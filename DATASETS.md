@@ -22,7 +22,7 @@ There are 20 input documents but only 10 repeated product scopes. This release c
 
 `datasets/storage/sample/` contains 1,000 rows in two JSONL files: two executions of 500 rows. It is a newly generated illustrative sample, not a subset asserted to reproduce historical results. `tools/generate_storage.py` can generate the million-record input in Parquet. It does not run the publication, compaction, or performance experiments.
 
-DuckDB is pinned because hash and serialization behavior may depend on its version. The million-record configuration has 19,900 distinct URL identities under the declared rule; the 1,000-row sample has 505.
+DuckDB is pinned because hash and serialization behavior may depend on its version. The generator explicitly uses UTC so timestamps do not depend on the workstation timezone. The million-record configuration has 19,900 distinct URL identities under the declared rule; the 1,000-row sample has 505.
 
 ## WebBench: an executable input source
 

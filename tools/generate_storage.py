@@ -56,6 +56,7 @@ def generate(output: Path, rows: int, executions: int, *, format: str = "parquet
     files = []
     connection = duckdb.connect(":memory:")
     try:
+        connection.execute("SET TimeZone = 'UTC'")
         for execution in range(executions):
             relative = Path(f"exec-{execution:06d}.{format}")
             path = output / relative
