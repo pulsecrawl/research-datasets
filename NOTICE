@@ -1,0 +1,7 @@
+PulseCrawl research dataset inputs
+
+Generators are adapted from PulseCrawl research tooling. WebBench is distributed as source. Software and adaptations remain under GNU AGPL version 3 only; the full license is included.
+
+The pre-existing fixed HTML and site-pattern collections identify their original synthetic contents as CC0-1.0. That designation is preserved in their manifests. Other newly published files are AGPL-3.0-only unless a file states otherwise.
+
+Named businesses and product URL shapes are used solely as test scopes. Generated contents do not represent real prices, actual jobs, factual news, permission to crawl, or affiliation.

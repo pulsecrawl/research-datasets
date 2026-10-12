@@ -1,0 +1,11 @@
+{
+  "classification": "illustrative-not-a-historical-run",
+  "host": "127.0.0.1",
+  "port": 8765,
+  "itemsPerSite": 10,
+  "sitesPerVertical": 1,
+  "seed": 4703,
+  "epoch": 1,
+  "crawlDelaySeconds": 0,
+  "includeFaultLinks": false
+}

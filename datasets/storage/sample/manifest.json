@@ -1,0 +1,27 @@
+{
+  "classification": "freshly-generated-synthetic-storage-input",
+  "duckdbVersion": "1.5.5",
+  "executions": 2,
+  "expectedDistinctUrlIdentities": 505,
+  "files": [
+    {
+      "path": "exec-000000.jsonl",
+      "rows": 500,
+      "sha256": "bd7adcd1cc22dbd969970f2f70cdc1235e20481aaced3aeea72277647727cd4a"
+    },
+    {
+      "path": "exec-000001.jsonl",
+      "rows": 500,
+      "sha256": "46841e40982172278b4d8c093e32b84cfaa2e56913467e12356e192ef744136a"
+    }
+  ],
+  "format": "jsonl",
+  "historicalExperimentOutput": false,
+  "license": "AGPL-3.0-only",
+  "maximumBodyBytes": 2048,
+  "minimumBodyBytes": 128,
+  "newFraction": 0.01,
+  "rows": 1000,
+  "rowsPerExecution": 500,
+  "schemaVersion": 1
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this versioned synthetic-input release."
+title: "PulseCrawl research datasets"
+type: dataset
+authors:
+  - name: "PulseCrawl"
+version: "0.1.0"
+date-released: "2026-10-11"
+repository-code: "https://github.com/pulsecrawl/research-datasets"
+license:
+  - AGPL-3.0-only
+  - CC0-1.0

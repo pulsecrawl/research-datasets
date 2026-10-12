@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "release": "0.1.0",
+  "publisher": "PulseCrawl",
+  "publicRepository": "https://github.com/pulsecrawl/research-datasets",
+  "kind": "synthetic-input-release-not-complete-experiment-archive",
+  "collections": {
+    "fixed-html": {
+      "documents": 60,
+      "license": "CC0-1.0"
+    },
+    "site-pattern-html": {
+      "baselineDocuments": 100,
+      "configurations": 20,
+      "mutationsIncluded": false,
+      "license": "CC0-1.0"
+    },
+    "commerce-html": {
+      "documents": 20,
+      "distinctScopes": 10,
+      "liveEnabled": false,
+      "fictionalPrices": true,
+      "license": "AGPL-3.0-only"
+    },
+    "storage": {
+      "sampleRows": 1000,
+      "sampleExecutions": 2,
+      "referenceRows": 1000000,
+      "referenceExecutions": 100,
+      "millionRowOutputIncluded": false,
+      "license": "AGPL-3.0-only"
+    },
+    "webbench": {
+      "standaloneServerIncluded": true,
+      "historicalTracesIncluded": false,
+      "license": "AGPL-3.0-only"
+    }
+  },
+  "exclusions": [
+    "original Git history",
+    "personal author metadata",
+    "absolute workstation paths",
+    "live HTML and live audit files",
+    "raw request traces",
+    "environment metadata",
+    "thesis documents",
+    "raw benchmark results",
+    "retained million-row outputs",
+    "independently labeled external corpus"
+  ],
+  "identifier": {
+    "doi": null,
+    "note": "No DOI assigned; cite the tagged repository release."
+  }
+}

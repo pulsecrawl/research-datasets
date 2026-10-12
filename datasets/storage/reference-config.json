@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "classification": "synthetic-storage-input",
+  "totalRows": 1000000,
+  "executions": 100,
+  "rowsPerExecution": 10000,
+  "newFraction": 0.01,
+  "minimumBodyBytes": 128,
+  "maximumBodyBytes": 2048,
+  "duckdbVersion": "1.5.5",
+  "retainedExperimentalOutputsIncluded": false
+}
