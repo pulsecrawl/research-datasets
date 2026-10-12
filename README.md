@@ -1,54 +1,46 @@
-# PulseCrawl research datasets
+# PulseCrawl evaluation inputs and live case-study plan
 
-Versioned, synthetic inputs for separate local crawling, extraction, and storage evaluations.
+Two separate kinds of evaluation:
 
-These are **different tests, not one shared dataset or a single pipeline**.
-
-| Input | Contents | Purpose |
+| Area | Contents | What it establishes |
 | --- | --- | --- |
-| WebBench | Local HTTP server and example configuration | Test crawling behavior, links, robots, redirects, and request timing |
-| Fixed HTML | 60 pages: 20 news, 20 jobs, 20 products; expected fields and checksums | Repeatable basic extraction checks |
-| Site-pattern HTML | 100 baseline pages across 20 documented site configurations | Scoped-template checks using synthetic markup |
-| Commerce HTML | 20 synthetic observations: 10 product scopes, twice | Illustrate fictional price changes across two observations |
-| Storage workload | Generator, reference configuration, and a 1,000-row sample | Generate structured records independently of HTML extraction |
+| Controlled synthetic tests | 60 fixed HTML pages, 100 scoped HTML pages, 20 fictional commerce inputs, WebBench, storage generator and 1,000-row sample | Repeatable behavior against known inputs |
+| [Live end-to-end case study](live-case-study/README.md) | Real candidate URLs, provisional templates, field definitions, and execution limits | A plan for using the local OSS application against real websites; not completed results |
 
-## Use
+**Synthetic data uses fictional names and reserved .example URLs. Real website names and URLs belong only to the live case-study plan.** Synthetic pages are never substituted for a failed live fetch.
 
-Python 3.11 or newer is required. Small HTML inputs are included directly.
+## Verify and regenerate synthetic inputs
+
+Python 3.11 or newer:
 
 ```sh
 python tools/verify.py
+python -m pip install -r requirements-storage.txt
 python -m unittest discover -s tests -v
-python tools/webbench.py --items-per-site 10 --sites-per-vertical 1
-```
-
-The HTTP server binds to loopback by default. Its generated pages are not the saved extraction collections.
-
-Regenerate each collection separately:
-
-```sh
 python tools/generate_fixed_html.py
 python tools/generate_site_pattern.py
 python tools/generate_commerce.py
+python tools/webbench.py --items-per-site 10 --sites-per-vertical 1
 ```
 
-For the storage workload, install the pinned optional dependency and generate a fresh directory:
+WebBench binds to loopback by default. Its HTTP websites are not the saved extraction sets. To generate storage input in a fresh directory:
 
 ```sh
-python -m pip install -r requirements-storage.txt
 python tools/generate_storage.py --output ./storage-output --rows 1000000 --executions 100
 ```
 
-This may produce large files. Generated output is excluded from Git. This release includes the generator and a 1,000-row sample, **not the retained million-row experimental outputs**.
+The million-row generator is included; retained historical million-row outputs and performance measurements are not.
 
-## Evidence boundaries
+## Run the real-world exercise
 
-All included HTML bodies and record values are synthetic. Retailer and publisher names identify example URL scopes, not endorsements, permissions, observed live prices, or verified live integrations. No live website requests are made by the HTML generators. Never crawl the example URLs solely because they appear here.
+[The manifest](live-case-study/sources.json) defines ten real candidate product sources, provisional template stacks, and bounded policy settings. Every candidate starts disabled pending an operator's access review.
 
-This is an input-data release, not a complete archive of research runs, performance results, or the PulseCrawl application. Generating new files does not reproduce historical timings. The site-pattern release includes baseline pages only, not the additional mutation experiments.
+The local OSS example provides separate `live.py` commands to inspect the plan, initialize an explicitly reviewed job, run it once over real HTTP, and record exercise notes. Re-run manually later to compare actual observations. No HTML archive is required: retain structured outputs, dataset versions, request metadata, and practical workflow notes.
 
-See [DATASETS.md](DATASETS.md) for counts, labels, and limitations, and [PRIVACY.md](PRIVACY.md) for the publication boundary.
+A manifest alone is not evidence of a run. This release contains **no completed live commerce executions or observed retailer price changes**. Access blocks, empty results, unchanged prices, and template repairs are reportable outcomes.
 
-## License
+## Version and evidence boundaries
 
-The existing fixed and site-pattern datasets are CC0-1.0; their manifests retain that designation. The commerce fixtures, software, documentation, and new storage sample are distributed under AGPL-3.0-only. See [LICENSE](LICENSE) and [NOTICE](NOTICE). Dataset licenses do not cover third-party names or trademarks.
+Version 0.2.0 replaces real-brand-shaped synthetic fixtures with fictional identities. Earlier versions remain historical snapshots; their fixtures were also synthetic. Existing research scores must not be silently assigned to the revised inputs. This is not a complete archive of the application, historical runs, or a participant usability study.
+
+See [DATASETS.md](DATASETS.md), [PRIVACY.md](PRIVACY.md), and [NOTICE](NOTICE). Fixed/scoped synthetic collections retain CC0-1.0; software, commerce fixtures, and other new files are AGPL-3.0-only. Third-party names and URLs do not convey affiliation or crawling permission.

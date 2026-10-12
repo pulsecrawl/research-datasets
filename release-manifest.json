@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "release": "0.1.1",
+  "release": "0.2.0",
   "publisher": "PulseCrawl",
   "publicRepository": "https://github.com/pulsecrawl/research-datasets",
-  "kind": "synthetic-input-release-not-complete-experiment-archive",
+  "kind": "fictional-controlled-inputs-and-live-exercise-plan",
   "collections": {
     "fixed-html": {
       "documents": 60,
@@ -13,14 +13,16 @@
       "baselineDocuments": 100,
       "configurations": 20,
       "mutationsIncluded": false,
-      "license": "CC0-1.0"
+      "license": "CC0-1.0",
+      "fictionalIdentities": true
     },
     "commerce-html": {
       "documents": 20,
       "distinctScopes": 10,
       "liveEnabled": false,
       "fictionalPrices": true,
-      "license": "AGPL-3.0-only"
+      "license": "AGPL-3.0-only",
+      "fictionalIdentities": true
     },
     "storage": {
       "sampleRows": 1000,
@@ -51,5 +53,14 @@
   "identifier": {
     "doi": null,
     "note": "No DOI assigned; cite the tagged repository release."
-  }
+  },
+  "liveCaseStudy": {
+    "manifest": "live-case-study/sources.json",
+    "status": "not-run",
+    "candidateSources": 10,
+    "enabledSources": 0,
+    "htmlArchivingRequired": false,
+    "actualResultsIncluded": false
+  },
+  "revisionNote": "Synthetic identity changes are not a rerun of historical benchmarks; live manifest is a plan only."
 }

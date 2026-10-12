@@ -20,6 +20,21 @@ def module(name):
 
 
 class DatasetTests(unittest.TestCase):
+    def test_fictional_inputs_and_live_plan_are_separate(self):
+        from urllib.parse import urlsplit
+        catalog = json.loads((ROOT / "datasets/site-pattern-html/catalog.json").read_text())
+        self.assertTrue(all(s["host"].endswith(".example") for s in catalog["sites"]))
+        for line in (ROOT / "datasets/commerce-html/manifest.jsonl").read_text().splitlines():
+            row = json.loads(line)
+            self.assertTrue(urlsplit(row["scopeUrl"]).hostname.endswith(".example"))
+            self.assertTrue(row["storeContext"].startswith("Fictional Store"))
+        plan = json.loads((ROOT / "live-case-study/sources.json").read_text())
+        self.assertEqual(plan["status"], "not-run")
+        self.assertFalse(plan["recordHtml"])
+        self.assertEqual(len(plan["sources"]), 10)
+        self.assertTrue(all(not s["enabled"] for s in plan["sources"]))
+        self.assertTrue(all(s["accessReview"]["status"] == "pending-review" for s in plan["sources"]))
+
     def test_counts_and_hashes(self):
         verifier = module("verify")
         self.assertEqual(verifier.verify_manifests(), {

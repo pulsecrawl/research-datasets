@@ -71,7 +71,7 @@ def render_fixture(
     body_selector = str(site["bodySelector"])
     if mutation == "shared_selector_rename" and site["family"] == "shopify-product":
         body_selector = ".product-details"
-    if mutation == "site_selector_rename" and site["id"] == "news-laopcion":
+    if mutation == "site_selector_rename" and site["id"] == "news-case-05":
         body_selector = "div.newsfull__content"
     body_markup = _selector_markup(body_selector, truth["body"])
     if mutation == "wrapper_insertion":

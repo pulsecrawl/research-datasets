@@ -1,35 +1,29 @@
-# Dataset guide
+# Evaluation inputs
 
-## Fixed HTML: basic extraction
+## Controlled synthetic inputs
 
-The 60 generated HTML files in `datasets/fixed-html/expanded/` and their answer manifest are unchanged from the controlled input collection. The manifest stores expected title, body/description, date, mappings, layout, and SHA-256. It contains 20 documents in each of three categories. The symbolic `webbench://` source identifiers do not mean these files were downloaded from a running WebBench server.
+All HTML bodies and expected record values in `datasets/` are generated, not scraped.
 
-## Site-pattern HTML: scoped extraction
+- **Fixed HTML:** 60 pages, 20 each for news, employment, and products. The unchanged answer manifest includes mappings and checksums. Symbolic `webbench://` identifiers are not downloaded URLs.
+- **Scoped synthetic HTML:** 100 baseline pages across 20 fictional configurations. Five layouts per configuration: JSON-LD, graph, metadata, CSS, and malformed JSON-LD with CSS fallback. Hosts end in `.example`. Extra mutation experiments are not included.
+- **Fictional commerce:** 20 documents representing two observations of ten fictional stores. Prices USD 120 and USD 99 are deliberate test values, not observed market prices. There are ten repeated scopes, not twenty independent products.
+- **Storage:** a newly generated 1,000-row JSONL sample (two executions of 500 rows) plus the generator and million-row reference configuration. Source URLs use `source.example`. Full historical outputs are not included.
+- **WebBench:** a local HTTP server generating fictional websites on demand. Its example configuration is illustrative; no historical request logs are included.
 
-`datasets/site-pattern-html/catalog.json` contains 20 configurations. Each has five baseline layouts: JSON-LD, JSON-LD graph, metadata, CSS, and malformed JSON-LD with CSS fallback. The 100 generated pages and their expected values are in the same directory.
+DuckDB is pinned and storage timestamps explicitly use UTC. Under the declared identity rule, the sample has 505 distinct URLs and the million-record configuration has 19,900.
 
-Host/path and selector patterns are documented example scopes; the HTML bodies are synthetic, not captured third-party pages. Multiple configurations can share a host. The baseline does not include selector-renaming, negative-page, or other mutation experiments.
+Version 0.2.0 changed the identities of scoped and commerce synthetic inputs. It does not claim byte identity with earlier real-brand-shaped fixtures or establish that historical accuracy results were rerun against this version.
 
-## Commerce HTML: repeated observations
+## Live end-to-end case study
 
-`datasets/commerce-html/` contains two observations for each of ten retailer-shaped URLs: lululemon, Alo Yoga, Nordstrom, REVOLVE, Nike, Adidas, New Balance, On, HOKA, and UGG. The price values are fictional USD 120.00 followed by USD 99.00. Identifiers, sizes, colors, and brands are synthetic.
+`live-case-study/sources.json` contains real candidate product URLs, provisional template stacks, shared fields, request limits, and explicit access-review status. It contains no fake records or expected prices. All candidates are initially disabled. The study status is `not-run`.
 
-There are 20 input documents but only 10 repeated product scopes. This release contains fixtures and expected fields, not the local Workspace execution state or proof of live extraction. Live access is not enabled.
+The exercise uses real HTTP through the local OSS workspace. It retains extracted records, execution summaries, version manifests, request status/checksum metadata, and setup/repair notes. HTML is processed in memory, not archived by the example.
 
-## Storage: independently generated records
+Repeated executions may show changed or unchanged prices. Missing fields, redirects outside scope, access denials, and required template edits remain observations. Provisional templates are not validated live integrations.
 
-`datasets/storage/reference-config.json` records the million-record workload parameters: 100 executions, 10,000 records each, 1% new identities per execution, body lengths from 128 to 2,048 characters, and synthetic source.example URLs. The SQL row-generation expressions are adapted from the research storage generator.
+## Evidence and verification
 
-`datasets/storage/sample/` contains 1,000 rows in two JSONL files: two executions of 500 rows. It is a newly generated illustrative sample, not a subset asserted to reproduce historical results. `tools/generate_storage.py` can generate the million-record input in Parquet. It does not run the publication, compaction, or performance experiments.
+HTML answer manifests hash the synthetic inputs; `checksums.sha256` covers release files. `release-manifest.json` records current coverage and exclusions.
 
-DuckDB is pinned because hash and serialization behavior may depend on its version. The generator explicitly uses UTC so timestamps do not depend on the workstation timezone. The million-record configuration has 19,900 distinct URL identities under the declared rule; the 1,000-row sample has 505.
-
-## WebBench: an executable input source
-
-`tools/webbench.py` is a standalone copy of the local HTTP testbed implementation. It generates websites on demand and records requests when tracing is enabled. No request traces are included here. `datasets/webbench/example-config.json` is an illustrative configuration, not a claim that all historical experiments used those settings.
-
-## Reproducibility limits
-
-Each HTML manifest hashes its files. `checksums.sha256` covers all committed release content except itself. `release-manifest.json` records the included counts and exclusions.
-
-The source application, complete experiment harness, raw benchmark runs, live audits, thesis, machine metadata, and independently labeled external corpus are not included. Public access to these inputs does not establish a complete reproducibility archive or independent real-web accuracy.
+The manifest defines the live exercise but does not prove it ran. No independently labeled external corpus, historical benchmark results, thesis PDF, personal metadata, or completed live commerce observations are included. Publishing any future collected output requires a separate review for permissions and sensitive data.

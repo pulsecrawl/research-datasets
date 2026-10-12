@@ -20,37 +20,11 @@ class Source:
     terms_url: str
 
 
-SOURCES = (
-    Source("lululemon", "lululemon", "shop.lululemon.com", ("/p/*/*",),
-           "https://shop.lululemon.com/p/align-pant-2/i4goprzy85?color=77648&locale=en_US",
-           "https://shop.lululemon.com/help/legal/terms-of-use/"),
-    Source("alo", "Alo Yoga", "www.aloyoga.com", ("/products/*",),
-           "https://www.aloyoga.com/products/w5561r-high-waist-airlift-legging-black?variant=22032629170294",
-           "https://www.aloyoga.com/pages/terms-of-use"),
-    Source("nordstrom", "Nordstrom", "www.nordstrom.com", ("/s/*/[0-9]*",),
-           "https://www.nordstrom.com/s/alo-airbrush-high-waist-leggings/5538850",
-           "https://www.nordstrom.com/browse/customer-service/policy/terms-conditions"),
-    Source("revolve", "REVOLVE", "www.revolve.com", ("/*/dp/*/",),
-           "https://www.revolve.com/nike-air-footscape-woven-og-sneakers-in-black-white/dp/NIKR-MZ933/",
-           "https://www.revolve.com/r/infoTerms.jsp"),
-    Source("nike", "Nike", "www.nike.com", ("/t/*/*",),
-           "https://www.nike.com/t/air-force-1-07-ayakkab%C4%B1s%C4%B1-rWtqPn/CW2288-001",
-           "https://agreementservice.svs.nike.com/gb/en_gb/rest/agreement?agreementType=termsOfUse&uxId=com.nike&country=US&language=en&requestType=redirect"),
-    Source("adidas", "Adidas", "www.adidas.com", ("/us/*/*.html",),
-           "https://www.adidas.com/us/samba-og-shoes/B75806.html",
-           "https://www.adidas.com/us/help/us-company-information/what-are-the-terms-and-conditions"),
-    Source("new-balance", "New Balance", "www.newbalance.com", ("/pd/*/*.html",),
-           "https://www.newbalance.com/pd/made-in-usa-990v6/M990NV6-D-11.html",
-           "https://www.newbalance.com/terms.html"),
-    Source("on", "On", "www.on.com", ("/en-us/products/*/mens/*", "/en-us/products/*/womens/*"),
-           "https://www.on.com/en-us/products/cloudmonster-2-m-3mf3115/mens/ivory-steel-shoes-3MF31154571",
-           "https://www.on.com/en-us/terms-and-conditions"),
-    Source("hoka", "HOKA", "www.hoka.com", ("/en/us/*/*/[0-9]*.html",),
-           "https://www.hoka.com/en/us/mens-everyday-running-gear/clifton-11/1176572.html?dwvar_1176572_color=BKCS",
-           "https://www.hoka.com/en/us/terms-and-conditions.html"),
-    Source("ugg", "UGG", "www.ugg.com", ("/women-*/*/[0-9]*.html", "/men-*/*/[0-9]*.html"),
-           "https://www.ugg.com/women-boots/classic-ultra-mini/1116109.html?dwvar_1116109_color=CRBO&dwvar_1116109_size=11",
-           "https://www.ugg.com/terms-and-conditions.html"),
+SOURCES = tuple(
+    Source(f"shop-{i:02d}", f"Fictional Store {i:02d}", f"shop-{i:02d}.example",
+           ("/products/*",), f"https://shop-{i:02d}.example/products/item-{i:02d}?color=black&size=m",
+           f"https://shop-{i:02d}.example/policies")
+    for i in range(1, 11)
 )
 
 def product_html(source: Source, execution: int, *, layout: str = "jsonld") -> str:

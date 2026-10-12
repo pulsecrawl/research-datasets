@@ -4,7 +4,7 @@ title: "PulseCrawl research datasets"
 type: dataset
 authors:
   - name: "PulseCrawl"
-version: "0.1.1"
+version: "0.2.0"
 date-released: "2026-10-11"
 repository-code: "https://github.com/pulsecrawl/research-datasets"
 license:
