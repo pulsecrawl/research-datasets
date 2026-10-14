@@ -1,9 +1,25 @@
 {
-  "schemaVersion": 1,
-  "release": "0.2.0",
+  "schemaVersion": 2,
+  "release": "0.3.0-development",
+  "status": "development",
   "publisher": "PulseCrawl",
   "publicRepository": "https://github.com/pulsecrawl/research-datasets",
-  "kind": "fictional-controlled-inputs-and-live-exercise-plan",
+  "kind": "research-experiments-inputs-evidence-and-analysis",
+  "softwareUnderEvaluation": {
+    "distribution": "pulsecrawl",
+    "version": "0.1.0",
+    "extra": "workspace",
+    "source": "https://github.com/pulsecrawl/PulseCrawl"
+  },
+  "inputReleaseBase": "0.2.0",
+  "artifactAreas": {
+    "datasets": "datasets/",
+    "experiments": "experiments/",
+    "protocols": "protocols/",
+    "evidence": "evidence/",
+    "analysis": "analysis/",
+    "liveCaseStudy": "live-case-study/"
+  },
   "collections": {
     "fixed-html": {
       "documents": 60,
@@ -38,21 +54,39 @@
       "license": "AGPL-3.0-only"
     }
   },
+  "experimentCatalog": {
+    "path": "experiments/catalog.json",
+    "naming": "descriptive-identifiers",
+    "families": ["policy-and-recovery", "template-extraction", "versioned-datasets"]
+  },
+  "evidence": {
+    "schema": "evidence/execution-manifest.schema.json",
+    "executionsPath": "evidence/executions/",
+    "reviewedExecutions": 0,
+    "status": "schema-published-no-reviewed-executions"
+  },
+  "analysis": {
+    "schema": "analysis/analysis-manifest.schema.json",
+    "path": "analysis/",
+    "reviewedAnalyses": 0,
+    "status": "method-published-no-reviewed-analyses"
+  },
   "exclusions": [
-    "original Git history",
+    "private repository history",
     "personal author metadata",
     "absolute workstation paths",
-    "live HTML and live audit files",
-    "raw request traces",
-    "environment metadata",
-    "thesis documents",
-    "raw benchmark results",
+    "usernames and machine hostnames",
+    "credentials cookies and sensitive headers",
+    "manuscripts and thesis documents",
+    "downloaded third-party HTML without redistribution permission",
+    "unreviewed live request logs",
+    "raw workspace databases",
     "retained million-row outputs",
     "independently labeled external corpus"
   ],
   "identifier": {
     "doi": null,
-    "note": "No DOI assigned; cite the tagged repository release."
+    "note": "No DOI assigned; cite a tagged repository release."
   },
   "liveCaseStudy": {
     "manifest": "live-case-study/sources.json",
@@ -62,5 +96,5 @@
     "htmlArchivingRequired": false,
     "actualResultsIncluded": false
   },
-  "revisionNote": "Synthetic identity changes are not a rerun of historical benchmarks; live manifest is a plan only."
+  "revisionNote": "Development manifest for the first release combining public inputs, descriptive experiment registration, evidence schemas, and analysis rules. Existing version tags remain immutable."
 }

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "artifactRelease": "0.3.0-development",
+  "pulsecrawl": "0.1.0",
+  "pulsecrawlExtra": "workspace",
+  "python": ">=3.11,<3.14",
+  "evidenceSchema": "1.0",
+  "inputReleaseBase": "0.2.0"
+}
+

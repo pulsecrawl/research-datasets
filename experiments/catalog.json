@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "package": "pulsecrawl[workspace]==0.1.0",
+  "datasetRevision": "0.3.0-development",
+  "experiments": [
+    {
+      "id": "execution-budget-under-concurrency",
+      "family": "policy-and-recovery",
+      "title": "Execution budget under concurrent discovery",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"maximumUrls": 50, "maximumDepth": 6, "concurrency": 8},
+      "measurements": ["authorized_requests", "completed_requests", "budget_violations"],
+      "acceptance": "No authorization or completed request exceeds the configured execution budget."
+    },
+    {
+      "id": "interruption-recovery",
+      "family": "policy-and-recovery",
+      "title": "Recovery at durable crawl boundaries",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"maximumUrls": 1000, "maximumDepth": 8, "concurrency": 4, "interruptionPoints": ["after_admission", "before_request", "after_request", "after_commit"]},
+      "measurements": ["terminal_status", "frontier_residuals", "unsettled_reservations", "repeated_completed_requests"],
+      "acceptance": "Every interrupted execution converges to a terminal state with no residual frontier or unsettled reservation."
+    },
+    {
+      "id": "shared-origin-pacing",
+      "family": "policy-and-recovery",
+      "title": "Shared origin pacing across local jobs",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"parallelJobs": 3, "localPacingGroups": 2, "maximumUrlsPerJob": 20, "originRequestsPerSecond": 2},
+      "measurements": ["authorization_gap_seconds", "server_arrival_gap_seconds", "origin_interval_violations"],
+      "acceptance": "All same-origin authorization gaps satisfy the configured minimum interval."
+    },
+    {
+      "id": "robots-request-controls",
+      "family": "policy-and-recovery",
+      "title": "Robots rules, redirects, failures, cache, and crawl delay",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"maximumUrls": 30, "maximumDepth": 5, "concurrency": 4},
+      "measurements": ["forbidden_path_requests", "robots_fetches", "redirect_statuses", "retry_statuses", "minimum_request_gap_seconds"],
+      "acceptance": "No disallowed path is requested and applicable crawl-delay and request limits are respected."
+    },
+    {
+      "id": "deferred-work-efficiency",
+      "family": "policy-and-recovery",
+      "title": "Deferred-work scheduling efficiency",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"maximumUrls": 1000, "concurrency": 16, "profiles": ["worker_wait", "queue_defer", "scheduled_eligibility", "scheduled_eligibility_with_final_gate"]},
+      "measurements": ["queue_operations", "deferred_deliveries", "worker_wait_seconds", "policy_violations"],
+      "acceptance": "Scheduling variants preserve policy correctness; efficiency is reported without declaring a universal winner."
+    },
+    {
+      "id": "policy-mechanism-ablation",
+      "family": "policy-and-recovery",
+      "title": "Policy-mechanism ablation",
+      "seed": 4707,
+      "status": "registered",
+      "workload": {"maximumUrls": 5, "maximumDepth": 1, "concurrency": 2},
+      "measurements": ["budget_violations", "duplicate_authorizations", "post_terminal_requests", "unsettled_reservations"],
+      "acceptance": "Removing each mechanism produces only the predicted class of invariant violation in the controlled model."
+    },
+    {
+      "id": "concurrent-redelivery-stress",
+      "family": "policy-and-recovery",
+      "title": "Concurrency, redelivery, cache-loss, and late-message stress",
+      "seed": 4710,
+      "status": "registered",
+      "workload": {"repetitions": 30, "maximumUrls": 100, "concurrency": 8, "parallelJobs": 8, "localPacingGroups": 2, "duplicateDeliveryRate": 0.35, "cacheLossEvery": 17},
+      "measurements": ["duplicate_deliveries", "duplicate_authorizations", "late_messages", "policy_violations"],
+      "acceptance": "Redelivery and cache loss cause no duplicate authorization, post-terminal request, budget violation, or unsettled reservation."
+    },
+    {
+      "id": "coordination-operation-cost",
+      "family": "policy-and-recovery",
+      "title": "Coordination operation-count matrix",
+      "seed": 4711,
+      "status": "registered",
+      "workload": {"repetitions": 30, "maximumUrls": 1000, "concurrency": 8, "duplicateDeliveryRate": 0.35},
+      "measurements": ["durable_reads", "durable_writes", "queue_operations", "visibility_updates", "total_external_operations"],
+      "acceptance": "All regimes report correctness and operation counts from the same workload; missing operations are not interpreted as zero."
+    },
+    {
+      "id": "conservative-dispatch-spacing",
+      "family": "policy-and-recovery",
+      "title": "Conservative dispatch spacing",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"parallelJobs": 3, "localPacingGroups": 2, "maximumUrlsPerJob": 20, "originRequestsPerSecond": 2, "dispatchMarginRatio": 0.1},
+      "measurements": ["authorization_gap_seconds", "server_arrival_gap_seconds", "origin_interval_violations"],
+      "acceptance": "Every authorization gap satisfies the guarded dispatch interval; server arrival gaps are retained as diagnostic transport observations."
+    },
+    {
+      "id": "url-scoped-template-selection",
+      "family": "template-extraction",
+      "title": "URL-scoped template selection and contamination",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"sitesPerVertical": 5, "itemsPerSite": 20},
+      "measurements": ["field_precision", "field_recall", "record_coverage", "cross_scope_contamination"],
+      "acceptance": "Scoped stacks retain registered record coverage while preventing literal values from unrelated scopes."
+    },
+    {
+      "id": "fallback-and-template-diagnostics",
+      "family": "template-extraction",
+      "title": "Fallback and missing-template diagnostics",
+      "seed": 4704,
+      "status": "registered",
+      "workload": {"sitesPerVertical": 5, "itemsPerSite": 20},
+      "measurements": ["fallback_tier", "diagnostic_recall", "field_accuracy", "record_coverage"],
+      "acceptance": "Fallback is deterministic and missing-template cases produce an explicit diagnostic rather than a silently incorrect record."
+    },
+    {
+      "id": "controlled-markup-drift",
+      "family": "template-extraction",
+      "title": "Controlled markup drift",
+      "seed": 4705,
+      "status": "registered",
+      "workload": {"sitesPerVertical": 5, "itemsPerSite": 20, "mutations": ["class_renamed", "body_moved", "jsonld_removed", "jsonld_malformed", "metadata_removed", "multiple_entities"]},
+      "measurements": ["field_accuracy_before_repair", "field_accuracy_after_repair", "fallback_rate", "repair_count"],
+      "acceptance": "Every mutation is reported; repaired accuracy is measured separately from accuracy before repair."
+    },
+    {
+      "id": "frozen-multi-industry-corpus",
+      "family": "template-extraction",
+      "title": "Frozen multi-industry corpus quality",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"sitesPerVertical": 5, "itemsPerSite": 20},
+      "measurements": ["field_precision", "field_recall", "field_f1", "record_coverage"],
+      "acceptance": "Metrics are computed against the frozen expected-value manifests without live-network substitution."
+    },
+    {
+      "id": "integration-surface-comparison",
+      "family": "template-extraction",
+      "title": "Equivalent integration surface comparison",
+      "seed": 4712,
+      "status": "registered",
+      "workload": {"sites": 20, "itemsPerSite": 10},
+      "measurements": ["physical_lines", "selectors", "routes", "configuration_bytes", "oracle_accuracy"],
+      "acceptance": "Only semantically equivalent and syntactically valid integrations are compared."
+    },
+    {
+      "id": "template-change-diffusion",
+      "family": "template-extraction",
+      "title": "Template change diffusion and repair effort",
+      "seed": 4713,
+      "status": "registered",
+      "workload": {"sites": 20, "changedSites": 5},
+      "measurements": ["changed_files", "changed_lines", "diff_hunks", "post_change_accuracy"],
+      "acceptance": "Repair effort is interpreted only after the modified integrations restore expected extraction behavior."
+    },
+    {
+      "id": "multiple-entity-ambiguity",
+      "family": "template-extraction",
+      "title": "Multiple-entity ambiguity diagnostics",
+      "seed": 4714,
+      "status": "registered",
+      "workload": {"sites": 20, "itemsPerSite": 10},
+      "measurements": ["first_entity_accuracy", "canonical_entity_accuracy", "ambiguities_reported"],
+      "acceptance": "Ambiguous pages are surfaced and entity-selection accuracy is reported against the registered oracle."
+    },
+    {
+      "id": "permissioned-external-corpus",
+      "family": "template-extraction",
+      "title": "Permissioned external-corpus validation",
+      "seed": 4715,
+      "status": "awaiting-authorized-input",
+      "workload": {"manifest": "live-case-study/sources.json"},
+      "measurements": ["source_access_status", "field_precision", "field_recall", "record_coverage"],
+      "acceptance": "Results are published only for reviewed sources with independently defined expected values or explicitly labeled observational analysis."
+    },
+    {
+      "id": "scoped-template-governance",
+      "family": "template-extraction",
+      "title": "Scoped-template governance under realistic drift",
+      "seed": 4720,
+      "status": "registered",
+      "workload": {"catalog": "datasets/site-pattern-html/catalog.json", "documentsPerSite": 5, "driftCases": ["shared_selector_rename", "site_selector_rename", "wrapper_insertion", "jsonld_to_meta", "multiple_entities", "canonical_change", "negative_page", "literal_leak"]},
+      "measurements": ["field_accuracy", "negative_page_false_positive_rate", "contamination_rate", "repair_scope", "template_label_coverage"],
+      "acceptance": "Baseline, adverse, and repaired outcomes are reported separately; template-label coverage is not presented as field-level attribution."
+    },
+    {
+      "id": "temporal-query-scaling",
+      "family": "versioned-datasets",
+      "title": "Temporal query scaling",
+      "seed": 4703,
+      "status": "registered",
+      "workload": {"executions": 10, "rowsPerExecution": 1000, "newFraction": 0.1},
+      "measurements": ["row_count", "query_seconds", "payload_checksum", "bytes", "file_count"],
+      "acceptance": "Query results must be semantically correct before performance measurements are interpreted."
+    },
+    {
+      "id": "new-url-materialization",
+      "family": "versioned-datasets",
+      "title": "Append-all versus new-URL materialization",
+      "seed": 4704,
+      "status": "registered",
+      "workload": {"executions": 100, "rowsPerExecution": 1000, "newFraction": 0.05},
+      "measurements": ["append_rows", "new_url_rows", "distinct_url_identities", "bytes", "query_seconds"],
+      "acceptance": "The new-URL output equals the first observation of each normalized URL identity."
+    },
+    {
+      "id": "compaction-version-isolation",
+      "family": "versioned-datasets",
+      "title": "Compaction and version isolation",
+      "seed": 4705,
+      "status": "registered",
+      "workload": {"executions": 100, "rowsPerExecution": 1000, "newFraction": 0.1, "concurrentReaders": 8},
+      "measurements": ["version_count", "reader_consistency", "compaction_seconds", "file_count", "payload_checksum"],
+      "acceptance": "Readers observe a complete committed version before or after compaction, never a partial replacement."
+    },
+    {
+      "id": "parquet-semantic-round-trip",
+      "family": "versioned-datasets",
+      "title": "Reference-to-Parquet semantic round trip",
+      "seed": 4706,
+      "status": "registered",
+      "workload": {"executions": 10, "rowsPerExecution": 1000, "newFraction": 0.1},
+      "measurements": ["expected_rows", "actual_rows", "expected_checksum", "actual_checksum"],
+      "acceptance": "Row counts and canonical semantic checksums agree after publication and readback."
+    },
+    {
+      "id": "publication-atomicity-ablation",
+      "family": "versioned-datasets",
+      "title": "Publication atomicity ablation",
+      "seed": 4708,
+      "status": "registered",
+      "workload": {"executions": 10, "rowsPerExecution": 1000, "concurrentReaders": 4, "publications": 30},
+      "measurements": ["reader_consistency", "partial_versions", "missing_parts", "checksum_mismatches"],
+      "acceptance": "The normal publication protocol exposes no partial version; ablated variants are reported separately."
+    },
+    {
+      "id": "million-row-scale-matrix",
+      "family": "versioned-datasets",
+      "title": "Million-row temporal dataset scale matrix",
+      "seed": 4716,
+      "status": "registered",
+      "workload": {"cases": [{"totalRows": 1000000, "executions": 100, "newFraction": 0.01, "queryRepetitions": 5}, {"totalRows": 10000000, "executions": 100, "newFraction": 0.01, "queryRepetitions": 1}]},
+      "measurements": ["write_seconds", "query_seconds", "bytes", "file_count", "payload_checksum"],
+      "acceptance": "Every scale case must pass semantic checks before storage or timing results are compared."
+    },
+    {
+      "id": "temporal-query-correctness",
+      "family": "versioned-datasets",
+      "title": "Temporal query correctness and latency",
+      "seed": 4717,
+      "status": "registered",
+      "workload": {"queryRepetitions": 30},
+      "measurements": ["expected_rows", "actual_rows", "payload_checksum", "query_seconds"],
+      "acceptance": "Hourly, daily, all-history, and new-URL queries return the registered rows and checksums."
+    },
+    {
+      "id": "compaction-interruption-matrix",
+      "family": "versioned-datasets",
+      "title": "Compaction interruption matrix",
+      "seed": 4718,
+      "status": "registered",
+      "workload": {"repetitions": 30, "interruptionPoints": ["before_compaction", "after_replacement_write", "during_version_pointer_write", "after_version_swap", "after_cleanup"]},
+      "measurements": ["valid_committed_view", "missing_parts", "checksum_mismatches", "orphan_candidates"],
+      "acceptance": "Every interruption leaves at least one valid committed dataset view and never exposes a partial replacement."
+    },
+    {
+      "id": "local-publication-reproducibility",
+      "family": "versioned-datasets",
+      "title": "Local publication reproducibility",
+      "seed": 4719,
+      "status": "registered",
+      "workload": {"independentWorkspaces": 2},
+      "measurements": ["row_count", "semantic_checksum", "version_manifest_validity"],
+      "acceptance": "Independent local workspaces supplied with the same registered inputs produce equivalent logical records and valid version manifests."
+    },
+    {
+      "id": "governed-dataset-pipeline",
+      "family": "versioned-datasets",
+      "title": "Governed dataset pipeline comparison",
+      "seed": 4721,
+      "status": "registered",
+      "workload": {"totalRows": 1000000, "executions": 100, "newFraction": 0.01, "queryRepetitions": 10, "failureRepetitions": 30, "simulationHours": 8760, "bodyBytes": {"minimum": 128, "maximum": 2048}},
+      "measurements": ["semantic_checksum", "bytes", "file_count", "query_seconds", "publication_violations", "active_files_over_time"],
+      "acceptance": "Equivalent logical inputs and queries are validated before storage, query, or maintenance costs are compared."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pulsecrawl/research-datasets/evidence/execution-manifest.schema.json",
+  "title": "PulseCrawl public execution manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "executionId",
+    "experimentId",
+    "status",
+    "startedAt",
+    "completedAt",
+    "software",
+    "inputs",
+    "command",
+    "outputs"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "executionId": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+    "experimentId": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "status": {"enum": ["completed", "completed-with-observations", "failed", "stopped"]},
+    "startedAt": {"type": "string", "format": "date-time"},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "software": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pulsecrawl", "python", "platform"],
+      "properties": {
+        "pulsecrawl": {"type": "string"},
+        "python": {"type": "string"},
+        "platform": {"type": "string", "description": "Generic OS and architecture only; exclude hostnames and usernames."}
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactRelease", "checksumsSha256"],
+      "properties": {
+        "artifactRelease": {"type": "string"},
+        "checksumsSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "liveSourceManifestSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "command": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "configuration": {"type": "object"},
+    "outputs": {
+      "type": "object",
+      "additionalProperties": {"type": "string"},
+      "required": ["measurements", "summary", "checksums"]
+    },
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}
+

@@ -3,12 +3,14 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.metadata
 import json
 from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {"fixed-html": 60, "site-pattern-html": 100, "commerce-html": 20}
+EXPECTED_FAMILIES = {"policy-and-recovery", "template-extraction", "versioned-datasets"}
 
 
 def release_files() -> list[Path]:
@@ -42,6 +44,53 @@ def verify_manifests() -> dict[str, int]:
     return counts
 
 
+def verify_research_metadata() -> dict[str, object]:
+    compatibility = json.loads((ROOT / "environment" / "compatibility.json").read_text(encoding="utf-8"))
+    release = json.loads((ROOT / "release-manifest.json").read_text(encoding="utf-8"))
+    catalog = json.loads((ROOT / "experiments" / "catalog.json").read_text(encoding="utf-8"))
+
+    experiments = catalog["experiments"]
+    identifiers = [entry["id"] for entry in experiments]
+    if len(identifiers) != len(set(identifiers)):
+        raise ValueError("experiment identifiers must be unique")
+    if any(not re.fullmatch(r"[a-z0-9][a-z0-9-]+", identifier) for identifier in identifiers):
+        raise ValueError("experiment identifiers must be descriptive lowercase slugs")
+    families = {entry["family"] for entry in experiments}
+    if families != EXPECTED_FAMILIES:
+        raise ValueError(f"unexpected experiment families: {sorted(families)}")
+    required = {"id", "family", "title", "seed", "status", "workload", "measurements", "acceptance"}
+    for entry in experiments:
+        missing = required - entry.keys()
+        if missing:
+            raise ValueError(f"experiment {entry.get('id', '<unknown>')} is missing {sorted(missing)}")
+        if not entry["measurements"] or not entry["acceptance"].strip():
+            raise ValueError(f"experiment {entry['id']} lacks an evidence rule")
+
+    package_version = compatibility["pulsecrawl"]
+    expected_requirement = f"pulsecrawl[workspace]=={package_version}"
+    requirements = (ROOT / "environment" / "requirements.txt").read_text(encoding="utf-8").splitlines()
+    if expected_requirement not in requirements:
+        raise ValueError("public package pin does not match compatibility.json")
+    if catalog["package"] != expected_requirement:
+        raise ValueError("experiment catalog package pin does not match compatibility.json")
+    if release["softwareUnderEvaluation"]["version"] != package_version:
+        raise ValueError("release manifest package version does not match compatibility.json")
+    if release["release"] != compatibility["artifactRelease"]:
+        raise ValueError("release and compatibility artifact versions differ")
+
+    installed_version = importlib.metadata.version("pulsecrawl")
+    if installed_version != package_version:
+        raise ValueError(
+            f"installed pulsecrawl {installed_version} does not match registered {package_version}"
+        )
+
+    return {
+        "experiments": len(experiments),
+        "families": sorted(families),
+        "pulsecrawl": installed_version,
+    }
+
+
 def privacy_scan(deny: list[str] | None = None) -> None:
     rules = {
         "absolute home path": re.compile(r"/(?:Users|home)/[A-Za-z0-9_.-]+|[A-Za-z]:\\Users\\", re.I),
@@ -73,6 +122,7 @@ def main() -> int:
     parser.add_argument("--deny", action="append", default=[])
     args = parser.parse_args()
     counts = verify_manifests()
+    metadata = verify_research_metadata()
     privacy_scan(args.deny)
     expected = checksum_lines()
     checksum_file = ROOT / "checksums.sha256"
@@ -80,7 +130,12 @@ def main() -> int:
         checksum_file.write_text(expected, encoding="utf-8")
     elif checksum_file.read_text(encoding="utf-8") != expected:
         raise ValueError("release checksum coverage or contents changed")
-    print(json.dumps({"htmlCounts": counts, "checksums": "valid", "publicationScan": "passed"}))
+    print(json.dumps({
+        "htmlCounts": counts,
+        "researchMetadata": metadata,
+        "checksums": "valid",
+        "publicationScan": "passed",
+    }))
     return 0
 
 
