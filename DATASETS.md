@@ -1,4 +1,9 @@
-# Evaluation inputs
+# Evaluation inputs and evidence boundary
+
+The datasets are one part of the public research artifact. Experiment
+registrations live under `experiments/`, direct execution evidence under
+`evidence/`, and derived results under `analysis/`. Dataset presence alone does
+not establish that an experiment was executed.
 
 ## Controlled synthetic inputs
 
@@ -24,6 +29,13 @@ Repeated executions may show changed or unchanged prices. Missing fields, redire
 
 ## Evidence and verification
 
-HTML answer manifests hash the synthetic inputs; `checksums.sha256` covers release files. `release-manifest.json` records current coverage and exclusions.
+HTML answer manifests hash the synthetic inputs; `checksums.sha256` covers
+release files. `release-manifest.json` records current coverage and exclusions.
+Published executions additionally carry a per-execution checksum manifest and
+identify the exact public PulseCrawl package version.
 
-The manifest defines the live exercise but does not prove it ran. No independently labeled external corpus, historical benchmark results, thesis PDF, personal metadata, or completed live commerce observations are included. Publishing any future collected output requires a separate review for permissions and sensitive data.
+The live source manifest defines an exercise but does not prove it ran. No
+independently labeled external corpus, manuscript, personal metadata, or
+completed live-commerce observations are included in the current tagged
+release. Publishing collected output requires a separate review for permissions
+and sensitive data.

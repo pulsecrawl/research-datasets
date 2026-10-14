@@ -43,6 +43,15 @@ class DatasetTests(unittest.TestCase):
         verifier.privacy_scan()
         self.assertEqual((ROOT / "checksums.sha256").read_text(), verifier.checksum_lines())
 
+    def test_research_metadata_and_public_package_pin(self):
+        verifier = module("verify")
+        metadata = verifier.verify_research_metadata()
+        self.assertEqual(metadata["pulsecrawl"], "0.1.0")
+        self.assertEqual(metadata["experiments"], 28)
+        self.assertEqual(metadata["families"], [
+            "policy-and-recovery", "template-extraction", "versioned-datasets",
+        ])
+
     def test_fixed_inputs_regenerate_identically(self):
         generator = module("generate_fixed_html")
         for line in (ROOT / "datasets/fixed-html/manifest.jsonl").read_text().splitlines():
@@ -111,6 +120,33 @@ class DatasetTests(unittest.TestCase):
             with urlopen(server.base_url + "/robots.txt", timeout=5) as response:
                 self.assertEqual(response.status, 200)
                 self.assertIn(b"User-agent:", response.read())
+
+    def test_execution_manifest_is_sanitized_and_checksum_linked(self):
+        evidence = module("create_execution_manifest")
+        with tempfile.TemporaryDirectory() as temporary:
+            temporary_path = Path(temporary)
+            measurements = temporary_path / "measurements.csv"
+            summary = temporary_path / "summary.json"
+            measurements.write_text("metric,value\nbudget_violations,0\n")
+            summary.write_text('{"status":"completed"}\n')
+            output = temporary_path / "execution"
+            manifest_path = evidence.create_manifest(
+                experiment_id="execution-budget-under-concurrency",
+                execution_id="example-run-001",
+                output_dir=output,
+                measurements=measurements,
+                summary=summary,
+                command=["pulsecrawl", "run", "registered-job.json"],
+                status="completed",
+                started_at="2026-10-13T12:00:00Z",
+                completed_at="2026-10-13T12:01:00Z",
+            )
+            manifest = json.loads(manifest_path.read_text())
+            self.assertEqual(manifest["software"]["pulsecrawl"], "0.1.0")
+            self.assertEqual(manifest["experimentId"], "execution-budget-under-concurrency")
+            self.assertTrue((output / "checksums.sha256").is_file())
+            with self.assertRaises(ValueError):
+                evidence.ensure_publishable_text(["/" + "Users/example/private/file.json"])
 
 
 if __name__ == "__main__":

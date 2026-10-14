@@ -1,6 +1,9 @@
-PulseCrawl research dataset inputs
+PulseCrawl research experiments and evidence
 
-Generators are adapted from PulseCrawl research tooling. WebBench is distributed as source. Software and adaptations remain under GNU AGPL version 3 only; the full license is included.
+Generators, experiment registrations, evidence utilities, and analysis schemas
+are adapted from PulseCrawl research tooling. WebBench is distributed as
+source. Software and adaptations remain under GNU AGPL version 3 only; the full
+license is included.
 
 The pre-existing fixed HTML and site-pattern collections identify their original synthetic contents as CC0-1.0. That designation is preserved in their manifests. Other newly published files are AGPL-3.0-only unless a file states otherwise.
 
