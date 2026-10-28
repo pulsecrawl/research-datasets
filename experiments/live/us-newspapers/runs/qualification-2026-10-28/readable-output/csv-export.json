@@ -1,0 +1,100 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 24,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "589a9bf058325a03754808ce69245fab7500051c03af56382dd217133fb8ab0b",
+  "datasetId": "ds_21038383f9afcc9aff5a",
+  "datasetVersion": 20,
+  "exportType": "complete-current-version",
+  "rowCount": 20,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/manifests/versions/00000000000000000020-exec_qualification_us-anchorage-daily-news_001.json",
+  "sourceManifestSha256": "42193b4e310f18af3a90eae45b6a0b6b3f37703b832fe01e58bdc841bba7205c",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-atlanta-journal-constitution_001.parquet",
+      "sha256": "318769117f947349ef5ff5678b3454672e7b7587a8a5c33937d185fab904162f"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-baltimore-sun_001.parquet",
+      "sha256": "3fa80563a75af27ff7b0e78ffe948277c47465a90b22f1a3ee02e6b8fb255071"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-boston-globe_001.parquet",
+      "sha256": "490d796c0dd12753594012cef1163d12874c8f76b6711ec80d3863c81b764d60"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-boston-herald_001.parquet",
+      "sha256": "e75348b0b5e9f84a0428dd1975ad3540cc27a63dd80973eddef08752f0c6a4bf"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-chicago-tribune_001.parquet",
+      "sha256": "a277fb5fc6dafe6e9066505566d9adceed4da6d9c23c45754577da6bd9d84f97"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-dallas-morning-news_001.parquet",
+      "sha256": "c5b22a80a1350bad5e9ad393be579c8cd90f5d452448183a0b9d59893394918e"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-denver-post_001.parquet",
+      "sha256": "0d768d6b6b2469aa72100f0636c69e744d20da3e00346e344546ca5bcbb11959"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-houston-chronicle_001.parquet",
+      "sha256": "0f49232f300c15494712dda70e7ddae66d88d638b09fa9c2bcea8746299ff30a"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-los-angeles-times_001.parquet",
+      "sha256": "0f771309139464c3195c9dfa674bdf42ecedaf9ee32a2b423ac89ddb6c27fe56"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-newsday_001.parquet",
+      "sha256": "38fe3960ab78f713c5bd3a927f555c642fc32afff2c2b0560cf5e9fc8ec239db"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-nola_001.parquet",
+      "sha256": "b967765b5758601e8a5bbbdf83fc1612314f49bac0a8f6f51b954824efb6fff4"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-philadelphia-inquirer_001.parquet",
+      "sha256": "7116d8a78a8a48285eb36e6874d02af494574060db776a76d909ea2dc4508316"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-salt-lake-tribune_001.parquet",
+      "sha256": "113e8561aa36767e83203a302047ffcff34ca4d4f7ceee08b45b95b93f14f299"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-san-diego-union-tribune_001.parquet",
+      "sha256": "29cd62394171e89b98d4cc6f329002261c405530ca13a6e409a6e9caea7b41a0"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-san-francisco-chronicle_001.parquet",
+      "sha256": "fddde23bea7e54389409ea2f9582fd67116d1040d03339c0df471bb87ae6b1f1"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-seattle-times_001.parquet",
+      "sha256": "1ff8c833369a7319440e8749dd4d1be8a72c6d4d06d14f7c947fd4af22a0790d"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-tampa-bay-times_001.parquet",
+      "sha256": "88510853ab878f64249aa5012b5d7b397db9d02c7a867f76be1778bd8815c625"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_us-albuquerque-journal_001.parquet",
+      "sha256": "3c27d23185f38bb6618b65893fe9ae0e3ad2a09e40ee701f9118e270e710c733"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_us-anchorage-daily-news_001.parquet",
+      "sha256": "412a517e03ee87bd9af3c3f98a4a3ec34d16cd3ff037ad00647297d44f3e3120"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_21038383f9afcc9aff5a/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_us-orange-county-register_001.parquet",
+      "sha256": "09e270a69e9dedc2226c68e4d1b0650cb8f3396d94e5d6627e0b9a23daa3cf21"
+    }
+  ]
+}

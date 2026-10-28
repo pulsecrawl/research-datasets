@@ -28,6 +28,8 @@
   "outputs": {
     "checksums": "checksums.sha256",
     "measurements": "measurements.json",
+    "readableDataset": "readable-output/export-manifest.json",
+    "readableMeasurements": "measurements.csv",
     "summary": "summary.json"
   },
   "schemaVersion": 1,

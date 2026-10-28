@@ -34,9 +34,11 @@ Negative and null results remain part of the analysis. Failed runs are not
 silently deleted, post-repair measurements do not overwrite pre-repair
 measurements, and missing values are not treated as zero.
 
-The [controlled evidence release](controlled-evidence-v0.3.2/) indexes the 116
-reviewed controlled executions and their frozen analysis. The
-`multi-category-qualification-v0.4.1-rc.1/` folder indexes the later short live
-qualification for the 107 selected websites and explicitly records that the
-24-hour phase was not started.
+The [controlled evidence release](controlled-evidence-v0.3.3/) indexes the 116
+reviewed controlled executions, their frozen analysis, and the added readable
+CSV/Parquet evidence. The
+[`multi-category-qualification-v0.4.1/`](multi-category-qualification-v0.4.1/)
+folder indexes the short live qualification for 107 selected websites and its
+complete CSV views. It explicitly records that the 24-hour phase was not
+started. The earlier `v0.3.2` and `v0.4.1-rc.1` directories remain unchanged.
 

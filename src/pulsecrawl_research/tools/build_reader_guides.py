@@ -76,8 +76,11 @@ def build_controlled_guides() -> int:
 {resolved.get('description', 'Controlled experiment with fixed registered inputs.')}
 
 The registered acceptance rule is recorded in each run's
-`resolved-experiment.json`. Direct measurements are in `measurements.json`;
+`resolved-experiment.json`. Direct measurements are authoritative in
+`measurements.json` and available as a readable table in `measurements.csv`;
 `summary.json` contains the run-level result used by the reviewed analysis.
+When the run produced dataset rows, `readable-output/` contains checksum-linked
+Parquet evidence and its matching complete or bounded CSV view.
 
 | Public folder | Original execution ID | Status |
 |---|---|---|

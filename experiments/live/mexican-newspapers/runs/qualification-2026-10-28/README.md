@@ -14,3 +14,7 @@ bodies are not included.
 Start with `live-progress.json`, then inspect
 `workspace-evidence/access-review.json`. The SQLite database and Parquet
 files are retained so reviewers can reproduce the summary queries.
+
+## Read the extracted records
+
+Open [`readable-output/records.csv`](readable-output/records.csv) to inspect the complete current dataset version directly on GitHub. The source Parquet parts remain under `workspace-evidence/`.

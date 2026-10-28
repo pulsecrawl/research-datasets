@@ -1,0 +1,127 @@
+{
+  "analysis": {
+    "path": "experiments/releases/controlled-evidence-v0.3.3/analysis/",
+    "reviewedAnalyses": 1,
+    "reviewedRelease": "experiments/releases/controlled-evidence-v0.3.3/analysis/",
+    "schema": "experiments/releases/analysis-manifest.schema.json",
+    "status": "frozen-controlled-analysis-published"
+  },
+  "artifactAreas": {
+    "analysis": "experiments/releases/controlled-evidence-v0.3.3/analysis/",
+    "controlledEvidence": "experiments/controlled/",
+    "datasets": "datasets/",
+    "experiments": "experiments/",
+    "liveEvidence": "experiments/live/",
+    "protocols": "docs/protocols/"
+  },
+  "collections": {
+    "commerce-html": {
+      "distinctScopes": 10,
+      "documents": 20,
+      "fictionalIdentities": true,
+      "fictionalPrices": true,
+      "license": "AGPL-3.0-only",
+      "liveEnabled": false
+    },
+    "fixed-html": {
+      "documents": 60,
+      "license": "CC0-1.0"
+    },
+    "site-pattern-html": {
+      "baselineDocuments": 100,
+      "configurations": 20,
+      "fictionalIdentities": true,
+      "license": "CC0-1.0",
+      "mutationsIncluded": false
+    },
+    "storage": {
+      "license": "AGPL-3.0-only",
+      "millionRowOutputIncluded": false,
+      "referenceExecutions": 100,
+      "referenceRows": 1000000,
+      "sampleExecutions": 2,
+      "sampleRows": 1000
+    },
+    "webbench": {
+      "historicalTracesIncluded": false,
+      "license": "AGPL-3.0-only",
+      "standaloneServerIncluded": true
+    }
+  },
+  "documentation": {
+    "externalWebsiteScreenshots": 0,
+    "folderGuidesAdded": true,
+    "liveStudySourceIndexes": 2,
+    "startHereGuide": "START_HERE.md",
+    "syntheticFixtureScreenshots": 6,
+    "version": "0.3.3"
+  },
+  "evidence": {
+    "evidenceRelease": "0.3.3",
+    "executionsPath": "experiments/controlled/",
+    "reviewedExecutions": 116,
+    "reviewedRelease": "experiments/releases/controlled-evidence-v0.3.3/reviewed-release.json",
+    "schema": "experiments/releases/execution-manifest.schema.json",
+    "status": "sanitized-reviewed-and-readable-evidence-published"
+  },
+  "exclusions": [
+    "private repository history",
+    "personal author metadata",
+    "absolute workstation paths",
+    "usernames and machine hostnames",
+    "credentials cookies and sensitive headers",
+    "manuscripts and thesis documents",
+    "downloaded third-party HTML without redistribution permission",
+    "unreviewed live request logs",
+    "raw workspace databases",
+    "retained million-row outputs",
+    "independently labeled external corpus"
+  ],
+  "experimentCatalog": {
+    "families": [
+      "policy-and-recovery",
+      "template-extraction",
+      "versioned-datasets"
+    ],
+    "naming": "descriptive-identifiers",
+    "path": "experiments/catalog.json"
+  },
+  "identifier": {
+    "doi": null,
+    "note": "No DOI assigned; cite a tagged repository release."
+  },
+  "inputReleaseBase": "0.2.0",
+  "kind": "research-experiments-inputs-evidence-and-analysis",
+  "liveCaseStudy": {
+    "actualResultsIncluded": true,
+    "aggregateEnabledSiteConfigurations": 6,
+    "aggregateStudyNames": [
+      "news",
+      "commerce"
+    ],
+    "aggregateSummariesIncluded": 2,
+    "candidateCommerceManifest": "live-case-study/sources.json",
+    "candidateSources": 10,
+    "downloadedHtmlIncluded": false,
+    "enabledSources": 1,
+    "htmlArchivingRequired": false,
+    "rawRecordsIncluded": false,
+    "retainedSourceIndexes": [
+      "evidence/live-studies/news/sources.json",
+      "evidence/live-studies/commerce/sources.json"
+    ],
+    "status": "completed-aggregate-summaries-published"
+  },
+  "publicRepository": "https://github.com/pulsecrawl/research-datasets",
+  "publisher": "PulseCrawl",
+  "release": "0.3.3",
+  "revisionNote": "Release 0.3.3 adds a human-readable README and measurements.csv to every controlled run. Dataset-producing runs also publish checksum-linked Parquet evidence with a matching complete or bounded CSV view. Measurements and hypothesis decisions are unchanged from release 0.3.2.",
+  "schemaVersion": 2,
+  "softwareUnderEvaluation": {
+    "distribution": "pulsecrawl",
+    "extra": "workspace",
+    "source": "https://github.com/pulsecrawl/PulseCrawl",
+    "version": "0.1.0"
+  },
+  "status": "verified"
+}

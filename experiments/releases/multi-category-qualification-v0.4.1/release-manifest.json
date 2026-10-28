@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "categoryId": "financial-news",
+      "checksumsSha256": "333d6b9bb1aaf6e4e4f0057eb5a84cbebc615660fcaaea0b9bba7363c066ec3b",
+      "path": "experiments/live/financial-news/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/financial-news/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 20,
+      "selectedSites": 20,
+      "sourceUrlsWithAllRequiredFields": 20
+    },
+    {
+      "categoryId": "general-commerce",
+      "checksumsSha256": "863841dd7054f71d6c2071af0d2aa11940622610f6adb889a754665cfead376f",
+      "path": "experiments/live/general-commerce/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/general-commerce/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 22,
+      "selectedSites": 9,
+      "sourceUrlsWithAllRequiredFields": 9
+    },
+    {
+      "categoryId": "government-notices",
+      "checksumsSha256": "285231545376df6a5c163524384cb1b6e04548b4ea1737fcec28bbb69c01eea7",
+      "path": "experiments/live/government-notices/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/government-notices/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 9,
+      "selectedSites": 9,
+      "sourceUrlsWithAllRequiredFields": 9
+    },
+    {
+      "categoryId": "mexican-newspapers",
+      "checksumsSha256": "0574bacbcbb804e17e5706604f17fbf6a57b256b7f7c952cbcb180ffb2863892",
+      "path": "experiments/live/mexican-newspapers/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/mexican-newspapers/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 19,
+      "selectedSites": 19,
+      "sourceUrlsWithAllRequiredFields": 19
+    },
+    {
+      "categoryId": "mexican-supermarkets",
+      "checksumsSha256": "075e0aca0800865df5fcade985179bd4bcf1b044aa9b6384569f9ebb5528ebb2",
+      "path": "experiments/live/mexican-supermarkets/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/mexican-supermarkets/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 10,
+      "selectedSites": 5,
+      "sourceUrlsWithAllRequiredFields": 5
+    },
+    {
+      "categoryId": "security-advisories",
+      "checksumsSha256": "40aca67dfd582411382a45f35e1752651d521de20b25e3a2f7ab12ab19f79523",
+      "path": "experiments/live/security-advisories/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/security-advisories/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 8,
+      "selectedSites": 8,
+      "sourceUrlsWithAllRequiredFields": 8
+    },
+    {
+      "categoryId": "sp500-careers",
+      "checksumsSha256": "29a3b2b28c26242e80a14ccf47d9e1144545aef329142d654ff9924113f0ab92",
+      "path": "experiments/live/sp500-careers/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/sp500-careers/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 10,
+      "selectedSites": 10,
+      "sourceUrlsWithAllRequiredFields": 10
+    },
+    {
+      "categoryId": "us-newspapers",
+      "checksumsSha256": "3b678b409f38a6b46aafb02c682f080d0ea8f4ec7d66e491e77b982325279e9d",
+      "path": "experiments/live/us-newspapers/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/us-newspapers/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 20,
+      "selectedSites": 20,
+      "sourceUrlsWithAllRequiredFields": 20
+    },
+    {
+      "categoryId": "weather-alerts",
+      "checksumsSha256": "ccf62dfdca44042d518670db449f8ade2527d3f0328e52943a54992d5b131762",
+      "path": "experiments/live/weather-alerts/runs/qualification-2026-10-28",
+      "readableCsv": "experiments/live/weather-alerts/runs/qualification-2026-10-28/readable-output/records.csv",
+      "readableRows": 7,
+      "selectedSites": 7,
+      "sourceUrlsWithAllRequiredFields": 7
+    }
+  ],
+  "note": "This final qualification release adds checksum-linked CSV views of the existing Parquet evidence. It is not the separately configured 24-hour study.",
+  "personalMetadataIncluded": false,
+  "phase": "qualification",
+  "publicRepository": "https://github.com/pulsecrawl/research-datasets",
+  "readableCsvIncluded": true,
+  "readableRows": 125,
+  "release": "0.4.1",
+  "retainedStudyStarted": false,
+  "schemaVersion": 1,
+  "selectedSites": 107,
+  "softwareUnderEvaluation": {
+    "distribution": "pulsecrawl",
+    "version": "0.1.0"
+  },
+  "status": "qualification-readable-evidence-published",
+  "thirdPartyHtmlIncluded": false
+}

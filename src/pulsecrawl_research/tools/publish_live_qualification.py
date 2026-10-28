@@ -8,9 +8,11 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from pulsecrawl_research.tools.build_readable_evidence import build_live_readable_output
+
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE_ID = "multi-category-qualification-v0.4.1-rc.1"
+RELEASE_ID = "multi-category-qualification-v0.4.1"
 RUN_NAME = "qualification-2026-10-28"
 
 
@@ -75,6 +77,15 @@ Start with `live-progress.json`, then inspect
 are retained so reviewers can reproduce the summary queries.
 """
     (destination / "README.md").write_text(readme, encoding="utf-8")
+    readable = build_live_readable_output(destination)
+    with (destination / "README.md").open("a", encoding="utf-8") as handle:
+        handle.write(
+            "\n## Read the extracted records\n\n"
+            "Open [`readable-output/records.csv`](readable-output/records.csv) to inspect "
+            f"all {readable['rows']} records in the current dataset version directly on "
+            "GitHub. The manifest-selected Parquet parts under `workspace-evidence/` "
+            "remain authoritative.\n"
+        )
     (destination / "checksums.sha256").write_text(_checksums(destination), encoding="utf-8")
     return {
         "categoryId": category["categoryId"],
@@ -83,6 +94,10 @@ are retained so reviewers can reproduce the summary queries.
         "enabledSites": category["enabledSites"],
         "excludedSites": category["excludedSites"],
         "sourceUrlsWithAllRequiredFields": category["sourceUrlsWithAllRequiredFields"],
+        "readableCsv": (
+            destination / "readable-output/records.csv"
+        ).relative_to(ROOT).as_posix(),
+        "readableRows": readable["rows"],
         "checksumsSha256": hashlib.sha256(
             (destination / "checksums.sha256").read_bytes()
         ).hexdigest(),
@@ -120,7 +135,7 @@ def publish(source_root: Path) -> Path:
 
     manifest = {
         "schemaVersion": 1,
-        "release": "0.4.1-rc.1",
+        "release": "0.4.1",
         "status": "qualification-completed",
         "publicRepository": "https://github.com/pulsecrawl/research-datasets",
         "softwareUnderEvaluation": {"distribution": "pulsecrawl", "version": "0.1.0"},
@@ -137,7 +152,7 @@ def publish(source_root: Path) -> Path:
     }
     _write_json(release / "release-manifest.json", manifest)
     (release / "README.md").write_text(
-        "# Multi-category qualification v0.4.1-rc.1\n\n"
+        "# Multi-category qualification v0.4.1\n\n"
         "This release indexes the nine-category, two-cycle readiness check. "
         "The 24-hour study was not started. Open `release-manifest.json` for "
         "category paths and `qualification-summary.json` for the measured gates.\n",

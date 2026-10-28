@@ -1,0 +1,48 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 24,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "f516b84541d58eab7b0390e7291f4bf266bea3f7e44515515b5f56aaca5ca70e",
+  "datasetId": "ds_5323266d611d91865247",
+  "datasetVersion": 7,
+  "exportType": "complete-current-version",
+  "rowCount": 7,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/manifests/versions/00000000000000000007-exec_qualification_weather-mss-singapore_001.json",
+  "sourceManifestSha256": "1c1779c193c6cac083d69a9b0ad8bc0fa5fcae584db192ad7b2eb0cacb425a0d",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-aemet-es_001.parquet",
+      "sha256": "80ed9aa2840b3eacf6932d62204ba5fae0559fccf08a05caed27806149a5df9e"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-fmi-finland_001.parquet",
+      "sha256": "dc0a2ca60eaa4a6c0475a2e6b74a722f072168102c190c6a46e62980a8ce2957"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-knmi-nl_001.parquet",
+      "sha256": "a8c4875115f0b64d51975a326f93a1aa07e79d16fc8f5673e9df283abeca59da"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-met-eireann_001.parquet",
+      "sha256": "9bd37c408e770a9d89578a3544933f07ab56b19e8784812406603570c5e76eb1"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-meteofrance_001.parquet",
+      "sha256": "23f3c2095c54efd2b5d2ee6f0d06cae38bc73713626c9c0f4eb83d1d8402c8ea"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-mss-singapore_001.parquet",
+      "sha256": "7b5a6106b071fe2b49df7c5858f28e4ba93bcbe446849ccdaa7c92233da5211f"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_5323266d611d91865247/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-uk-met-office_001.parquet",
+      "sha256": "c028381f39fd7c619548f50009d7445d228f216038330ad32bc9100489073b03"
+    }
+  ]
+}

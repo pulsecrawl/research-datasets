@@ -1,0 +1,60 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 23,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "de8f3c5c36c6f8846dae6afa9ce8fdb0168871f347292879527597070d339346",
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "datasetVersion": 10,
+  "exportType": "complete-current-version",
+  "rowCount": 10,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/manifests/versions/00000000000000000010-exec_qualification_careers-pepsico_001.json",
+  "sourceManifestSha256": "3ab6400493515baa4a14e8fd6769ca23e6006a403dd3f1626546b4bf87d7053d",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-accenture_001.parquet",
+      "sha256": "afb081db359586fbd89c2910265271542de9a985119fb97e86a036f5f791e9e8"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-adobe_001.parquet",
+      "sha256": "6578aafdd0c797308d4e40ec2b93a88381cd62f7bc354acc8afdff008198fd46"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-cisco_001.parquet",
+      "sha256": "90f8a49ce0f38878d9a96f52df80dd27247abee937b11c34e4453b745ad14c4d"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-coca-cola_001.parquet",
+      "sha256": "6ca906f0134ce8fb3b8252d03dc795189d6b4b340b5e77de77ce6499057a0f70"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-home-depot_001.parquet",
+      "sha256": "bbaf4990d0153c4855c9d3119a92f069a38d2a23c2b6ba50e47106ef8d6b84fa"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-intel_001.parquet",
+      "sha256": "2321ca77a4169a2bb81f6a8ec9d9fd49902f1f94aee9e44a3aa74b2440921bab"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-merck_001.parquet",
+      "sha256": "e7fe90eb242b6aa9b48fd4992c9f1a9e45a4349bf4f86b873b2cb8b4e633b95d"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-nvidia_001.parquet",
+      "sha256": "db7d8234b3cd361fa24fd2fa8c24704e6f5801d0b00a5e11a308c21cfe626b7b"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-pepsico_001.parquet",
+      "sha256": "a259b7ee582ff297fef38490d09878ab7f7dcc17cac534979cee8f1120c4adc8"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d238052a48d5a4012cf9/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-procter-gamble_001.parquet",
+      "sha256": "1f441bda7001f2175157d6763d98a100860545d7250a755c723f7cfa9f1934e9"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 24,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "be6a4bc4fbf00d4b006abec7c15e1c7de677971dbb33ecb991a37bbf1e1752eb",
+  "datasetId": "ds_fc773854aaf73d28a175",
+  "datasetVersion": 20,
+  "exportType": "complete-current-version",
+  "rowCount": 20,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/manifests/versions/00000000000000000020-exec_qualification_finance-sherwood_001.json",
+  "sourceManifestSha256": "55d51df829047ad39eb6d3f0893959a7a5d2af0efa2d8829cd90bc24e1d4105b",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-bnn-bloomberg_001.parquet",
+      "sha256": "0dd2bee775582d7e7eeafc94dcfb6b6628fea43a4c33a4eae45287e22587ec3a"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-business-insider_001.parquet",
+      "sha256": "2804fbd0d5aba41d7cb00ae57a53ce5de0265dc4bd369a7d7bd0100920f57338"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-cbs-moneywatch_001.parquet",
+      "sha256": "42aa85355c7b1ad0e654803a6e57947085dce2d6568da3767ead75b8a30887b7"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-cnbc_001.parquet",
+      "sha256": "f2334c285957025d4686dee70f590430bdee576f08e224d2559ad2b5927d6190"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-daily-upside_001.parquet",
+      "sha256": "0e5b01b8fc7d3d0281c2fdacbf130e68ac935f4cc9ac376642e8bdcdd4b9c6e9"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-economic-times_001.parquet",
+      "sha256": "d69ce3e33e1d7d6711015537ff78679ad497a6efd1cbb72d8f9e62d869b63464"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-financial-post_001.parquet",
+      "sha256": "190ced33562cd9b629759fa4ce2936381956adf43cced2b3cb0e938c137fa494"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-finbold_001.parquet",
+      "sha256": "7b90357786f4d0592adcf3e1d64c8a03792b2a84196cbdab57fd5c5636ff773c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fortune_001.parquet",
+      "sha256": "91abe8ac9d98357484bc7a0a2b6c82877d6500dd03bd313f1df98ae923f14a44"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fox-business_001.parquet",
+      "sha256": "e81bedd677e440fa3445d11c2a45391521e711044ac22e8e964952bc22a1820c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fxstreet_001.parquet",
+      "sha256": "88710f1b82606682a7382f9395c1163f72083f25f58bde33945f536b5a72a5dd"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-kiplinger_001.parquet",
+      "sha256": "2e3d6f4d4f6d09c135638868166aa231e33ddf0e72373902b1d2d59788277842"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-kitco_001.parquet",
+      "sha256": "4535cb26a11633b15b75815a118cda928f273abd82db63e7c4b57e35f2c4660a"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-mint_001.parquet",
+      "sha256": "f272e22e1485575e5b1f8470c715367ddc299d1b132ab193e5d6910d7a5fdbde"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-motley-fool_001.parquet",
+      "sha256": "e98b2e248622d3aefc4d71e305f21d881b1b28e7776278cfee273b1156f43bad"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-tradingview_001.parquet",
+      "sha256": "3ef834a62e85de37cf3100385dad229834a74df1f5a8809fc54a18664c013c2c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-yahoo_001.parquet",
+      "sha256": "f2bfcc1acf5658f2372b79447be73ea35f6b3e33f7915a06727badae50343443"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_finance-guardian-business_001.parquet",
+      "sha256": "298b1b31ffb8b29ede44bb992857e0bc5806945f7f19a7c83e124d734d1027f5"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_finance-moneyweek_001.parquet",
+      "sha256": "bee020f8b9f386c063cac5e1215e08f7f4e1191bebf843e860884ac0bb8b1b40"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc773854aaf73d28a175/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_finance-sherwood_001.parquet",
+      "sha256": "f4c8da0720fe8d8f48f4486fd438c55b7104a2a6dcd1c6581948088c86565958"
+    }
+  ]
+}

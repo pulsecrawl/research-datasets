@@ -16,5 +16,10 @@ at least one record containing every required field.
 Third-party response bodies are processed in memory and are never published.
 The evidence may include access decisions, request metadata, SQLite state,
 Parquet dataset parts, dataset-version manifests, summaries, and checksums.
+Each published qualification run also contains
+`readable-output/records.csv`, a complete row-level view of the current
+manifest-selected Parquet version. `csv-export.json` records the exact source
+manifest, Parquet checksums, row count, and CSV checksum. Sensitive text is
+redacted only in the readable CSV.
 
 Start with [`catalog.json`](catalog.json), then open a category README.

@@ -10,6 +10,13 @@ import re
 import shutil
 from typing import Any, Iterable
 
+from pulsecrawl_research.tools.build_readable_evidence import (
+    build_controlled_dataset_output,
+    controlled_readme,
+    flatten,
+    write_csv,
+)
+
 
 ROOT = Path(__file__).resolve().parents[3]
 PRIVATE_RULES = {
@@ -123,8 +130,11 @@ def generic_platform(environment: dict[str, Any]) -> str:
 
 
 def write_checksums(directory: Path, files: Iterable[Path]) -> None:
-    paths = sorted(files, key=lambda path: path.name)
-    body = "".join(f"{sha256(path)}  {path.name}\n" for path in paths)
+    paths = sorted(files, key=lambda path: path.relative_to(directory).as_posix())
+    body = "".join(
+        f"{sha256(path)}  {path.relative_to(directory).as_posix()}\n"
+        for path in paths
+    )
     (directory / "checksums.sha256").write_text(body, encoding="utf-8")
 
 
@@ -182,6 +192,12 @@ def publish_execution(
     write_json(resolved_path, public_experiment)
     write_json(measurements_path, observations)
     write_json(summary_path, summary)
+    readable_measurements_path = output_dir / "measurements.csv"
+    write_csv(
+        readable_measurements_path,
+        flatten(observations),
+        ["measurement", "value", "type"],
+    )
 
     started_at, completed_at = source_times(summary, run_dir.name)
     manifest = {
@@ -213,6 +229,7 @@ def publish_execution(
         "configuration": public_experiment["workload"],
         "outputs": {
             "measurements": measurements_path.name,
+            "readableMeasurements": readable_measurements_path.name,
             "summary": summary_path.name,
             "checksums": "checksums.sha256",
         },
@@ -222,9 +239,27 @@ def publish_execution(
         ],
     }
     manifest_path = output_dir / "execution-manifest.json"
+    has_dataset = False
+    if public_experiment.get("family") == "versioned-datasets":
+        has_dataset = build_controlled_dataset_output(output_dir, run_dir)
+        if has_dataset:
+            manifest["outputs"]["readableDataset"] = "readable-output/export-manifest.json"
     write_json(manifest_path, manifest)
+    (output_dir / "README.md").write_text(
+        controlled_readme(
+            manifest=manifest,
+            experiment=public_experiment,
+            summary=summary,
+            has_dataset=has_dataset,
+        ),
+        encoding="utf-8",
+    )
     write_checksums(
-        output_dir, [manifest_path, resolved_path, measurements_path, summary_path]
+        output_dir,
+        [
+            path for path in output_dir.rglob("*")
+            if path.is_file() and path.name not in {"checksums.sha256", "README.md"}
+        ],
     )
     for path in output_dir.iterdir():
         scan_path(path)

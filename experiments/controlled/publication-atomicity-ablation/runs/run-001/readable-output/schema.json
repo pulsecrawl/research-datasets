@@ -1,0 +1,54 @@
+{
+  "fields": [
+    {
+      "name": "title",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_source_url",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_url_identity",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_execution_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_job_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_crawled_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_committed_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_is_new_url",
+      "nullable": true,
+      "type": "bool"
+    },
+    {
+      "name": "hour",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "ingest_date",
+      "nullable": true,
+      "type": "date32[day]"
+    }
+  ]
+}

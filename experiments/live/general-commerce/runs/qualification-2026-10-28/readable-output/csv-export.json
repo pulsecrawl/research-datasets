@@ -1,0 +1,92 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 29,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "d28c694bfd6f441e21c5da4a78170ca3a81f027b1fc0e4ec99301c1c4b675e80",
+  "datasetId": "ds_eac2542fc4ba38113aa6",
+  "datasetVersion": 18,
+  "exportType": "complete-current-version",
+  "rowCount": 22,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/manifests/versions/00000000000000000018-exec_qualification_commerce-dsw_002.json",
+  "sourceManifestSha256": "19232306648111f7e3b9d73e2aed2c2fd25e5cfd0a4d4bed98a855866fd70eb0",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-alo-yoga_001.parquet",
+      "sha256": "e74364c8f819005ba8a0b3898f3d0598625d36053dc56d587bea6f4206e72e76"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-dsw_001.parquet",
+      "sha256": "59593e59f592ce0bdcb351d5593bdbe291a9e90f8e18488a0c0716bb2f8f597b"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-fashion-nova_001.parquet",
+      "sha256": "e2ce11a1d505ad7bbc0b6ca0150fcc21574eb4cb3b1a3f4ebe68a3191438ec4a"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-gap_001.parquet",
+      "sha256": "455a0030e0722b45e07de49cdcd85908faed3aa3d74131229fa7e6dfe6ead2d5"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-nike_001.parquet",
+      "sha256": "3bafb1a5496b52aa92163aa8208b0e350770dc24d7838b8534ebea83ad5dd0ce"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-puma_001.parquet",
+      "sha256": "df7d1c87ab89a0d1ddb616b20a32931622dc257bbd24600f0d07068708114db1"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-quince_001.parquet",
+      "sha256": "6b6ff5089ad8c77f47984d40bef75097a1f84d4ba656a4866196d004c0ca82f2"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-spanx_001.parquet",
+      "sha256": "e93170edbb3b827c7060e43c1b4862594879697bfeb5d9b6e428c073a1d2ad39"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-ulta-beauty_001.parquet",
+      "sha256": "ee3bb5490700e62a02d451729da316808f6b72e01d70f842be80c85acabf6407"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-alo-yoga_002.parquet",
+      "sha256": "8402ba6511b2f26124e67d55eec8ba0639f7ba3dab5381e197073b0d7d9569cf"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-dsw_002.parquet",
+      "sha256": "0aba0545edef455e0d2d36a2f8a183b31e33d03db7e7d36a0907da68a457d87a"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-fashion-nova_002.parquet",
+      "sha256": "741cf4880d88d011eaf46bb54e0a7000f81c281e602d484bd1f39090968cf238"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-gap_002.parquet",
+      "sha256": "9164063cf91fd3a362cf450a6454975ff51e9dc84bc3a9af1a40003da1fd0e27"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-nike_002.parquet",
+      "sha256": "900455b9f512c6ddfc70ad209b93c8d5c274fecad6ae1f516f89673ece4a19a4"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-puma_002.parquet",
+      "sha256": "3bafbb2bbd06d08cfcaf92a8db27e6e149576894e0b5c2af4e1a1079a603bfdb"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-quince_002.parquet",
+      "sha256": "70d780566b0ab63ce3b099f177fd2945fcb3ce652aa5eebd5cf2f92e79409f15"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-spanx_002.parquet",
+      "sha256": "c9a0ad1ac29af16b68173fbee8f66e4f694f5d62bf417358b195f87e19e6d9d7"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_eac2542fc4ba38113aa6/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-ulta-beauty_002.parquet",
+      "sha256": "d9ce898c8249c7256834f4b4692455c2542b50b5a676e3c06b9ebb32327b4690"
+    }
+  ]
+}

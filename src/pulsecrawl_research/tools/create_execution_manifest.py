@@ -69,7 +69,7 @@ def create_manifest(
     )
     release_checksums = (
         ROOT
-        / "experiments/releases/controlled-evidence-v0.3.2/checksums-v0.3.2.sha256"
+        / "experiments/releases/controlled-evidence-v0.3.3/checksums-v0.3.3.sha256"
     )
     manifest = {
         "schemaVersion": 1,
