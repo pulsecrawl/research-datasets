@@ -1,0 +1,883 @@
+{
+  "kind": "crawl",
+  "results": [
+    {
+      "capabilities": [
+        {
+          "detail": "allow/disallow and crawl-delay",
+          "name": "robots",
+          "state": "supported"
+        },
+        {
+          "detail": "",
+          "name": "depth_limit",
+          "state": "supported"
+        },
+        {
+          "detail": "",
+          "name": "per_execution_budget",
+          "state": "supported"
+        },
+        {
+          "detail": "local workspace state",
+          "name": "recurring_job_outcome_budget",
+          "state": "supported"
+        },
+        {
+          "detail": "local SQLite gate",
+          "name": "shared_origin_gate",
+          "state": "supported"
+        },
+        {
+          "detail": "",
+          "name": "scoped_templates",
+          "state": "supported"
+        },
+        {
+          "detail": "local workspace publication",
+          "name": "versioned_parquet",
+          "state": "supported"
+        }
+      ],
+      "configuration": {
+        "concurrency": 8,
+        "expected": {
+          "maximumHttpRequests": 50
+        },
+        "experiment_id": "S01",
+        "max_depth": 6,
+        "max_urls": 50,
+        "metadata": {},
+        "name": "50 URL exact admission",
+        "requests_per_second": 100.0,
+        "respect_robots": true,
+        "seed_urls": [
+          "http://127.0.0.1:49890/site/news/01/"
+        ],
+        "timeout_seconds": 120.0
+      },
+      "duration_seconds": 11.217665291042067,
+      "errors": [],
+      "experiment_id": "S01",
+      "finished_at": "2026-10-26T05:34:41.096159+00:00",
+      "metrics": {
+        "bytesProcessed": 21967,
+        "pagesDiscovered": 49,
+        "pagesFailed": 1,
+        "pagesFetched": 48,
+        "rateLimitDeferrals": 45,
+        "rateLimitQueueDeferrals": 49,
+        "rateLimitQueueWaitSeconds": 259.40155392466113,
+        "rateLimitWaitSeconds": 0.6331485816044733,
+        "records": 13,
+        "recordsExtracted": 13,
+        "robotsBlocked": 1,
+        "robotsCacheHits": 49,
+        "robotsChecks": 50,
+        "robotsFetchFailures": 0,
+        "robotsFetches": 1,
+        "templateCoverage": {
+          "127.0.0.1:49890": {
+            "needsTemplate": false,
+            "sampleUrls": [
+              "http://127.0.0.1:49890/site/news/01/category/00/",
+              "http://127.0.0.1:49890/site/news/01/category/01/",
+              "http://127.0.0.1:49890/site/news/01/category/02/",
+              "http://127.0.0.1:49890/site/news/01/category/03/",
+              "http://127.0.0.1:49890/site/news/01/category/04/"
+            ],
+            "scopedMatches": 0,
+            "stackFallbackMatches": 13,
+            "systemFallbackMatches": 0,
+            "unmatchedPages": 35
+          }
+        },
+        "transientRetries": 0,
+        "urlsAttempted": 49
+      },
+      "observations": {
+        "distinctRequestPaths": 49,
+        "duplicateRequestsObserved": 0,
+        "httpRequestsObserved": 49,
+        "interRequestSeconds": {
+          "confidence95High": 0.23300393417878396,
+          "confidence95Low": 0.2172297324878827,
+          "count": 48,
+          "max": 0.414169,
+          "mean": 0.22511683333333332,
+          "median": 0.2209795,
+          "min": 0.219615,
+          "p50": 0.2209795,
+          "p95": 0.22280165,
+          "p99": 0.3242528300000002,
+          "stdev": 0.02787930487497952
+        },
+        "invariantViolations": [],
+        "minimumInterRequestSeconds": 0.219615,
+        "requestPathCounts": {
+          "/site/news/01/": 1,
+          "/site/news/01/category/00/": 1,
+          "/site/news/01/category/00/00/page/1": 1,
+          "/site/news/01/category/00/01/page/1": 1,
+          "/site/news/01/category/00/02/page/1": 1,
+          "/site/news/01/category/00/03/page/1": 1,
+          "/site/news/01/category/00/04/page/1": 1,
+          "/site/news/01/category/00/05/page/1": 1,
+          "/site/news/01/category/00/06/page/1": 1,
+          "/site/news/01/category/00/07/page/1": 1,
+          "/site/news/01/category/00/08/page/1": 1,
+          "/site/news/01/category/00/09/page/1": 1,
+          "/site/news/01/category/01/": 1,
+          "/site/news/01/category/01/00/page/1": 1,
+          "/site/news/01/category/01/01/page/1": 1,
+          "/site/news/01/category/01/02/page/1": 1,
+          "/site/news/01/category/01/03/page/1": 1,
+          "/site/news/01/category/01/04/page/1": 1,
+          "/site/news/01/category/01/05/page/1": 1,
+          "/site/news/01/category/01/06/page/1": 1,
+          "/site/news/01/category/01/07/page/1": 1,
+          "/site/news/01/category/01/08/page/1": 1,
+          "/site/news/01/category/01/09/page/1": 1,
+          "/site/news/01/category/02/": 1,
+          "/site/news/01/category/02/00/page/1": 1,
+          "/site/news/01/category/02/01/page/1": 1,
+          "/site/news/01/category/02/02/page/1": 1,
+          "/site/news/01/category/02/03/page/1": 1,
+          "/site/news/01/category/02/04/page/1": 1,
+          "/site/news/01/category/03/": 1,
+          "/site/news/01/category/04/": 1,
+          "/site/news/01/category/05/": 1,
+          "/site/news/01/category/06/": 1,
+          "/site/news/01/category/07/": 1,
+          "/site/news/01/category/08/": 1,
+          "/site/news/01/category/09/": 1,
+          "/site/news/01/item/0000012": 1,
+          "/site/news/01/item/0000013": 1,
+          "/site/news/01/item/0000020": 1,
+          "/site/news/01/item/0000030": 1,
+          "/site/news/01/item/0000033": 1,
+          "/site/news/01/item/0000035": 1,
+          "/site/news/01/item/0000038": 1,
+          "/site/news/01/item/0000039": 1,
+          "/site/news/01/item/0000042": 1,
+          "/site/news/01/item/0000043": 1,
+          "/site/news/01/item/0000044": 1,
+          "/site/news/01/item/0000045": 1,
+          "/site/news/01/sitemap.xml": 1
+        },
+        "responseStatusCounts": {
+          "200": 49
+        }
+      },
+      "profile": "default",
+      "repetition": 0,
+      "started_at": "2026-10-26T05:34:29.878278+00:00",
+      "status": "completed",
+      "system": "pulsecrawl",
+      "system_version": "0.1.0"
+    },
+    {
+      "capabilities": [
+        {
+          "detail": "allow/disallow; configured delay did not enforce a strict origin interval",
+          "name": "robots",
+          "state": "partial"
+        },
+        {
+          "detail": "",
+          "name": "depth_limit",
+          "state": "supported"
+        },
+        {
+          "detail": "close-spider page count",
+          "name": "per_execution_budget",
+          "state": "partial"
+        },
+        {
+          "detail": "requires user state",
+          "name": "recurring_job_outcome_budget",
+          "state": "not_supported"
+        },
+        {
+          "detail": "requires extension",
+          "name": "shared_origin_gate",
+          "state": "not_supported"
+        },
+        {
+          "detail": "manual spider routing",
+          "name": "scoped_templates",
+          "state": "partial"
+        },
+        {
+          "detail": "requires pipeline",
+          "name": "versioned_parquet",
+          "state": "not_supported"
+        }
+      ],
+      "configuration": {
+        "concurrency": 8,
+        "expected": {
+          "maximumHttpRequests": 50
+        },
+        "experiment_id": "S01",
+        "max_depth": 6,
+        "max_urls": 50,
+        "metadata": {},
+        "name": "50 URL exact admission",
+        "requests_per_second": 100.0,
+        "respect_robots": true,
+        "seed_urls": [
+          "http://127.0.0.1:49890/site/news/01/"
+        ],
+        "timeout_seconds": 120.0
+      },
+      "duration_seconds": 1.153689790982753,
+      "errors": [],
+      "experiment_id": "S01",
+      "finished_at": "2026-10-26T05:34:42.628570+00:00",
+      "metrics": {
+        "duplicatesFiltered": 50,
+        "finishReason": "closespider_pagecount",
+        "itemsScraped": 56,
+        "pagesFetched": 57
+      },
+      "observations": {
+        "distinctRequestPaths": 56,
+        "duplicateRequestsObserved": 0,
+        "httpRequestsObserved": 56,
+        "interRequestSeconds": {
+          "confidence95High": 0.013908011303274667,
+          "confidence95Low": 0.012559697787634425,
+          "count": 55,
+          "max": 0.016833,
+          "mean": 0.013233854545454546,
+          "median": 0.013809,
+          "min": 0.006913,
+          "p50": 0.013809,
+          "p95": 0.0166455,
+          "p99": 0.01679736,
+          "stdev": 0.0025508573099035188
+        },
+        "invariantViolations": [
+          {
+            "expectedMaximum": 50,
+            "invariant": "http_requests_within_budget",
+            "observed": 56
+          }
+        ],
+        "minimumInterRequestSeconds": 0.006913,
+        "requestPathCounts": {
+          "/site/news/01/": 1,
+          "/site/news/01/category/06/": 1,
+          "/site/news/01/category/06/08/page/1": 1,
+          "/site/news/01/category/06/09/page/1": 1,
+          "/site/news/01/category/07/": 1,
+          "/site/news/01/category/07/09/page/1": 1,
+          "/site/news/01/category/08/": 1,
+          "/site/news/01/category/08/08/page/1": 1,
+          "/site/news/01/category/08/09/page/1": 1,
+          "/site/news/01/category/09/": 1,
+          "/site/news/01/category/09/09/page/1": 1,
+          "/site/news/01/item/0000007": 1,
+          "/site/news/01/item/0000008": 1,
+          "/site/news/01/item/0000009": 1,
+          "/site/news/01/item/0000010": 1,
+          "/site/news/01/item/0000011": 1,
+          "/site/news/01/item/0000012": 1,
+          "/site/news/01/item/0000013": 1,
+          "/site/news/01/item/0000014": 1,
+          "/site/news/01/item/0000015": 1,
+          "/site/news/01/item/0000016": 1,
+          "/site/news/01/item/0000017": 1,
+          "/site/news/01/item/0000018": 1,
+          "/site/news/01/item/0000019": 1,
+          "/site/news/01/item/0000020": 1,
+          "/site/news/01/item/0000021": 1,
+          "/site/news/01/item/0000022": 1,
+          "/site/news/01/item/0000023": 1,
+          "/site/news/01/item/0000024": 1,
+          "/site/news/01/item/0000025": 1,
+          "/site/news/01/item/0000026": 1,
+          "/site/news/01/item/0000027": 1,
+          "/site/news/01/item/0000028": 1,
+          "/site/news/01/item/0000029": 1,
+          "/site/news/01/item/0000030": 1,
+          "/site/news/01/item/0000031": 1,
+          "/site/news/01/item/0000032": 1,
+          "/site/news/01/item/0000033": 1,
+          "/site/news/01/item/0000034": 1,
+          "/site/news/01/item/0000035": 1,
+          "/site/news/01/item/0000036": 1,
+          "/site/news/01/item/0000037": 1,
+          "/site/news/01/item/0000038": 1,
+          "/site/news/01/item/0000039": 1,
+          "/site/news/01/item/0000040": 1,
+          "/site/news/01/item/0000041": 1,
+          "/site/news/01/item/0000042": 1,
+          "/site/news/01/item/0000043": 1,
+          "/site/news/01/item/0000044": 1,
+          "/site/news/01/item/0000045": 1,
+          "/site/news/01/item/0000046": 1,
+          "/site/news/01/item/0000047": 1,
+          "/site/news/01/item/0000048": 1,
+          "/site/news/01/item/0000049": 1,
+          "/site/news/01/item/0000050": 1,
+          "/site/news/01/sitemap.xml": 1
+        },
+        "responseStatusCounts": {
+          "200": 56
+        }
+      },
+      "profile": "default",
+      "repetition": 0,
+      "started_at": "2026-10-26T05:34:41.474841+00:00",
+      "status": "completed",
+      "system": "scrapy",
+      "system_version": "2.18.0"
+    },
+    {
+      "capabilities": [
+        {
+          "detail": "allow/disallow; configured delay did not enforce a strict origin interval",
+          "name": "robots",
+          "state": "partial"
+        },
+        {
+          "detail": "",
+          "name": "depth_limit",
+          "state": "supported"
+        },
+        {
+          "detail": "close-spider page count",
+          "name": "per_execution_budget",
+          "state": "partial"
+        },
+        {
+          "detail": "requires user state",
+          "name": "recurring_job_outcome_budget",
+          "state": "not_supported"
+        },
+        {
+          "detail": "requires extension",
+          "name": "shared_origin_gate",
+          "state": "not_supported"
+        },
+        {
+          "detail": "manual spider routing",
+          "name": "scoped_templates",
+          "state": "partial"
+        },
+        {
+          "detail": "requires pipeline",
+          "name": "versioned_parquet",
+          "state": "not_supported"
+        }
+      ],
+      "configuration": {
+        "concurrency": 8,
+        "expected": {
+          "maximumHttpRequests": 50
+        },
+        "experiment_id": "S01",
+        "max_depth": 6,
+        "max_urls": 50,
+        "metadata": {},
+        "name": "50 URL exact admission",
+        "requests_per_second": 100.0,
+        "respect_robots": true,
+        "seed_urls": [
+          "http://127.0.0.1:49890/site/news/01/"
+        ],
+        "timeout_seconds": 120.0
+      },
+      "duration_seconds": 1.0737290830584243,
+      "errors": [],
+      "experiment_id": "S01",
+      "finished_at": "2026-10-26T05:34:43.875052+00:00",
+      "metrics": {
+        "duplicatesFiltered": 50,
+        "finishReason": "closespider_pagecount",
+        "itemsScraped": 56,
+        "pagesFetched": 57
+      },
+      "observations": {
+        "distinctRequestPaths": 56,
+        "duplicateRequestsObserved": 0,
+        "httpRequestsObserved": 56,
+        "interRequestSeconds": {
+          "confidence95High": 0.014031616907907041,
+          "confidence95Low": 0.012734419455729323,
+          "count": 55,
+          "max": 0.016771,
+          "mean": 0.013383018181818182,
+          "median": 0.013958,
+          "min": 0.006373,
+          "p50": 0.013958,
+          "p95": 0.0164724,
+          "p99": 0.01668568,
+          "stdev": 0.002454151475077743
+        },
+        "invariantViolations": [
+          {
+            "expectedMaximum": 50,
+            "invariant": "http_requests_within_budget",
+            "observed": 56
+          }
+        ],
+        "minimumInterRequestSeconds": 0.006373,
+        "requestPathCounts": {
+          "/site/news/01/": 1,
+          "/site/news/01/category/06/": 1,
+          "/site/news/01/category/06/08/page/1": 1,
+          "/site/news/01/category/06/09/page/1": 1,
+          "/site/news/01/category/07/": 1,
+          "/site/news/01/category/07/09/page/1": 1,
+          "/site/news/01/category/08/": 1,
+          "/site/news/01/category/08/08/page/1": 1,
+          "/site/news/01/category/08/09/page/1": 1,
+          "/site/news/01/category/09/": 1,
+          "/site/news/01/category/09/09/page/1": 1,
+          "/site/news/01/item/0000007": 1,
+          "/site/news/01/item/0000008": 1,
+          "/site/news/01/item/0000009": 1,
+          "/site/news/01/item/0000010": 1,
+          "/site/news/01/item/0000011": 1,
+          "/site/news/01/item/0000012": 1,
+          "/site/news/01/item/0000013": 1,
+          "/site/news/01/item/0000014": 1,
+          "/site/news/01/item/0000015": 1,
+          "/site/news/01/item/0000016": 1,
+          "/site/news/01/item/0000017": 1,
+          "/site/news/01/item/0000018": 1,
+          "/site/news/01/item/0000019": 1,
+          "/site/news/01/item/0000020": 1,
+          "/site/news/01/item/0000021": 1,
+          "/site/news/01/item/0000022": 1,
+          "/site/news/01/item/0000023": 1,
+          "/site/news/01/item/0000024": 1,
+          "/site/news/01/item/0000025": 1,
+          "/site/news/01/item/0000026": 1,
+          "/site/news/01/item/0000027": 1,
+          "/site/news/01/item/0000028": 1,
+          "/site/news/01/item/0000029": 1,
+          "/site/news/01/item/0000030": 1,
+          "/site/news/01/item/0000031": 1,
+          "/site/news/01/item/0000032": 1,
+          "/site/news/01/item/0000033": 1,
+          "/site/news/01/item/0000034": 1,
+          "/site/news/01/item/0000035": 1,
+          "/site/news/01/item/0000036": 1,
+          "/site/news/01/item/0000037": 1,
+          "/site/news/01/item/0000038": 1,
+          "/site/news/01/item/0000039": 1,
+          "/site/news/01/item/0000040": 1,
+          "/site/news/01/item/0000041": 1,
+          "/site/news/01/item/0000042": 1,
+          "/site/news/01/item/0000043": 1,
+          "/site/news/01/item/0000044": 1,
+          "/site/news/01/item/0000045": 1,
+          "/site/news/01/item/0000046": 1,
+          "/site/news/01/item/0000047": 1,
+          "/site/news/01/item/0000048": 1,
+          "/site/news/01/item/0000049": 1,
+          "/site/news/01/item/0000050": 1,
+          "/site/news/01/sitemap.xml": 1
+        },
+        "responseStatusCounts": {
+          "200": 56
+        }
+      },
+      "profile": "tuned",
+      "repetition": 0,
+      "started_at": "2026-10-26T05:34:42.801281+00:00",
+      "status": "completed",
+      "system": "scrapy",
+      "system_version": "2.18.0"
+    },
+    {
+      "capabilities": [
+        {
+          "detail": "allow/disallow; evaluated adapter did not enforce robots crawl-delay",
+          "name": "robots",
+          "state": "partial"
+        },
+        {
+          "detail": "",
+          "name": "depth_limit",
+          "state": "supported"
+        },
+        {
+          "detail": "may overshoot with concurrency",
+          "name": "per_execution_budget",
+          "state": "partial"
+        },
+        {
+          "detail": "requires user state",
+          "name": "recurring_job_outcome_budget",
+          "state": "not_supported"
+        },
+        {
+          "detail": "requires shared adapter",
+          "name": "shared_origin_gate",
+          "state": "not_supported"
+        },
+        {
+          "detail": "request router",
+          "name": "scoped_templates",
+          "state": "partial"
+        },
+        {
+          "detail": "requires exporter",
+          "name": "versioned_parquet",
+          "state": "not_supported"
+        }
+      ],
+      "configuration": {
+        "concurrency": 8,
+        "expected": {
+          "maximumHttpRequests": 50
+        },
+        "experiment_id": "S01",
+        "max_depth": 6,
+        "max_urls": 50,
+        "metadata": {},
+        "name": "50 URL exact admission",
+        "requests_per_second": 100.0,
+        "respect_robots": true,
+        "seed_urls": [
+          "http://127.0.0.1:49890/site/news/01/"
+        ],
+        "timeout_seconds": 120.0
+      },
+      "duration_seconds": 0.6905573750846088,
+      "errors": [],
+      "experiment_id": "S01",
+      "finished_at": "2026-10-26T05:34:44.867942+00:00",
+      "metrics": {
+        "pagesFetched": 53
+      },
+      "observations": {
+        "distinctRequestPaths": 53,
+        "duplicateRequestsObserved": 0,
+        "httpRequestsObserved": 53,
+        "interRequestSeconds": {
+          "confidence95High": 0.005912845224325234,
+          "confidence95Low": 0.0013759624679824584,
+          "count": 52,
+          "max": 0.046502,
+          "mean": 0.0036444038461538463,
+          "median": 0.000226,
+          "min": 6.2e-05,
+          "p50": 0.000226,
+          "p95": 0.018955299999999977,
+          "p99": 0.03574253000000004,
+          "stdev": 0.008345899698348098
+        },
+        "invariantViolations": [
+          {
+            "expectedMaximum": 50,
+            "invariant": "http_requests_within_budget",
+            "observed": 53
+          }
+        ],
+        "minimumInterRequestSeconds": 6.2e-05,
+        "requestPathCounts": {
+          "/site/news/01/": 1,
+          "/site/news/01/category/00/": 1,
+          "/site/news/01/category/00/00/page/1": 1,
+          "/site/news/01/category/00/01/page/1": 1,
+          "/site/news/01/category/00/02/page/1": 1,
+          "/site/news/01/category/00/03/page/1": 1,
+          "/site/news/01/category/00/04/page/1": 1,
+          "/site/news/01/category/00/05/page/1": 1,
+          "/site/news/01/category/00/06/page/1": 1,
+          "/site/news/01/category/00/07/page/1": 1,
+          "/site/news/01/category/00/08/page/1": 1,
+          "/site/news/01/category/00/09/page/1": 1,
+          "/site/news/01/category/01/": 1,
+          "/site/news/01/category/02/": 1,
+          "/site/news/01/category/02/00/page/1": 1,
+          "/site/news/01/category/02/01/page/1": 1,
+          "/site/news/01/category/02/02/page/1": 1,
+          "/site/news/01/category/02/03/page/1": 1,
+          "/site/news/01/category/02/04/page/1": 1,
+          "/site/news/01/category/02/05/page/1": 1,
+          "/site/news/01/category/02/06/page/1": 1,
+          "/site/news/01/category/02/07/page/1": 1,
+          "/site/news/01/category/02/08/page/1": 1,
+          "/site/news/01/category/03/": 1,
+          "/site/news/01/category/04/": 1,
+          "/site/news/01/category/04/00/page/1": 1,
+          "/site/news/01/category/04/01/page/1": 1,
+          "/site/news/01/category/04/02/page/1": 1,
+          "/site/news/01/category/04/03/page/1": 1,
+          "/site/news/01/category/04/04/page/1": 1,
+          "/site/news/01/category/04/05/page/1": 1,
+          "/site/news/01/category/04/06/page/1": 1,
+          "/site/news/01/category/04/07/page/1": 1,
+          "/site/news/01/category/04/08/page/1": 1,
+          "/site/news/01/category/04/09/page/1": 1,
+          "/site/news/01/category/05/": 1,
+          "/site/news/01/category/06/": 1,
+          "/site/news/01/category/07/": 1,
+          "/site/news/01/category/08/": 1,
+          "/site/news/01/category/09/": 1,
+          "/site/news/01/item/0000012": 1,
+          "/site/news/01/item/0000013": 1,
+          "/site/news/01/item/0000020": 1,
+          "/site/news/01/item/0000030": 1,
+          "/site/news/01/item/0000033": 1,
+          "/site/news/01/item/0000035": 1,
+          "/site/news/01/item/0000038": 1,
+          "/site/news/01/item/0000039": 1,
+          "/site/news/01/item/0000042": 1,
+          "/site/news/01/item/0000043": 1,
+          "/site/news/01/item/0000044": 1,
+          "/site/news/01/item/0000045": 1,
+          "/site/news/01/sitemap.xml": 1
+        },
+        "responseStatusCounts": {
+          "200": 53
+        }
+      },
+      "profile": "default",
+      "repetition": 0,
+      "started_at": "2026-10-26T05:34:44.177351+00:00",
+      "status": "completed",
+      "system": "crawlee",
+      "system_version": "1.9.3"
+    },
+    {
+      "capabilities": [
+        {
+          "detail": "allow/disallow; evaluated adapter did not enforce robots crawl-delay",
+          "name": "robots",
+          "state": "partial"
+        },
+        {
+          "detail": "",
+          "name": "depth_limit",
+          "state": "supported"
+        },
+        {
+          "detail": "may overshoot with concurrency",
+          "name": "per_execution_budget",
+          "state": "partial"
+        },
+        {
+          "detail": "requires user state",
+          "name": "recurring_job_outcome_budget",
+          "state": "not_supported"
+        },
+        {
+          "detail": "requires shared adapter",
+          "name": "shared_origin_gate",
+          "state": "not_supported"
+        },
+        {
+          "detail": "request router",
+          "name": "scoped_templates",
+          "state": "partial"
+        },
+        {
+          "detail": "requires exporter",
+          "name": "versioned_parquet",
+          "state": "not_supported"
+        }
+      ],
+      "configuration": {
+        "concurrency": 8,
+        "expected": {
+          "maximumHttpRequests": 50
+        },
+        "experiment_id": "S01",
+        "max_depth": 6,
+        "max_urls": 50,
+        "metadata": {},
+        "name": "50 URL exact admission",
+        "requests_per_second": 100.0,
+        "respect_robots": true,
+        "seed_urls": [
+          "http://127.0.0.1:49890/site/news/01/"
+        ],
+        "timeout_seconds": 120.0
+      },
+      "duration_seconds": 1.1098033749731258,
+      "errors": [],
+      "experiment_id": "S01",
+      "finished_at": "2026-10-26T05:34:46.170458+00:00",
+      "metrics": {
+        "pagesFetched": 51
+      },
+      "observations": {
+        "distinctRequestPaths": 51,
+        "duplicateRequestsObserved": 0,
+        "httpRequestsObserved": 51,
+        "interRequestSeconds": {
+          "confidence95High": 0.016669623008022303,
+          "confidence95Low": 0.010274576991977698,
+          "count": 50,
+          "max": 0.081261,
+          "mean": 0.0134721,
+          "median": 0.011116000000000001,
+          "min": 0.00014,
+          "p50": 0.011116000000000001,
+          "p95": 0.029395399999999988,
+          "p99": 0.05873716999999991,
+          "stdev": 0.01153566429577846
+        },
+        "invariantViolations": [
+          {
+            "expectedMaximum": 50,
+            "invariant": "http_requests_within_budget",
+            "observed": 51
+          }
+        ],
+        "minimumInterRequestSeconds": 0.00014,
+        "requestPathCounts": {
+          "/site/news/01/": 1,
+          "/site/news/01/category/00/": 1,
+          "/site/news/01/category/00/00/page/1": 1,
+          "/site/news/01/category/00/01/page/1": 1,
+          "/site/news/01/category/00/02/page/1": 1,
+          "/site/news/01/category/00/03/page/1": 1,
+          "/site/news/01/category/00/04/page/1": 1,
+          "/site/news/01/category/00/05/page/1": 1,
+          "/site/news/01/category/00/06/page/1": 1,
+          "/site/news/01/category/00/07/page/1": 1,
+          "/site/news/01/category/00/08/page/1": 1,
+          "/site/news/01/category/00/09/page/1": 1,
+          "/site/news/01/category/01/": 1,
+          "/site/news/01/category/01/00/page/1": 1,
+          "/site/news/01/category/01/01/page/1": 1,
+          "/site/news/01/category/01/02/page/1": 1,
+          "/site/news/01/category/01/03/page/1": 1,
+          "/site/news/01/category/01/04/page/1": 1,
+          "/site/news/01/category/01/05/page/1": 1,
+          "/site/news/01/category/01/06/page/1": 1,
+          "/site/news/01/category/01/07/page/1": 1,
+          "/site/news/01/category/01/08/page/1": 1,
+          "/site/news/01/category/01/09/page/1": 1,
+          "/site/news/01/category/02/": 1,
+          "/site/news/01/category/02/00/page/1": 1,
+          "/site/news/01/category/02/01/page/1": 1,
+          "/site/news/01/category/02/02/page/1": 1,
+          "/site/news/01/category/02/03/page/1": 1,
+          "/site/news/01/category/02/04/page/1": 1,
+          "/site/news/01/category/02/05/page/1": 1,
+          "/site/news/01/category/02/06/page/1": 1,
+          "/site/news/01/category/03/": 1,
+          "/site/news/01/category/04/": 1,
+          "/site/news/01/category/05/": 1,
+          "/site/news/01/category/06/": 1,
+          "/site/news/01/category/07/": 1,
+          "/site/news/01/category/08/": 1,
+          "/site/news/01/category/09/": 1,
+          "/site/news/01/item/0000012": 1,
+          "/site/news/01/item/0000013": 1,
+          "/site/news/01/item/0000020": 1,
+          "/site/news/01/item/0000030": 1,
+          "/site/news/01/item/0000033": 1,
+          "/site/news/01/item/0000035": 1,
+          "/site/news/01/item/0000038": 1,
+          "/site/news/01/item/0000039": 1,
+          "/site/news/01/item/0000042": 1,
+          "/site/news/01/item/0000043": 1,
+          "/site/news/01/item/0000044": 1,
+          "/site/news/01/item/0000045": 1,
+          "/site/news/01/sitemap.xml": 1
+        },
+        "responseStatusCounts": {
+          "200": 51
+        }
+      },
+      "profile": "tuned",
+      "repetition": 0,
+      "started_at": "2026-10-26T05:34:45.060616+00:00",
+      "status": "completed",
+      "system": "crawlee",
+      "system_version": "1.9.3"
+    },
+    {
+      "capabilities": [
+        {
+          "detail": "allow/disallow; the inspected local service did not enforce robots crawl-delay",
+          "name": "robots",
+          "state": "partial"
+        },
+        {
+          "detail": "",
+          "name": "depth_limit",
+          "state": "supported"
+        },
+        {
+          "detail": "crawl limit",
+          "name": "per_execution_budget",
+          "state": "supported"
+        },
+        {
+          "detail": "",
+          "name": "recurring_job_outcome_budget",
+          "state": "not_supported"
+        },
+        {
+          "detail": "service concurrency/delay differs",
+          "name": "shared_origin_gate",
+          "state": "partial"
+        },
+        {
+          "detail": "structured JSON extraction differs",
+          "name": "scoped_templates",
+          "state": "partial"
+        },
+        {
+          "detail": "",
+          "name": "versioned_parquet",
+          "state": "not_supported"
+        }
+      ],
+      "configuration": {
+        "concurrency": 8,
+        "expected": {
+          "maximumHttpRequests": 50
+        },
+        "experiment_id": "S01",
+        "max_depth": 6,
+        "max_urls": 50,
+        "metadata": {},
+        "name": "50 URL exact admission",
+        "requests_per_second": 100.0,
+        "respect_robots": true,
+        "seed_urls": [
+          "http://127.0.0.1:49890/site/news/01/"
+        ],
+        "timeout_seconds": 120.0
+      },
+      "duration_seconds": 0,
+      "errors": [
+        "Firecrawl is not reachable at http://127.0.0.1:3002: <urlopen error [Errno 61] Connection refused>"
+      ],
+      "experiment_id": "S01",
+      "finished_at": "2026-10-26T05:34:46.171337+00:00",
+      "metrics": {},
+      "observations": {
+        "distinctRequestPaths": 0,
+        "duplicateRequestsObserved": 0,
+        "httpRequestsObserved": 0,
+        "interRequestSeconds": {
+          "count": 0
+        },
+        "invariantViolations": [],
+        "minimumInterRequestSeconds": null,
+        "requestPathCounts": {},
+        "responseStatusCounts": {}
+      },
+      "profile": "default",
+      "repetition": 0,
+      "started_at": "2026-10-26T05:34:46.171337+00:00",
+      "status": "unavailable",
+      "system": "firecrawl-local",
+      "system_version": null
+    }
+  ]
+}

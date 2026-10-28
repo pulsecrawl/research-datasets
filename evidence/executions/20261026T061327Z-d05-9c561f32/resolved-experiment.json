@@ -1,0 +1,20 @@
+{
+  "acceptance": "The normal publication protocol exposes no partial version; ablated variants are reported separately.",
+  "family": "versioned-datasets",
+  "id": "publication-atomicity-ablation",
+  "measurements": [
+    "reader_consistency",
+    "partial_versions",
+    "missing_parts",
+    "checksum_mismatches"
+  ],
+  "seed": 4708,
+  "status": "registered",
+  "title": "Publication atomicity ablation",
+  "workload": {
+    "concurrentReaders": 4,
+    "executions": 10,
+    "publications": 30,
+    "rowsPerExecution": 1000
+  }
+}

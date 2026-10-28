@@ -1,0 +1,19 @@
+{
+  "acceptance": "Only semantically equivalent and syntactically valid integrations are compared.",
+  "family": "template-extraction",
+  "id": "integration-surface-comparison",
+  "measurements": [
+    "physical_lines",
+    "selectors",
+    "routes",
+    "configuration_bytes",
+    "oracle_accuracy"
+  ],
+  "seed": 4712,
+  "status": "registered",
+  "title": "Equivalent integration surface comparison",
+  "workload": {
+    "itemsPerSite": 10,
+    "sites": 20
+  }
+}

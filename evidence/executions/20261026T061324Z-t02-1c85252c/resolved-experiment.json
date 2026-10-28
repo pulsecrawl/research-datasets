@@ -1,0 +1,18 @@
+{
+  "acceptance": "Fallback is deterministic and missing-template cases produce an explicit diagnostic rather than a silently incorrect record.",
+  "family": "template-extraction",
+  "id": "fallback-and-template-diagnostics",
+  "measurements": [
+    "fallback_tier",
+    "diagnostic_recall",
+    "field_accuracy",
+    "record_coverage"
+  ],
+  "seed": 4704,
+  "status": "registered",
+  "title": "Fallback and missing-template diagnostics",
+  "workload": {
+    "itemsPerSite": 20,
+    "sitesPerVertical": 5
+  }
+}

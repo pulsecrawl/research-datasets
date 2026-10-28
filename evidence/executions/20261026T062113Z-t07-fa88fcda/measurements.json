@@ -1,0 +1,10 @@
+{
+  "allAmbiguitiesSurfaced": true,
+  "ambiguousPages": 200,
+  "canonicalCompletenessAccuracy": 1.0,
+  "diagnosticRecall": 1.0,
+  "firstEntityAccuracy": 0.5,
+  "method": "controlled-multiple-jsonld-entity-canonical-ranking",
+  "pages": 200,
+  "status": "completed"
+}

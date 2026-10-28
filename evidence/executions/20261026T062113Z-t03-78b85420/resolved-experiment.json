@@ -1,0 +1,26 @@
+{
+  "acceptance": "Every mutation is reported; repaired accuracy is measured separately from accuracy before repair.",
+  "family": "template-extraction",
+  "id": "controlled-markup-drift",
+  "measurements": [
+    "field_accuracy_before_repair",
+    "field_accuracy_after_repair",
+    "fallback_rate",
+    "repair_count"
+  ],
+  "seed": 4705,
+  "status": "registered",
+  "title": "Controlled markup drift",
+  "workload": {
+    "itemsPerSite": 20,
+    "mutations": [
+      "class_renamed",
+      "body_moved",
+      "jsonld_removed",
+      "jsonld_malformed",
+      "metadata_removed",
+      "multiple_entities"
+    ],
+    "sitesPerVertical": 5
+  }
+}

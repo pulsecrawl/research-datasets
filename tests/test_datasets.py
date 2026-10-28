@@ -47,10 +47,17 @@ class DatasetTests(unittest.TestCase):
         verifier = module("verify")
         metadata = verifier.verify_research_metadata()
         self.assertEqual(metadata["pulsecrawl"], "0.1.0")
-        self.assertEqual(metadata["experiments"], 28)
+        self.assertEqual(metadata["experiments"], 30)
         self.assertEqual(metadata["families"], [
             "policy-and-recovery", "template-extraction", "versioned-datasets",
         ])
+
+    def test_reviewed_release_is_complete_and_checksum_linked(self):
+        verifier = module("verify")
+        evidence = verifier.verify_reviewed_evidence()
+        self.assertEqual(evidence["controlledExecutions"], 116)
+        self.assertEqual(evidence["controlledAnalysis"], "public-local-0.1.0-2026-10-27")
+        self.assertEqual(evidence["liveStudies"], ["news", "commerce"])
 
     def test_fixed_inputs_regenerate_identically(self):
         generator = module("generate_fixed_html")

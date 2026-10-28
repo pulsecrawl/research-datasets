@@ -1,0 +1,504 @@
+{
+  "allBaselineF1Perfect": true,
+  "allPostRepairAccurate": true,
+  "allSyntaxValid": true,
+  "corpusClassification": "fully-synthetic-scoped-html",
+  "documents": 100,
+  "externalAccuracyBoundary": "controlled conformance only; T08 remains permission-gated",
+  "fixtureManifestSha256": "21517ed8b6137d4f5db138f1cf73623423eacad7a1d771b5ad7552aa250f58f0",
+  "literalLeakAblation": {
+    "pages": 19,
+    "scopedContaminationRate": 0.0,
+    "unscopedContaminationRate": 1.0
+  },
+  "method": "generated-scoped-fixtures-with-equivalent-user-integrations",
+  "sites": 20,
+  "status": "completed",
+  "systems": {
+    "beautifulsoup-reference": {
+      "afterSha256": "6148b26eec9f815ebc2b2dc42e08e7ce851e3da21d9538f8a237e998aaa09e98",
+      "artifact": "beautifulsoup-reference/integration.py",
+      "authoredBytes": 6078,
+      "authoredLoc": 4,
+      "capabilityBoundary": "registered deterministic user integration",
+      "changedFiles": 1,
+      "changedLines": 2,
+      "correctFields": 400,
+      "diffHunks": 1,
+      "documents": 100,
+      "drift": {
+        "canonical_change": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "jsonld_to_meta": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "literal_leak": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "multiple_entities": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.25,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "negative_page": {
+          "documents": 20,
+          "falsePositiveRate": 0.0,
+          "fieldAccuracy": 0.0,
+          "recordCoverage": 0.0,
+          "records": 0
+        },
+        "shared_selector_rename": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "site_selector_rename": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 1
+        },
+        "wrapper_insertion": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        }
+      },
+      "expectedFields": 400,
+      "fieldF1": 1.0,
+      "fieldPrecision": 1.0,
+      "fieldRecall": 1.0,
+      "maintainedComponents": 2,
+      "maintainedFiles": 1,
+      "postRepair": {
+        "sharedSelector": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "siteSelector": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 1
+        }
+      },
+      "predictedFields": 400,
+      "provenanceCoverage": 1.0,
+      "records": 100,
+      "sha256": "2cc62bc93b3e216ac0baa8ee3efe291a593b685e2df66b0ba385056ff59bf948",
+      "syntaxCheck": "ast.parse"
+    },
+    "crawlee-python": {
+      "afterSha256": "60a9ffcbec6c9c7752cc4dfa51c1c4f487e31e038108460b964701ef8b9a6966",
+      "artifact": "crawlee-python/integration.py",
+      "authoredBytes": 6110,
+      "authoredLoc": 5,
+      "capabilityBoundary": "registered deterministic user integration",
+      "changedFiles": 1,
+      "changedLines": 2,
+      "correctFields": 400,
+      "diffHunks": 1,
+      "documents": 100,
+      "drift": {
+        "canonical_change": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "jsonld_to_meta": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "literal_leak": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "multiple_entities": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.25,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "negative_page": {
+          "documents": 20,
+          "falsePositiveRate": 0.0,
+          "fieldAccuracy": 0.0,
+          "recordCoverage": 0.0,
+          "records": 0
+        },
+        "shared_selector_rename": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "site_selector_rename": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 1
+        },
+        "wrapper_insertion": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        }
+      },
+      "expectedFields": 400,
+      "fieldF1": 1.0,
+      "fieldPrecision": 1.0,
+      "fieldRecall": 1.0,
+      "maintainedComponents": 2,
+      "maintainedFiles": 1,
+      "postRepair": {
+        "sharedSelector": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "siteSelector": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 1
+        }
+      },
+      "predictedFields": 400,
+      "provenanceCoverage": 1.0,
+      "records": 100,
+      "sha256": "a9049bb969eb0231e1490350a7b87cb71b5db4782747a767970cfe27b1993402",
+      "syntaxCheck": "ast.parse"
+    },
+    "firecrawl-client": {
+      "afterSha256": "73193559ed05b7e222e5d92a957c0b9de267951b20d9fc4927178aa84b29935c",
+      "artifact": "firecrawl-client/integration.json",
+      "authoredBytes": 7256,
+      "authoredLoc": 232,
+      "capabilityBoundary": "deterministic selector routing is evaluated in the client layer; live LLM extraction is not scored",
+      "changedFiles": 1,
+      "changedLines": 10,
+      "correctFields": 400,
+      "diffHunks": 5,
+      "documents": 100,
+      "drift": {
+        "canonical_change": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "jsonld_to_meta": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "literal_leak": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "multiple_entities": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.25,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "negative_page": {
+          "documents": 20,
+          "falsePositiveRate": 0.0,
+          "fieldAccuracy": 0.0,
+          "recordCoverage": 0.0,
+          "records": 0
+        },
+        "shared_selector_rename": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "site_selector_rename": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 1
+        },
+        "wrapper_insertion": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        }
+      },
+      "expectedFields": 400,
+      "fieldF1": 1.0,
+      "fieldPrecision": 1.0,
+      "fieldRecall": 1.0,
+      "maintainedComponents": 2,
+      "maintainedFiles": 1,
+      "postRepair": {
+        "sharedSelector": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "siteSelector": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 1
+        }
+      },
+      "predictedFields": 400,
+      "provenanceCoverage": 1.0,
+      "records": 100,
+      "sha256": "f8517982e0fdba76d7ee924e1cd210553dd596a85132d1353a7d246e5f6225a1",
+      "syntaxCheck": "json.loads"
+    },
+    "pulsecrawl": {
+      "afterSha256": "023bc80170173b5779d57c19b110fdf9275dc9a55f6356f2d66241702be1807d",
+      "artifact": "pulsecrawl/integration.json",
+      "authoredBytes": 31361,
+      "authoredLoc": 1463,
+      "capabilityBoundary": "registered deterministic user integration",
+      "changedFiles": 1,
+      "changedLines": 10,
+      "correctFields": 400,
+      "diffHunks": 5,
+      "documents": 100,
+      "drift": {
+        "canonical_change": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "jsonld_to_meta": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "literal_leak": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "multiple_entities": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "negative_page": {
+          "documents": 20,
+          "falsePositiveRate": 1.0,
+          "fieldAccuracy": 0.25,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "shared_selector_rename": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "site_selector_rename": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 1
+        },
+        "wrapper_insertion": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        }
+      },
+      "expectedFields": 400,
+      "fieldF1": 1.0,
+      "fieldPrecision": 1.0,
+      "fieldRecall": 1.0,
+      "maintainedComponents": 1,
+      "maintainedFiles": 1,
+      "postRepair": {
+        "sharedSelector": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "siteSelector": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 1
+        }
+      },
+      "predictedFields": 400,
+      "provenanceCoverage": 1.0,
+      "records": 100,
+      "sha256": "431537492a0071f05f2e7645f61a8e40da2c26ea51c2890b7a6f9bcc72158001",
+      "syntaxCheck": "json.loads"
+    },
+    "scrapy": {
+      "afterSha256": "fac60fc435fc6ccb4971fb81e33b686f27b7865467e4b5b5fd55c01792c29cce",
+      "artifact": "scrapy/integration.py",
+      "authoredBytes": 6068,
+      "authoredLoc": 4,
+      "capabilityBoundary": "registered deterministic user integration",
+      "changedFiles": 1,
+      "changedLines": 2,
+      "correctFields": 400,
+      "diffHunks": 1,
+      "documents": 100,
+      "drift": {
+        "canonical_change": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "jsonld_to_meta": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "literal_leak": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "multiple_entities": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.25,
+          "recordCoverage": 1.0,
+          "records": 20
+        },
+        "negative_page": {
+          "documents": 20,
+          "falsePositiveRate": 0.0,
+          "fieldAccuracy": 0.0,
+          "recordCoverage": 0.0,
+          "records": 0
+        },
+        "shared_selector_rename": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "site_selector_rename": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 0.75,
+          "recordCoverage": 1.0,
+          "records": 1
+        },
+        "wrapper_insertion": {
+          "documents": 20,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 20
+        }
+      },
+      "expectedFields": 400,
+      "fieldF1": 1.0,
+      "fieldPrecision": 1.0,
+      "fieldRecall": 1.0,
+      "maintainedComponents": 2,
+      "maintainedFiles": 1,
+      "postRepair": {
+        "sharedSelector": {
+          "documents": 4,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 4
+        },
+        "siteSelector": {
+          "documents": 1,
+          "falsePositiveRate": null,
+          "fieldAccuracy": 1.0,
+          "recordCoverage": 1.0,
+          "records": 1
+        }
+      },
+      "predictedFields": 400,
+      "provenanceCoverage": 1.0,
+      "records": 100,
+      "sha256": "cc51c38f18cfa55319c2c500704a7eb9e6a31cf006e6235f15a3292ac093cb61",
+      "syntaxCheck": "ast.parse"
+    }
+  }
+}

@@ -1,0 +1,685 @@
+[
+  {
+    "capabilities": [
+      {
+        "detail": "allow/disallow and crawl-delay",
+        "name": "robots",
+        "state": "supported"
+      },
+      {
+        "detail": "",
+        "name": "depth_limit",
+        "state": "supported"
+      },
+      {
+        "detail": "",
+        "name": "per_execution_budget",
+        "state": "supported"
+      },
+      {
+        "detail": "local workspace state",
+        "name": "recurring_job_outcome_budget",
+        "state": "supported"
+      },
+      {
+        "detail": "local SQLite gate",
+        "name": "shared_origin_gate",
+        "state": "supported"
+      },
+      {
+        "detail": "",
+        "name": "scoped_templates",
+        "state": "supported"
+      },
+      {
+        "detail": "local workspace publication",
+        "name": "versioned_parquet",
+        "state": "supported"
+      }
+    ],
+    "configuration": {
+      "concurrency": 4,
+      "expected": {
+        "forbiddenRequestPaths": [
+          "/blocked/canary"
+        ],
+        "maximumHttpRequests": 30,
+        "minimumInterRequestSeconds": 0.01,
+        "requiredRequestPaths": [
+          "/redirect/site/news/01/item/0000001",
+          "/fault/status/404",
+          "/fault/status/429",
+          "/fault/status/500",
+          "/fault/delay/50"
+        ],
+        "requiredStatusCodes": [
+          302,
+          404,
+          429,
+          500
+        ]
+      },
+      "experiment_id": "S04",
+      "max_depth": 5,
+      "max_urls": 30,
+      "metadata": {},
+      "name": "robots canary",
+      "requests_per_second": 100.0,
+      "respect_robots": true,
+      "seed_urls": [
+        "http://127.0.0.1:49692/site/news/01/"
+      ],
+      "timeout_seconds": 120.0
+    },
+    "duration_seconds": 11.625820499961264,
+    "errors": [],
+    "experiment_id": "S04",
+    "finished_at": "2026-10-26T06:13:21.278870+00:00",
+    "metrics": {
+      "bytesProcessed": 20329,
+      "pagesDiscovered": 29,
+      "pagesFailed": 4,
+      "pagesFetched": 23,
+      "rateLimitDeferrals": 28,
+      "rateLimitQueueDeferrals": 29,
+      "rateLimitQueueWaitSeconds": 95.5324707783293,
+      "rateLimitWaitSeconds": 4.78080037527252,
+      "records": 13,
+      "recordsExtracted": 13,
+      "robotsBlocked": 0,
+      "robotsCacheHits": 29,
+      "robotsChecks": 30,
+      "robotsFetchFailures": 0,
+      "robotsFetches": 1,
+      "templateCoverage": {
+        "127.0.0.1:49692": {
+          "needsTemplate": false,
+          "sampleUrls": [
+            "http://127.0.0.1:49692/site/news/01/category/00/",
+            "http://127.0.0.1:49692/site/news/01/category/01/",
+            "http://127.0.0.1:49692/site/news/01/category/02/",
+            "http://127.0.0.1:49692/site/news/01/category/03/",
+            "http://127.0.0.1:49692/site/news/01/category/04/"
+          ],
+          "scopedMatches": 0,
+          "stackFallbackMatches": 13,
+          "systemFallbackMatches": 0,
+          "unmatchedPages": 10
+        }
+      },
+      "transientRetries": 2,
+      "urlsAttempted": 30
+    },
+    "observations": {
+      "distinctRequestPaths": 29,
+      "duplicateRequestsObserved": 1,
+      "httpRequestsObserved": 30,
+      "interRequestSeconds": {
+        "confidence95High": 0.7151456304761596,
+        "confidence95Low": 0.06121830055832317,
+        "count": 29,
+        "max": 5.059083,
+        "mean": 0.3881819655172414,
+        "median": 0.221338,
+        "min": 0.218547,
+        "p50": 0.221338,
+        "p95": 0.2252538,
+        "p99": 3.7057494799999944,
+        "stdev": 0.89834348048392
+      },
+      "invariantViolations": [],
+      "minimumInterRequestSeconds": 0.218547,
+      "requestPathCounts": {
+        "/fault/delay/50": 1,
+        "/fault/status/404": 1,
+        "/fault/status/429": 2,
+        "/fault/status/500": 1,
+        "/redirect/site/news/01/item/0000001": 1,
+        "/site/news/01/": 1,
+        "/site/news/01/category/00/": 1,
+        "/site/news/01/category/01/": 1,
+        "/site/news/01/category/02/": 1,
+        "/site/news/01/category/03/": 1,
+        "/site/news/01/category/04/": 1,
+        "/site/news/01/category/05/": 1,
+        "/site/news/01/category/06/": 1,
+        "/site/news/01/category/07/": 1,
+        "/site/news/01/category/08/": 1,
+        "/site/news/01/category/09/": 1,
+        "/site/news/01/item/0000012": 1,
+        "/site/news/01/item/0000013": 1,
+        "/site/news/01/item/0000020": 1,
+        "/site/news/01/item/0000030": 1,
+        "/site/news/01/item/0000033": 1,
+        "/site/news/01/item/0000035": 1,
+        "/site/news/01/item/0000038": 1,
+        "/site/news/01/item/0000039": 1,
+        "/site/news/01/item/0000042": 1,
+        "/site/news/01/item/0000043": 1,
+        "/site/news/01/item/0000044": 1,
+        "/site/news/01/item/0000045": 1,
+        "/site/news/01/sitemap.xml": 1
+      },
+      "responseStatusCounts": {
+        "200": 25,
+        "302": 1,
+        "404": 1,
+        "429": 2,
+        "500": 1
+      }
+    },
+    "profile": "default",
+    "repetition": 0,
+    "started_at": "2026-10-26T06:13:09.652850+00:00",
+    "status": "completed",
+    "system": "pulsecrawl",
+    "system_version": "0.1.0"
+  },
+  {
+    "capabilities": [
+      {
+        "detail": "allow/disallow; configured delay did not enforce a strict origin interval",
+        "name": "robots",
+        "state": "partial"
+      },
+      {
+        "detail": "",
+        "name": "depth_limit",
+        "state": "supported"
+      },
+      {
+        "detail": "close-spider page count",
+        "name": "per_execution_budget",
+        "state": "partial"
+      },
+      {
+        "detail": "requires user state",
+        "name": "recurring_job_outcome_budget",
+        "state": "not_supported"
+      },
+      {
+        "detail": "requires extension",
+        "name": "shared_origin_gate",
+        "state": "not_supported"
+      },
+      {
+        "detail": "manual spider routing",
+        "name": "scoped_templates",
+        "state": "partial"
+      },
+      {
+        "detail": "requires pipeline",
+        "name": "versioned_parquet",
+        "state": "not_supported"
+      }
+    ],
+    "configuration": {
+      "concurrency": 4,
+      "expected": {
+        "forbiddenRequestPaths": [
+          "/blocked/canary"
+        ],
+        "maximumHttpRequests": 30,
+        "minimumInterRequestSeconds": 0.01,
+        "requiredRequestPaths": [
+          "/redirect/site/news/01/item/0000001",
+          "/fault/status/404",
+          "/fault/status/429",
+          "/fault/status/500",
+          "/fault/delay/50"
+        ],
+        "requiredStatusCodes": [
+          302,
+          404,
+          429,
+          500
+        ]
+      },
+      "experiment_id": "S04",
+      "max_depth": 5,
+      "max_urls": 30,
+      "metadata": {},
+      "name": "robots canary",
+      "requests_per_second": 100.0,
+      "respect_robots": true,
+      "seed_urls": [
+        "http://127.0.0.1:49692/site/news/01/"
+      ],
+      "timeout_seconds": 120.0
+    },
+    "duration_seconds": 0.7277631249744445,
+    "errors": [],
+    "experiment_id": "S04",
+    "finished_at": "2026-10-26T06:13:22.233088+00:00",
+    "metrics": {
+      "duplicatesFiltered": 33,
+      "finishReason": "closespider_pagecount",
+      "itemsScraped": 32,
+      "pagesFetched": 33
+    },
+    "observations": {
+      "distinctRequestPaths": 32,
+      "duplicateRequestsObserved": 0,
+      "httpRequestsObserved": 32,
+      "interRequestSeconds": {
+        "confidence95High": 0.0145022020524516,
+        "confidence95Low": 0.01283321730238711,
+        "count": 31,
+        "max": 0.017899,
+        "mean": 0.013667709677419355,
+        "median": 0.014037,
+        "min": 0.008108,
+        "p50": 0.014037,
+        "p95": 0.0169565,
+        "p99": 0.0177385,
+        "stdev": 0.0023705392381417976
+      },
+      "invariantViolations": [
+        {
+          "expectedMaximum": 30,
+          "invariant": "http_requests_within_budget",
+          "observed": 32
+        },
+        {
+          "expectedMinimum": 0.01,
+          "invariant": "minimum_request_interval",
+          "observed": 0.008108
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/redirect/site/news/01/item/0000001"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/status/404"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/status/429"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/status/500"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/delay/50"
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 302
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 404
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 429
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 500
+        }
+      ],
+      "minimumInterRequestSeconds": 0.008108,
+      "requestPathCounts": {
+        "/fault/": 1,
+        "/site/news/01/": 1,
+        "/site/news/01/item/0000008": 1,
+        "/site/news/01/item/0000009": 1,
+        "/site/news/01/item/0000010": 1,
+        "/site/news/01/item/0000011": 1,
+        "/site/news/01/item/0000012": 1,
+        "/site/news/01/item/0000013": 1,
+        "/site/news/01/item/0000014": 1,
+        "/site/news/01/item/0000015": 1,
+        "/site/news/01/item/0000020": 1,
+        "/site/news/01/item/0000021": 1,
+        "/site/news/01/item/0000022": 1,
+        "/site/news/01/item/0000026": 1,
+        "/site/news/01/item/0000027": 1,
+        "/site/news/01/item/0000028": 1,
+        "/site/news/01/item/0000029": 1,
+        "/site/news/01/item/0000030": 1,
+        "/site/news/01/item/0000031": 1,
+        "/site/news/01/item/0000032": 1,
+        "/site/news/01/item/0000034": 1,
+        "/site/news/01/item/0000035": 1,
+        "/site/news/01/item/0000036": 1,
+        "/site/news/01/item/0000037": 1,
+        "/site/news/01/item/0000038": 1,
+        "/site/news/01/item/0000039": 1,
+        "/site/news/01/item/0000040": 1,
+        "/site/news/01/item/0000041": 1,
+        "/site/news/01/item/0000045": 1,
+        "/site/news/01/item/0000046": 1,
+        "/site/news/01/item/0000047": 1,
+        "/site/news/01/sitemap.xml": 1
+      },
+      "responseStatusCounts": {
+        "200": 32
+      }
+    },
+    "profile": "default",
+    "repetition": 0,
+    "started_at": "2026-10-26T06:13:21.505292+00:00",
+    "status": "completed",
+    "system": "scrapy",
+    "system_version": "2.18.0"
+  },
+  {
+    "capabilities": [
+      {
+        "detail": "allow/disallow; evaluated adapter did not enforce robots crawl-delay",
+        "name": "robots",
+        "state": "partial"
+      },
+      {
+        "detail": "",
+        "name": "depth_limit",
+        "state": "supported"
+      },
+      {
+        "detail": "may overshoot with concurrency",
+        "name": "per_execution_budget",
+        "state": "partial"
+      },
+      {
+        "detail": "requires user state",
+        "name": "recurring_job_outcome_budget",
+        "state": "not_supported"
+      },
+      {
+        "detail": "requires shared adapter",
+        "name": "shared_origin_gate",
+        "state": "not_supported"
+      },
+      {
+        "detail": "request router",
+        "name": "scoped_templates",
+        "state": "partial"
+      },
+      {
+        "detail": "requires exporter",
+        "name": "versioned_parquet",
+        "state": "not_supported"
+      }
+    ],
+    "configuration": {
+      "concurrency": 4,
+      "expected": {
+        "forbiddenRequestPaths": [
+          "/blocked/canary"
+        ],
+        "maximumHttpRequests": 30,
+        "minimumInterRequestSeconds": 0.01,
+        "requiredRequestPaths": [
+          "/redirect/site/news/01/item/0000001",
+          "/fault/status/404",
+          "/fault/status/429",
+          "/fault/status/500",
+          "/fault/delay/50"
+        ],
+        "requiredStatusCodes": [
+          302,
+          404,
+          429,
+          500
+        ]
+      },
+      "experiment_id": "S04",
+      "max_depth": 5,
+      "max_urls": 30,
+      "metadata": {},
+      "name": "robots canary",
+      "requests_per_second": 100.0,
+      "respect_robots": true,
+      "seed_urls": [
+        "http://127.0.0.1:49692/site/news/01/"
+      ],
+      "timeout_seconds": 120.0
+    },
+    "duration_seconds": 0.48070249997545034,
+    "errors": [],
+    "experiment_id": "S04",
+    "finished_at": "2026-10-26T06:13:22.902630+00:00",
+    "metrics": {
+      "pagesFetched": 32
+    },
+    "observations": {
+      "distinctRequestPaths": 35,
+      "duplicateRequestsObserved": 3,
+      "httpRequestsObserved": 38,
+      "interRequestSeconds": {
+        "confidence95High": 0.004914395202762299,
+        "confidence95Low": 0.001551388581021484,
+        "count": 37,
+        "max": 0.017231,
+        "mean": 0.003232891891891892,
+        "median": 0.000156,
+        "min": 8.6e-05,
+        "p50": 0.000156,
+        "p95": 0.013966,
+        "p99": 0.01612904,
+        "stdev": 0.005218461905068835
+      },
+      "invariantViolations": [
+        {
+          "expectedMaximum": 30,
+          "invariant": "http_requests_within_budget",
+          "observed": 38
+        },
+        {
+          "expectedMinimum": 0.01,
+          "invariant": "minimum_request_interval",
+          "observed": 8.6e-05
+        }
+      ],
+      "minimumInterRequestSeconds": 8.6e-05,
+      "requestPathCounts": {
+        "/fault/": 1,
+        "/fault/delay/50": 1,
+        "/fault/status/404": 1,
+        "/fault/status/429": 2,
+        "/fault/status/500": 2,
+        "/redirect/site/news/01/item/0000001": 1,
+        "/site/news/01/": 1,
+        "/site/news/01/category/00/": 1,
+        "/site/news/01/category/00/00/page/1": 1,
+        "/site/news/01/category/00/01/page/1": 1,
+        "/site/news/01/category/00/02/page/1": 1,
+        "/site/news/01/category/01/": 1,
+        "/site/news/01/category/02/": 1,
+        "/site/news/01/category/03/": 1,
+        "/site/news/01/category/04/": 1,
+        "/site/news/01/category/05/": 1,
+        "/site/news/01/category/06/": 1,
+        "/site/news/01/category/07/": 1,
+        "/site/news/01/category/08/": 1,
+        "/site/news/01/category/09/": 1,
+        "/site/news/01/item/0000001": 2,
+        "/site/news/01/item/0000002": 1,
+        "/site/news/01/item/0000012": 1,
+        "/site/news/01/item/0000013": 1,
+        "/site/news/01/item/0000020": 1,
+        "/site/news/01/item/0000030": 1,
+        "/site/news/01/item/0000033": 1,
+        "/site/news/01/item/0000035": 1,
+        "/site/news/01/item/0000038": 1,
+        "/site/news/01/item/0000039": 1,
+        "/site/news/01/item/0000042": 1,
+        "/site/news/01/item/0000043": 1,
+        "/site/news/01/item/0000044": 1,
+        "/site/news/01/item/0000045": 1,
+        "/site/news/01/sitemap.xml": 1
+      },
+      "responseStatusCounts": {
+        "200": 32,
+        "302": 1,
+        "404": 1,
+        "429": 2,
+        "500": 2
+      }
+    },
+    "profile": "default",
+    "repetition": 0,
+    "started_at": "2026-10-26T06:13:22.421906+00:00",
+    "status": "completed",
+    "system": "crawlee",
+    "system_version": "1.9.3"
+  },
+  {
+    "capabilities": [
+      {
+        "detail": "allow/disallow; the inspected local service did not enforce robots crawl-delay",
+        "name": "robots",
+        "state": "partial"
+      },
+      {
+        "detail": "",
+        "name": "depth_limit",
+        "state": "supported"
+      },
+      {
+        "detail": "crawl limit",
+        "name": "per_execution_budget",
+        "state": "supported"
+      },
+      {
+        "detail": "",
+        "name": "recurring_job_outcome_budget",
+        "state": "not_supported"
+      },
+      {
+        "detail": "service concurrency/delay differs",
+        "name": "shared_origin_gate",
+        "state": "partial"
+      },
+      {
+        "detail": "structured JSON extraction differs",
+        "name": "scoped_templates",
+        "state": "partial"
+      },
+      {
+        "detail": "",
+        "name": "versioned_parquet",
+        "state": "not_supported"
+      }
+    ],
+    "configuration": {
+      "concurrency": 4,
+      "expected": {
+        "forbiddenRequestPaths": [
+          "/blocked/canary"
+        ],
+        "maximumHttpRequests": 30,
+        "minimumInterRequestSeconds": 0.01,
+        "requiredRequestPaths": [
+          "/redirect/site/news/01/item/0000001",
+          "/fault/status/404",
+          "/fault/status/429",
+          "/fault/status/500",
+          "/fault/delay/50"
+        ],
+        "requiredStatusCodes": [
+          302,
+          404,
+          429,
+          500
+        ]
+      },
+      "experiment_id": "S04",
+      "max_depth": 5,
+      "max_urls": 30,
+      "metadata": {},
+      "name": "robots canary",
+      "requests_per_second": 100.0,
+      "respect_robots": true,
+      "seed_urls": [
+        "http://127.0.0.1:49692/site/news/01/"
+      ],
+      "timeout_seconds": 120.0
+    },
+    "duration_seconds": 0,
+    "errors": [
+      "Firecrawl is not reachable at http://127.0.0.1:3002: <urlopen error [Errno 61] Connection refused>"
+    ],
+    "experiment_id": "S04",
+    "finished_at": "2026-10-26T06:13:22.903207+00:00",
+    "metrics": {},
+    "observations": {
+      "distinctRequestPaths": 0,
+      "duplicateRequestsObserved": 0,
+      "httpRequestsObserved": 0,
+      "interRequestSeconds": {
+        "count": 0
+      },
+      "invariantViolations": [
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/redirect/site/news/01/item/0000001"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/status/404"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/status/429"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/status/500"
+        },
+        {
+          "invariant": "required_path_requested",
+          "observed": 0,
+          "path": "/fault/delay/50"
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 302
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 404
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 429
+        },
+        {
+          "invariant": "required_status_observed",
+          "observed": 0,
+          "status": 500
+        }
+      ],
+      "minimumInterRequestSeconds": null,
+      "requestPathCounts": {},
+      "responseStatusCounts": {}
+    },
+    "profile": "default",
+    "repetition": 0,
+    "started_at": "2026-10-26T06:13:22.903207+00:00",
+    "status": "unavailable",
+    "system": "firecrawl-local",
+    "system_version": null
+  }
+]

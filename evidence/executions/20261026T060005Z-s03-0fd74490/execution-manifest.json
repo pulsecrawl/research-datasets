@@ -1,0 +1,42 @@
+{
+  "command": [
+    "pulsecrawl-research",
+    "run",
+    "S03",
+    "--phase",
+    "confirmatory"
+  ],
+  "completedAt": "2026-10-26T06:00:05Z",
+  "configuration": {
+    "localPacingGroups": 2,
+    "maximumUrlsPerJob": 20,
+    "originRequestsPerSecond": 2,
+    "parallelJobs": 3
+  },
+  "executionId": "20261026T060005Z-s03-0fd74490",
+  "experimentId": "shared-origin-pacing",
+  "inputs": {
+    "artifactRelease": "0.3.0",
+    "checksumsSha256": "bdf18de67795693b5d68e35009f74f8c1e898f55cb4c3a7242f3f0c3ddc18d59",
+    "sourceRelease": "public-local-0.1.0-2026-10-27",
+    "sourceRepositoryCommit": "ca95ec21827c73205fc87480a906ed388e101097",
+    "sourceRunChecksumsSha256": "3500aff2d0ac9acd7c0db0d98e8cc9c642fb19b252ec007d4fb905c7008e9829"
+  },
+  "notes": [
+    "The shell invocation is reconstructed from the registered release procedure; the source run did not retain a shell transcript.",
+    "This public directory excludes raw workspaces, downloaded HTML, and machine-specific environment fields."
+  ],
+  "outputs": {
+    "checksums": "checksums.sha256",
+    "measurements": "measurements.json",
+    "summary": "summary.json"
+  },
+  "schemaVersion": 1,
+  "software": {
+    "platform": "macOS-arm64",
+    "pulsecrawl": "0.1.0",
+    "python": "3.11.9"
+  },
+  "startedAt": "2026-10-26T06:00:05Z",
+  "status": "completed"
+}

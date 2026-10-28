@@ -1,0 +1,169 @@
+{
+  "allCausalChecksPassed": true,
+  "cases": {
+    "complete": {
+      "attemptsByExecution": {
+        "e1": 2
+      },
+      "attemptsTotal": 2,
+      "causalMatch": true,
+      "events": 17,
+      "expectedCausalViolations": [],
+      "invariantsSatisfied": true,
+      "violations": []
+    },
+    "without_durable_admission": {
+      "attemptsByExecution": {
+        "e1": 2
+      },
+      "attemptsTotal": 2,
+      "causalMatch": true,
+      "events": 15,
+      "expectedCausalViolations": [
+        "valid_state_transition"
+      ],
+      "invariantsSatisfied": false,
+      "violations": [
+        {
+          "event": {
+            "at": null,
+            "event": "schedule",
+            "execution": "e1",
+            "pending_urls": null,
+            "reservations": null,
+            "url": "https://site.test/a"
+          },
+          "expectedEvents": [
+            "admit"
+          ],
+          "invariant": "valid_state_transition",
+          "priorState": "discovered"
+        },
+        {
+          "event": {
+            "at": null,
+            "event": "schedule",
+            "execution": "e1",
+            "pending_urls": null,
+            "reservations": null,
+            "url": "https://site.test/b"
+          },
+          "expectedEvents": [
+            "admit"
+          ],
+          "invariant": "valid_state_transition",
+          "priorState": "discovered"
+        }
+      ]
+    },
+    "without_final_dispatch_gate": {
+      "attemptsByExecution": {
+        "e1": 2
+      },
+      "attemptsTotal": 2,
+      "causalMatch": true,
+      "events": 17,
+      "expectedCausalViolations": [
+        "origin_interval"
+      ],
+      "invariantsSatisfied": false,
+      "violations": [
+        {
+          "event": {
+            "at": 0.001,
+            "event": "attempt",
+            "execution": "e1",
+            "pending_urls": null,
+            "reservations": null,
+            "url": "https://site.test/b"
+          },
+          "invariant": "origin_interval",
+          "minimum": 0.1,
+          "observed": 0.001
+        }
+      ]
+    },
+    "without_lifetime_reservation": {
+      "attemptsByExecution": {
+        "e1": 3,
+        "e2": 3
+      },
+      "attemptsTotal": 6,
+      "causalMatch": true,
+      "events": 48,
+      "expectedCausalViolations": [
+        "lifetime_budget"
+      ],
+      "invariantsSatisfied": false,
+      "violations": [
+        {
+          "event": {
+            "at": 0.55,
+            "event": "attempt",
+            "execution": "e2",
+            "pending_urls": null,
+            "reservations": null,
+            "url": "https://site.test/5"
+          },
+          "invariant": "lifetime_budget",
+          "maximum": 5,
+          "observed": 6
+        }
+      ]
+    },
+    "without_terminal_cleanup": {
+      "attemptsByExecution": {
+        "e1": 2
+      },
+      "attemptsTotal": 2,
+      "causalMatch": true,
+      "events": 17,
+      "expectedCausalViolations": [
+        "terminal_cleanup"
+      ],
+      "invariantsSatisfied": false,
+      "violations": [
+        {
+          "event": {
+            "at": null,
+            "event": "terminal",
+            "execution": "e1",
+            "pending_urls": 1,
+            "reservations": 1,
+            "url": null
+          },
+          "invariant": "terminal_cleanup",
+          "observedPendingUrls": 1,
+          "observedReservations": 1
+        }
+      ]
+    },
+    "without_terminal_guard": {
+      "attemptsByExecution": {
+        "e1": 2
+      },
+      "attemptsTotal": 2,
+      "causalMatch": true,
+      "events": 18,
+      "expectedCausalViolations": [
+        "terminal_no_new_work"
+      ],
+      "invariantsSatisfied": false,
+      "violations": [
+        {
+          "event": {
+            "at": null,
+            "event": "discover",
+            "execution": "e1",
+            "pending_urls": null,
+            "reservations": null,
+            "url": "https://site.test/late"
+          },
+          "invariant": "terminal_no_new_work"
+        }
+      ]
+    }
+  },
+  "method": "executable-deterministic-state-trace-ablation",
+  "status": "completed"
+}

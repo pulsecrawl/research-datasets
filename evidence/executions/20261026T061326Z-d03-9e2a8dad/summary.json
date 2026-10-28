@@ -1,0 +1,43 @@
+{
+  "kind": "datalake",
+  "results": {
+    "allQuerySeconds": 0.006177666946314275,
+    "appendAllBytes": 1203506,
+    "appendAllRows": 100000,
+    "compactBytes": 344015,
+    "compactManifestVersion": 101,
+    "compactQuerySeconds": 0.0003108329838141799,
+    "compactSeconds": 0.034732708940282464,
+    "deltaFilesRetained": true,
+    "executions": 100,
+    "fileCount": 100,
+    "hourlyQuerySeconds": 0.006771833053790033,
+    "hourlyRows": 1000,
+    "manifestVersion": 100,
+    "newOnlyBytes": 394129,
+    "newOnlyFileCount": 100,
+    "newOnlyQuerySeconds": 0.006836666958406568,
+    "newOnlyRows": 10900,
+    "outputRoot": "research/results/runs/final-local-public-0.1.0-candidate-2026-10-25/20261026T061326Z-d03-9e2a8dad/artifacts/datalake",
+    "rowsPerExecution": 1000,
+    "snapshotConsistent": true,
+    "snapshotCountAfter": 100000,
+    "snapshotCountBefore": 100000,
+    "snapshotStress": {
+      "atomic": true,
+      "injectedFailuresAfterSwap": 10,
+      "injectedFailuresBeforeSwap": 10,
+      "observedVersions": [
+        100,
+        101
+      ],
+      "publications": 100,
+      "readers": 8,
+      "reads": 273,
+      "status": "completed",
+      "violations": 0
+    },
+    "status": "completed",
+    "writeSeconds": 0.27274749998468906
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "exclusions": [
+    "downloaded HTML bodies",
+    "article and product text",
+    "raw request logs",
+    "workspace databases",
+    "machine-specific environment fields"
+  ],
+  "publishedSummarySha256": "1a22da3b09dae77873bba1bebecfe2d82a1dd2f2e744086372b2d118a4f9504a",
+  "schemaVersion": 1,
+  "sourceSummarySha256": "1a22da3b09dae77873bba1bebecfe2d82a1dd2f2e744086372b2d118a4f9504a",
+  "status": "completed-supporting-observation",
+  "study": "commerce"
+}

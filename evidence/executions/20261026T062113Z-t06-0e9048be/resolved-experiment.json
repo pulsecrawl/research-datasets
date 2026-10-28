@@ -1,0 +1,18 @@
+{
+  "acceptance": "Repair effort is interpreted only after the modified integrations restore expected extraction behavior.",
+  "family": "template-extraction",
+  "id": "template-change-diffusion",
+  "measurements": [
+    "changed_files",
+    "changed_lines",
+    "diff_hunks",
+    "post_change_accuracy"
+  ],
+  "seed": 4713,
+  "status": "registered",
+  "title": "Template change diffusion and repair effort",
+  "workload": {
+    "changedSites": 5,
+    "sites": 20
+  }
+}

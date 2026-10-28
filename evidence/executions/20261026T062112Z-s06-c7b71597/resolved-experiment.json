@@ -1,0 +1,19 @@
+{
+  "acceptance": "Removing each mechanism produces only the predicted class of invariant violation in the controlled model.",
+  "family": "policy-and-recovery",
+  "id": "policy-mechanism-ablation",
+  "measurements": [
+    "budget_violations",
+    "duplicate_authorizations",
+    "post_terminal_requests",
+    "unsettled_reservations"
+  ],
+  "seed": 4707,
+  "status": "registered",
+  "title": "Policy-mechanism ablation",
+  "workload": {
+    "concurrency": 2,
+    "maximumDepth": 1,
+    "maximumUrls": 5
+  }
+}

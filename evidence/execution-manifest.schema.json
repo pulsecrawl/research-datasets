@@ -40,7 +40,10 @@
       "properties": {
         "artifactRelease": {"type": "string"},
         "checksumsSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-        "liveSourceManifestSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        "liveSourceManifestSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "sourceRelease": {"type": "string"},
+        "sourceRepositoryCommit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "sourceRunChecksumsSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
       }
     },
     "command": {"type": "array", "minItems": 1, "items": {"type": "string"}},

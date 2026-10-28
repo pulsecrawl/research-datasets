@@ -1,0 +1,182 @@
+{
+  "checks": [
+    {
+      "criterion": "Execution allowance and request-scope checks",
+      "evidence": {
+        "experimentKey": "S01",
+        "runs": 30,
+        "zeroViolationRuns": 30
+      },
+      "hypothesis": "H1",
+      "passed": true
+    },
+    {
+      "criterion": "Robots and request-policy checks",
+      "evidence": {
+        "experimentKey": "S04",
+        "runs": 30,
+        "zeroViolationRuns": 30
+      },
+      "hypothesis": "H1",
+      "passed": true
+    },
+    {
+      "criterion": "Recovery and reservation settlement",
+      "evidence": {
+        "boundaries": [
+          "after_admission",
+          "after_commit",
+          "after_http",
+          "before_http"
+        ],
+        "experimentKey": "S02",
+        "fullyRecoveredRuns": 3,
+        "independentRuns": 3
+      },
+      "hypothesis": "H1",
+      "passed": true
+    },
+    {
+      "criterion": "Shared same-origin authorization intervals",
+      "evidence": {
+        "experimentKey": "S03",
+        "minimumConfiguredAllowanceGapSeconds": 0.220001024,
+        "minimumOriginCeilingGapSeconds": 0.550036992,
+        "passingRuns": 30,
+        "runs": 30,
+        "timingAuthority": [
+          "gate-authorization"
+        ]
+      },
+      "hypothesis": "H1",
+      "passed": true
+    },
+    {
+      "criterion": "Redelivery, terminal-state, and cache-loss stress",
+      "evidence": {
+        "experimentKey": "S07",
+        "stressRepetitions": 30,
+        "violations": 0
+      },
+      "hypothesis": "H1",
+      "passed": true
+    },
+    {
+      "criterion": "URL-scoped template-policy comparison",
+      "evidence": {
+        "experimentKey": "T01",
+        "runs": 1,
+        "scopedWrongSiteRecords": 0,
+        "unscopedWrongSiteRecords": 280
+      },
+      "hypothesis": "H2",
+      "passed": true
+    },
+    {
+      "criterion": "Controlled fallback preserves positive-page coverage",
+      "evidence": {
+        "completeRecords": 300,
+        "experimentKey": "T02",
+        "pages": 300
+      },
+      "hypothesis": "H2",
+      "passed": true
+    },
+    {
+      "criterion": "Field correctness on the exact controlled corpus",
+      "evidence": {
+        "documents": 60,
+        "experimentKey": "T04",
+        "minimumFieldF1": 1.0
+      },
+      "hypothesis": "H2",
+      "passed": true
+    },
+    {
+      "criterion": "Expanded multi-site policy matrix",
+      "evidence": {
+        "expectedFields": 4400,
+        "experimentKeys": [
+          "T09",
+          "T10"
+        ],
+        "pages": 1100,
+        "scopeAblationPassed": true
+      },
+      "hypothesis": "H2",
+      "passed": true
+    },
+    {
+      "criterion": "Incremental publication and readable versions",
+      "evidence": {
+        "experimentKeys": [
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D05"
+        ],
+        "workloadsEvaluated": 5,
+        "workloadsPassing": 5
+      },
+      "hypothesis": "H3",
+      "passed": true
+    },
+    {
+      "criterion": "Reference-to-Parquet row equivalence",
+      "evidence": {
+        "actualRows": 10000,
+        "expectedRows": 10000,
+        "experimentKey": "D04"
+      },
+      "hypothesis": "H3",
+      "passed": true
+    },
+    {
+      "criterion": "Atomic version selection across compaction boundaries",
+      "evidence": {
+        "experimentKey": "D08",
+        "observations": 150,
+        "violations": 0
+      },
+      "hypothesis": "H3",
+      "passed": true
+    },
+    {
+      "criterion": "Public local workspace publication and replay",
+      "evidence": {
+        "checks": {
+          "appendAllExpectedRows": true,
+          "compactionPreservesRows": true,
+          "newOnlyExpectedRows": true,
+          "newOnlyStoresFewerBytes": true,
+          "newOnlyStoresFewerRows": true,
+          "replayIsIdempotent": true
+        },
+        "experimentKey": "D11",
+        "inputObservations": 1000
+      },
+      "hypothesis": "H3",
+      "passed": true
+    }
+  ],
+  "hypotheses": {
+    "H1": {
+      "checksPassed": 5,
+      "checksTotal": 5,
+      "status": "supported"
+    },
+    "H2": {
+      "checksPassed": 4,
+      "checksTotal": 4,
+      "status": "supported"
+    },
+    "H3": {
+      "checksPassed": 4,
+      "checksTotal": 4,
+      "status": "supported"
+    }
+  },
+  "schemaVersion": 1,
+  "scope": "final local open-source candidate evidence"
+}

@@ -11,6 +11,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {"fixed-html": 60, "site-pattern-html": 100, "commerce-html": 20}
 EXPECTED_FAMILIES = {"policy-and-recovery", "template-extraction", "versioned-datasets"}
+SHA256_PATTERN = re.compile(r"[a-f0-9]{64}")
 
 
 def release_files() -> list[Path]:
@@ -91,6 +92,116 @@ def verify_research_metadata() -> dict[str, object]:
     }
 
 
+def verify_directory_checksums(directory: Path) -> str:
+    checksum_path = directory / "checksums.sha256"
+    if not checksum_path.is_file():
+        raise ValueError(f"missing checksum manifest: {directory.relative_to(ROOT)}")
+    listed: set[Path] = set()
+    for line in checksum_path.read_text(encoding="utf-8").splitlines():
+        digest, relative = line.split("  ", 1)
+        if not SHA256_PATTERN.fullmatch(digest):
+            raise ValueError(f"invalid checksum in {checksum_path.relative_to(ROOT)}")
+        relative_path = Path(relative)
+        if relative_path.is_absolute() or ".." in relative_path.parts:
+            raise ValueError(f"unsafe checksum path in {checksum_path.relative_to(ROOT)}")
+        target = directory / relative_path
+        if not target.is_file() or hashlib.sha256(target.read_bytes()).hexdigest() != digest:
+            raise ValueError(f"evidence checksum mismatch: {target.relative_to(ROOT)}")
+        listed.add(target)
+    actual = {path for path in directory.iterdir() if path.is_file() and path != checksum_path}
+    if listed != actual:
+        raise ValueError(f"checksum coverage mismatch: {directory.relative_to(ROOT)}")
+    return hashlib.sha256(checksum_path.read_bytes()).hexdigest()
+
+
+def verify_reviewed_evidence() -> dict[str, object]:
+    release = json.loads((ROOT / "release-manifest.json").read_text(encoding="utf-8"))
+    reviewed = json.loads((ROOT / "evidence" / "reviewed-release.json").read_text(encoding="utf-8"))
+    catalog = json.loads((ROOT / "experiments" / "catalog.json").read_text(encoding="utf-8"))
+    experiment_ids = {entry["id"] for entry in catalog["experiments"]}
+    execution_root = ROOT / "evidence" / "executions"
+    execution_dirs = sorted(path for path in execution_root.iterdir() if path.is_dir())
+    expected_files = {
+        "execution-manifest.json",
+        "resolved-experiment.json",
+        "measurements.json",
+        "summary.json",
+        "checksums.sha256",
+    }
+    execution_ids: list[str] = []
+    execution_checksums: dict[str, str] = {}
+    for directory in execution_dirs:
+        if {path.name for path in directory.iterdir() if path.is_file()} != expected_files:
+            raise ValueError(f"unexpected evidence layout: {directory.relative_to(ROOT)}")
+        manifest = json.loads((directory / "execution-manifest.json").read_text(encoding="utf-8"))
+        if manifest["executionId"] != directory.name:
+            raise ValueError(f"execution ID does not match directory: {directory.name}")
+        if manifest["experimentId"] not in experiment_ids:
+            raise ValueError(f"unknown experiment in execution {directory.name}")
+        if manifest["status"] != "completed":
+            raise ValueError(f"reviewed execution is not complete: {directory.name}")
+        inputs = manifest["inputs"]
+        if inputs["artifactRelease"] != release["release"]:
+            raise ValueError(f"artifact release mismatch: {directory.name}")
+        if not SHA256_PATTERN.fullmatch(inputs["checksumsSha256"]):
+            raise ValueError(f"invalid input-release checksum: {directory.name}")
+        if not re.fullmatch(r"[a-f0-9]{40}", inputs["sourceRepositoryCommit"]):
+            raise ValueError(f"invalid source commit: {directory.name}")
+        if not SHA256_PATTERN.fullmatch(inputs["sourceRunChecksumsSha256"]):
+            raise ValueError(f"invalid source-run checksum: {directory.name}")
+        resolved = json.loads((directory / "resolved-experiment.json").read_text(encoding="utf-8"))
+        if resolved["id"] != manifest["experimentId"]:
+            raise ValueError(f"resolved experiment mismatch: {directory.name}")
+        execution_ids.append(directory.name)
+        execution_checksums[directory.name] = verify_directory_checksums(directory)
+
+    if len(execution_ids) != len(set(execution_ids)):
+        raise ValueError("reviewed execution IDs are not unique")
+    if len(execution_ids) != release["evidence"]["reviewedExecutions"]:
+        raise ValueError("release manifest reviewed-execution count differs")
+    if reviewed["controlledExecutionCount"] != len(execution_ids):
+        raise ValueError("reviewed release execution count differs")
+    reviewed_rows = {row["executionId"]: row for row in reviewed["controlledExecutions"]}
+    if set(reviewed_rows) != set(execution_ids):
+        raise ValueError("reviewed release execution list differs")
+    for execution_id, digest in execution_checksums.items():
+        if reviewed_rows[execution_id]["publicChecksumsSha256"] != digest:
+            raise ValueError(f"reviewed-release checksum differs: {execution_id}")
+
+    analysis_dir = ROOT / "analysis" / "releases" / reviewed["analysis"]["analysisId"]
+    analysis_manifest = json.loads((analysis_dir / "analysis-manifest.json").read_text(encoding="utf-8"))
+    if set(analysis_manifest["includedExecutions"]) != set(execution_ids):
+        raise ValueError("analysis execution set differs from reviewed executions")
+    if analysis_manifest["excludedExecutions"]:
+        raise ValueError("frozen confirmatory analysis unexpectedly excludes executions")
+    analysis_checksum = verify_directory_checksums(analysis_dir)
+    if analysis_checksum != reviewed["analysis"]["checksumsSha256"]:
+        raise ValueError("analysis checksum differs from reviewed release")
+
+    live_studies: list[str] = []
+    for row in reviewed["liveStudies"]:
+        study = row["study"]
+        directory = ROOT / "evidence" / "live-studies" / study
+        manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+        if manifest["study"] != study or manifest["status"] != "completed-supporting-observation":
+            raise ValueError(f"invalid live-study manifest: {study}")
+        if hashlib.sha256((directory / "summary.json").read_bytes()).hexdigest() != manifest["publishedSummarySha256"]:
+            raise ValueError(f"live-study summary checksum differs: {study}")
+        if verify_directory_checksums(directory) != row["checksumsSha256"]:
+            raise ValueError(f"live-study checksum differs: {study}")
+        live_studies.append(study)
+
+    if release["analysis"]["reviewedAnalyses"] != 1:
+        raise ValueError("release manifest reviewed-analysis count differs")
+    if release["liveCaseStudy"]["aggregateSummariesIncluded"] != len(live_studies):
+        raise ValueError("release manifest live-summary count differs")
+    return {
+        "controlledExecutions": len(execution_ids),
+        "controlledAnalysis": reviewed["analysis"]["analysisId"],
+        "liveStudies": live_studies,
+    }
+
+
 def privacy_scan(deny: list[str] | None = None) -> None:
     rules = {
         "absolute home path": re.compile(r"/(?:Users|home)/[A-Za-z0-9_.-]+|[A-Za-z]:\\Users\\", re.I),
@@ -123,6 +234,7 @@ def main() -> int:
     args = parser.parse_args()
     counts = verify_manifests()
     metadata = verify_research_metadata()
+    evidence = verify_reviewed_evidence()
     privacy_scan(args.deny)
     expected = checksum_lines()
     checksum_file = ROOT / "checksums.sha256"
@@ -133,6 +245,7 @@ def main() -> int:
     print(json.dumps({
         "htmlCounts": counts,
         "researchMetadata": metadata,
+        "reviewedEvidence": evidence,
         "checksums": "valid",
         "publicationScan": "passed",
     }))

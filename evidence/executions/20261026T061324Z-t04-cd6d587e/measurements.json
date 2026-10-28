@@ -1,0 +1,566 @@
+{
+  "authoringSelectors": 180,
+  "completeRecords": 60,
+  "documents": 60,
+  "extractionLatencySeconds": {
+    "confidence95High": 3.288095787459441e-05,
+    "confidence95Low": 2.1269089682213183e-05,
+    "count": 60,
+    "max": 0.0001337080029770732,
+    "mean": 2.7075023778403797e-05,
+    "median": 2.174999099224806e-05,
+    "min": 1.5583005733788013e-05,
+    "p50": 2.174999099224806e-05,
+    "p95": 3.707531723193803e-05,
+    "p99": 0.000131815318018198,
+    "stdev": 2.2945189860942924e-05
+  },
+  "fieldAccuracy": 1.0,
+  "fieldF1": 1.0,
+  "fieldPrecision": 1.0,
+  "fieldRecall": 1.0,
+  "recordsMatched": 60,
+  "rows": [
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-01-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-02-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-03-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-04-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-05-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-06-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-07-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-08-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-09-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-10-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-11-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-12-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-13-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-14-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-15-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-16-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-17-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-18-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-19-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "news-20-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "news"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-01-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-02-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-03-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-04-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-05-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-06-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-07-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-08-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-09-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-10-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-11-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-12-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-13-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-14-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-15-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-16-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-17-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-18-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-19-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "jobs-20-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "jobs"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-01-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-02-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-03-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-04-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-05-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-06-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-07-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-08-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-09-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-10-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-11-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-12-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-13-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-14-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-15-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-16-jsonld",
+      "layout": "jsonld",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-17-meta",
+      "layout": "meta",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-18-css",
+      "layout": "css",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-19-graph",
+      "layout": "graph",
+      "recordMatched": true,
+      "vertical": "products"
+    },
+    {
+      "completeRecord": true,
+      "correctFields": 3,
+      "expectedFields": 3,
+      "id": "products-20-malformed-with-css",
+      "layout": "malformed-with-css",
+      "recordMatched": true,
+      "vertical": "products"
+    }
+  ],
+  "status": "completed"
+}

@@ -1,0 +1,209 @@
+{
+  "mutations": {
+    "body_moved": {
+      "byLayout": {
+        "css": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "jsonld": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "malformed": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "metadata": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "nested": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        }
+      },
+      "correctRecords": 120,
+      "pages": 300,
+      "recordAccuracy": 0.4,
+      "recordCoverage": 1.0,
+      "records": 300
+    },
+    "class_renamed": {
+      "byLayout": {
+        "css": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "jsonld": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "malformed": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "metadata": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "nested": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        }
+      },
+      "correctRecords": 120,
+      "pages": 300,
+      "recordAccuracy": 0.4,
+      "recordCoverage": 1.0,
+      "records": 300
+    },
+    "jsonld_malformed": {
+      "byLayout": {
+        "css": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "jsonld": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "malformed": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "metadata": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "nested": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        }
+      },
+      "correctRecords": 300,
+      "pages": 300,
+      "recordAccuracy": 1.0,
+      "recordCoverage": 1.0,
+      "records": 300
+    },
+    "jsonld_removed": {
+      "byLayout": {
+        "css": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "jsonld": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "malformed": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "metadata": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "nested": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        }
+      },
+      "correctRecords": 300,
+      "pages": 300,
+      "recordAccuracy": 1.0,
+      "recordCoverage": 1.0,
+      "records": 300
+    },
+    "metadata_removed": {
+      "byLayout": {
+        "css": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "jsonld": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "malformed": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "metadata": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "nested": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        }
+      },
+      "correctRecords": 240,
+      "pages": 300,
+      "recordAccuracy": 0.8,
+      "recordCoverage": 1.0,
+      "records": 300
+    },
+    "multiple_entities": {
+      "byLayout": {
+        "css": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "jsonld": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "malformed": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        },
+        "metadata": {
+          "correct": 60,
+          "pages": 60,
+          "records": 60
+        },
+        "nested": {
+          "correct": 0,
+          "pages": 60,
+          "records": 60
+        }
+      },
+      "correctRecords": 120,
+      "pages": 300,
+      "recordAccuracy": 0.4,
+      "recordCoverage": 1.0,
+      "records": 300
+    }
+  },
+  "status": "completed"
+}

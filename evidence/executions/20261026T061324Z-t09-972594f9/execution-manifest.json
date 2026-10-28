@@ -1,0 +1,50 @@
+{
+  "command": [
+    "pulsecrawl-research",
+    "run",
+    "T09",
+    "--phase",
+    "confirmatory"
+  ],
+  "completedAt": "2026-10-26T06:13:24Z",
+  "configuration": {
+    "catalog": "datasets/site-pattern-html/catalog.json",
+    "documentsPerSite": 5,
+    "driftCases": [
+      "shared_selector_rename",
+      "site_selector_rename",
+      "wrapper_insertion",
+      "jsonld_to_meta",
+      "multiple_entities",
+      "canonical_change",
+      "negative_page",
+      "literal_leak"
+    ]
+  },
+  "executionId": "20261026T061324Z-t09-972594f9",
+  "experimentId": "scoped-template-governance",
+  "inputs": {
+    "artifactRelease": "0.3.0",
+    "checksumsSha256": "bdf18de67795693b5d68e35009f74f8c1e898f55cb4c3a7242f3f0c3ddc18d59",
+    "sourceRelease": "public-local-0.1.0-2026-10-27",
+    "sourceRepositoryCommit": "ca95ec21827c73205fc87480a906ed388e101097",
+    "sourceRunChecksumsSha256": "2e1dde5040449574b1755be872920781e44900aef7bfd3e6832495ec302f579c"
+  },
+  "notes": [
+    "The shell invocation is reconstructed from the registered release procedure; the source run did not retain a shell transcript.",
+    "This public directory excludes raw workspaces, downloaded HTML, and machine-specific environment fields."
+  ],
+  "outputs": {
+    "checksums": "checksums.sha256",
+    "measurements": "measurements.json",
+    "summary": "summary.json"
+  },
+  "schemaVersion": 1,
+  "software": {
+    "platform": "macOS-arm64",
+    "pulsecrawl": "0.1.0",
+    "python": "3.11.9"
+  },
+  "startedAt": "2026-10-26T06:13:24Z",
+  "status": "completed"
+}

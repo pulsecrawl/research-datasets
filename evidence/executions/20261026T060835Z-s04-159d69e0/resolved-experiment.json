@@ -1,0 +1,20 @@
+{
+  "acceptance": "No disallowed path is requested and applicable crawl-delay and request limits are respected.",
+  "family": "policy-and-recovery",
+  "id": "robots-request-controls",
+  "measurements": [
+    "forbidden_path_requests",
+    "robots_fetches",
+    "redirect_statuses",
+    "retry_statuses",
+    "minimum_request_gap_seconds"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Robots rules, redirects, failures, cache, and crawl delay",
+  "workload": {
+    "concurrency": 4,
+    "maximumDepth": 5,
+    "maximumUrls": 30
+  }
+}

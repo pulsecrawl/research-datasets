@@ -1,0 +1,48 @@
+{
+  "allPostChangeIntegrationsCorrect": true,
+  "changedSites": 5,
+  "method": "checked-before-after-source-diff-with-post-change-oracle",
+  "oracle": {
+    "accuracy": 1.0,
+    "correct": 100,
+    "documents": 100
+  },
+  "status": "completed",
+  "systems": {
+    "beautifulsoup-reference": {
+      "changedFiles": 1,
+      "changedLines": 10,
+      "diffHunks": 1,
+      "postChangeOracleAccuracy": 1.0,
+      "syntaxValid": true
+    },
+    "crawlee": {
+      "changedFiles": 1,
+      "changedLines": 10,
+      "diffHunks": 1,
+      "postChangeOracleAccuracy": 1.0,
+      "syntaxValid": true
+    },
+    "firecrawl": {
+      "changedFiles": 1,
+      "changedLines": 10,
+      "diffHunks": 5,
+      "postChangeOracleAccuracy": 1.0,
+      "syntaxValid": true
+    },
+    "pulsecrawl": {
+      "changedFiles": 1,
+      "changedLines": 10,
+      "diffHunks": 5,
+      "postChangeOracleAccuracy": 1.0,
+      "syntaxValid": true
+    },
+    "scrapy": {
+      "changedFiles": 1,
+      "changedLines": 10,
+      "diffHunks": 1,
+      "postChangeOracleAccuracy": 1.0,
+      "syntaxValid": true
+    }
+  }
+}

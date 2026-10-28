@@ -1,0 +1,31 @@
+{
+  "acceptance": "Every scale case must pass semantic checks before storage or timing results are compared.",
+  "family": "versioned-datasets",
+  "id": "million-row-scale-matrix",
+  "measurements": [
+    "write_seconds",
+    "query_seconds",
+    "bytes",
+    "file_count",
+    "payload_checksum"
+  ],
+  "seed": 4716,
+  "status": "registered",
+  "title": "Million-row temporal dataset scale matrix",
+  "workload": {
+    "cases": [
+      {
+        "executions": 100,
+        "newFraction": 0.01,
+        "queryRepetitions": 5,
+        "totalRows": 1000000
+      },
+      {
+        "executions": 100,
+        "newFraction": 0.01,
+        "queryRepetitions": 1,
+        "totalRows": 10000000
+      }
+    ]
+  }
+}

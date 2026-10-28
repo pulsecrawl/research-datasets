@@ -1,0 +1,19 @@
+{
+  "acceptance": "Row counts and canonical semantic checksums agree after publication and readback.",
+  "family": "versioned-datasets",
+  "id": "parquet-semantic-round-trip",
+  "measurements": [
+    "expected_rows",
+    "actual_rows",
+    "expected_checksum",
+    "actual_checksum"
+  ],
+  "seed": 4706,
+  "status": "registered",
+  "title": "Reference-to-Parquet semantic round trip",
+  "workload": {
+    "executions": 10,
+    "newFraction": 0.1,
+    "rowsPerExecution": 1000
+  }
+}
