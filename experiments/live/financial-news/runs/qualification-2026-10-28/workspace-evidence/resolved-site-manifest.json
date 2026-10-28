@@ -1,0 +1,609 @@
+{
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "displayName": "Financial and stock news",
+  "schemaProfile": "article",
+  "schemaVersion": 2,
+  "sites": [
+    {
+      "constantFields": {
+        "source_name": "Business Insider Markets"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?businessinsider\\.com/.+"
+      ],
+      "hosts": [
+        "www.businessinsider.com"
+      ],
+      "id": "finance-business-insider",
+      "listingUrl": "https://www.businessinsider.com/markets",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Business Insider Markets",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.businessinsider.com/hedge-funds-citadel-and-bridgewater-handling-ai-2026-10"
+      ],
+      "representativeDetailUrl": "https://www.businessinsider.com/hedge-funds-citadel-and-bridgewater-handling-ai-2026-10",
+      "seedUrls": [
+        "https://www.businessinsider.com/markets",
+        "https://www.businessinsider.com/hedge-funds-citadel-and-bridgewater-handling-ai-2026-10"
+      ],
+      "templatePatterns": [
+        "https://www.businessinsider.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "CNBC Markets"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?cnbc\\.com/.+"
+      ],
+      "hosts": [
+        "www.cnbc.com"
+      ],
+      "id": "finance-cnbc",
+      "listingUrl": "https://www.cnbc.com/markets/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "CNBC Markets",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.cnbc.com/2026/10/27/ai-debt-hyperscaler-earnings.html"
+      ],
+      "representativeDetailUrl": "https://www.cnbc.com/2026/10/27/ai-debt-hyperscaler-earnings.html",
+      "seedUrls": [
+        "https://www.cnbc.com/markets/",
+        "https://www.cnbc.com/2026/10/27/ai-debt-hyperscaler-earnings.html"
+      ],
+      "templatePatterns": [
+        "https://www.cnbc.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Fortune Finance"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?fortune\\.com/.+"
+      ],
+      "hosts": [
+        "fortune.com"
+      ],
+      "id": "finance-fortune",
+      "listingUrl": "https://fortune.com/finance/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Fortune Finance",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://fortune.com/2026/10/27/billionaire-uber-cofounder-travis-kalanick-moved-to-texas-prior-to-january-dodging-180-million-hit-from-californias-billionaire-tax/"
+      ],
+      "representativeDetailUrl": "https://fortune.com/2026/10/27/billionaire-uber-cofounder-travis-kalanick-moved-to-texas-prior-to-january-dodging-180-million-hit-from-californias-billionaire-tax/",
+      "seedUrls": [
+        "https://fortune.com/finance/",
+        "https://fortune.com/2026/10/27/billionaire-uber-cofounder-travis-kalanick-moved-to-texas-prior-to-january-dodging-180-million-hit-from-californias-billionaire-tax/"
+      ],
+      "templatePatterns": [
+        "https://fortune.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Kiplinger"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?kiplinger\\.com/.+"
+      ],
+      "hosts": [
+        "www.kiplinger.com"
+      ],
+      "id": "finance-kiplinger",
+      "listingUrl": "https://www.kiplinger.com/investing",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Kiplinger",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.kiplinger.com/investing/ipos/anthropic-ipo-should-you-buy-ant-stock"
+      ],
+      "representativeDetailUrl": "https://www.kiplinger.com/investing/ipos/anthropic-ipo-should-you-buy-ant-stock",
+      "seedUrls": [
+        "https://www.kiplinger.com/investing",
+        "https://www.kiplinger.com/investing/ipos/anthropic-ipo-should-you-buy-ant-stock"
+      ],
+      "templatePatterns": [
+        "https://www.kiplinger.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "The Motley Fool"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?fool\\.com/.+"
+      ],
+      "hosts": [
+        "www.fool.com"
+      ],
+      "id": "finance-motley-fool",
+      "listingUrl": "https://www.fool.com/investing-news/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "The Motley Fool",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.fool.com/investing/2026/10/27/coca-cola-organic-revenue-jumps-7-despite-flat-north-america-volumes-heres-what-investors-need-to-know/"
+      ],
+      "representativeDetailUrl": "https://www.fool.com/investing/2026/10/27/coca-cola-organic-revenue-jumps-7-despite-flat-north-america-volumes-heres-what-investors-need-to-know/",
+      "seedUrls": [
+        "https://www.fool.com/investing-news/",
+        "https://www.fool.com/investing/2026/10/27/coca-cola-organic-revenue-jumps-7-despite-flat-north-america-volumes-heres-what-investors-need-to-know/"
+      ],
+      "templatePatterns": [
+        "https://www.fool.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "TradingView News"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?tradingview\\.com/.+"
+      ],
+      "hosts": [
+        "www.tradingview.com"
+      ],
+      "id": "finance-tradingview",
+      "listingUrl": "https://www.tradingview.com/news/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "TradingView News",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46D1W9:0-jyoti-structures-receives-order-worth-6-49-billion-rupees-from-power-grid-corporation-of-india/"
+      ],
+      "representativeDetailUrl": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46D1W9:0-jyoti-structures-receives-order-worth-6-49-billion-rupees-from-power-grid-corporation-of-india/",
+      "seedUrls": [
+        "https://www.tradingview.com/news/",
+        "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46D1W9:0-jyoti-structures-receives-order-worth-6-49-billion-rupees-from-power-grid-corporation-of-india/"
+      ],
+      "templatePatterns": [
+        "https://www.tradingview.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Yahoo Finance"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?finance\\.yahoo\\.com/.+"
+      ],
+      "hosts": [
+        "finance.yahoo.com"
+      ],
+      "id": "finance-yahoo",
+      "listingUrl": "https://finance.yahoo.com/news/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Yahoo Finance",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://finance.yahoo.com/personal-finance/banking/article/what-the-feds-interest-rate-decision-means-for-your-bank-accounts-loans-credit-cards-and-investments-135527251.html"
+      ],
+      "representativeDetailUrl": "https://finance.yahoo.com/personal-finance/banking/article/what-the-feds-interest-rate-decision-means-for-your-bank-accounts-loans-credit-cards-and-investments-135527251.html",
+      "seedUrls": [
+        "https://finance.yahoo.com/news/",
+        "https://finance.yahoo.com/personal-finance/banking/article/what-the-feds-interest-rate-decision-means-for-your-bank-accounts-loans-credit-cards-and-investments-135527251.html"
+      ],
+      "templatePatterns": [
+        "https://finance.yahoo.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "BNN Bloomberg"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?bnnbloomberg\\.ca/.+"
+      ],
+      "hosts": [
+        "www.bnnbloomberg.ca"
+      ],
+      "id": "finance-bnn-bloomberg",
+      "listingUrl": "https://www.bnnbloomberg.ca/markets/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "BNN Bloomberg",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/26/ai-companies-are-barrelling-toward-huge-wall-street-debuts-a-look-at-the-biggest-players/"
+      ],
+      "representativeDetailUrl": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/26/ai-companies-are-barrelling-toward-huge-wall-street-debuts-a-look-at-the-biggest-players/",
+      "seedUrls": [
+        "https://www.bnnbloomberg.ca/markets/",
+        "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/26/ai-companies-are-barrelling-toward-huge-wall-street-debuts-a-look-at-the-biggest-players/"
+      ],
+      "templatePatterns": [
+        "https://www.bnnbloomberg.ca/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "CBS MoneyWatch"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?cbsnews\\.com/.+"
+      ],
+      "hosts": [
+        "www.cbsnews.com"
+      ],
+      "id": "finance-cbs-moneywatch",
+      "listingUrl": "https://www.cbsnews.com/moneywatch/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "CBS MoneyWatch",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.cbsnews.com/news/anthropic-ipo-filing-ai-risks/"
+      ],
+      "representativeDetailUrl": "https://www.cbsnews.com/news/anthropic-ipo-filing-ai-risks/",
+      "seedUrls": [
+        "https://www.cbsnews.com/moneywatch/",
+        "https://www.cbsnews.com/news/anthropic-ipo-filing-ai-risks/"
+      ],
+      "templatePatterns": [
+        "https://www.cbsnews.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Economic Times Markets"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?economictimes\\.indiatimes\\.com/.+"
+      ],
+      "hosts": [
+        "economictimes.indiatimes.com"
+      ],
+      "id": "finance-economic-times",
+      "listingUrl": "https://economictimes.indiatimes.com/markets",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Economic Times Markets",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms"
+      ],
+      "representativeDetailUrl": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms",
+      "seedUrls": [
+        "https://economictimes.indiatimes.com/markets",
+        "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-coca-cola-paypal-tesla-meta-earnings-federal-reserve-fed-rate-decision-us-stocks-oil-crude-oil-treasury-yields-ai-stocks-anthropic-ipo-27th-october-2026/liveblog/135233966.cms"
+      ],
+      "templatePatterns": [
+        "https://economictimes.indiatimes.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "FXStreet"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?fxstreet\\.com/.+"
+      ],
+      "hosts": [
+        "www.fxstreet.com"
+      ],
+      "id": "finance-fxstreet",
+      "listingUrl": "https://www.fxstreet.com/news",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "FXStreet",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.fxstreet.com/cryptocurrencies/news/ethereum-etfs-near-record-monthly-outflows-as-eth-tests-2-310-202610272243"
+      ],
+      "representativeDetailUrl": "https://www.fxstreet.com/cryptocurrencies/news/ethereum-etfs-near-record-monthly-outflows-as-eth-tests-2-310-202610272243",
+      "seedUrls": [
+        "https://www.fxstreet.com/news",
+        "https://www.fxstreet.com/cryptocurrencies/news/ethereum-etfs-near-record-monthly-outflows-as-eth-tests-2-310-202610272243"
+      ],
+      "templatePatterns": [
+        "https://www.fxstreet.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Financial Post"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?financialpost\\.com/.+"
+      ],
+      "hosts": [
+        "financialpost.com"
+      ],
+      "id": "finance-financial-post",
+      "listingUrl": "https://financialpost.com/category/investing/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Financial Post",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://financialpost.com/investing/investors-are-ignoring-sky-high-stock-valuations-and-downplaying-the-potential-for-a-stock-market-bubble"
+      ],
+      "representativeDetailUrl": "https://financialpost.com/investing/investors-are-ignoring-sky-high-stock-valuations-and-downplaying-the-potential-for-a-stock-market-bubble",
+      "seedUrls": [
+        "https://financialpost.com/category/investing/",
+        "https://financialpost.com/investing/investors-are-ignoring-sky-high-stock-valuations-and-downplaying-the-potential-for-a-stock-market-bubble"
+      ],
+      "templatePatterns": [
+        "https://financialpost.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Finbold"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?finbold\\.com/.+"
+      ],
+      "hosts": [
+        "finbold.com"
+      ],
+      "id": "finance-finbold",
+      "listingUrl": "https://finbold.com/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Finbold",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://finbold.com/cryptocurrency/space-exploration-technologies-dinari-tokenized-stock/"
+      ],
+      "representativeDetailUrl": "https://finbold.com/cryptocurrency/space-exploration-technologies-dinari-tokenized-stock/",
+      "seedUrls": [
+        "https://finbold.com/",
+        "https://finbold.com/cryptocurrency/space-exploration-technologies-dinari-tokenized-stock/"
+      ],
+      "templatePatterns": [
+        "https://finbold.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Fox Business Markets"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?foxbusiness\\.com/.+"
+      ],
+      "hosts": [
+        "www.foxbusiness.com"
+      ],
+      "id": "finance-fox-business",
+      "listingUrl": "https://www.foxbusiness.com/markets",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Fox Business Markets",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.foxbusiness.com/markets/microsoft-offers-voluntary-buyouts-60000-employees-tech-giant-reshapes-its-workforce"
+      ],
+      "representativeDetailUrl": "https://www.foxbusiness.com/markets/microsoft-offers-voluntary-buyouts-60000-employees-tech-giant-reshapes-its-workforce",
+      "seedUrls": [
+        "https://www.foxbusiness.com/markets",
+        "https://www.foxbusiness.com/markets/microsoft-offers-voluntary-buyouts-60000-employees-tech-giant-reshapes-its-workforce"
+      ],
+      "templatePatterns": [
+        "https://www.foxbusiness.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Kitco News"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?kitco\\.com/.+"
+      ],
+      "hosts": [
+        "www.kitco.com"
+      ],
+      "id": "finance-kitco",
+      "listingUrl": "https://www.kitco.com/news",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Kitco News",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.kitco.com/news/article/2026-10-27/freeport-beats-q3-earnings-expectations-despite-rising-costs-and-sharp-drop"
+      ],
+      "representativeDetailUrl": "https://www.kitco.com/news/article/2026-10-27/freeport-beats-q3-earnings-expectations-despite-rising-costs-and-sharp-drop",
+      "seedUrls": [
+        "https://www.kitco.com/news",
+        "https://www.kitco.com/news/article/2026-10-27/freeport-beats-q3-earnings-expectations-despite-rising-costs-and-sharp-drop"
+      ],
+      "templatePatterns": [
+        "https://www.kitco.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Mint Markets"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?livemint\\.com/.+"
+      ],
+      "hosts": [
+        "www.livemint.com"
+      ],
+      "id": "finance-mint",
+      "listingUrl": "https://www.livemint.com/market",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Mint Markets",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.livemint.com/market/stock-market-news/anthropic-ipo-it-s-official-now-artificial-intelligence-giant-files-papers-to-sell-shares-to-public-for-first-time-11793019537204.html"
+      ],
+      "representativeDetailUrl": "https://www.livemint.com/market/stock-market-news/anthropic-ipo-it-s-official-now-artificial-intelligence-giant-files-papers-to-sell-shares-to-public-for-first-time-11793019537204.html",
+      "seedUrls": [
+        "https://www.livemint.com/market",
+        "https://www.livemint.com/market/stock-market-news/anthropic-ipo-it-s-official-now-artificial-intelligence-giant-files-papers-to-sell-shares-to-public-for-first-time-11793019537204.html"
+      ],
+      "templatePatterns": [
+        "https://www.livemint.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "The Daily Upside"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?thedailyupside\\.com/.+"
+      ],
+      "hosts": [
+        "www.thedailyupside.com"
+      ],
+      "id": "finance-daily-upside",
+      "listingUrl": "https://www.thedailyupside.com/investments/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "The Daily Upside",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.thedailyupside.com/finance/banking/big-banks-earning-week-puts-fears-of-slowing-capital-markets-activity-in-focus/"
+      ],
+      "representativeDetailUrl": "https://www.thedailyupside.com/finance/banking/big-banks-earning-week-puts-fears-of-slowing-capital-markets-activity-in-focus/",
+      "seedUrls": [
+        "https://www.thedailyupside.com/investments/",
+        "https://www.thedailyupside.com/finance/banking/big-banks-earning-week-puts-fears-of-slowing-capital-markets-activity-in-focus/"
+      ],
+      "templatePatterns": [
+        "https://www.thedailyupside.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "The Guardian Business"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?theguardian\\.com/.+"
+      ],
+      "hosts": [
+        "www.theguardian.com"
+      ],
+      "id": "finance-guardian-business",
+      "listingUrl": "https://www.theguardian.com/business",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "The Guardian Business",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates"
+      ],
+      "representativeDetailUrl": "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates",
+      "seedUrls": [
+        "https://www.theguardian.com/business",
+        "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates"
+      ],
+      "templatePatterns": [
+        "https://www.theguardian.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "MoneyWeek"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?moneyweek\\.com/.+"
+      ],
+      "hosts": [
+        "moneyweek.com"
+      ],
+      "id": "finance-moneyweek",
+      "listingUrl": "https://moneyweek.com/investments",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "MoneyWeek",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://moneyweek.com/investments/tech-stocks/anthropic-ipo-process"
+      ],
+      "representativeDetailUrl": "https://moneyweek.com/investments/tech-stocks/anthropic-ipo-process",
+      "seedUrls": [
+        "https://moneyweek.com/investments",
+        "https://moneyweek.com/investments/tech-stocks/anthropic-ipo-process"
+      ],
+      "templatePatterns": [
+        "https://moneyweek.com/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "source_name": "Sherwood Markets"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?sherwood\\.news/.+"
+      ],
+      "hosts": [
+        "sherwood.news"
+      ],
+      "id": "finance-sherwood",
+      "listingUrl": "https://sherwood.news/markets/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Sherwood Markets",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://sherwood.news/markets/blackberry-is-on-one-of-its-hottest-rallies-of-all-time/"
+      ],
+      "representativeDetailUrl": "https://sherwood.news/markets/blackberry-is-on-one-of-its-hottest-rallies-of-all-time/",
+      "seedUrls": [
+        "https://sherwood.news/markets/",
+        "https://sherwood.news/markets/blackberry-is-on-one-of-its-hottest-rallies-of-all-time/"
+      ],
+      "templatePatterns": [
+        "https://sherwood.news/*"
+      ]
+    }
+  ],
+  "studyId": "financial-news"
+}

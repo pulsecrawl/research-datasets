@@ -1,0 +1,30 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "currency": [
+      "[itemprop='priceCurrency']@content",
+      "meta[property='product:price:currency']@content"
+    ],
+    "image_url": [
+      "meta[property='og:image:secure_url']@content",
+      "meta[property='og:image']@content"
+    ],
+    "name": [
+      "h1.product_title"
+    ],
+    "price": [
+      ".price .woocommerce-Price-amount"
+    ],
+    "sku": [
+      "[itemprop='sku']@content",
+      "[data-product-sku]"
+    ]
+  },
+  "name": "supermarket-tiendas-neto-product-css",
+  "origin": "org",
+  "outputSchemaId": "schema_20c1eb585d318d2d9fd5",
+  "templateId": "supermarket-tiendas-neto-product-css"
+}

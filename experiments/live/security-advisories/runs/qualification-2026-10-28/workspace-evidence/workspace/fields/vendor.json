@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "vendor",
+  "name": "vendor",
+  "origin": "custom",
+  "type": "string"
+}

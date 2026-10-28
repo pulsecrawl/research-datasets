@@ -1,0 +1,176 @@
+{
+  "createdAt": "2026-10-28T03:58:16.574373+00:00",
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "jobId": "job_037dc9bf26cd6bca25af",
+  "name": "sp500-careers: Merck",
+  "politeness": {
+    "organizationRequestsPerSecond": 0.2,
+    "requestsPerSecond": 0.2,
+    "respectRobotsTxt": true,
+    "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"
+  },
+  "schema": {
+    "fields": [
+      {
+        "fieldId": "job_id",
+        "name": "job_id",
+        "type": "string"
+      },
+      {
+        "fieldId": "title",
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "fieldId": "company",
+        "name": "company",
+        "type": "string"
+      },
+      {
+        "fieldId": "location",
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "fieldId": "employment_type",
+        "name": "employment_type",
+        "type": "string"
+      },
+      {
+        "fieldId": "posted_at",
+        "name": "posted_at",
+        "type": "datetime"
+      },
+      {
+        "fieldId": "description",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "fieldId": "canonical_url",
+        "name": "canonical_url",
+        "type": "url"
+      }
+    ],
+    "schemaId": "schema_b9a0eee344faf485150a"
+  },
+  "scope": {
+    "excludePatterns": [],
+    "includePatterns": [
+      "^https?://(?:www\\.)?jobs\\.merck\\.com/.+",
+      "^https?://(?:www\\.)?msd\\.wd5\\.myworkdayjobs\\.com/.+"
+    ],
+    "maxDepth": 0,
+    "maxUrlsPerExecution": 1,
+    "maxUrlsTotal": 2,
+    "sameDomainOnly": true
+  },
+  "seeds": [
+    "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---New-Jersey---Rahway/Biologics-Process-Research---Development--Associate-Scientist_R413843-1"
+  ],
+  "storeRawPages": false,
+  "systemTemplates": [],
+  "templates": [
+    {
+      "engine": "jsonld",
+      "mappings": {
+        "canonical_url": [
+          "JobPosting.url"
+        ],
+        "company": [
+          "JobPosting.hiringOrganization.name"
+        ],
+        "description": [
+          "JobPosting.description"
+        ],
+        "employment_type": [
+          "JobPosting.employmentType"
+        ],
+        "job_id": [
+          "JobPosting.identifier.value",
+          "JobPosting.identifier"
+        ],
+        "location": [
+          "JobPosting.jobLocation.address.addressLocality",
+          "JobPosting.jobLocation.address.addressRegion"
+        ],
+        "posted_at": [
+          "JobPosting.datePosted"
+        ],
+        "title": [
+          "JobPosting.title",
+          "JobPosting.name"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "jobs.merck.com",
+          "msd.wd5.myworkdayjobs.com"
+        ],
+        "urlPatterns": [
+          "https://jobs.merck.com/*",
+          "https://msd.wd5.myworkdayjobs.com/*"
+        ]
+      },
+      "templateId": "careers-merck-job-jsonld"
+    },
+    {
+      "engine": "css",
+      "mappings": {
+        "canonical_url": [
+          "link[rel='canonical']@href"
+        ],
+        "title": [
+          "main h1",
+          "article h1",
+          "h1"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "jobs.merck.com",
+          "msd.wd5.myworkdayjobs.com"
+        ],
+        "urlPatterns": [
+          "https://jobs.merck.com/*",
+          "https://msd.wd5.myworkdayjobs.com/*"
+        ]
+      },
+      "templateId": "careers-merck-job-css"
+    },
+    {
+      "engine": "meta",
+      "mappings": {
+        "canonical_url": [
+          "og:url"
+        ],
+        "company": [
+          "literal:Merck"
+        ],
+        "description": [
+          "og:description",
+          "description"
+        ],
+        "title": [
+          "og:title",
+          "twitter:title",
+          "<title>"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "jobs.merck.com",
+          "msd.wd5.myworkdayjobs.com"
+        ],
+        "urlPatterns": [
+          "https://jobs.merck.com/*",
+          "https://msd.wd5.myworkdayjobs.com/*"
+        ]
+      },
+      "templateId": "careers-merck-job-meta"
+    }
+  ]
+}

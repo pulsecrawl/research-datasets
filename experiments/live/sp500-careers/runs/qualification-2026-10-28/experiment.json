@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    "sp500-careers"
+  ],
+  "id": "live-sp500-careers",
+  "kind": "live",
+  "parameters": {
+    "manifest": "corpora/live-studies/sp500-careers/site-manifest.json",
+    "maxDepth": 1,
+    "maxUrlsPerSitePerExecution": 4,
+    "minimumOriginDelaySeconds": 5,
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 24,
+        "intervalMinutes": 60
+      }
+    },
+    "retainResponseBodies": false,
+    "study": "sp500-careers"
+  },
+  "seed": 4703,
+  "title": "Recurring s&p 500 company careers study"
+}

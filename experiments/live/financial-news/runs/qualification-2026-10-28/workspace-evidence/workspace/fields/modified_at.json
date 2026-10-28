@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "modified_at",
+  "name": "modified_at",
+  "origin": "custom",
+  "type": "datetime"
+}

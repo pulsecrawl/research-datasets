@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-10-28T03:58:40.127022+00:00",
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "files": [
+    {
+      "executionId": "exec_qualification_careers-adobe_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:39.705485+00:00",
+      "minCrawledAt": "2026-10-28 03:58:39.705485+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-adobe_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12505
+    },
+    {
+      "executionId": "exec_qualification_careers-cisco_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:33.885582+00:00",
+      "minCrawledAt": "2026-10-28 03:58:33.885582+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-cisco_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13021
+    },
+    {
+      "executionId": "exec_qualification_careers-intel_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:27.926646+00:00",
+      "minCrawledAt": "2026-10-28 03:58:27.926646+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-intel_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12457
+    },
+    {
+      "executionId": "exec_qualification_careers-nvidia_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:22.085023+00:00",
+      "minCrawledAt": "2026-10-28 03:58:22.085023+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-nvidia_001.parquet",
+      "rows": 1,
+      "sizeBytes": 23425
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 4
+}

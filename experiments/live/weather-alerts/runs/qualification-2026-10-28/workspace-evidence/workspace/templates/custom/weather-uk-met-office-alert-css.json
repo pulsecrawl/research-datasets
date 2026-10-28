@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "title": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "weather-uk-met-office-alert-css",
+  "origin": "org",
+  "outputSchemaId": "schema_dccd072a77e7b481b286",
+  "templateId": "weather-uk-met-office-alert-css"
+}

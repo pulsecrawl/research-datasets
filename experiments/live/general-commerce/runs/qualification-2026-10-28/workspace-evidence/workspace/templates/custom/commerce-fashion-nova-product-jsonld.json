@@ -1,0 +1,62 @@
+{
+  "engine": "jsonld",
+  "mappings": {
+    "availability": [
+      "Product.offers.availability",
+      "Product.hasVariant.offers.availability"
+    ],
+    "brand": [
+      "Product.brand.name",
+      "Product.brand"
+    ],
+    "canonical_url": [
+      "Product.url",
+      "Product.offers.url"
+    ],
+    "category": [
+      "Product.category"
+    ],
+    "color": [
+      "Product.color"
+    ],
+    "currency": [
+      "Product.offers.priceCurrency",
+      "Product.hasVariant.offers.priceCurrency"
+    ],
+    "description": [
+      "Product.description"
+    ],
+    "image_url": [
+      "Product.image.url",
+      "Product.image",
+      "Product.primaryImageOfPage.contentUrl"
+    ],
+    "name": [
+      "Product.name"
+    ],
+    "price": [
+      "Product.offers.price",
+      "Product.offers.lowPrice",
+      "Product.hasVariant.offers.price",
+      "Product.hasVariant.offers.lowPrice"
+    ],
+    "product_id": [
+      "Product.productID",
+      "Product.mpn"
+    ],
+    "rating_count": [
+      "Product.aggregateRating.ratingCount",
+      "Product.aggregateRating.reviewCount"
+    ],
+    "rating_value": [
+      "Product.aggregateRating.ratingValue"
+    ],
+    "sku": [
+      "Product.sku"
+    ]
+  },
+  "name": "commerce-fashion-nova-product-jsonld",
+  "origin": "org",
+  "outputSchemaId": "schema_b74cf08ce9bc84ab5422",
+  "templateId": "commerce-fashion-nova-product-jsonld"
+}

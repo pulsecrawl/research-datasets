@@ -1,0 +1,65 @@
+{
+  "fieldIds": [
+    "notice_id",
+    "title",
+    "agency",
+    "published_at",
+    "updated_at",
+    "summary",
+    "canonical_url"
+  ],
+  "fields": [
+    {
+      "description": "",
+      "fieldId": "notice_id",
+      "name": "notice_id",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "title",
+      "name": "title",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "agency",
+      "name": "agency",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "published_at",
+      "name": "published_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "updated_at",
+      "name": "updated_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "summary",
+      "name": "summary",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "origin": "custom",
+      "type": "url"
+    }
+  ],
+  "name": "Live government-notices observations schema",
+  "origin": "custom",
+  "schemaId": "schema_ded022f721cafafef812"
+}

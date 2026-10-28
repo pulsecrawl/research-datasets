@@ -1,0 +1,218 @@
+{
+  "cancellationMode": null,
+  "cancellationRequestedAt": null,
+  "createdAt": "2026-10-28T03:58:34.200536+00:00",
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "error": null,
+  "executionId": "exec_qualification_careers-adobe_001",
+  "finishedAt": "2026-10-28T03:58:40.127665+00:00",
+  "intent": {
+    "datasetId": "ds_d238052a48d5a4012cf9",
+    "politeness": {
+      "organizationRequestsPerSecond": 0.2,
+      "requestsPerSecond": 0.2,
+      "respectRobotsTxt": true,
+      "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"
+    },
+    "publishRecords": true,
+    "schema": {
+      "fields": [
+        {
+          "fieldId": "job_id",
+          "name": "job_id",
+          "type": "string"
+        },
+        {
+          "fieldId": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "fieldId": "company",
+          "name": "company",
+          "type": "string"
+        },
+        {
+          "fieldId": "location",
+          "name": "location",
+          "type": "string"
+        },
+        {
+          "fieldId": "employment_type",
+          "name": "employment_type",
+          "type": "string"
+        },
+        {
+          "fieldId": "posted_at",
+          "name": "posted_at",
+          "type": "datetime"
+        },
+        {
+          "fieldId": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "fieldId": "canonical_url",
+          "name": "canonical_url",
+          "type": "url"
+        }
+      ],
+      "schemaId": "schema_b9a0eee344faf485150a"
+    },
+    "scope": {
+      "excludePatterns": [],
+      "includePatterns": [
+        "^https?://(?:www\\.)?careers\\.adobe\\.com/.+",
+        "^https?://(?:www\\.)?adobe\\.wd5\\.myworkdayjobs\\.com/.+"
+      ],
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "maxUrlsTotal": 2,
+      "sameDomainOnly": true
+    },
+    "seeds": [
+      "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Legal-Operations_R171588"
+    ],
+    "storeRawPages": false,
+    "systemTemplates": [],
+    "templateStack": [
+      {
+        "engine": "jsonld",
+        "mappings": {
+          "canonical_url": [
+            "JobPosting.url"
+          ],
+          "company": [
+            "JobPosting.hiringOrganization.name"
+          ],
+          "description": [
+            "JobPosting.description"
+          ],
+          "employment_type": [
+            "JobPosting.employmentType"
+          ],
+          "job_id": [
+            "JobPosting.identifier.value",
+            "JobPosting.identifier"
+          ],
+          "location": [
+            "JobPosting.jobLocation.address.addressLocality",
+            "JobPosting.jobLocation.address.addressRegion"
+          ],
+          "posted_at": [
+            "JobPosting.datePosted"
+          ],
+          "title": [
+            "JobPosting.title",
+            "JobPosting.name"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "careers.adobe.com",
+            "adobe.wd5.myworkdayjobs.com"
+          ],
+          "urlPatterns": [
+            "https://careers.adobe.com/*",
+            "https://adobe.wd5.myworkdayjobs.com/*"
+          ]
+        },
+        "templateId": "careers-adobe-job-jsonld"
+      },
+      {
+        "engine": "css",
+        "mappings": {
+          "canonical_url": [
+            "link[rel='canonical']@href"
+          ],
+          "title": [
+            "main h1",
+            "article h1",
+            "h1"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "careers.adobe.com",
+            "adobe.wd5.myworkdayjobs.com"
+          ],
+          "urlPatterns": [
+            "https://careers.adobe.com/*",
+            "https://adobe.wd5.myworkdayjobs.com/*"
+          ]
+        },
+        "templateId": "careers-adobe-job-css"
+      },
+      {
+        "engine": "meta",
+        "mappings": {
+          "canonical_url": [
+            "og:url"
+          ],
+          "company": [
+            "literal:Adobe"
+          ],
+          "description": [
+            "og:description",
+            "description"
+          ],
+          "title": [
+            "og:title",
+            "twitter:title",
+            "<title>"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "careers.adobe.com",
+            "adobe.wd5.myworkdayjobs.com"
+          ],
+          "urlPatterns": [
+            "https://careers.adobe.com/*",
+            "https://adobe.wd5.myworkdayjobs.com/*"
+          ]
+        },
+        "templateId": "careers-adobe-job-meta"
+      }
+    ]
+  },
+  "jobId": "job_619b28e1085d1c431295",
+  "reservedUrls": 0,
+  "scheduledFor": null,
+  "startedAt": "2026-10-28T03:58:34.201950+00:00",
+  "stats": {
+    "bytes_processed": 24200,
+    "materializedRows": 1,
+    "pages_discovered": 0,
+    "pages_failed": 0,
+    "pages_fetched": 1,
+    "rate_limit_deferrals": 1,
+    "rate_limit_queue_deferrals": 1,
+    "rate_limit_queue_wait_seconds": 5.135448217391968,
+    "rate_limit_wait_seconds": 5.135448932647705,
+    "records_extracted": 1,
+    "robots_blocked": 0,
+    "robots_cache_hits": 1,
+    "robots_checks": 2,
+    "robots_fetch_failures": 0,
+    "robots_fetches": 1,
+    "template_coverage": {
+      "adobe.wd5.myworkdayjobs.com": {
+        "needsTemplate": false,
+        "sampleUrls": [],
+        "scopedMatches": 1,
+        "stackFallbackMatches": 0,
+        "systemFallbackMatches": 0,
+        "unmatchedPages": 0
+      }
+    },
+    "transient_retries": 0,
+    "urls_attempted": 1
+  },
+  "status": "succeeded",
+  "trigger": "manual"
+}

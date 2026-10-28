@@ -1,0 +1,185 @@
+{
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "displayName": "Mexican supermarkets",
+  "schemaProfile": "product",
+  "schemaVersion": 2,
+  "sites": [
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?alsuper\\.com/.+"
+      ],
+      "hosts": [
+        "alsuper.com"
+      ],
+      "id": "supermarket-alsuper",
+      "listingUrl": "https://alsuper.com/",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Alsuper",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://alsuper.com/producto/uva-roja-sin-semilla-35"
+      ],
+      "representativeDetailUrl": "https://alsuper.com/producto/uva-roja-sin-semilla-35",
+      "retainedEnabled": false,
+      "retainedExclusion": "The server-rendered response identifies the product but does not expose a price that the tested local templates can extract.",
+      "seedUrls": [
+        "https://alsuper.com/producto/uva-roja-sin-semilla-35"
+      ],
+      "templatePatterns": [
+        "https://alsuper.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?arteli\\.com\\.mx/.+"
+      ],
+      "hosts": [
+        "www.arteli.com.mx"
+      ],
+      "id": "supermarket-arteli",
+      "listingUrl": "https://www.arteli.com.mx/",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Arteli",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.arteli.com.mx/leche-marsella-1l-3014354/p"
+      ],
+      "representativeDetailUrl": "https://www.arteli.com.mx/leche-marsella-1l-3014354/p",
+      "seedUrls": [
+        "https://www.arteli.com.mx/leche-marsella-1l-3014354/p"
+      ],
+      "templatePatterns": [
+        "https://www.arteli.com.mx/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?justo\\.mx/.+"
+      ],
+      "hosts": [
+        "justo.mx"
+      ],
+      "id": "supermarket-justo",
+      "listingUrl": "https://justo.mx/",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "J\u00fcsto",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://justo.mx/product/leche-alpura-selecta-entera-1l-12249"
+      ],
+      "representativeDetailUrl": "https://justo.mx/product/leche-alpura-selecta-entera-1l-12249",
+      "seedUrls": [
+        "https://justo.mx/product/leche-alpura-selecta-entera-1l-12249"
+      ],
+      "templatePatterns": [
+        "https://justo.mx/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?adomicilio\\.merco\\.mx/.+"
+      ],
+      "hosts": [
+        "adomicilio.merco.mx"
+      ],
+      "id": "supermarket-merco",
+      "listingUrl": "https://adomicilio.merco.mx/",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Merco",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://adomicilio.merco.mx/p/santa-clara-leche-entera-10244576"
+      ],
+      "representativeDetailUrl": "https://adomicilio.merco.mx/p/santa-clara-leche-entera-10244576",
+      "seedUrls": [
+        "https://adomicilio.merco.mx/p/santa-clara-leche-entera-10244576"
+      ],
+      "templatePatterns": [
+        "https://adomicilio.merco.mx/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?smartnfinal\\.com\\.mx/.+"
+      ],
+      "hosts": [
+        "www.smartnfinal.com.mx"
+      ],
+      "id": "supermarket-smart-final",
+      "listingUrl": "https://www.smartnfinal.com.mx/tienda/",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Smart & Final M\u00e9xico",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.smartnfinal.com.mx/tienda/abarrotes/frijol-pinto-verde-valle-900-g/"
+      ],
+      "representativeDetailUrl": "https://www.smartnfinal.com.mx/tienda/abarrotes/frijol-pinto-verde-valle-900-g/",
+      "seedUrls": [
+        "https://www.smartnfinal.com.mx/tienda/abarrotes/frijol-pinto-verde-valle-900-g/"
+      ],
+      "templatePatterns": [
+        "https://www.smartnfinal.com.mx/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "currency": "MXN"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?tiendasneto\\.com\\.mx/.+"
+      ],
+      "hosts": [
+        "tiendasneto.com.mx"
+      ],
+      "id": "supermarket-tiendas-neto",
+      "listingUrl": "https://tiendasneto.com.mx/",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Tiendas Neto",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://tiendasneto.com.mx/producto/atun-best-choice/"
+      ],
+      "representativeDetailUrl": "https://tiendasneto.com.mx/producto/atun-best-choice/",
+      "seedUrls": [
+        "https://tiendasneto.com.mx/producto/atun-best-choice/"
+      ],
+      "templateMappings": {
+        "css": {
+          "name": [
+            "h1.product_title"
+          ],
+          "price": [
+            ".price .woocommerce-Price-amount"
+          ]
+        }
+      },
+      "templatePatterns": [
+        "https://tiendasneto.com.mx/*"
+      ]
+    }
+  ],
+  "studyId": "mexican-supermarkets"
+}

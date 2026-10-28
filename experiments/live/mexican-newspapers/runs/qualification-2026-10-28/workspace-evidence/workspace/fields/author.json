@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "author",
+  "name": "author",
+  "origin": "custom",
+  "type": "string"
+}

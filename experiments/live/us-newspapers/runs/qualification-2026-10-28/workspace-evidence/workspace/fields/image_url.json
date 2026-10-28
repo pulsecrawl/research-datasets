@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "image_url",
+  "name": "image_url",
+  "origin": "custom",
+  "type": "url"
+}

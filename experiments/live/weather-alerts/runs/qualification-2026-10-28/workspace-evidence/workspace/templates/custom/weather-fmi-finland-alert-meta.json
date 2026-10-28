@@ -1,0 +1,28 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "authority": [
+      "literal:Finnish Meteorological Institute Warnings"
+    ],
+    "canonical_url": [
+      "og:url"
+    ],
+    "issued_at": [
+      "article:published_time",
+      "date"
+    ],
+    "summary": [
+      "og:description",
+      "description"
+    ],
+    "title": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ]
+  },
+  "name": "weather-fmi-finland-alert-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_dccd072a77e7b481b286",
+  "templateId": "weather-fmi-finland-alert-meta"
+}

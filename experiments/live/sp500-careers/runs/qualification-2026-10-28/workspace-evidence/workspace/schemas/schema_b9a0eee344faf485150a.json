@@ -1,0 +1,73 @@
+{
+  "fieldIds": [
+    "job_id",
+    "title",
+    "company",
+    "location",
+    "employment_type",
+    "posted_at",
+    "description",
+    "canonical_url"
+  ],
+  "fields": [
+    {
+      "description": "",
+      "fieldId": "job_id",
+      "name": "job_id",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "title",
+      "name": "title",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "company",
+      "name": "company",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "location",
+      "name": "location",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "employment_type",
+      "name": "employment_type",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "posted_at",
+      "name": "posted_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "description",
+      "name": "description",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "origin": "custom",
+      "type": "url"
+    }
+  ],
+  "name": "Live sp500-careers observations schema",
+  "origin": "custom",
+  "schemaId": "schema_b9a0eee344faf485150a"
+}

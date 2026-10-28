@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "issued_at",
+  "name": "issued_at",
+  "origin": "custom",
+  "type": "datetime"
+}

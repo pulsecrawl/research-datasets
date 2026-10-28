@@ -1,0 +1,51 @@
+{
+  "createdAt": "2026-10-28T03:58:12.575127+00:00",
+  "datasetId": "ds_2b13c3f125eaa5bb568b",
+  "fields": [
+    {
+      "fieldId": "advisory_id",
+      "name": "advisory_id",
+      "type": "string"
+    },
+    {
+      "fieldId": "title",
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "fieldId": "vendor",
+      "name": "vendor",
+      "type": "string"
+    },
+    {
+      "fieldId": "published_at",
+      "name": "published_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "updated_at",
+      "name": "updated_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "severity",
+      "name": "severity",
+      "type": "string"
+    },
+    {
+      "fieldId": "summary",
+      "name": "summary",
+      "type": "string"
+    },
+    {
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "type": "url"
+    }
+  ],
+  "identityColumn": "_source_url",
+  "identityField": "_source_url",
+  "mode": "new_urls_only",
+  "name": "Live security-advisories observations",
+  "schemaId": "schema_865574962352c0bfa4ac"
+}

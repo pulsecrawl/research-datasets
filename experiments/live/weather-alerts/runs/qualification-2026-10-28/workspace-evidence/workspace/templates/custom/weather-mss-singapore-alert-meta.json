@@ -1,0 +1,28 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "authority": [
+      "literal:Meteorological Service Singapore Heavy Rain Warning"
+    ],
+    "canonical_url": [
+      "og:url"
+    ],
+    "issued_at": [
+      "article:published_time",
+      "date"
+    ],
+    "summary": [
+      "og:description",
+      "description"
+    ],
+    "title": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ]
+  },
+  "name": "weather-mss-singapore-alert-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_dccd072a77e7b481b286",
+  "templateId": "weather-mss-singapore-alert-meta"
+}

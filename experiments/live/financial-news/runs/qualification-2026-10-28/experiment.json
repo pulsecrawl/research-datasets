@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    "financial-news"
+  ],
+  "id": "live-financial-news",
+  "kind": "live",
+  "parameters": {
+    "manifest": "corpora/live-studies/financial-news/site-manifest.json",
+    "maxDepth": 1,
+    "maxUrlsPerSitePerExecution": 4,
+    "minimumOriginDelaySeconds": 5,
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 48,
+        "intervalMinutes": 30
+      }
+    },
+    "retainResponseBodies": false,
+    "study": "financial-news"
+  },
+  "seed": 4703,
+  "title": "Recurring financial and stock news study"
+}

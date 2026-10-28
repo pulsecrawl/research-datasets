@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "sku",
+  "name": "sku",
+  "origin": "custom",
+  "type": "string"
+}

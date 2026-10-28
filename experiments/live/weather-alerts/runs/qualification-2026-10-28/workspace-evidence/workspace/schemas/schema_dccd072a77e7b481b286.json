@@ -1,0 +1,81 @@
+{
+  "fieldIds": [
+    "alert_id",
+    "title",
+    "authority",
+    "issued_at",
+    "expires_at",
+    "severity",
+    "area",
+    "summary",
+    "canonical_url"
+  ],
+  "fields": [
+    {
+      "description": "",
+      "fieldId": "alert_id",
+      "name": "alert_id",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "title",
+      "name": "title",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "authority",
+      "name": "authority",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "issued_at",
+      "name": "issued_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "expires_at",
+      "name": "expires_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "severity",
+      "name": "severity",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "area",
+      "name": "area",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "summary",
+      "name": "summary",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "origin": "custom",
+      "type": "url"
+    }
+  ],
+  "name": "Live weather-alerts observations schema",
+  "origin": "custom",
+  "schemaId": "schema_dccd072a77e7b481b286"
+}

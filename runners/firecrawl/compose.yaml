@@ -1,0 +1,21 @@
+# Logging-disabled override for the exact upstream v2.9.0 composition.
+services:
+  api:
+    environment:
+      # The benchmark is intentionally served from the host. These settings are
+      # scoped to the research override and must not be copied to production.
+      TEST_SUITE_SELF_HOSTED: "true"
+      ALLOW_LOCAL_WEBHOOKS: "true"
+    logging: &no-logging
+      driver: none
+      options: !reset {}
+  playwright-service:
+    environment:
+      ALLOW_LOCAL_WEBHOOKS: "true"
+    logging: *no-logging
+  redis:
+    logging: *no-logging
+  rabbitmq:
+    logging: *no-logging
+  nuq-postgres:
+    logging: *no-logging

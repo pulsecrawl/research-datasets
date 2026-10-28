@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "source_name",
+  "name": "source_name",
+  "origin": "custom",
+  "type": "string"
+}

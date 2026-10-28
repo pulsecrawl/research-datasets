@@ -1,0 +1,24 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "canonical_url": [
+      "og:url"
+    ],
+    "company": [
+      "literal:The Home Depot"
+    ],
+    "description": [
+      "og:description",
+      "description"
+    ],
+    "title": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ]
+  },
+  "name": "careers-home-depot-job-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_b9a0eee344faf485150a",
+  "templateId": "careers-home-depot-job-meta"
+}

@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-10-28T03:58:41.818092+00:00",
+  "datasetId": "ds_5323266d611d91865247",
+  "files": [
+    {
+      "executionId": "exec_qualification_weather-aemet-es_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.784118+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.784118+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-aemet-es_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8292
+    },
+    {
+      "executionId": "exec_qualification_weather-knmi-nl_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:35.580059+00:00",
+      "minCrawledAt": "2026-10-28 03:58:35.580059+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-knmi-nl_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8136
+    },
+    {
+      "executionId": "exec_qualification_weather-met-eireann_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:29.086281+00:00",
+      "minCrawledAt": "2026-10-28 03:58:29.086281+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-met-eireann_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8719
+    },
+    {
+      "executionId": "exec_qualification_weather-uk-met-office_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:23.513794+00:00",
+      "minCrawledAt": "2026-10-28 03:58:23.513794+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_weather-uk-met-office_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8787
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 4
+}

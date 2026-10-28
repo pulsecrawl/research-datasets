@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-10-28T03:58:17.909281+00:00",
+  "datasetId": "ds_d21ca77fcdd2daa19c2c",
+  "files": [
+    {
+      "executionId": "exec_qualification_government-cnbv-mx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:17.628910+00:00",
+      "minCrawledAt": "2026-10-28 03:58:17.628910+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cnbv-mx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8815
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 1
+}

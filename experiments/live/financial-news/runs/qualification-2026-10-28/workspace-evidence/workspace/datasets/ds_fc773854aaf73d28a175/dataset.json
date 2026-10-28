@@ -1,0 +1,56 @@
+{
+  "createdAt": "2026-10-28T03:58:19.029250+00:00",
+  "datasetId": "ds_fc773854aaf73d28a175",
+  "fields": [
+    {
+      "fieldId": "headline",
+      "name": "headline",
+      "type": "string"
+    },
+    {
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "type": "url"
+    },
+    {
+      "fieldId": "description",
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "fieldId": "author",
+      "name": "author",
+      "type": "string"
+    },
+    {
+      "fieldId": "published_at",
+      "name": "published_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "modified_at",
+      "name": "modified_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "image_url",
+      "name": "image_url",
+      "type": "url"
+    },
+    {
+      "fieldId": "section",
+      "name": "section",
+      "type": "string"
+    },
+    {
+      "fieldId": "source_name",
+      "name": "source_name",
+      "type": "string"
+    }
+  ],
+  "identityColumn": "_source_url",
+  "identityField": "_source_url",
+  "mode": "new_urls_only",
+  "name": "Live financial-news observations",
+  "schemaId": "schema_c8ac4d64bd083cd8958a"
+}

@@ -1,0 +1,176 @@
+{
+  "createdAt": "2026-10-28T03:58:12.582524+00:00",
+  "datasetId": "ds_2b13c3f125eaa5bb568b",
+  "jobId": "job_2b6d33f3009cc71beb7f",
+  "name": "security-advisories: GitHub Security Advisories",
+  "politeness": {
+    "organizationRequestsPerSecond": 0.2,
+    "requestsPerSecond": 0.2,
+    "respectRobotsTxt": true,
+    "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"
+  },
+  "schema": {
+    "fields": [
+      {
+        "fieldId": "advisory_id",
+        "name": "advisory_id",
+        "type": "string"
+      },
+      {
+        "fieldId": "title",
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "fieldId": "vendor",
+        "name": "vendor",
+        "type": "string"
+      },
+      {
+        "fieldId": "published_at",
+        "name": "published_at",
+        "type": "datetime"
+      },
+      {
+        "fieldId": "updated_at",
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "fieldId": "severity",
+        "name": "severity",
+        "type": "string"
+      },
+      {
+        "fieldId": "summary",
+        "name": "summary",
+        "type": "string"
+      },
+      {
+        "fieldId": "canonical_url",
+        "name": "canonical_url",
+        "type": "url"
+      }
+    ],
+    "schemaId": "schema_865574962352c0bfa4ac"
+  },
+  "scope": {
+    "excludePatterns": [],
+    "includePatterns": [
+      "^https?://(?:www\\.)?github\\.com/.+"
+    ],
+    "maxDepth": 0,
+    "maxUrlsPerExecution": 1,
+    "maxUrlsTotal": 2,
+    "sameDomainOnly": true
+  },
+  "seeds": [
+    "https://github.com/advisories/GHSA-m65p-9j7q-6w33"
+  ],
+  "storeRawPages": false,
+  "systemTemplates": [],
+  "templates": [
+    {
+      "engine": "jsonld",
+      "mappings": {
+        "advisory_id": [
+          "TechArticle.identifier",
+          "Article.identifier"
+        ],
+        "canonical_url": [
+          "TechArticle.url",
+          "Article.url"
+        ],
+        "published_at": [
+          "TechArticle.datePublished",
+          "Article.datePublished"
+        ],
+        "summary": [
+          "TechArticle.description",
+          "Article.description"
+        ],
+        "title": [
+          "TechArticle.headline",
+          "Article.headline",
+          "TechArticle.name",
+          "Article.name"
+        ],
+        "updated_at": [
+          "TechArticle.dateModified",
+          "Article.dateModified"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "github.com"
+        ],
+        "urlPatterns": [
+          "https://github.com/*"
+        ]
+      },
+      "templateId": "security-github-advisory-jsonld"
+    },
+    {
+      "engine": "css",
+      "mappings": {
+        "canonical_url": [
+          "link[rel='canonical']@href"
+        ],
+        "title": [
+          "main h1",
+          "article h1",
+          "h1"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "github.com"
+        ],
+        "urlPatterns": [
+          "https://github.com/*"
+        ]
+      },
+      "templateId": "security-github-advisory-css"
+    },
+    {
+      "engine": "meta",
+      "mappings": {
+        "canonical_url": [
+          "og:url"
+        ],
+        "published_at": [
+          "article:published_time",
+          "date"
+        ],
+        "summary": [
+          "og:description",
+          "description"
+        ],
+        "title": [
+          "og:title",
+          "twitter:title",
+          "<title>"
+        ],
+        "updated_at": [
+          "article:modified_time",
+          "og:updated_time"
+        ],
+        "vendor": [
+          "literal:GitHub Security Advisories"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "github.com"
+        ],
+        "urlPatterns": [
+          "https://github.com/*"
+        ]
+      },
+      "templateId": "security-github-advisory-meta"
+    }
+  ]
+}

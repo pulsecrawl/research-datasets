@@ -1,0 +1,81 @@
+{
+  "createdAt": "2026-10-28T03:58:17.101897+00:00",
+  "datasetId": "ds_3485417b793f5c8fa2a2",
+  "fields": [
+    {
+      "fieldId": "product_id",
+      "name": "product_id",
+      "type": "string"
+    },
+    {
+      "fieldId": "sku",
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "fieldId": "name",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "type": "url"
+    },
+    {
+      "fieldId": "description",
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "fieldId": "brand",
+      "name": "brand",
+      "type": "string"
+    },
+    {
+      "fieldId": "category",
+      "name": "category",
+      "type": "string"
+    },
+    {
+      "fieldId": "color",
+      "name": "color",
+      "type": "string"
+    },
+    {
+      "fieldId": "price",
+      "name": "price",
+      "type": "number"
+    },
+    {
+      "fieldId": "currency",
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "fieldId": "availability",
+      "name": "availability",
+      "type": "string"
+    },
+    {
+      "fieldId": "image_url",
+      "name": "image_url",
+      "type": "url"
+    },
+    {
+      "fieldId": "rating_value",
+      "name": "rating_value",
+      "type": "number"
+    },
+    {
+      "fieldId": "rating_count",
+      "name": "rating_count",
+      "type": "number"
+    }
+  ],
+  "identityColumn": "_source_url",
+  "identityField": "_source_url",
+  "mode": "append_all",
+  "name": "Live mexican-supermarkets observations",
+  "schemaId": "schema_20c1eb585d318d2d9fd5"
+}

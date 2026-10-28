@@ -1,0 +1,74 @@
+{
+  "createdAt": "2026-10-28T03:58:47.257063+00:00",
+  "datasetId": "ds_2b13c3f125eaa5bb568b",
+  "files": [
+    {
+      "executionId": "exec_qualification_security-apple_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:18.089663+00:00",
+      "minCrawledAt": "2026-10-28 03:58:18.089663+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-apple_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8359
+    },
+    {
+      "executionId": "exec_qualification_security-chrome-releases_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:29.769495+00:00",
+      "minCrawledAt": "2026-10-28 03:58:29.769495+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-chrome-releases_001.parquet",
+      "rows": 1,
+      "sizeBytes": 9143
+    },
+    {
+      "executionId": "exec_qualification_security-github_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.903711+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.903711+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-github_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8312
+    },
+    {
+      "executionId": "exec_qualification_security-mozilla_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:35.484444+00:00",
+      "minCrawledAt": "2026-10-28 03:58:35.484444+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-mozilla_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8182
+    },
+    {
+      "executionId": "exec_qualification_security-oracle_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.036953+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.036953+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-oracle_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8291
+    },
+    {
+      "executionId": "exec_qualification_security-ubuntu_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:23.700534+00:00",
+      "minCrawledAt": "2026-10-28 03:58:23.700534+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-ubuntu_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8471
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 6
+}

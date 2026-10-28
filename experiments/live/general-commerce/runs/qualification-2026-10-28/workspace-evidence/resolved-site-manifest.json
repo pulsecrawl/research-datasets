@@ -1,0 +1,310 @@
+{
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "displayName": "General commerce",
+  "schemaProfile": "product",
+  "schemaVersion": 2,
+  "sites": [
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?aloyoga\\.com/.+"
+      ],
+      "hosts": [
+        "www.aloyoga.com"
+      ],
+      "id": "commerce-alo-yoga",
+      "listingUrl": "https://www.aloyoga.com/collections/yoga?page=1&view=fallback",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Alo Yoga",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.aloyoga.com/collections/yoga/products/w5473r-high-waist-airbrush-legging-white"
+      ],
+      "representativeDetailUrl": "https://www.aloyoga.com/collections/yoga/products/w5473r-high-waist-airbrush-legging-white",
+      "seedUrls": [
+        "https://www.aloyoga.com/collections/yoga/products/w5473r-high-waist-airbrush-legging-white"
+      ],
+      "templatePatterns": [
+        "https://www.aloyoga.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?nike\\.com/.+"
+      ],
+      "hosts": [
+        "www.nike.com"
+      ],
+      "id": "commerce-nike",
+      "listingUrl": "https://www.nike.com/w/womens-shoes-5e1x6zy7ok",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Nike",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.nike.com/t/air-max-moto-2k-womens-shoes-with-reflective-accents-xfKLxDbe/HQ2056-203"
+      ],
+      "representativeDetailUrl": "https://www.nike.com/t/air-max-moto-2k-womens-shoes-with-reflective-accents-xfKLxDbe/HQ2056-203",
+      "seedUrls": [
+        "https://www.nike.com/t/air-max-moto-2k-womens-shoes-with-reflective-accents-xfKLxDbe/HQ2056-203"
+      ],
+      "templatePatterns": [
+        "https://www.nike.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?gap\\.com/.+"
+      ],
+      "hosts": [
+        "www.gap.com"
+      ],
+      "id": "commerce-gap",
+      "listingUrl": "https://www.gap.com/browse/category.do?cid=5664",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Gap",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.gap.com/browse/product.do?pid=1180239022&cl=true"
+      ],
+      "representativeDetailUrl": "https://www.gap.com/browse/product.do?pid=1180239022&cl=true",
+      "seedUrls": [
+        "https://www.gap.com/browse/product.do?pid=1180239022&cl=true"
+      ],
+      "templatePatterns": [
+        "https://www.gap.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?ulta\\.com/.+"
+      ],
+      "hosts": [
+        "www.ulta.com"
+      ],
+      "id": "commerce-ulta-beauty",
+      "listingUrl": "https://www.ulta.com/shop/makeup",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Ulta Beauty",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.ulta.com/p/holiday-2026-11-piece-beauty-box-89-with-any-lancome-purchase-616-value-pimprod2062703"
+      ],
+      "representativeDetailUrl": "https://www.ulta.com/p/holiday-2026-11-piece-beauty-box-89-with-any-lancome-purchase-616-value-pimprod2062703",
+      "seedUrls": [
+        "https://www.ulta.com/p/holiday-2026-11-piece-beauty-box-89-with-any-lancome-purchase-616-value-pimprod2062703"
+      ],
+      "templatePatterns": [
+        "https://www.ulta.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?fashionnova\\.com/.+"
+      ],
+      "hosts": [
+        "www.fashionnova.com"
+      ],
+      "id": "commerce-fashion-nova",
+      "listingUrl": "https://www.fashionnova.com/collections/new",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Fashion Nova",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.fashionnova.com/products/leanne-chiffon-draped-one-shoulder-maxi-dress?color=olive"
+      ],
+      "representativeDetailUrl": "https://www.fashionnova.com/products/leanne-chiffon-draped-one-shoulder-maxi-dress?color=olive",
+      "seedUrls": [
+        "https://www.fashionnova.com/products/leanne-chiffon-draped-one-shoulder-maxi-dress?color=olive"
+      ],
+      "templatePatterns": [
+        "https://www.fashionnova.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?madewell\\.com/.+"
+      ],
+      "hosts": [
+        "www.madewell.com"
+      ],
+      "id": "commerce-madewell",
+      "listingUrl": "https://www.madewell.com/womens/clothing",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Madewell",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609"
+      ],
+      "representativeDetailUrl": "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609",
+      "retainedEnabled": false,
+      "retainedExclusion": "The raw page exposes product text, but the tested local extraction stack did not recover a complete price and currency record without interpreting application state.",
+      "seedUrls": [
+        "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609"
+      ],
+      "templatePatterns": [
+        "https://www.madewell.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?us\\.puma\\.com/.+"
+      ],
+      "hosts": [
+        "us.puma.com"
+      ],
+      "id": "commerce-puma",
+      "listingUrl": "https://us.puma.com/us/en/women",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "PUMA",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://us.puma.com/us/en/pd/speedcat-ballet-suede-womens-sneakers/401287?swatch=02"
+      ],
+      "representativeDetailUrl": "https://us.puma.com/us/en/pd/speedcat-ballet-suede-womens-sneakers/401287?swatch=02",
+      "seedUrls": [
+        "https://us.puma.com/us/en/pd/speedcat-ballet-suede-womens-sneakers/401287?swatch=02"
+      ],
+      "templatePatterns": [
+        "https://us.puma.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?thereformation\\.com/.+"
+      ],
+      "hosts": [
+        "www.thereformation.com"
+      ],
+      "id": "commerce-reformation",
+      "listingUrl": "https://www.thereformation.com/new",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Reformation",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO"
+      ],
+      "representativeDetailUrl": "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO",
+      "retainedEnabled": false,
+      "retainedExclusion": "The raw preflight request succeeded, but the PulseCrawl request received HTTP 403 during both pilot cycles.",
+      "seedUrls": [
+        "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO"
+      ],
+      "templatePatterns": [
+        "https://www.thereformation.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?quince\\.com/.+"
+      ],
+      "hosts": [
+        "www.quince.com"
+      ],
+      "id": "commerce-quince",
+      "listingUrl": "https://www.quince.com/women",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Quince",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.quince.com/women/cashmere/cashmere-crewneck-sweater"
+      ],
+      "representativeDetailUrl": "https://www.quince.com/women/cashmere/cashmere-crewneck-sweater",
+      "seedUrls": [
+        "https://www.quince.com/women/cashmere/cashmere-crewneck-sweater"
+      ],
+      "templatePatterns": [
+        "https://www.quince.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?spanx\\.com/.+"
+      ],
+      "hosts": [
+        "spanx.com"
+      ],
+      "id": "commerce-spanx",
+      "listingUrl": "https://spanx.com/collections/new-arrivals",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Spanx",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://spanx.com/products/spanx-airessentials-pleated-wide-leg-pant?v=48685727580371&bau-context=standard"
+      ],
+      "representativeDetailUrl": "https://spanx.com/products/spanx-airessentials-pleated-wide-leg-pant?v=48685727580371&bau-context=standard",
+      "seedUrls": [
+        "https://spanx.com/products/spanx-airessentials-pleated-wide-leg-pant?v=48685727580371&bau-context=standard"
+      ],
+      "templatePatterns": [
+        "https://spanx.com/*"
+      ]
+    },
+    {
+      "constantFields": {},
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?dsw\\.com/.+"
+      ],
+      "hosts": [
+        "www.dsw.com"
+      ],
+      "id": "commerce-dsw",
+      "listingUrl": "https://www.dsw.com/category/womens",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5,
+      "name": "DSW",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.dsw.com/product/ugg-classic-slipper---womens/509585?activeColor=250"
+      ],
+      "representativeDetailUrl": "https://www.dsw.com/product/ugg-classic-slipper---womens/509585?activeColor=250",
+      "seedUrls": [
+        "https://www.dsw.com/product/ugg-classic-slipper---womens/509585?activeColor=250"
+      ],
+      "templatePatterns": [
+        "https://www.dsw.com/*"
+      ]
+    }
+  ],
+  "studyId": "general-commerce"
+}

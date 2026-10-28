@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "price",
+  "name": "price",
+  "origin": "custom",
+  "type": "number"
+}

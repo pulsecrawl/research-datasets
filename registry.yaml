@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "title": "PulseCrawl public research artifact",
+  "seed": 4703,
+  "researchQuestions": {
+    "RQ1": {
+      "title": "Policy-controlled crawling and recovery",
+      "experiments": [
+        "live-mexican-newspapers", "live-us-newspapers", "live-financial-news",
+        "live-general-commerce", "live-mexican-supermarkets", "live-sp500-careers",
+        "live-government-notices", "live-security-advisories", "live-weather-alerts"
+      ]
+    },
+    "RQ2": {
+      "title": "Template-policy extraction into shared schemas",
+      "experiments": [
+        "live-mexican-newspapers", "live-us-newspapers", "live-financial-news",
+        "live-general-commerce", "live-mexican-supermarkets", "live-sp500-careers",
+        "live-government-notices", "live-security-advisories", "live-weather-alerts"
+      ]
+    },
+    "RQ3": {
+      "title": "Recurring versioned dataset publication",
+      "experiments": [
+        "live-mexican-newspapers", "live-us-newspapers", "live-financial-news",
+        "live-general-commerce", "live-mexican-supermarkets", "live-sp500-careers",
+        "live-government-notices", "live-security-advisories", "live-weather-alerts"
+      ]
+    }
+  },
+  "systems": [
+    {"id": "pulsecrawl", "kind": "local", "role": "framework-under-evaluation"},
+    {"id": "scrapy", "kind": "subprocess", "role": "controlled-crawler-comparison"},
+    {"id": "crawlee", "kind": "subprocess", "role": "controlled-crawler-comparison"},
+    {"id": "firecrawl-self-hosted", "kind": "http", "role": "optional-controlled-profile"}
+  ]
+}

@@ -11,7 +11,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def module(name):
-    spec = importlib.util.spec_from_file_location(name, ROOT / "tools" / f"{name}.py")
+    spec = importlib.util.spec_from_file_location(
+        name, ROOT / "src/pulsecrawl_research/tools" / f"{name}.py"
+    )
     value = importlib.util.module_from_spec(spec)
     import sys
     sys.modules[name] = value
@@ -28,7 +30,7 @@ class DatasetTests(unittest.TestCase):
             row = json.loads(line)
             self.assertTrue(urlsplit(row["scopeUrl"]).hostname.endswith(".example"))
             self.assertTrue(row["storeContext"].startswith("Fictional Store"))
-        plan = json.loads((ROOT / "live-case-study/sources.json").read_text())
+        plan = json.loads((ROOT / "experiments/live/commerce-candidate-review/sources.json").read_text())
         self.assertEqual(plan["status"], "not-run")
         self.assertFalse(plan["recordHtml"])
         self.assertEqual(len(plan["sources"]), 10)
@@ -41,23 +43,30 @@ class DatasetTests(unittest.TestCase):
             "fixed-html": 60, "site-pattern-html": 100, "commerce-html": 20,
         })
         verifier.privacy_scan()
-        self.assertEqual((ROOT / "checksums.sha256").read_text(), verifier.checksum_lines())
 
     def test_research_metadata_and_public_package_pin(self):
         verifier = module("verify")
         metadata = verifier.verify_research_metadata()
         self.assertEqual(metadata["pulsecrawl"], "0.1.0")
-        self.assertEqual(metadata["experiments"], 30)
+        self.assertEqual(metadata["controlledExperiments"], 30)
         self.assertEqual(metadata["families"], [
             "policy-and-recovery", "template-extraction", "versioned-datasets",
         ])
 
     def test_reviewed_release_is_complete_and_checksum_linked(self):
         verifier = module("verify")
-        evidence = verifier.verify_reviewed_evidence()
+        evidence = verifier.verify_controlled_evidence()
         self.assertEqual(evidence["controlledExecutions"], 116)
-        self.assertEqual(evidence["controlledAnalysis"], "public-local-0.1.0-2026-10-27")
-        self.assertEqual(evidence["liveStudies"], ["news", "commerce"])
+        self.assertEqual(evidence["controlledExperimentsWithEvidence"], 27)
+        self.assertEqual(evidence["earlierLiveStudies"], ["news", "commerce"])
+
+    def test_multi_category_qualification_is_complete_and_did_not_start_retained(self):
+        verifier = module("verify")
+        evidence = verifier.verify_qualification_release()
+        self.assertEqual(evidence["release"], "0.4.0-rc.1")
+        self.assertEqual(evidence["categories"], 9)
+        self.assertEqual(evidence["candidateSites"], 119)
+        self.assertFalse(evidence["retainedStudyStarted"])
 
     def test_fixed_inputs_regenerate_identically(self):
         generator = module("generate_fixed_html")

@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "title": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "government-profeco-mx-notice-css",
+  "origin": "org",
+  "outputSchemaId": "schema_ded022f721cafafef812",
+  "templateId": "government-profeco-mx-notice-css"
+}

@@ -1,0 +1,37 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "availability": [
+      "product:availability"
+    ],
+    "canonical_url": [
+      "og:url"
+    ],
+    "currency": [
+      "product:price:currency",
+      "og:price:currency",
+      "literal:MXN"
+    ],
+    "description": [
+      "og:description",
+      "description"
+    ],
+    "image_url": [
+      "og:image",
+      "twitter:image"
+    ],
+    "name": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ],
+    "price": [
+      "product:price:amount",
+      "og:price:amount"
+    ]
+  },
+  "name": "supermarket-tiendas-neto-product-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_20c1eb585d318d2d9fd5",
+  "templateId": "supermarket-tiendas-neto-product-meta"
+}

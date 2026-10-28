@@ -1,0 +1,81 @@
+{
+  "fieldIds": [
+    "headline",
+    "canonical_url",
+    "description",
+    "author",
+    "published_at",
+    "modified_at",
+    "image_url",
+    "section",
+    "source_name"
+  ],
+  "fields": [
+    {
+      "description": "",
+      "fieldId": "headline",
+      "name": "headline",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "origin": "custom",
+      "type": "url"
+    },
+    {
+      "description": "",
+      "fieldId": "description",
+      "name": "description",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "author",
+      "name": "author",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "published_at",
+      "name": "published_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "modified_at",
+      "name": "modified_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "image_url",
+      "name": "image_url",
+      "origin": "custom",
+      "type": "url"
+    },
+    {
+      "description": "",
+      "fieldId": "section",
+      "name": "section",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "source_name",
+      "name": "source_name",
+      "origin": "custom",
+      "type": "string"
+    }
+  ],
+  "name": "Live us-newspapers observations schema",
+  "origin": "custom",
+  "schemaId": "schema_6aa09c399697a207348a"
+}

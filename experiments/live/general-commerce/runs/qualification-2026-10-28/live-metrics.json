@@ -1,0 +1,938 @@
+{
+  "completedAt": "2026-10-28T04:03:20.145860+00:00",
+  "datasetFiles": [
+    {
+      "executionId": "exec_qualification_commerce-alo-yoga_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:21.323716+00:00",
+      "minCrawledAt": "2026-10-28 03:58:21.323716+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-alo-yoga_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12716
+    },
+    {
+      "executionId": "exec_qualification_commerce-dsw_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:09.987693+00:00",
+      "minCrawledAt": "2026-10-28 03:59:09.987693+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-dsw_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12721
+    },
+    {
+      "executionId": "exec_qualification_commerce-fashion-nova_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.426180+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.426180+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-fashion-nova_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13568
+    },
+    {
+      "executionId": "exec_qualification_commerce-gap_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:34.050388+00:00",
+      "minCrawledAt": "2026-10-28 03:58:34.050388+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-gap_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13246
+    },
+    {
+      "executionId": "exec_qualification_commerce-nike_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:26.994867+00:00",
+      "minCrawledAt": "2026-10-28 03:58:26.994867+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-nike_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11577
+    },
+    {
+      "executionId": "exec_qualification_commerce-puma_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:52.510577+00:00",
+      "minCrawledAt": "2026-10-28 03:58:52.510577+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-puma_001.parquet",
+      "rows": 2,
+      "sizeBytes": 15920
+    },
+    {
+      "executionId": "exec_qualification_commerce-quince_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:58.102939+00:00",
+      "minCrawledAt": "2026-10-28 03:58:58.102939+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-quince_001.parquet",
+      "rows": 2,
+      "sizeBytes": 12520
+    },
+    {
+      "executionId": "exec_qualification_commerce-spanx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:04.070913+00:00",
+      "minCrawledAt": "2026-10-28 03:59:04.070913+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-spanx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11713
+    },
+    {
+      "executionId": "exec_qualification_commerce-ulta-beauty_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:40.480287+00:00",
+      "minCrawledAt": "2026-10-28 03:58:40.480287+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-ulta-beauty_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13175
+    },
+    {
+      "executionId": "exec_qualification_commerce-alo-yoga_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:15.834948+00:00",
+      "minCrawledAt": "2026-10-28 04:03:15.834948+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-alo-yoga_002.parquet",
+      "rows": 1,
+      "sizeBytes": 12716
+    },
+    {
+      "executionId": "exec_qualification_commerce-dsw_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:19.959500+00:00",
+      "minCrawledAt": "2026-10-28 04:03:19.959500+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-dsw_002.parquet",
+      "rows": 1,
+      "sizeBytes": 12721
+    },
+    {
+      "executionId": "exec_qualification_commerce-fashion-nova_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:18.068125+00:00",
+      "minCrawledAt": "2026-10-28 04:03:18.068125+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-fashion-nova_002.parquet",
+      "rows": 1,
+      "sizeBytes": 13568
+    },
+    {
+      "executionId": "exec_qualification_commerce-gap_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:16.702932+00:00",
+      "minCrawledAt": "2026-10-28 04:03:16.702932+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-gap_002.parquet",
+      "rows": 1,
+      "sizeBytes": 13246
+    },
+    {
+      "executionId": "exec_qualification_commerce-nike_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:16.191230+00:00",
+      "minCrawledAt": "2026-10-28 04:03:16.191230+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-nike_002.parquet",
+      "rows": 1,
+      "sizeBytes": 11577
+    },
+    {
+      "executionId": "exec_qualification_commerce-puma_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:18.856422+00:00",
+      "minCrawledAt": "2026-10-28 04:03:18.856422+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-puma_002.parquet",
+      "rows": 2,
+      "sizeBytes": 15920
+    },
+    {
+      "executionId": "exec_qualification_commerce-quince_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:18.967224+00:00",
+      "minCrawledAt": "2026-10-28 04:03:18.967224+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-quince_002.parquet",
+      "rows": 2,
+      "sizeBytes": 12520
+    },
+    {
+      "executionId": "exec_qualification_commerce-spanx_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:19.368549+00:00",
+      "minCrawledAt": "2026-10-28 04:03:19.368549+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-spanx_002.parquet",
+      "rows": 1,
+      "sizeBytes": 11713
+    },
+    {
+      "executionId": "exec_qualification_commerce-ulta-beauty_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:17.055915+00:00",
+      "minCrawledAt": "2026-10-28 04:03:17.055915+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-ulta-beauty_002.parquet",
+      "rows": 1,
+      "sizeBytes": 13175
+    }
+  ],
+  "datasetId": "ds_eac2542fc4ba38113aa6",
+  "enabledSites": 9,
+  "excludedSites": 2,
+  "executions": [
+    {
+      "durationSeconds": 54.289863,
+      "finishedAt": "2026-10-28T03:59:10.108114+00:00",
+      "scheduledAt": "2026-10-28T03:58:15.818247+00:00",
+      "sequence": 1,
+      "sites": [
+        {
+          "executionId": "exec_qualification_commerce-alo-yoga_001",
+          "finishedAt": "2026-10-28T03:58:21.487872+00:00",
+          "siteId": "commerce-alo-yoga",
+          "startedAt": "2026-10-28T03:58:15.819052+00:00",
+          "stats": {
+            "bytes_processed": 500254,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.397186040878296,
+            "rate_limit_wait_seconds": 5.397187232971191,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.aloyoga.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-nike_001",
+          "finishedAt": "2026-10-28T03:58:28.543364+00:00",
+          "siteId": "commerce-nike",
+          "startedAt": "2026-10-28T03:58:21.491028+00:00",
+          "stats": {
+            "bytes_processed": 1061659,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.451991319656372,
+            "rate_limit_wait_seconds": 5.451992034912109,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.nike.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-gap_001",
+          "finishedAt": "2026-10-28T03:58:34.974614+00:00",
+          "siteId": "commerce-gap",
+          "startedAt": "2026-10-28T03:58:28.545616+00:00",
+          "stats": {
+            "bytes_processed": 1109224,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.111191034317017,
+            "rate_limit_wait_seconds": 5.111191987991333,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.gap.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-ulta-beauty_001",
+          "finishedAt": "2026-10-28T03:58:40.916604+00:00",
+          "siteId": "commerce-ulta-beauty",
+          "startedAt": "2026-10-28T03:58:34.976914+00:00",
+          "stats": {
+            "bytes_processed": 1449810,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.3100080490112305,
+            "rate_limit_wait_seconds": 5.310009002685547,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.ulta.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-fashion-nova_001",
+          "finishedAt": "2026-10-28T03:58:47.003984+00:00",
+          "siteId": "commerce-fashion-nova",
+          "startedAt": "2026-10-28T03:58:40.918897+00:00",
+          "stats": {
+            "bytes_processed": 1573078,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.430602788925171,
+            "rate_limit_wait_seconds": 5.430603981018066,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.fashionnova.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-puma_001",
+          "finishedAt": "2026-10-28T03:58:52.595557+00:00",
+          "siteId": "commerce-puma",
+          "startedAt": "2026-10-28T03:58:47.006242+00:00",
+          "stats": {
+            "bytes_processed": 865544,
+            "materializedRows": 2,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.3631720542907715,
+            "rate_limit_wait_seconds": 5.363173007965088,
+            "records_extracted": 2,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "us.puma.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-quince_001",
+          "finishedAt": "2026-10-28T03:58:58.564843+00:00",
+          "siteId": "commerce-quince",
+          "startedAt": "2026-10-28T03:58:52.598013+00:00",
+          "stats": {
+            "bytes_processed": 1380689,
+            "materializedRows": 2,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.377473831176758,
+            "rate_limit_wait_seconds": 5.377475023269653,
+            "records_extracted": 2,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.quince.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-spanx_001",
+          "finishedAt": "2026-10-28T03:59:04.480690+00:00",
+          "siteId": "commerce-spanx",
+          "startedAt": "2026-10-28T03:58:58.567137+00:00",
+          "stats": {
+            "bytes_processed": 566428,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.38604474067688,
+            "rate_limit_wait_seconds": 5.386045932769775,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "spanx.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-dsw_001",
+          "finishedAt": "2026-10-28T03:59:10.106374+00:00",
+          "siteId": "commerce-dsw",
+          "startedAt": "2026-10-28T03:59:04.483950+00:00",
+          "stats": {
+            "bytes_processed": 573881,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.333888053894043,
+            "rate_limit_wait_seconds": 5.333888053894043,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.dsw.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 4e-06,
+      "startedAt": "2026-10-28T03:58:15.818251+00:00"
+    },
+    {
+      "durationSeconds": 4.268204,
+      "finishedAt": "2026-10-28T04:03:20.095261+00:00",
+      "scheduledAt": "2026-10-28T04:03:15.818247+00:00",
+      "sequence": 2,
+      "sites": [
+        {
+          "executionId": "exec_qualification_commerce-alo-yoga_002",
+          "finishedAt": "2026-10-28T04:03:16.186365+00:00",
+          "siteId": "commerce-alo-yoga",
+          "startedAt": "2026-10-28T04:03:15.831677+00:00",
+          "stats": {
+            "bytes_processed": 500254,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.aloyoga.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-nike_002",
+          "finishedAt": "2026-10-28T04:03:16.698994+00:00",
+          "siteId": "commerce-nike",
+          "startedAt": "2026-10-28T04:03:16.189345+00:00",
+          "stats": {
+            "bytes_processed": 1061660,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.nike.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-gap_002",
+          "finishedAt": "2026-10-28T04:03:17.052004+00:00",
+          "siteId": "commerce-gap",
+          "startedAt": "2026-10-28T04:03:16.701357+00:00",
+          "stats": {
+            "bytes_processed": 1109224,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.gap.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-ulta-beauty_002",
+          "finishedAt": "2026-10-28T04:03:18.064345+00:00",
+          "siteId": "commerce-ulta-beauty",
+          "startedAt": "2026-10-28T04:03:17.054404+00:00",
+          "stats": {
+            "bytes_processed": 1440011,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.ulta.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-fashion-nova_002",
+          "finishedAt": "2026-10-28T04:03:18.852928+00:00",
+          "siteId": "commerce-fashion-nova",
+          "startedAt": "2026-10-28T04:03:18.066457+00:00",
+          "stats": {
+            "bytes_processed": 1573040,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.fashionnova.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-puma_002",
+          "finishedAt": "2026-10-28T04:03:18.963318+00:00",
+          "siteId": "commerce-puma",
+          "startedAt": "2026-10-28T04:03:18.855176+00:00",
+          "stats": {
+            "bytes_processed": 865544,
+            "materializedRows": 2,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 2,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "us.puma.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-quince_002",
+          "finishedAt": "2026-10-28T04:03:19.364210+00:00",
+          "siteId": "commerce-quince",
+          "startedAt": "2026-10-28T04:03:18.965787+00:00",
+          "stats": {
+            "bytes_processed": 1379901,
+            "materializedRows": 2,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 2,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.quince.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-spanx_002",
+          "finishedAt": "2026-10-28T04:03:19.950105+00:00",
+          "siteId": "commerce-spanx",
+          "startedAt": "2026-10-28T04:03:19.366876+00:00",
+          "stats": {
+            "bytes_processed": 566428,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "spanx.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_commerce-dsw_002",
+          "finishedAt": "2026-10-28T04:03:20.093574+00:00",
+          "siteId": "commerce-dsw",
+          "startedAt": "2026-10-28T04:03:19.955865+00:00",
+          "stats": {
+            "bytes_processed": 573881,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.dsw.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 0.00881,
+      "startedAt": "2026-10-28T04:03:15.827057+00:00"
+    }
+  ],
+  "jobIds": {
+    "commerce-alo-yoga": "job_8fc8fa5a41e4228afc9b",
+    "commerce-dsw": "job_554d234e5e2d6fbf7a30",
+    "commerce-fashion-nova": "job_35ed2e756f1e104bd5a5",
+    "commerce-gap": "job_cac3fa0f2312378cd3fb",
+    "commerce-nike": "job_dcd0fda9dc4527457954",
+    "commerce-puma": "job_3ee7bca6ff852f52edf5",
+    "commerce-quince": "job_e35587013e95602932d7",
+    "commerce-spanx": "job_99df61be7e87ea112d15",
+    "commerce-ulta-beauty": "job_b7722081b3eb3c0c2ce7"
+  },
+  "phase": "qualification",
+  "publicPackageVersion": "0.1.0",
+  "qualitySummary": {
+    "columns": [
+      "rows_with_name",
+      "rows_with_price",
+      "rows_with_currency",
+      "rows_with_all_required_fields",
+      "source_urls_with_all_required_fields"
+    ],
+    "rows": [
+      [
+        22,
+        22,
+        22,
+        22,
+        9
+      ]
+    ],
+    "truncated": false
+  },
+  "querySummary": {
+    "columns": [
+      "rows",
+      "executions",
+      "source_urls"
+    ],
+    "rows": [
+      [
+        22,
+        18,
+        9
+      ]
+    ],
+    "truncated": false
+  },
+  "requestedSites": 11,
+  "schemaProfile": "product",
+  "settings": {
+    "executions": 2,
+    "intervalMinutes": 5
+  },
+  "status": "completed",
+  "study": "general-commerce",
+  "workspaceValidation": {
+    "datasets": 1,
+    "errors": [],
+    "executions": 18,
+    "jobs": 9,
+    "valid": true
+  }
+}

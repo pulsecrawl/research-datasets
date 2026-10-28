@@ -1,0 +1,35 @@
+{
+  "engine": "jsonld",
+  "mappings": {
+    "alert_id": [
+      "SpecialAnnouncement.identifier",
+      "Article.identifier"
+    ],
+    "canonical_url": [
+      "SpecialAnnouncement.url",
+      "Article.url"
+    ],
+    "expires_at": [
+      "SpecialAnnouncement.expires"
+    ],
+    "issued_at": [
+      "SpecialAnnouncement.datePosted",
+      "Article.datePublished"
+    ],
+    "summary": [
+      "SpecialAnnouncement.text",
+      "SpecialAnnouncement.description",
+      "Article.description"
+    ],
+    "title": [
+      "SpecialAnnouncement.name",
+      "SpecialAnnouncement.headline",
+      "Article.headline",
+      "Article.name"
+    ]
+  },
+  "name": "weather-fmi-finland-alert-jsonld",
+  "origin": "org",
+  "outputSchemaId": "schema_dccd072a77e7b481b286",
+  "templateId": "weather-fmi-finland-alert-jsonld"
+}

@@ -1,0 +1,16 @@
+# Government and regulatory notices
+
+This directory defines the public sources used by the bounded live study. The listing URL supports later recurring discovery; the representative detail URL is used by the ten-minute qualification. No response bodies are retained.
+
+| Website | Stable ID | Listing URL | Qualification URL |
+|---|---|---|---|
+| Diario Oficial de la Federación | `government-dof-mx` | https://sidof.segob.gob.mx/ | https://sidof.segob.gob.mx/notas/5800082 |
+| CNBV | `government-cnbv-mx` | https://www.gob.mx/cnbv/archivo/prensa | https://www.gob.mx/cnbv/prensa/indice-de-capitalizacion-de-la-banca-multiple-al-cierre-de-agosto-de-2026?idiom=es |
+| PROFECO | `government-profeco-mx` | https://www.gob.mx/profeco/archivo/prensa | https://www.gob.mx/profeco/prensa/publicidad-enganosa-profeco-orienta-para-identificarla?idiom=es |
+| U.S. Consumer Product Safety Commission | `government-cpsc-us` | https://www.cpsc.gov/Recalls | https://www.cpsc.gov/Recalls/2027/VQQQ-Gas-Patio-Heaters-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards |
+| U.S. Food and Drug Administration | `government-fda-us` | https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts | https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk |
+| U.S. Environmental Protection Agency | `government-epa-us` | https://www.epa.gov/newsroom/browse-news-releases | https://www.epa.gov/newsreleases/epas-first-ever-pfas-tech-strategy-spurs-innovation-research-and-technology-address |
+| U.S. Department of Justice | `government-doj-us` | https://www.justice.gov/news | https://www.justice.gov/opa/pr/justice-department-moves-strip-citizenship-40-criminals-largest-single-period |
+| Commodity Futures Trading Commission | `government-cftc-us` | https://www.cftc.gov/PressRoom/PressReleases | https://www.cftc.gov/PressRoom/PressReleases/9317-26 |
+| Consumer Financial Protection Bureau | `government-cfpb-us` | https://www.consumerfinance.gov/about-us/newsroom/ | https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-new-initiative-to-address-occ-uncovered-debanking-by-large-banks/ |
+| FINRA | `government-finra-us` | https://www.finra.org/media-center/newsreleases | https://www.finra.org/media-center/newsreleases/2026/finra-makes-investor-education-content-available-zogo-financial |

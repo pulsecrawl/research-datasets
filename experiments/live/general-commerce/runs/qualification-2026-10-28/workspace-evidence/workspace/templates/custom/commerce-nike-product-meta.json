@@ -1,0 +1,36 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "availability": [
+      "product:availability"
+    ],
+    "canonical_url": [
+      "og:url"
+    ],
+    "currency": [
+      "product:price:currency",
+      "og:price:currency"
+    ],
+    "description": [
+      "og:description",
+      "description"
+    ],
+    "image_url": [
+      "og:image",
+      "twitter:image"
+    ],
+    "name": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ],
+    "price": [
+      "product:price:amount",
+      "og:price:amount"
+    ]
+  },
+  "name": "commerce-nike-product-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_b74cf08ce9bc84ab5422",
+  "templateId": "commerce-nike-product-meta"
+}

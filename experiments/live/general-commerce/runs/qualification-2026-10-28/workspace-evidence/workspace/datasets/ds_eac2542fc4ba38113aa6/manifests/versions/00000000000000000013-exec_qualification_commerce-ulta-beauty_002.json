@@ -1,0 +1,151 @@
+{
+  "createdAt": "2026-10-28T04:03:18.063807+00:00",
+  "datasetId": "ds_eac2542fc4ba38113aa6",
+  "files": [
+    {
+      "executionId": "exec_qualification_commerce-alo-yoga_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:21.323716+00:00",
+      "minCrawledAt": "2026-10-28 03:58:21.323716+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-alo-yoga_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12716
+    },
+    {
+      "executionId": "exec_qualification_commerce-dsw_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:09.987693+00:00",
+      "minCrawledAt": "2026-10-28 03:59:09.987693+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-dsw_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12721
+    },
+    {
+      "executionId": "exec_qualification_commerce-fashion-nova_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.426180+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.426180+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-fashion-nova_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13568
+    },
+    {
+      "executionId": "exec_qualification_commerce-gap_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:34.050388+00:00",
+      "minCrawledAt": "2026-10-28 03:58:34.050388+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-gap_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13246
+    },
+    {
+      "executionId": "exec_qualification_commerce-nike_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:26.994867+00:00",
+      "minCrawledAt": "2026-10-28 03:58:26.994867+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-nike_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11577
+    },
+    {
+      "executionId": "exec_qualification_commerce-puma_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:52.510577+00:00",
+      "minCrawledAt": "2026-10-28 03:58:52.510577+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-puma_001.parquet",
+      "rows": 2,
+      "sizeBytes": 15920
+    },
+    {
+      "executionId": "exec_qualification_commerce-quince_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:58.102939+00:00",
+      "minCrawledAt": "2026-10-28 03:58:58.102939+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-quince_001.parquet",
+      "rows": 2,
+      "sizeBytes": 12520
+    },
+    {
+      "executionId": "exec_qualification_commerce-spanx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:04.070913+00:00",
+      "minCrawledAt": "2026-10-28 03:59:04.070913+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-spanx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11713
+    },
+    {
+      "executionId": "exec_qualification_commerce-ulta-beauty_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:40.480287+00:00",
+      "minCrawledAt": "2026-10-28 03:58:40.480287+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_commerce-ulta-beauty_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13175
+    },
+    {
+      "executionId": "exec_qualification_commerce-alo-yoga_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:15.834948+00:00",
+      "minCrawledAt": "2026-10-28 04:03:15.834948+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-alo-yoga_002.parquet",
+      "rows": 1,
+      "sizeBytes": 12716
+    },
+    {
+      "executionId": "exec_qualification_commerce-gap_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:16.702932+00:00",
+      "minCrawledAt": "2026-10-28 04:03:16.702932+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-gap_002.parquet",
+      "rows": 1,
+      "sizeBytes": 13246
+    },
+    {
+      "executionId": "exec_qualification_commerce-nike_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:16.191230+00:00",
+      "minCrawledAt": "2026-10-28 04:03:16.191230+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-nike_002.parquet",
+      "rows": 1,
+      "sizeBytes": 11577
+    },
+    {
+      "executionId": "exec_qualification_commerce-ulta-beauty_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:17.055915+00:00",
+      "minCrawledAt": "2026-10-28 04:03:17.055915+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_commerce-ulta-beauty_002.parquet",
+      "rows": 1,
+      "sizeBytes": 13175
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 13
+}

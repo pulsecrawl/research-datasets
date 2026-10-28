@@ -1,0 +1,558 @@
+{
+  "completedAt": "2026-10-28T04:03:23.615989+00:00",
+  "datasetFiles": [
+    {
+      "executionId": "exec_qualification_supermarket-arteli_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:22.613626+00:00",
+      "minCrawledAt": "2026-10-28 03:58:22.613626+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_supermarket-arteli_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11830
+    },
+    {
+      "executionId": "exec_qualification_supermarket-justo_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:28.191738+00:00",
+      "minCrawledAt": "2026-10-28 03:58:28.191738+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_supermarket-justo_001.parquet",
+      "rows": 1,
+      "sizeBytes": 14978
+    },
+    {
+      "executionId": "exec_qualification_supermarket-merco_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:34.309268+00:00",
+      "minCrawledAt": "2026-10-28 03:58:34.309268+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_supermarket-merco_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11270
+    },
+    {
+      "executionId": "exec_qualification_supermarket-smart-final_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.354114+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.354114+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_supermarket-smart-final_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10401
+    },
+    {
+      "executionId": "exec_qualification_supermarket-tiendas-neto_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:47.175587+00:00",
+      "minCrawledAt": "2026-10-28 03:58:47.175587+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_supermarket-tiendas-neto_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11298
+    },
+    {
+      "executionId": "exec_qualification_supermarket-arteli_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:17.121830+00:00",
+      "minCrawledAt": "2026-10-28 04:03:17.121830+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_supermarket-arteli_002.parquet",
+      "rows": 1,
+      "sizeBytes": 11830
+    },
+    {
+      "executionId": "exec_qualification_supermarket-justo_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:17.242541+00:00",
+      "minCrawledAt": "2026-10-28 04:03:17.242541+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_supermarket-justo_002.parquet",
+      "rows": 1,
+      "sizeBytes": 14978
+    },
+    {
+      "executionId": "exec_qualification_supermarket-merco_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:17.803206+00:00",
+      "minCrawledAt": "2026-10-28 04:03:17.803206+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_supermarket-merco_002.parquet",
+      "rows": 1,
+      "sizeBytes": 11270
+    },
+    {
+      "executionId": "exec_qualification_supermarket-smart-final_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:19.481593+00:00",
+      "minCrawledAt": "2026-10-28 04:03:19.481593+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_supermarket-smart-final_002.parquet",
+      "rows": 1,
+      "sizeBytes": 10401
+    },
+    {
+      "executionId": "exec_qualification_supermarket-tiendas-neto_002",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:03:22.642174+00:00",
+      "minCrawledAt": "2026-10-28 04:03:22.642174+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_supermarket-tiendas-neto_002.parquet",
+      "rows": 1,
+      "sizeBytes": 11298
+    }
+  ],
+  "datasetId": "ds_3485417b793f5c8fa2a2",
+  "enabledSites": 5,
+  "excludedSites": 1,
+  "executions": [
+    {
+      "durationSeconds": 30.932152,
+      "finishedAt": "2026-10-28T03:58:48.040751+00:00",
+      "scheduledAt": "2026-10-28T03:58:17.108595+00:00",
+      "sequence": 1,
+      "sites": [
+        {
+          "executionId": "exec_qualification_supermarket-arteli_001",
+          "finishedAt": "2026-10-28T03:58:22.685079+00:00",
+          "siteId": "supermarket-arteli",
+          "startedAt": "2026-10-28T03:58:17.109416+00:00",
+          "stats": {
+            "bytes_processed": 643038,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.191325902938843,
+            "rate_limit_wait_seconds": 5.191325902938843,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.arteli.com.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-justo_001",
+          "finishedAt": "2026-10-28T03:58:28.803022+00:00",
+          "siteId": "supermarket-justo",
+          "startedAt": "2026-10-28T03:58:22.688376+00:00",
+          "stats": {
+            "bytes_processed": 154077,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.442892074584961,
+            "rate_limit_wait_seconds": 5.442893028259277,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "justo.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-merco_001",
+          "finishedAt": "2026-10-28T03:58:35.848288+00:00",
+          "siteId": "supermarket-merco",
+          "startedAt": "2026-10-28T03:58:28.805398+00:00",
+          "stats": {
+            "bytes_processed": 150685,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.184231996536255,
+            "rate_limit_wait_seconds": 5.184231996536255,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "adomicilio.merco.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-smart-final_001",
+          "finishedAt": "2026-10-28T03:58:41.670390+00:00",
+          "siteId": "supermarket-smart-final",
+          "startedAt": "2026-10-28T03:58:35.851676+00:00",
+          "stats": {
+            "bytes_processed": 272156,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.218390703201294,
+            "rate_limit_wait_seconds": 5.218392848968506,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.smartnfinal.com.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-tiendas-neto_001",
+          "finishedAt": "2026-10-28T03:58:48.038845+00:00",
+          "siteId": "supermarket-tiendas-neto",
+          "startedAt": "2026-10-28T03:58:41.672898+00:00",
+          "stats": {
+            "bytes_processed": 86734,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 4.748997926712036,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 0,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "tiendasneto.com.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 4e-06,
+      "startedAt": "2026-10-28T03:58:17.108599+00:00"
+    },
+    {
+      "durationSeconds": 6.457228,
+      "finishedAt": "2026-10-28T04:03:23.575655+00:00",
+      "scheduledAt": "2026-10-28T04:03:17.108595+00:00",
+      "sequence": 2,
+      "sites": [
+        {
+          "executionId": "exec_qualification_supermarket-arteli_002",
+          "finishedAt": "2026-10-28T04:03:17.238132+00:00",
+          "siteId": "supermarket-arteli",
+          "startedAt": "2026-10-28T04:03:17.120193+00:00",
+          "stats": {
+            "bytes_processed": 643038,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.arteli.com.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-justo_002",
+          "finishedAt": "2026-10-28T04:03:17.798561+00:00",
+          "siteId": "supermarket-justo",
+          "startedAt": "2026-10-28T04:03:17.241026+00:00",
+          "stats": {
+            "bytes_processed": 154077,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "justo.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-merco_002",
+          "finishedAt": "2026-10-28T04:03:19.478042+00:00",
+          "siteId": "supermarket-merco",
+          "startedAt": "2026-10-28T04:03:17.801422+00:00",
+          "stats": {
+            "bytes_processed": 149582,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "adomicilio.merco.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-smart-final_002",
+          "finishedAt": "2026-10-28T04:03:22.636933+00:00",
+          "siteId": "supermarket-smart-final",
+          "startedAt": "2026-10-28T04:03:19.480283+00:00",
+          "stats": {
+            "bytes_processed": 274220,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.smartnfinal.com.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_supermarket-tiendas-neto_002",
+          "finishedAt": "2026-10-28T04:03:23.574154+00:00",
+          "siteId": "supermarket-tiendas-neto",
+          "startedAt": "2026-10-28T04:03:22.640318+00:00",
+          "stats": {
+            "bytes_processed": 86734,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "tiendasneto.com.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 0.009832,
+      "startedAt": "2026-10-28T04:03:17.118427+00:00"
+    }
+  ],
+  "jobIds": {
+    "supermarket-arteli": "job_d2723ca648d1ef16ddec",
+    "supermarket-justo": "job_3517cb300243d7e9d624",
+    "supermarket-merco": "job_02cabc794478fe17e6f0",
+    "supermarket-smart-final": "job_6eb69de59b1e22aebf05",
+    "supermarket-tiendas-neto": "job_744b061dd8023eea2f37"
+  },
+  "phase": "qualification",
+  "publicPackageVersion": "0.1.0",
+  "qualitySummary": {
+    "columns": [
+      "rows_with_name",
+      "rows_with_price",
+      "rows_with_currency",
+      "rows_with_all_required_fields",
+      "source_urls_with_all_required_fields"
+    ],
+    "rows": [
+      [
+        10,
+        10,
+        10,
+        10,
+        5
+      ]
+    ],
+    "truncated": false
+  },
+  "querySummary": {
+    "columns": [
+      "rows",
+      "executions",
+      "source_urls"
+    ],
+    "rows": [
+      [
+        10,
+        10,
+        5
+      ]
+    ],
+    "truncated": false
+  },
+  "requestedSites": 6,
+  "schemaProfile": "product",
+  "settings": {
+    "executions": 2,
+    "intervalMinutes": 5
+  },
+  "status": "completed",
+  "study": "mexican-supermarkets",
+  "workspaceValidation": {
+    "datasets": 1,
+    "errors": [],
+    "executions": 10,
+    "jobs": 5,
+    "valid": true
+  }
+}

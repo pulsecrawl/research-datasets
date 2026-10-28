@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "headline": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "finance-financial-post-article-css",
+  "origin": "org",
+  "outputSchemaId": "schema_c8ac4d64bd083cd8958a",
+  "templateId": "finance-financial-post-article-css"
+}

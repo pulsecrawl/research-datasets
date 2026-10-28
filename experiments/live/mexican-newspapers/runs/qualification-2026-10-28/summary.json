@@ -1,0 +1,1680 @@
+{
+  "kind": "live",
+  "results": {
+    "completedAt": "2026-10-28T04:03:29.385289+00:00",
+    "datasetFiles": [
+      {
+        "executionId": "exec_qualification_mx-el-economista_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:26.701793+00:00",
+        "minCrawledAt": "2026-10-28 03:58:26.701793+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-economista_001.parquet",
+        "rows": 1,
+        "sizeBytes": 12508
+      },
+      {
+        "executionId": "exec_qualification_mx-el-financiero_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:32.270056+00:00",
+        "minCrawledAt": "2026-10-28 03:58:32.270056+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-financiero_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11992
+      },
+      {
+        "executionId": "exec_qualification_mx-el-heraldo_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:37.878871+00:00",
+        "minCrawledAt": "2026-10-28 03:58:37.878871+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-heraldo_001.parquet",
+        "rows": 1,
+        "sizeBytes": 12506
+      },
+      {
+        "executionId": "exec_qualification_mx-el-horizonte_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:52.308659+00:00",
+        "minCrawledAt": "2026-10-28 03:59:52.308659+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-horizonte_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10675
+      },
+      {
+        "executionId": "exec_qualification_mx-el-imparcial_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:43.467227+00:00",
+        "minCrawledAt": "2026-10-28 03:58:43.467227+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-imparcial_001.parquet",
+        "rows": 1,
+        "sizeBytes": 15704
+      },
+      {
+        "executionId": "exec_qualification_mx-el-informador_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:49.142386+00:00",
+        "minCrawledAt": "2026-10-28 03:58:49.142386+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-informador_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11675
+      },
+      {
+        "executionId": "exec_qualification_mx-el-porvenir_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:59.870923+00:00",
+        "minCrawledAt": "2026-10-28 03:59:59.870923+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-porvenir_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10564
+      },
+      {
+        "executionId": "exec_qualification_mx-excelsior_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:54.775754+00:00",
+        "minCrawledAt": "2026-10-28 03:58:54.775754+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-excelsior_001.parquet",
+        "rows": 1,
+        "sizeBytes": 12266
+      },
+      {
+        "executionId": "exec_qualification_mx-la-cronica_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:00.327456+00:00",
+        "minCrawledAt": "2026-10-28 03:59:00.327456+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-cronica_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11797
+      },
+      {
+        "executionId": "exec_qualification_mx-la-opcion_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:05.956150+00:00",
+        "minCrawledAt": "2026-10-28 03:59:05.956150+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-opcion_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10464
+      },
+      {
+        "executionId": "exec_qualification_mx-la-razon_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:11.815043+00:00",
+        "minCrawledAt": "2026-10-28 03:59:11.815043+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-razon_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11909
+      },
+      {
+        "executionId": "exec_qualification_mx-noroeste_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:17.445317+00:00",
+        "minCrawledAt": "2026-10-28 03:59:17.445317+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-noroeste_001.parquet",
+        "rows": 1,
+        "sizeBytes": 13026
+      },
+      {
+        "executionId": "exec_qualification_mx-norte-digital_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:23.181760+00:00",
+        "minCrawledAt": "2026-10-28 03:59:23.181760+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-norte-digital_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10568
+      },
+      {
+        "executionId": "exec_qualification_mx-proceso_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:29.222413+00:00",
+        "minCrawledAt": "2026-10-28 03:59:29.222413+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-proceso_001.parquet",
+        "rows": 1,
+        "sizeBytes": 14410
+      },
+      {
+        "executionId": "exec_qualification_mx-pulso-slp_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:34.859420+00:00",
+        "minCrawledAt": "2026-10-28 03:59:34.859420+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-pulso-slp_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10374
+      },
+      {
+        "executionId": "exec_qualification_mx-raichali_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:40.457474+00:00",
+        "minCrawledAt": "2026-10-28 03:59:40.457474+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-raichali_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10761
+      },
+      {
+        "executionId": "exec_qualification_mx-sdp-noticias_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:46.693379+00:00",
+        "minCrawledAt": "2026-10-28 03:59:46.693379+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-sdp-noticias_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11545
+      },
+      {
+        "executionId": "exec_qualification_mx-el-manana-nuevo-laredo_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 4,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 04:00:11.080104+00:00",
+        "minCrawledAt": "2026-10-28 04:00:11.080104+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_mx-el-manana-nuevo-laredo_001.parquet",
+        "rows": 1,
+        "sizeBytes": 13913
+      },
+      {
+        "executionId": "exec_qualification_mx-la-silla-rota_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 4,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 04:00:05.448502+00:00",
+        "minCrawledAt": "2026-10-28 04:00:05.448502+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_mx-la-silla-rota_001.parquet",
+        "rows": 1,
+        "sizeBytes": 13500
+      }
+    ],
+    "datasetId": "ds_fc602d9164abeac5bb8c",
+    "enabledSites": 19,
+    "excludedSites": 1,
+    "executions": [
+      {
+        "durationSeconds": 110.021905,
+        "finishedAt": "2026-10-28T04:00:11.218701+00:00",
+        "scheduledAt": "2026-10-28T03:58:21.196792+00:00",
+        "sequence": 1,
+        "sites": [
+          {
+            "executionId": "exec_qualification_mx-el-economista_001",
+            "finishedAt": "2026-10-28T03:58:26.764101+00:00",
+            "siteId": "mx-el-economista",
+            "startedAt": "2026-10-28T03:58:21.197929+00:00",
+            "stats": {
+              "bytes_processed": 225279,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.469183921813965,
+              "rate_limit_wait_seconds": 5.469183921813965,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.eleconomista.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-financiero_001",
+            "finishedAt": "2026-10-28T03:58:32.371559+00:00",
+            "siteId": "mx-el-financiero",
+            "startedAt": "2026-10-28T03:58:26.766373+00:00",
+            "stats": {
+              "bytes_processed": 568460,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.001055955886841,
+              "rate_limit_wait_seconds": 5.001055955886841,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.elfinanciero.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-heraldo_001",
+            "finishedAt": "2026-10-28T03:58:37.959240+00:00",
+            "siteId": "mx-el-heraldo",
+            "startedAt": "2026-10-28T03:58:32.374252+00:00",
+            "stats": {
+              "bytes_processed": 108807,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.382198810577393,
+              "rate_limit_wait_seconds": 5.382198810577393,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "heraldodemexico.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-imparcial_001",
+            "finishedAt": "2026-10-28T03:58:43.635969+00:00",
+            "siteId": "mx-el-imparcial",
+            "startedAt": "2026-10-28T03:58:37.962587+00:00",
+            "stats": {
+              "bytes_processed": 691338,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.3994200229644775,
+              "rate_limit_wait_seconds": 5.399420976638794,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.elimparcial.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-informador_001",
+            "finishedAt": "2026-10-28T03:58:49.268092+00:00",
+            "siteId": "mx-el-informador",
+            "startedAt": "2026-10-28T03:58:43.638379+00:00",
+            "stats": {
+              "bytes_processed": 57603,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.450793504714966,
+              "rate_limit_wait_seconds": 5.450794219970703,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.informador.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-excelsior_001",
+            "finishedAt": "2026-10-28T03:58:54.821142+00:00",
+            "siteId": "mx-excelsior",
+            "startedAt": "2026-10-28T03:58:49.271752+00:00",
+            "stats": {
+              "bytes_processed": 107280,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.46362042427063,
+              "rate_limit_wait_seconds": 5.463621139526367,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.excelsior.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-cronica_001",
+            "finishedAt": "2026-10-28T03:59:00.448862+00:00",
+            "siteId": "mx-la-cronica",
+            "startedAt": "2026-10-28T03:58:54.823595+00:00",
+            "stats": {
+              "bytes_processed": 272542,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.12677526473999,
+              "rate_limit_wait_seconds": 5.12677526473999,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.cronica.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-opcion_001",
+            "finishedAt": "2026-10-28T03:59:06.308376+00:00",
+            "siteId": "mx-la-opcion",
+            "startedAt": "2026-10-28T03:59:00.451243+00:00",
+            "stats": {
+              "bytes_processed": 97775,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.439017057418823,
+              "rate_limit_wait_seconds": 5.43901801109314,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "laopcion.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-razon_001",
+            "finishedAt": "2026-10-28T03:59:11.937421+00:00",
+            "siteId": "mx-la-razon",
+            "startedAt": "2026-10-28T03:59:06.311434+00:00",
+            "stats": {
+              "bytes_processed": 119692,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.2649829387664795,
+              "rate_limit_wait_seconds": 5.264985084533691,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.razon.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-noroeste_001",
+            "finishedAt": "2026-10-28T03:59:17.675228+00:00",
+            "siteId": "mx-noroeste",
+            "startedAt": "2026-10-28T03:59:11.940339+00:00",
+            "stats": {
+              "bytes_processed": 127563,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.28351092338562,
+              "rate_limit_wait_seconds": 5.2835118770599365,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.noroeste.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-norte-digital_001",
+            "finishedAt": "2026-10-28T03:59:23.716312+00:00",
+            "siteId": "mx-norte-digital",
+            "startedAt": "2026-10-28T03:59:17.678376+00:00",
+            "stats": {
+              "bytes_processed": 91330,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.35809588432312,
+              "rate_limit_wait_seconds": 5.358097076416016,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "nortedigital.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-proceso_001",
+            "finishedAt": "2026-10-28T03:59:29.353835+00:00",
+            "siteId": "mx-proceso",
+            "startedAt": "2026-10-28T03:59:23.719320+00:00",
+            "stats": {
+              "bytes_processed": 254952,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.374001979827881,
+              "rate_limit_wait_seconds": 5.374001979827881,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.proceso.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-pulso-slp_001",
+            "finishedAt": "2026-10-28T03:59:34.949583+00:00",
+            "siteId": "mx-pulso-slp",
+            "startedAt": "2026-10-28T03:59:29.355825+00:00",
+            "stats": {
+              "bytes_processed": 315135,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.432633876800537,
+              "rate_limit_wait_seconds": 5.4326348304748535,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "pulsoslp.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-raichali_001",
+            "finishedAt": "2026-10-28T03:59:41.185376+00:00",
+            "siteId": "mx-raichali",
+            "startedAt": "2026-10-28T03:59:34.952409+00:00",
+            "stats": {
+              "bytes_processed": 310793,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.074718952178955,
+              "rate_limit_wait_seconds": 5.074718952178955,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "raichali.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-sdp-noticias_001",
+            "finishedAt": "2026-10-28T03:59:46.799793+00:00",
+            "siteId": "mx-sdp-noticias",
+            "startedAt": "2026-10-28T03:59:41.188646+00:00",
+            "stats": {
+              "bytes_processed": 138541,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.109533786773682,
+              "rate_limit_wait_seconds": 5.109534978866577,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.sdpnoticias.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-horizonte_001",
+            "finishedAt": "2026-10-28T03:59:54.362247+00:00",
+            "siteId": "mx-el-horizonte",
+            "startedAt": "2026-10-28T03:59:46.803290+00:00",
+            "stats": {
+              "bytes_processed": 80338,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.115239858627319,
+              "rate_limit_wait_seconds": 5.115240812301636,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.elhorizonte.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-porvenir_001",
+            "finishedAt": "2026-10-28T03:59:59.941730+00:00",
+            "siteId": "mx-el-porvenir",
+            "startedAt": "2026-10-28T03:59:54.365524+00:00",
+            "stats": {
+              "bytes_processed": 231969,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.432635307312012,
+              "rate_limit_wait_seconds": 5.432635307312012,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "elporvenir.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-silla-rota_001",
+            "finishedAt": "2026-10-28T04:00:05.573609+00:00",
+            "siteId": "mx-la-silla-rota",
+            "startedAt": "2026-10-28T03:59:59.944741+00:00",
+            "stats": {
+              "bytes_processed": 240742,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.388300895690918,
+              "rate_limit_wait_seconds": 5.3883020877838135,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "lasillarota.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-manana-nuevo-laredo_001",
+            "finishedAt": "2026-10-28T04:00:11.215687+00:00",
+            "siteId": "mx-el-manana-nuevo-laredo",
+            "startedAt": "2026-10-28T04:00:05.576407+00:00",
+            "stats": {
+              "bytes_processed": 190365,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.411347150802612,
+              "rate_limit_wait_seconds": 5.411348104476929,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "elmanana.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          }
+        ],
+        "startLagSeconds": 4e-06,
+        "startedAt": "2026-10-28T03:58:21.196796+00:00"
+      },
+      {
+        "durationSeconds": 8.129525,
+        "finishedAt": "2026-10-28T04:03:29.334604+00:00",
+        "scheduledAt": "2026-10-28T04:03:21.196792+00:00",
+        "sequence": 2,
+        "sites": [
+          {
+            "executionId": "exec_qualification_mx-el-economista_002",
+            "finishedAt": "2026-10-28T04:03:21.396335+00:00",
+            "siteId": "mx-el-economista",
+            "startedAt": "2026-10-28T04:03:21.209627+00:00",
+            "stats": {
+              "bytes_processed": 225279,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.eleconomista.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-financiero_002",
+            "finishedAt": "2026-10-28T04:03:22.432459+00:00",
+            "siteId": "mx-el-financiero",
+            "startedAt": "2026-10-28T04:03:21.399821+00:00",
+            "stats": {
+              "bytes_processed": 568460,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.elfinanciero.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-heraldo_002",
+            "finishedAt": "2026-10-28T04:03:22.487962+00:00",
+            "siteId": "mx-el-heraldo",
+            "startedAt": "2026-10-28T04:03:22.435891+00:00",
+            "stats": {
+              "bytes_processed": 108807,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "heraldodemexico.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-imparcial_002",
+            "finishedAt": "2026-10-28T04:03:22.699516+00:00",
+            "siteId": "mx-el-imparcial",
+            "startedAt": "2026-10-28T04:03:22.492369+00:00",
+            "stats": {
+              "bytes_processed": 691338,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.elimparcial.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-informador_002",
+            "finishedAt": "2026-10-28T04:03:22.817520+00:00",
+            "siteId": "mx-el-informador",
+            "startedAt": "2026-10-28T04:03:22.702670+00:00",
+            "stats": {
+              "bytes_processed": 57603,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.informador.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-excelsior_002",
+            "finishedAt": "2026-10-28T04:03:23.071611+00:00",
+            "siteId": "mx-excelsior",
+            "startedAt": "2026-10-28T04:03:22.821401+00:00",
+            "stats": {
+              "bytes_processed": 107280,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.excelsior.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-cronica_002",
+            "finishedAt": "2026-10-28T04:03:23.512711+00:00",
+            "siteId": "mx-la-cronica",
+            "startedAt": "2026-10-28T04:03:23.075140+00:00",
+            "stats": {
+              "bytes_processed": 272468,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.cronica.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-opcion_002",
+            "finishedAt": "2026-10-28T04:03:23.727786+00:00",
+            "siteId": "mx-la-opcion",
+            "startedAt": "2026-10-28T04:03:23.516239+00:00",
+            "stats": {
+              "bytes_processed": 97775,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "laopcion.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-razon_002",
+            "finishedAt": "2026-10-28T04:03:23.869712+00:00",
+            "siteId": "mx-la-razon",
+            "startedAt": "2026-10-28T04:03:23.730354+00:00",
+            "stats": {
+              "bytes_processed": 119692,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.razon.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-noroeste_002",
+            "finishedAt": "2026-10-28T04:03:24.103450+00:00",
+            "siteId": "mx-noroeste",
+            "startedAt": "2026-10-28T04:03:23.871744+00:00",
+            "stats": {
+              "bytes_processed": 127563,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.noroeste.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-norte-digital_002",
+            "finishedAt": "2026-10-28T04:03:24.605154+00:00",
+            "siteId": "mx-norte-digital",
+            "startedAt": "2026-10-28T04:03:24.106441+00:00",
+            "stats": {
+              "bytes_processed": 91330,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "nortedigital.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-proceso_002",
+            "finishedAt": "2026-10-28T04:03:24.736319+00:00",
+            "siteId": "mx-proceso",
+            "startedAt": "2026-10-28T04:03:24.608720+00:00",
+            "stats": {
+              "bytes_processed": 254952,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.proceso.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-pulso-slp_002",
+            "finishedAt": "2026-10-28T04:03:24.821367+00:00",
+            "siteId": "mx-pulso-slp",
+            "startedAt": "2026-10-28T04:03:24.739608+00:00",
+            "stats": {
+              "bytes_processed": 315135,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "pulsoslp.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-raichali_002",
+            "finishedAt": "2026-10-28T04:03:26.351267+00:00",
+            "siteId": "mx-raichali",
+            "startedAt": "2026-10-28T04:03:24.824363+00:00",
+            "stats": {
+              "bytes_processed": 310793,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "raichali.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-sdp-noticias_002",
+            "finishedAt": "2026-10-28T04:03:26.475705+00:00",
+            "siteId": "mx-sdp-noticias",
+            "startedAt": "2026-10-28T04:03:26.354769+00:00",
+            "stats": {
+              "bytes_processed": 138541,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.sdpnoticias.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-horizonte_002",
+            "finishedAt": "2026-10-28T04:03:28.858730+00:00",
+            "siteId": "mx-el-horizonte",
+            "startedAt": "2026-10-28T04:03:26.478196+00:00",
+            "stats": {
+              "bytes_processed": 80338,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.elhorizonte.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-porvenir_002",
+            "finishedAt": "2026-10-28T04:03:28.953155+00:00",
+            "siteId": "mx-el-porvenir",
+            "startedAt": "2026-10-28T04:03:28.862417+00:00",
+            "stats": {
+              "bytes_processed": 231969,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "elporvenir.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-la-silla-rota_002",
+            "finishedAt": "2026-10-28T04:03:29.112951+00:00",
+            "siteId": "mx-la-silla-rota",
+            "startedAt": "2026-10-28T04:03:28.956650+00:00",
+            "stats": {
+              "bytes_processed": 240742,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "lasillarota.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_mx-el-manana-nuevo-laredo_002",
+            "finishedAt": "2026-10-28T04:03:29.333111+00:00",
+            "siteId": "mx-el-manana-nuevo-laredo",
+            "startedAt": "2026-10-28T04:03:29.130279+00:00",
+            "stats": {
+              "bytes_processed": 190365,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "elmanana.com.mx": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          }
+        ],
+        "startLagSeconds": 0.008287,
+        "startedAt": "2026-10-28T04:03:21.205079+00:00"
+      }
+    ],
+    "jobIds": {
+      "mx-el-economista": "job_d6ce9272840c815ce97e",
+      "mx-el-financiero": "job_69a5baecd0565f8b64b3",
+      "mx-el-heraldo": "job_c727358dda537b058763",
+      "mx-el-horizonte": "job_65a3f62559762a35e4a4",
+      "mx-el-imparcial": "job_04933ccebc04c9fdaeb0",
+      "mx-el-informador": "job_b779b9f676f11b960120",
+      "mx-el-manana-nuevo-laredo": "job_98e423cc9dffab0edfd8",
+      "mx-el-porvenir": "job_6d29591a0dd40b7e535c",
+      "mx-excelsior": "job_d82ce2e8288f7da07dd8",
+      "mx-la-cronica": "job_321771355e808869bc7b",
+      "mx-la-opcion": "job_7d366d671a2917e2a149",
+      "mx-la-razon": "job_4154a80c55e47ef2bc9d",
+      "mx-la-silla-rota": "job_674d5a3dac855f38fa04",
+      "mx-noroeste": "job_73c4c0df9aff97cf91c5",
+      "mx-norte-digital": "job_3db56cf7f5d3c354ef57",
+      "mx-proceso": "job_c1ecc62905cbd9ae13f8",
+      "mx-pulso-slp": "job_0b336f537c603e89833b",
+      "mx-raichali": "job_62befe861ab5017762db",
+      "mx-sdp-noticias": "job_d55aeffd741714bed1c3"
+    },
+    "phase": "qualification",
+    "publicPackageVersion": "0.1.0",
+    "qualitySummary": {
+      "columns": [
+        "rows_with_headline",
+        "rows_with_canonical_url",
+        "rows_with_all_required_fields",
+        "source_urls_with_all_required_fields"
+      ],
+      "rows": [
+        [
+          19,
+          19,
+          19,
+          19
+        ]
+      ],
+      "truncated": false
+    },
+    "querySummary": {
+      "columns": [
+        "rows",
+        "executions",
+        "source_urls"
+      ],
+      "rows": [
+        [
+          19,
+          19,
+          19
+        ]
+      ],
+      "truncated": false
+    },
+    "requestedSites": 20,
+    "schemaProfile": "article",
+    "settings": {
+      "executions": 2,
+      "intervalMinutes": 5
+    },
+    "status": "completed",
+    "study": "mexican-newspapers",
+    "workspaceValidation": {
+      "datasets": 1,
+      "errors": [],
+      "executions": 38,
+      "jobs": 19,
+      "valid": true
+    }
+  }
+}
