@@ -1,0 +1,20 @@
+{
+  "acceptance": "The new-URL output equals the first observation of each normalized URL identity.",
+  "family": "versioned-datasets",
+  "id": "new-url-materialization",
+  "measurements": [
+    "append_rows",
+    "new_url_rows",
+    "distinct_url_identities",
+    "bytes",
+    "query_seconds"
+  ],
+  "seed": 4704,
+  "status": "registered",
+  "title": "Append-all versus new-URL materialization",
+  "workload": {
+    "executions": 100,
+    "newFraction": 0.05,
+    "rowsPerExecution": 1000
+  }
+}

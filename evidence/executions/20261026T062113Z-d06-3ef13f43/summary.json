@@ -1,0 +1,155 @@
+{
+  "kind": "datalake",
+  "results": {
+    "allCorrect": true,
+    "cases": [
+      {
+        "allPayloadChecksum": 53798600,
+        "allPayloadScanSeconds": [
+          0.026331249973736703,
+          0.032396583002991974,
+          0.03082454204559326,
+          0.021104958024807274,
+          0.03332716703880578
+        ],
+        "allQuerySeconds": [
+          0.026716833002865314,
+          0.010986791923642159,
+          0.022251709015108645,
+          0.011809917050413787,
+          0.015256916987709701
+        ],
+        "appendAllBytes": 3381687,
+        "appendAllRows": 1000000,
+        "cleanupPolicy": "eligible only after active manifest v2 is durable; retained in experiment",
+        "compactBytes": 2282860,
+        "compactPayloadChecksum": 53798600,
+        "compactPayloadScanSeconds": [
+          0.012229999992996454,
+          0.011708374950103462,
+          0.019068291992880404,
+          0.025007624994032085,
+          0.013648124993778765
+        ],
+        "compactQuerySeconds": [
+          0.0018859170377254486,
+          0.004526583012193441,
+          0.0028184589464217424,
+          0.009872500086203218,
+          0.0028374160174280405
+        ],
+        "compactSeconds": 0.3551605000393465,
+        "dailyCompactFiles": 5,
+        "deltaFiles": 100,
+        "deltaFilesRetainedAfterPublication": true,
+        "executions": 100,
+        "expectedNewOnlyRows": 19900,
+        "lastHourPayloadChecksum": 538986,
+        "lastHourPayloadScanSeconds": [
+          0.020150416996330023,
+          0.013373124995268881,
+          0.01964120799675584,
+          0.017162750009447336,
+          0.020954792038537562
+        ],
+        "lastHourQuerySeconds": [
+          0.01718966697808355,
+          0.019228333025239408,
+          0.015593582997098565,
+          0.014117667102254927,
+          0.01647987507749349
+        ],
+        "lastHourRows": 10000,
+        "method": "duckdb-generated-hourly-parquet-deltas-and-daily-compaction",
+        "newFraction": 0.01,
+        "newOnlyBytes": 276593,
+        "newOnlyCorrect": true,
+        "newOnlyPayloadChecksum": 1181486,
+        "newOnlyPayloadScanSeconds": [
+          0.013075582915917039,
+          0.029922250076197088,
+          0.02858729101717472,
+          0.011750041972845793,
+          0.01922841602936387
+        ],
+        "newOnlyQuerySeconds": [
+          0.017602332984097302,
+          0.030218792031519115,
+          0.026101749972440302,
+          0.007900416036136448,
+          0.0073123330948874354
+        ],
+        "newOnlyRows": 19900,
+        "outputRoot": "research/results/runs/final-local-public-0.1.0-candidate-2026-10-25/20261026T062113Z-d06-3ef13f43/artifacts/datalake/rows-1000000",
+        "rowsPerExecution": 10000,
+        "snapshotConsistent": true,
+        "snapshotVersions": [
+          1,
+          2
+        ],
+        "status": "completed",
+        "syntheticCompressionCaveat": "deterministic repeated strings compress unusually well; bytes and latency apply only to this registered local workload",
+        "totalRows": 1000000,
+        "writeSeconds": 0.8779575420776382
+      },
+      {
+        "allPayloadChecksum": 557778800,
+        "allPayloadScanSeconds": [
+          0.14385108300484717
+        ],
+        "allQuerySeconds": [
+          0.017163708922453225
+        ],
+        "appendAllBytes": 25966131,
+        "appendAllRows": 10000000,
+        "cleanupPolicy": "eligible only after active manifest v2 is durable; retained in experiment",
+        "compactBytes": 24665600,
+        "compactPayloadChecksum": 557778800,
+        "compactPayloadScanSeconds": [
+          0.10364504193421453
+        ],
+        "compactQuerySeconds": [
+          0.005070290993899107
+        ],
+        "compactSeconds": 1.5287389169679955,
+        "dailyCompactFiles": 5,
+        "deltaFiles": 100,
+        "deltaFilesRetainedAfterPublication": true,
+        "executions": 100,
+        "expectedNewOnlyRows": 199000,
+        "lastHourPayloadChecksum": 5587788,
+        "lastHourPayloadScanSeconds": [
+          0.0284981660079211
+        ],
+        "lastHourQuerySeconds": [
+          0.018911624909378588
+        ],
+        "lastHourRows": 100000,
+        "method": "duckdb-generated-hourly-parquet-deltas-and-daily-compaction",
+        "newFraction": 0.01,
+        "newOnlyBytes": 741690,
+        "newOnlyCorrect": true,
+        "newOnlyPayloadChecksum": 12012788,
+        "newOnlyPayloadScanSeconds": [
+          0.025609917007386684
+        ],
+        "newOnlyQuerySeconds": [
+          0.012580416980199516
+        ],
+        "newOnlyRows": 199000,
+        "outputRoot": "research/results/runs/final-local-public-0.1.0-candidate-2026-10-25/20261026T062113Z-d06-3ef13f43/artifacts/datalake/rows-10000000",
+        "rowsPerExecution": 100000,
+        "snapshotConsistent": true,
+        "snapshotVersions": [
+          1,
+          2
+        ],
+        "status": "completed",
+        "syntheticCompressionCaveat": "deterministic repeated strings compress unusually well; bytes and latency apply only to this registered local workload",
+        "totalRows": 10000000,
+        "writeSeconds": 4.234121292014606
+      }
+    ],
+    "status": "completed"
+  }
+}

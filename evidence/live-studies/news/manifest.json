@@ -1,0 +1,14 @@
+{
+  "exclusions": [
+    "downloaded HTML bodies",
+    "article and product text",
+    "raw request logs",
+    "workspace databases",
+    "machine-specific environment fields"
+  ],
+  "publishedSummarySha256": "616f0bfce043be2c3b6f9fae3167ebc9556cb09b8932cc5f06584a7576d04a4c",
+  "schemaVersion": 1,
+  "sourceSummarySha256": "616f0bfce043be2c3b6f9fae3167ebc9556cb09b8932cc5f06584a7576d04a4c",
+  "status": "completed-supporting-observation",
+  "study": "news"
+}

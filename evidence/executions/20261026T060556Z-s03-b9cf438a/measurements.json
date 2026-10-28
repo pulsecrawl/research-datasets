@@ -1,0 +1,91 @@
+{
+  "allInvariantsSatisfied": true,
+  "configuredAllowancePhase": {
+    "arrivalDiagnostics": {
+      "group-a": {
+        "gapCount": 39,
+        "gapViolations": 0,
+        "measurementToleranceSeconds": 0.02,
+        "minimumGapSeconds": 0.218638,
+        "requiredGapSeconds": 0.2,
+        "violationSamplesSeconds": []
+      },
+      "group-b": {
+        "gapCount": 19,
+        "gapViolations": 0,
+        "measurementToleranceSeconds": 0.02,
+        "minimumGapSeconds": 0.218333,
+        "requiredGapSeconds": 0.2,
+        "violationSamplesSeconds": []
+      }
+    },
+    "configuredAllowanceRequestsPerSecond": 5.0,
+    "durationSeconds": 12.380203999928199,
+    "executionStatuses": [
+      "succeeded",
+      "succeeded",
+      "succeeded"
+    ],
+    "httpRequests": 60,
+    "name": "configured-allowance-phase",
+    "originCeilingRequestsPerSecond": 100.0,
+    "perGroup": {
+      "group-a": {
+        "gapCount": 40,
+        "gapViolations": 0,
+        "measurementToleranceSeconds": 1e-06,
+        "minimumGapSeconds": 0.220020992,
+        "requiredGapSeconds": 0.2,
+        "violationSamplesSeconds": []
+      },
+      "group-b": {
+        "gapCount": 19,
+        "gapViolations": 0,
+        "measurementToleranceSeconds": 1e-06,
+        "minimumGapSeconds": 0.220062976,
+        "requiredGapSeconds": 0.2,
+        "violationSamplesSeconds": []
+      }
+    }
+  },
+  "dispatchMarginRatio": 0.1,
+  "executionStatuses": [
+    "succeeded",
+    "succeeded",
+    "succeeded",
+    "succeeded",
+    "succeeded"
+  ],
+  "method": "real-crawl-engines-shared-sqlite-authorization-gate",
+  "originCeilingPhase": {
+    "arrivalDiagnostics": {
+      "gapCount": 39,
+      "gapViolations": 0,
+      "measurementToleranceSeconds": 0.02,
+      "minimumGapSeconds": 0.548688,
+      "requiredGapSeconds": 0.5,
+      "violationSamplesSeconds": []
+    },
+    "configuredAllowanceRequestsPerSecond": 100.0,
+    "durationSeconds": 22.097025125054643,
+    "executionStatuses": [
+      "succeeded",
+      "succeeded"
+    ],
+    "global": {
+      "gapCount": 40,
+      "gapViolations": 0,
+      "measurementToleranceSeconds": 1e-06,
+      "minimumGapSeconds": 0.550496,
+      "requiredGapSeconds": 0.5,
+      "violationSamplesSeconds": []
+    },
+    "httpRequests": 40,
+    "name": "origin-ceiling-phase",
+    "originCeilingRequestsPerSecond": 2.0
+  },
+  "pacingGroups": 2,
+  "parallelJobs": 3,
+  "status": "completed",
+  "timingAuthority": "gate-authorization"
+}

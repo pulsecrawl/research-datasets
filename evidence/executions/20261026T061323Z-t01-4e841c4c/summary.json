@@ -1,0 +1,48 @@
+{
+  "kind": "templates",
+  "results": {
+    "status": "completed",
+    "strategies": {
+      "generic": {
+        "contaminated": 0,
+        "contaminationRate": 0.0,
+        "correctFields": 360,
+        "expectedFields": 600,
+        "fieldAccuracy": 0.6,
+        "pages": 300,
+        "recordCoverage": 1.0,
+        "records": 300
+      },
+      "routed": {
+        "contaminated": 0,
+        "contaminationRate": 0.0,
+        "correctFields": 600,
+        "expectedFields": 600,
+        "fieldAccuracy": 1.0,
+        "pages": 300,
+        "recordCoverage": 1.0,
+        "records": 300
+      },
+      "scoped": {
+        "contaminated": 0,
+        "contaminationRate": 0.0,
+        "correctFields": 600,
+        "expectedFields": 600,
+        "fieldAccuracy": 1.0,
+        "pages": 300,
+        "recordCoverage": 1.0,
+        "records": 300
+      },
+      "unscoped": {
+        "contaminated": 280,
+        "contaminationRate": 0.9333333333333333,
+        "correctFields": 600,
+        "expectedFields": 600,
+        "fieldAccuracy": 1.0,
+        "pages": 300,
+        "recordCoverage": 1.0,
+        "records": 300
+      }
+    }
+  }
+}

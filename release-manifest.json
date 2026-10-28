@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "release": "0.3.0-development",
-  "status": "development",
+  "release": "0.3.0",
+  "status": "verified",
   "publisher": "PulseCrawl",
   "publicRepository": "https://github.com/pulsecrawl/research-datasets",
   "kind": "research-experiments-inputs-evidence-and-analysis",
@@ -62,14 +62,16 @@
   "evidence": {
     "schema": "evidence/execution-manifest.schema.json",
     "executionsPath": "evidence/executions/",
-    "reviewedExecutions": 0,
-    "status": "schema-published-no-reviewed-executions"
+    "reviewedExecutions": 116,
+    "reviewedRelease": "evidence/reviewed-release.json",
+    "status": "sanitized-reviewed-executions-published"
   },
   "analysis": {
     "schema": "analysis/analysis-manifest.schema.json",
     "path": "analysis/",
-    "reviewedAnalyses": 0,
-    "status": "method-published-no-reviewed-analyses"
+    "reviewedAnalyses": 1,
+    "reviewedRelease": "analysis/releases/public-local-0.1.0-2026-10-27/",
+    "status": "frozen-controlled-analysis-published"
   },
   "exclusions": [
     "private repository history",
@@ -90,11 +92,16 @@
   },
   "liveCaseStudy": {
     "manifest": "live-case-study/sources.json",
-    "status": "not-run",
+    "status": "completed-aggregate-summaries-published",
     "candidateSources": 10,
-    "enabledSources": 0,
+    "enabledSources": 1,
     "htmlArchivingRequired": false,
-    "actualResultsIncluded": false
+    "actualResultsIncluded": true,
+    "aggregateSummariesIncluded": 2,
+    "aggregateStudyNames": ["news", "commerce"],
+    "aggregateEnabledSiteConfigurations": 6,
+    "rawRecordsIncluded": false,
+    "downloadedHtmlIncluded": false
   },
-  "revisionNote": "Development manifest for the first release combining public inputs, descriptive experiment registration, evidence schemas, and analysis rules. Existing version tags remain immutable."
+  "revisionNote": "Release 0.3.0 adds 116 sanitized controlled executions, one frozen controlled analysis, and aggregate summaries from the retained news and commerce studies. Raw workspaces, downloaded third-party HTML, record-level live review files, and machine-specific metadata remain excluded."
 }

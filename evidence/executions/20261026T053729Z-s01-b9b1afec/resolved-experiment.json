@@ -1,0 +1,18 @@
+{
+  "acceptance": "No authorization or completed request exceeds the configured execution budget.",
+  "family": "policy-and-recovery",
+  "id": "execution-budget-under-concurrency",
+  "measurements": [
+    "authorized_requests",
+    "completed_requests",
+    "budget_violations"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Execution budget under concurrent discovery",
+  "workload": {
+    "concurrency": 8,
+    "maximumDepth": 6,
+    "maximumUrls": 50
+  }
+}

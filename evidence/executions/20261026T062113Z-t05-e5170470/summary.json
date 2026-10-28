@@ -1,0 +1,81 @@
+{
+  "kind": "templates",
+  "results": {
+    "allComparableArtifactsValid": true,
+    "method": "generated-equivalent-user-integration-artifacts-with-common-oracle",
+    "oracle": {
+      "accuracy": 1.0,
+      "correct": 200,
+      "documents": 200
+    },
+    "scope": "user-authored integration surface; excludes framework internals",
+    "status": "completed",
+    "systems": {
+      "beautifulsoup-reference": {
+        "artifact": "beautifulsoup-reference/integration.py",
+        "bytes": 1729,
+        "capabilityBoundary": "deterministic routing fixture",
+        "hostsRepresented": 20,
+        "oracleAccuracy": 1.0,
+        "physicalLoc": 30,
+        "routeEntries": 20,
+        "selectorsRepresented": 20,
+        "semanticCatalogComplete": true,
+        "sha256": "1293acbddc7f2f549034623edb84fbb71798e553a4fc344895d748ff65426809",
+        "syntaxCheck": "ast.parse"
+      },
+      "crawlee": {
+        "artifact": "crawlee/integration.mjs",
+        "bytes": 1749,
+        "capabilityBoundary": "deterministic routing fixture",
+        "hostsRepresented": 20,
+        "oracleAccuracy": 1.0,
+        "physicalLoc": 29,
+        "routeEntries": 20,
+        "selectorsRepresented": 20,
+        "semanticCatalogComplete": true,
+        "sha256": "0a7798eb6af22059614b82690b1f9fab8ed61150cc53b8c1a6cc914e4c419be2",
+        "syntaxCheck": "structural-no-node"
+      },
+      "firecrawl": {
+        "artifact": "firecrawl/integration.json",
+        "bytes": 3250,
+        "capabilityBoundary": "schema-plus-client-routing; live LLM extraction not evaluated",
+        "hostsRepresented": 20,
+        "oracleAccuracy": 1.0,
+        "physicalLoc": 172,
+        "routeEntries": 20,
+        "selectorsRepresented": 20,
+        "semanticCatalogComplete": true,
+        "sha256": "6f11d03fd626aa9eee29d121072e96d117b122008496862c9b0032f6d0d6afc1",
+        "syntaxCheck": "json.loads"
+      },
+      "pulsecrawl": {
+        "artifact": "pulsecrawl/integration.json",
+        "bytes": 7354,
+        "capabilityBoundary": "deterministic routing fixture",
+        "hostsRepresented": 20,
+        "oracleAccuracy": 1.0,
+        "physicalLoc": 405,
+        "routeEntries": 20,
+        "selectorsRepresented": 20,
+        "semanticCatalogComplete": true,
+        "sha256": "9d631c47c5ce331ca30c7d96fb08cae2e00b9c97850d992b4dd57e5f574d95af",
+        "syntaxCheck": "json.loads"
+      },
+      "scrapy": {
+        "artifact": "scrapy/integration.py",
+        "bytes": 1645,
+        "capabilityBoundary": "deterministic routing fixture",
+        "hostsRepresented": 20,
+        "oracleAccuracy": 1.0,
+        "physicalLoc": 28,
+        "routeEntries": 20,
+        "selectorsRepresented": 20,
+        "semanticCatalogComplete": true,
+        "sha256": "7e35eb4400609422630f8b6ed0a12fb189b058f353f5418f5128e97902723104",
+        "syntaxCheck": "ast.parse"
+      }
+    }
+  }
+}

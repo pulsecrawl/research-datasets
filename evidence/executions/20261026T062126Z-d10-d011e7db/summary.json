@@ -1,0 +1,500 @@
+{
+  "kind": "datalake",
+  "results": {
+    "allGovernedSnapshotsValid": true,
+    "allReplayIdempotent": true,
+    "appendParquetBytes": 28530416,
+    "bodyBytes": {
+      "maximum": 2048,
+      "minimum": 128
+    },
+    "compactFiles": 5,
+    "compactFingerprint": {
+      "hashXor": 9464846728092398686,
+      "payloadCharacters": 1141193404,
+      "rows": 1000000,
+      "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+    },
+    "compactParquetBytes": 27429171,
+    "compactSeconds": 0.7574197909561917,
+    "cpuSeconds": 113.312785,
+    "deltaFiles": 100,
+    "exactDifferenceRows": {
+      "jsonMinusParquet": 0,
+      "parquetMinusJson": 0
+    },
+    "executions": 100,
+    "expectedNewOnlyRows": 19900,
+    "failureMatrix": {
+      "allSnapshotsValid": true,
+      "byStage": {
+        "after_cleanup": {
+          "observations": 30,
+          "violations": 0
+        },
+        "after_compact_before_swap": {
+          "observations": 30,
+          "violations": 0
+        },
+        "after_swap_before_cleanup": {
+          "observations": 30,
+          "violations": 0
+        },
+        "before_compact": {
+          "observations": 30,
+          "violations": 0
+        },
+        "during_pointer_write": {
+          "observations": 30,
+          "violations": 0
+        }
+      },
+      "method": "atomic-pointer-compaction-boundary-failure-matrix",
+      "observations": 150,
+      "repetitions": 30,
+      "status": "completed",
+      "violations": 0
+    },
+    "integrationBurdenCriterion": true,
+    "jsonFingerprint": {
+      "hashXor": 9464846728092398686,
+      "payloadCharacters": 1141193404,
+      "rows": 1000000,
+      "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+    },
+    "longTerm": {
+      "activeFileReduction": 0.9583333333333334,
+      "boundedActiveFiles": true,
+      "cleanupEligibleDeltas": 8760,
+      "committedExecutions": 8760,
+      "duplicateCommittedExecutions": 0,
+      "executionMarkers": 8760,
+      "governedActiveFiles": 365,
+      "hours": 8760,
+      "nativeActiveFiles": 8760,
+      "publishedDailySnapshots": 365
+    },
+    "method": "native-jsonl-versus-equivalent-versioned-temporal-parquet",
+    "nativeJsonBytes": 1369011404,
+    "newOnlyCorrect": true,
+    "newOnlyParquetBytes": 846077,
+    "newOnlyRows": 19900,
+    "parquetFingerprint": {
+      "hashXor": 9464846728092398686,
+      "payloadCharacters": 1141193404,
+      "rows": 1000000,
+      "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+    },
+    "reopenedConnectionPayloadScanSeconds": [
+      0.06068133399821818,
+      0.05994658300187439,
+      0.06307775003369898,
+      0.06956958305090666,
+      0.07756145799066871,
+      0.061769707943312824,
+      0.06502891599666327,
+      0.0629092080052942,
+      0.062412000028416514,
+      0.06465679209213704
+    ],
+    "rowsPerExecution": 10000,
+    "rssAfterBytes": 1835171840,
+    "rssBeforeBytes": 932380672,
+    "semanticChecksumEquivalent": true,
+    "status": "completed",
+    "systems": {
+      "beautifulsoup-reference": {
+        "artifact": "beautifulsoup-reference/pipeline.py",
+        "capabilityBoundary": "reference user-maintained governance layer added to native extraction output",
+        "components": [
+          "beautifulsoup-reference-native-output",
+          "schema-normalization",
+          "url-identity-ledger",
+          "temporal-partitioner",
+          "parquet-writer",
+          "atomic-manifest-publisher",
+          "daily-compactor",
+          "snapshot-query-view"
+        ],
+        "governanceEquivalentBytes": 27429171,
+        "governanceEquivalentCountSeconds": [
+          0.0011236669961363077,
+          0.001802000100724399,
+          0.00082949991337955,
+          0.001006375066936016,
+          0.0015154160792008042,
+          0.0009803340071812272,
+          0.001290749991312623,
+          0.0009400419658049941,
+          0.0009208329720422626,
+          0.001463458058424294
+        ],
+        "governanceEquivalentFiles": 5,
+        "governanceEquivalentFingerprint": {
+          "hashXor": 9464846728092398686,
+          "payloadCharacters": 1141193404,
+          "rows": 1000000,
+          "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+        },
+        "governanceEquivalentPayloadScanSeconds": [
+          0.0619292079936713,
+          0.06072512490209192,
+          0.06305825000163168,
+          0.0637951249955222,
+          0.06118762493133545,
+          0.0607504160143435,
+          0.07422375003807247,
+          0.0621980840805918,
+          0.06248949992004782,
+          0.0623157910304144
+        ],
+        "maintainedComponents": 8,
+        "nativeBytes": 1369011404,
+        "nativeCountSeconds": [
+          0.2713164580054581,
+          0.2758089159615338,
+          0.2760115839773789,
+          0.2719875839538872,
+          0.2674425831064582,
+          0.27676520799286664,
+          0.26716358307749033,
+          0.27257070899941027,
+          0.33308379200752825,
+          0.30718658305704594
+        ],
+        "nativeFiles": 100,
+        "nativePayloadScanSeconds": [
+          0.2818945419276133,
+          0.296795874950476,
+          0.29996058298274875,
+          0.29857924999669194,
+          0.28935304190963507,
+          0.285717457998544,
+          0.2838044579839334,
+          0.3218219169648364,
+          0.32583258289378136,
+          0.32859770907089114
+        ],
+        "nativeProfile": "newline-delimited-json-reference",
+        "sha256": "5b5f52cab61b3a24a7809cf6a8b1bf19bb687f1b5832294aaa0a5821af5d07a2",
+        "syntaxCheck": "ast.parse",
+        "userAuthoredBytes": 1004,
+        "userAuthoredLoc": 22,
+        "version": "4.15.0"
+      },
+      "crawlee-python": {
+        "artifact": "crawlee-python/pipeline.py",
+        "capabilityBoundary": "reference user-maintained governance layer added to native extraction output",
+        "components": [
+          "crawlee-python-native-output",
+          "schema-normalization",
+          "url-identity-ledger",
+          "temporal-partitioner",
+          "parquet-writer",
+          "atomic-manifest-publisher",
+          "daily-compactor",
+          "snapshot-query-view"
+        ],
+        "governanceEquivalentBytes": 27429171,
+        "governanceEquivalentCountSeconds": [
+          0.0011236669961363077,
+          0.001802000100724399,
+          0.00082949991337955,
+          0.001006375066936016,
+          0.0015154160792008042,
+          0.0009803340071812272,
+          0.001290749991312623,
+          0.0009400419658049941,
+          0.0009208329720422626,
+          0.001463458058424294
+        ],
+        "governanceEquivalentFiles": 5,
+        "governanceEquivalentFingerprint": {
+          "hashXor": 9464846728092398686,
+          "payloadCharacters": 1141193404,
+          "rows": 1000000,
+          "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+        },
+        "governanceEquivalentPayloadScanSeconds": [
+          0.0619292079936713,
+          0.06072512490209192,
+          0.06305825000163168,
+          0.0637951249955222,
+          0.06118762493133545,
+          0.0607504160143435,
+          0.07422375003807247,
+          0.0621980840805918,
+          0.06248949992004782,
+          0.0623157910304144
+        ],
+        "maintainedComponents": 8,
+        "nativeBytes": 1369011404,
+        "nativeCountSeconds": [
+          0.2713164580054581,
+          0.2758089159615338,
+          0.2760115839773789,
+          0.2719875839538872,
+          0.2674425831064582,
+          0.27676520799286664,
+          0.26716358307749033,
+          0.27257070899941027,
+          0.33308379200752825,
+          0.30718658305704594
+        ],
+        "nativeFiles": 100,
+        "nativePayloadScanSeconds": [
+          0.2818945419276133,
+          0.296795874950476,
+          0.29996058298274875,
+          0.29857924999669194,
+          0.28935304190963507,
+          0.285717457998544,
+          0.2838044579839334,
+          0.3218219169648364,
+          0.32583258289378136,
+          0.32859770907089114
+        ],
+        "nativeProfile": "newline-delimited-json-reference",
+        "sha256": "1795a13c6e5ebb4e93028d0f3fad0def21068ba1c12b1917f6378631114f36be",
+        "syntaxCheck": "ast.parse",
+        "userAuthoredBytes": 1005,
+        "userAuthoredLoc": 22,
+        "version": "1.9.3"
+      },
+      "firecrawl-client": {
+        "artifact": "firecrawl-client/pipeline.py",
+        "capabilityBoundary": "reference user-maintained governance layer added to native extraction output",
+        "components": [
+          "firecrawl-client-native-output",
+          "schema-normalization",
+          "url-identity-ledger",
+          "temporal-partitioner",
+          "parquet-writer",
+          "atomic-manifest-publisher",
+          "daily-compactor",
+          "snapshot-query-view"
+        ],
+        "governanceEquivalentBytes": 27429171,
+        "governanceEquivalentCountSeconds": [
+          0.0011236669961363077,
+          0.001802000100724399,
+          0.00082949991337955,
+          0.001006375066936016,
+          0.0015154160792008042,
+          0.0009803340071812272,
+          0.001290749991312623,
+          0.0009400419658049941,
+          0.0009208329720422626,
+          0.001463458058424294
+        ],
+        "governanceEquivalentFiles": 5,
+        "governanceEquivalentFingerprint": {
+          "hashXor": 9464846728092398686,
+          "payloadCharacters": 1141193404,
+          "rows": 1000000,
+          "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+        },
+        "governanceEquivalentPayloadScanSeconds": [
+          0.0619292079936713,
+          0.06072512490209192,
+          0.06305825000163168,
+          0.0637951249955222,
+          0.06118762493133545,
+          0.0607504160143435,
+          0.07422375003807247,
+          0.0621980840805918,
+          0.06248949992004782,
+          0.0623157910304144
+        ],
+        "maintainedComponents": 8,
+        "nativeBytes": 1369011404,
+        "nativeCountSeconds": [
+          0.2713164580054581,
+          0.2758089159615338,
+          0.2760115839773789,
+          0.2719875839538872,
+          0.2674425831064582,
+          0.27676520799286664,
+          0.26716358307749033,
+          0.27257070899941027,
+          0.33308379200752825,
+          0.30718658305704594
+        ],
+        "nativeFiles": 100,
+        "nativePayloadScanSeconds": [
+          0.2818945419276133,
+          0.296795874950476,
+          0.29996058298274875,
+          0.29857924999669194,
+          0.28935304190963507,
+          0.285717457998544,
+          0.2838044579839334,
+          0.3218219169648364,
+          0.32583258289378136,
+          0.32859770907089114
+        ],
+        "nativeProfile": "newline-delimited-json-reference",
+        "sha256": "949d0b68e0667d945ea0016cb8adf3ab96ce4d76b3a0f6e77c1da23ef8e26f15",
+        "syntaxCheck": "ast.parse",
+        "userAuthoredBytes": 1000,
+        "userAuthoredLoc": 22,
+        "version": "v2.9.0-client-contract"
+      },
+      "pulsecrawl": {
+        "artifact": "pulsecrawl/pipeline.json",
+        "capabilityBoundary": "built-in registered dataset contract",
+        "components": [
+          "pulsecrawl-dataset-contract"
+        ],
+        "governanceEquivalentBytes": 27429171,
+        "governanceEquivalentCountSeconds": [
+          0.0011236669961363077,
+          0.001802000100724399,
+          0.00082949991337955,
+          0.001006375066936016,
+          0.0015154160792008042,
+          0.0009803340071812272,
+          0.001290749991312623,
+          0.0009400419658049941,
+          0.0009208329720422626,
+          0.001463458058424294
+        ],
+        "governanceEquivalentFiles": 5,
+        "governanceEquivalentFingerprint": {
+          "hashXor": 9464846728092398686,
+          "payloadCharacters": 1141193404,
+          "rows": 1000000,
+          "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+        },
+        "governanceEquivalentPayloadScanSeconds": [
+          0.0619292079936713,
+          0.06072512490209192,
+          0.06305825000163168,
+          0.0637951249955222,
+          0.06118762493133545,
+          0.0607504160143435,
+          0.07422375003807247,
+          0.0621980840805918,
+          0.06248949992004782,
+          0.0623157910304144
+        ],
+        "maintainedComponents": 1,
+        "nativeBytes": 28530416,
+        "nativeCountSeconds": [
+          0.1679652079474181,
+          0.00812483299523592,
+          0.007728041964583099,
+          0.007668625097721815,
+          0.008454291964881122,
+          0.007559166988357902,
+          0.008062000037170947,
+          0.008240625029429793,
+          0.007529792026616633,
+          0.006831125007010996
+        ],
+        "nativeFiles": 100,
+        "nativePayloadScanSeconds": [
+          0.051516792038455606,
+          0.04889579105656594,
+          0.053362834034487605,
+          0.05311249999795109,
+          0.05010904208756983,
+          0.05028504098299891,
+          0.04989683406893164,
+          0.05087000003550202,
+          0.056477459031157196,
+          0.061376500059850514
+        ],
+        "nativeProfile": "temporal-parquet",
+        "sha256": "fde8daeadd3e1573f485f625e63dca9994a3945bdcdf10b9fcb2dcc59b031931",
+        "syntaxCheck": "json.loads",
+        "userAuthoredBytes": 322,
+        "userAuthoredLoc": 17,
+        "version": "0.1.0"
+      },
+      "scrapy": {
+        "artifact": "scrapy/pipeline.py",
+        "capabilityBoundary": "reference user-maintained governance layer added to native extraction output",
+        "components": [
+          "scrapy-native-output",
+          "schema-normalization",
+          "url-identity-ledger",
+          "temporal-partitioner",
+          "parquet-writer",
+          "atomic-manifest-publisher",
+          "daily-compactor",
+          "snapshot-query-view"
+        ],
+        "governanceEquivalentBytes": 27429171,
+        "governanceEquivalentCountSeconds": [
+          0.0011236669961363077,
+          0.001802000100724399,
+          0.00082949991337955,
+          0.001006375066936016,
+          0.0015154160792008042,
+          0.0009803340071812272,
+          0.001290749991312623,
+          0.0009400419658049941,
+          0.0009208329720422626,
+          0.001463458058424294
+        ],
+        "governanceEquivalentFiles": 5,
+        "governanceEquivalentFingerprint": {
+          "hashXor": 9464846728092398686,
+          "payloadCharacters": 1141193404,
+          "rows": 1000000,
+          "sha256": "57238cb091a743ea5bdd3d4bdac7f46757cbe9400294fe7180675dc1c4ee4f4b"
+        },
+        "governanceEquivalentPayloadScanSeconds": [
+          0.0619292079936713,
+          0.06072512490209192,
+          0.06305825000163168,
+          0.0637951249955222,
+          0.06118762493133545,
+          0.0607504160143435,
+          0.07422375003807247,
+          0.0621980840805918,
+          0.06248949992004782,
+          0.0623157910304144
+        ],
+        "maintainedComponents": 8,
+        "nativeBytes": 1369011404,
+        "nativeCountSeconds": [
+          0.2713164580054581,
+          0.2758089159615338,
+          0.2760115839773789,
+          0.2719875839538872,
+          0.2674425831064582,
+          0.27676520799286664,
+          0.26716358307749033,
+          0.27257070899941027,
+          0.33308379200752825,
+          0.30718658305704594
+        ],
+        "nativeFiles": 100,
+        "nativePayloadScanSeconds": [
+          0.2818945419276133,
+          0.296795874950476,
+          0.29996058298274875,
+          0.29857924999669194,
+          0.28935304190963507,
+          0.285717457998544,
+          0.2838044579839334,
+          0.3218219169648364,
+          0.32583258289378136,
+          0.32859770907089114
+        ],
+        "nativeProfile": "newline-delimited-json-reference",
+        "sha256": "c2eab5c70d68f86350bb50879f4c56ae7f7f4387535f5d8ffb5ca5f36e8b75a6",
+        "syntaxCheck": "ast.parse",
+        "userAuthoredBytes": 997,
+        "userAuthoredLoc": 22,
+        "version": "2.18.0"
+      }
+    },
+    "timingBoundary": "local file system; reopening DuckDB does not flush operating-system or storage caches",
+    "totalRows": 1000000,
+    "wallSeconds": 21.42892466695048,
+    "writeSeconds": 7.531741332961246
+  }
+}

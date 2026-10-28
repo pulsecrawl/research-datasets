@@ -1,0 +1,19 @@
+{
+  "acceptance": "The expanded controlled input is scored with the same registered template-policy rules as the smaller comparison, with accuracy, coverage, contamination, and negative-page outcomes reported separately.",
+  "family": "template-extraction",
+  "id": "expanded-template-policy-comparison",
+  "measurements": [
+    "field_accuracy",
+    "record_coverage",
+    "contamination_rate",
+    "negative_page_false_positive_rate"
+  ],
+  "seed": 4722,
+  "status": "registered",
+  "title": "Expanded 1,000-page template-policy comparison",
+  "workload": {
+    "catalog": "datasets/site-pattern-html/catalog.json",
+    "configurations": 20,
+    "documents": 1000
+  }
+}

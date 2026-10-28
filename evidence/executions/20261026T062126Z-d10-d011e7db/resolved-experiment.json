@@ -1,0 +1,28 @@
+{
+  "acceptance": "Equivalent logical inputs and queries are validated before storage, query, or maintenance costs are compared.",
+  "family": "versioned-datasets",
+  "id": "governed-dataset-pipeline",
+  "measurements": [
+    "semantic_checksum",
+    "bytes",
+    "file_count",
+    "query_seconds",
+    "publication_violations",
+    "active_files_over_time"
+  ],
+  "seed": 4721,
+  "status": "registered",
+  "title": "Governed dataset pipeline comparison",
+  "workload": {
+    "bodyBytes": {
+      "maximum": 2048,
+      "minimum": 128
+    },
+    "executions": 100,
+    "failureRepetitions": 30,
+    "newFraction": 0.01,
+    "queryRepetitions": 10,
+    "simulationHours": 8760,
+    "totalRows": 1000000
+  }
+}

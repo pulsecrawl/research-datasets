@@ -1,0 +1,25 @@
+{
+  "acceptance": "Every interrupted execution converges to a terminal state with no residual frontier or unsettled reservation.",
+  "family": "policy-and-recovery",
+  "id": "interruption-recovery",
+  "measurements": [
+    "terminal_status",
+    "frontier_residuals",
+    "unsettled_reservations",
+    "repeated_completed_requests"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Recovery at durable crawl boundaries",
+  "workload": {
+    "concurrency": 4,
+    "interruptionPoints": [
+      "after_admission",
+      "before_request",
+      "after_request",
+      "after_commit"
+    ],
+    "maximumDepth": 8,
+    "maximumUrls": 1000
+  }
+}

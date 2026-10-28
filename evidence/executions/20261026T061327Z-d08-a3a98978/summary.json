@@ -1,0 +1,33 @@
+{
+  "kind": "datalake",
+  "results": {
+    "allSnapshotsValid": true,
+    "byStage": {
+      "after_cleanup": {
+        "observations": 30,
+        "violations": 0
+      },
+      "after_compact_before_swap": {
+        "observations": 30,
+        "violations": 0
+      },
+      "after_swap_before_cleanup": {
+        "observations": 30,
+        "violations": 0
+      },
+      "before_compact": {
+        "observations": 30,
+        "violations": 0
+      },
+      "during_pointer_write": {
+        "observations": 30,
+        "violations": 0
+      }
+    },
+    "method": "atomic-pointer-compaction-boundary-failure-matrix",
+    "observations": 150,
+    "repetitions": 30,
+    "status": "completed",
+    "violations": 0
+  }
+}

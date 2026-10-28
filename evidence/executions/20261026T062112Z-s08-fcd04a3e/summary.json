@@ -1,0 +1,75 @@
+{
+  "kind": "crawl",
+  "results": {
+    "allCorrectnessAuthoritiesDurable": true,
+    "method": "registered-operation-count-model-no-cloud-pricing",
+    "parameters": {
+      "concurrency": 8,
+      "expected": {},
+      "experiment_id": "S08",
+      "max_depth": 3,
+      "max_urls": 1000,
+      "metadata": {
+        "duplicateDeliveryRate": 0.35
+      },
+      "name": "operation count matrix",
+      "requests_per_second": 20.0,
+      "respect_robots": true,
+      "seed_urls": [
+        "http://model.invalid/"
+      ],
+      "timeout_seconds": 60.0
+    },
+    "regimes": {
+      "cache-loss-crawlby": {
+        "correctnessAuthority": "durable-store",
+        "deliveriesPerRepetition": 1350,
+        "durableReadsPerRepetition": 1012,
+        "durableWritesPerRepetition": 2000,
+        "queueOperationsPerRepetition": 2350,
+        "reductionVersusDurableOnly": 0.1137190082644628,
+        "repetitions": 30,
+        "totalExternalOperations": 160860,
+        "urlsPerRepetition": 1000,
+        "visibilityUpdatesPerRepetition": 0
+      },
+      "durable-only": {
+        "correctnessAuthority": "durable-store",
+        "deliveriesPerRepetition": 1350,
+        "durableReadsPerRepetition": 1350,
+        "durableWritesPerRepetition": 2000,
+        "queueOperationsPerRepetition": 2700,
+        "reductionVersusDurableOnly": 0.0,
+        "repetitions": 30,
+        "totalExternalOperations": 181500,
+        "urlsPerRepetition": 1000,
+        "visibilityUpdatesPerRepetition": 350
+      },
+      "volatile-cache": {
+        "correctnessAuthority": "durable-store",
+        "deliveriesPerRepetition": 1350,
+        "durableReadsPerRepetition": 338,
+        "durableWritesPerRepetition": 2000,
+        "queueOperationsPerRepetition": 2700,
+        "reductionVersusDurableOnly": 0.16727272727272724,
+        "repetitions": 30,
+        "totalExternalOperations": 151140,
+        "urlsPerRepetition": 1000,
+        "visibilityUpdatesPerRepetition": 350
+      },
+      "volatile-cache-crawlby": {
+        "correctnessAuthority": "durable-store",
+        "deliveriesPerRepetition": 1350,
+        "durableReadsPerRepetition": 338,
+        "durableWritesPerRepetition": 2000,
+        "queueOperationsPerRepetition": 2350,
+        "reductionVersusDurableOnly": 0.22512396694214876,
+        "repetitions": 30,
+        "totalExternalOperations": 140640,
+        "urlsPerRepetition": 1000,
+        "visibilityUpdatesPerRepetition": 0
+      }
+    },
+    "status": "completed"
+  }
+}

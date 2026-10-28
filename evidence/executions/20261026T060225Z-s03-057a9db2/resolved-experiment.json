@@ -1,0 +1,19 @@
+{
+  "acceptance": "All same-origin authorization gaps satisfy the configured minimum interval.",
+  "family": "policy-and-recovery",
+  "id": "shared-origin-pacing",
+  "measurements": [
+    "authorization_gap_seconds",
+    "server_arrival_gap_seconds",
+    "origin_interval_violations"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Shared origin pacing across local jobs",
+  "workload": {
+    "localPacingGroups": 2,
+    "maximumUrlsPerJob": 20,
+    "originRequestsPerSecond": 2,
+    "parallelJobs": 3
+  }
+}

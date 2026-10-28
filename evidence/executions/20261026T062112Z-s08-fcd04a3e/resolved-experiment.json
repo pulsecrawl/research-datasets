@@ -1,0 +1,21 @@
+{
+  "acceptance": "All regimes report correctness and operation counts from the same workload; missing operations are not interpreted as zero.",
+  "family": "policy-and-recovery",
+  "id": "coordination-operation-cost",
+  "measurements": [
+    "durable_reads",
+    "durable_writes",
+    "queue_operations",
+    "visibility_updates",
+    "total_external_operations"
+  ],
+  "seed": 4711,
+  "status": "registered",
+  "title": "Coordination operation-count matrix",
+  "workload": {
+    "concurrency": 8,
+    "duplicateDeliveryRate": 0.35,
+    "maximumUrls": 1000,
+    "repetitions": 30
+  }
+}

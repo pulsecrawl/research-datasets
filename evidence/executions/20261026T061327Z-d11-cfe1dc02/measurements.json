@@ -1,0 +1,92 @@
+{
+  "allChecksPassed": true,
+  "checks": {
+    "appendAllExpectedRows": true,
+    "compactionPreservesRows": true,
+    "newOnlyExpectedRows": true,
+    "newOnlyStoresFewerBytes": true,
+    "newOnlyStoresFewerRows": true,
+    "replayIsIdempotent": true
+  },
+  "executions": 10,
+  "inputObservations": 1000,
+  "method": "public-local-workspace-end-to-end",
+  "modes": {
+    "append_all": {
+      "bytesBeforeCompaction": 78608,
+      "compactedInputFiles": 1,
+      "compactionPreservedRows": true,
+      "datasetId": "ds_33fee79c96088d6c4166",
+      "executionIds": [
+        "exec_append_all_000",
+        "exec_append_all_001",
+        "exec_append_all_002",
+        "exec_append_all_003",
+        "exec_append_all_004",
+        "exec_append_all_005",
+        "exec_append_all_006",
+        "exec_append_all_007",
+        "exec_append_all_008",
+        "exec_append_all_009"
+      ],
+      "filesAfterCompaction": 1,
+      "filesBeforeCompaction": 10,
+      "jobId": "job_c7ddf6dd8c7594122ce4",
+      "materializedRowsPerExecution": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "replayExecutionId": "exec_append_all_009",
+      "replayIdempotent": true,
+      "rowsAfterCompaction": 1000,
+      "rowsBeforeCompaction": 1000
+    },
+    "new_urls_only": {
+      "bytesBeforeCompaction": 7871,
+      "compactedInputFiles": 0,
+      "compactionPreservedRows": true,
+      "datasetId": "ds_0e304c18d63c0ff77ccd",
+      "executionIds": [
+        "exec_new_urls_only_000",
+        "exec_new_urls_only_001",
+        "exec_new_urls_only_002",
+        "exec_new_urls_only_003",
+        "exec_new_urls_only_004",
+        "exec_new_urls_only_005",
+        "exec_new_urls_only_006",
+        "exec_new_urls_only_007",
+        "exec_new_urls_only_008",
+        "exec_new_urls_only_009"
+      ],
+      "filesAfterCompaction": 1,
+      "filesBeforeCompaction": 1,
+      "jobId": "job_1f9b60a2348b2e1e2ebe",
+      "materializedRowsPerExecution": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "replayExecutionId": "exec_new_urls_only_009",
+      "replayIdempotent": true,
+      "rowsAfterCompaction": 100,
+      "rowsBeforeCompaction": 100
+    }
+  },
+  "status": "completed",
+  "urlsPerExecution": 100
+}

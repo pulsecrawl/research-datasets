@@ -1,0 +1,68 @@
+{
+  "method": "labelled-deterministic-discrete-event-ablation",
+  "parameters": {
+    "concurrency": 16,
+    "expected": {
+      "maximumHttpRequests": 1000,
+      "minimumInterRequestSeconds": 0.005
+    },
+    "experiment_id": "S05",
+    "max_depth": 8,
+    "max_urls": 1000,
+    "metadata": {},
+    "name": "queue scheduling strategies",
+    "requests_per_second": 200.0,
+    "respect_robots": true,
+    "seed_urls": [
+      "http://127.0.0.1:50660/site/news/01/"
+    ],
+    "timeout_seconds": 600.0
+  },
+  "status": "completed",
+  "strategies": {
+    "crawlby": {
+      "deferrals": 0,
+      "exactAdmission": true,
+      "finalDispatchProtection": false,
+      "gateCallsPerUrl": 1,
+      "modeledMakespanSeconds": 4.995,
+      "queueReadsPerUrl": 1,
+      "queueWritesPerUrl": 1,
+      "storageCalls": 2000,
+      "visibilityUpdatesPerUrl": 0
+    },
+    "crawlby-final-gate": {
+      "deferrals": 0,
+      "exactAdmission": true,
+      "finalDispatchProtection": true,
+      "gateCallsPerUrl": 2,
+      "modeledMakespanSeconds": 4.995,
+      "queueReadsPerUrl": 1,
+      "queueWritesPerUrl": 1,
+      "storageCalls": 2000,
+      "visibilityUpdatesPerUrl": 0
+    },
+    "queue-defer": {
+      "deferrals": 984,
+      "exactAdmission": false,
+      "finalDispatchProtection": false,
+      "gateCallsPerUrl": 2,
+      "modeledMakespanSeconds": 4.995,
+      "queueReadsPerUrl": 2,
+      "queueWritesPerUrl": 1,
+      "storageCalls": 4000,
+      "visibilityUpdatesPerUrl": 1
+    },
+    "worker-sleep": {
+      "deferrals": 984,
+      "exactAdmission": false,
+      "finalDispatchProtection": false,
+      "gateCallsPerUrl": 1,
+      "modeledMakespanSeconds": 4.995,
+      "queueReadsPerUrl": 1,
+      "queueWritesPerUrl": 1,
+      "storageCalls": 2000,
+      "visibilityUpdatesPerUrl": 0
+    }
+  }
+}

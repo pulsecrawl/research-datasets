@@ -28,3 +28,9 @@ Negative and null results remain part of the analysis. Failed runs are not
 silently deleted, post-repair measurements do not overwrite pre-repair
 measurements, and missing values are not treated as zero.
 
+Release `v0.3.0` publishes the frozen controlled analysis under
+[`releases/public-local-0.1.0-2026-10-27/`](releases/public-local-0.1.0-2026-10-27/).
+Its manifest lists all 116 included controlled executions, and its checksum
+manifest covers the retained findings, measurements, statistics, and verdict
+files.
+

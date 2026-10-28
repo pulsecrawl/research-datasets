@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "package": "pulsecrawl[workspace]==0.1.0",
-  "datasetRevision": "0.3.0-development",
+  "datasetRevision": "0.3.0",
   "experiments": [
     {
       "id": "execution-budget-under-concurrency",
@@ -184,6 +184,16 @@
       "acceptance": "Baseline, adverse, and repaired outcomes are reported separately; template-label coverage is not presented as field-level attribution."
     },
     {
+      "id": "expanded-template-policy-comparison",
+      "family": "template-extraction",
+      "title": "Expanded 1,000-page template-policy comparison",
+      "seed": 4722,
+      "status": "registered",
+      "workload": {"catalog": "datasets/site-pattern-html/catalog.json", "documents": 1000, "configurations": 20},
+      "measurements": ["field_accuracy", "record_coverage", "contamination_rate", "negative_page_false_positive_rate"],
+      "acceptance": "The expanded controlled input is scored with the same registered template-policy rules as the smaller comparison, with accuracy, coverage, contamination, and negative-page outcomes reported separately."
+    },
+    {
       "id": "temporal-query-scaling",
       "family": "versioned-datasets",
       "title": "Temporal query scaling",
@@ -272,6 +282,16 @@
       "workload": {"independentWorkspaces": 2},
       "measurements": ["row_count", "semantic_checksum", "version_manifest_validity"],
       "acceptance": "Independent local workspaces supplied with the same registered inputs produce equivalent logical records and valid version manifests."
+    },
+    {
+      "id": "public-workspace-publication",
+      "family": "versioned-datasets",
+      "title": "Public local-workspace publication, replay, and compaction",
+      "seed": 4723,
+      "status": "registered",
+      "workload": {"urls": 100, "executions": 10, "publicationPolicies": ["append_all", "new_urls_only"]},
+      "measurements": ["row_count", "semantic_checksum", "published_files", "replay_effect", "compaction_result"],
+      "acceptance": "The installed public package publishes the expected logical rows, completed-execution replay adds no duplicate output, and compaction preserves the selected dataset contents."
     },
     {
       "id": "governed-dataset-pipeline",

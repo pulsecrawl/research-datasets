@@ -128,15 +128,19 @@ notes. Downloaded HTML bodies are not published. Access blocks, zero extracted
 records, unchanged prices, and required template repairs remain valid observed
 outcomes.
 
-The current tagged release contains a plan, not completed live-commerce
-results. A source manifest by itself is not evidence of execution.
+Release `v0.3.0` includes aggregate summaries from two retained live studies:
+48 news cycles across five eligible sites and eight commerce cycles on one
+eligible product page. These summaries contain counts and operational outcomes,
+not downloaded pages, article or product text, raw request logs, or workspace
+databases. The source manifest alone is not treated as evidence of execution.
 
 ## Release boundary
 
-The existing [`v0.2.0`](https://github.com/pulsecrawl/research-datasets/releases/tag/v0.2.0)
-tag remains the immutable synthetic-input release. The main branch prepares the
-next artifact release, which adds experiment registration and a reviewed
-evidence format. Existing tags are not rewritten.
+[`v0.3.0`](https://github.com/pulsecrawl/research-datasets/releases/tag/v0.3.0)
+publishes 116 sanitized controlled executions, the frozen controlled analysis,
+and the two aggregate live-study summaries. Each controlled execution links its
+public checksum manifest to the checksum of the corresponding frozen source
+run. Existing tags remain immutable.
 
 See [`DATASETS.md`](DATASETS.md), [`PRIVACY.md`](PRIVACY.md), and
 [`NOTICE`](NOTICE) for dataset, publication, and licensing boundaries.

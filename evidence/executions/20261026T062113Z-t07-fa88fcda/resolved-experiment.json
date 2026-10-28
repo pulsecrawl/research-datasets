@@ -1,0 +1,17 @@
+{
+  "acceptance": "Ambiguous pages are surfaced and entity-selection accuracy is reported against the registered oracle.",
+  "family": "template-extraction",
+  "id": "multiple-entity-ambiguity",
+  "measurements": [
+    "first_entity_accuracy",
+    "canonical_entity_accuracy",
+    "ambiguities_reported"
+  ],
+  "seed": 4714,
+  "status": "registered",
+  "title": "Multiple-entity ambiguity diagnostics",
+  "workload": {
+    "itemsPerSite": 10,
+    "sites": 20
+  }
+}

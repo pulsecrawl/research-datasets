@@ -1,0 +1,24 @@
+{
+  "acceptance": "Scheduling variants preserve policy correctness; efficiency is reported without declaring a universal winner.",
+  "family": "policy-and-recovery",
+  "id": "deferred-work-efficiency",
+  "measurements": [
+    "queue_operations",
+    "deferred_deliveries",
+    "worker_wait_seconds",
+    "policy_violations"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Deferred-work scheduling efficiency",
+  "workload": {
+    "concurrency": 16,
+    "maximumUrls": 1000,
+    "profiles": [
+      "worker_wait",
+      "queue_defer",
+      "scheduled_eligibility",
+      "scheduled_eligibility_with_final_gate"
+    ]
+  }
+}

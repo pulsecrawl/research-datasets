@@ -27,7 +27,12 @@ The following material is not publishable here:
 - downloaded third-party HTML without redistribution permission;
 - raw high-cardinality logs that are unnecessary for the stated measurement.
 
-An empty `executions/` directory means that no run has yet passed the public
-evidence review. Definitions in `experiments/catalog.json` remain useful and
-reproducible, but they are not presented as completed results.
+Release `v0.3.0` contains 116 reviewed controlled executions. The release index
+at [`reviewed-release.json`](reviewed-release.json) records the frozen source
+release, source commit, per-run source checksum, public checksum, controlled
+analysis, and aggregate live-study summaries.
+
+The live-study directories contain aggregate counts only. Record-level review
+files, downloaded third-party HTML, article or product text, raw request logs,
+and workspace databases remain outside the public artifact.
 

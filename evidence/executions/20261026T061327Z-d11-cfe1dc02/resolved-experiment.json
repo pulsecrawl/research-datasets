@@ -1,0 +1,23 @@
+{
+  "acceptance": "The installed public package publishes the expected logical rows, completed-execution replay adds no duplicate output, and compaction preserves the selected dataset contents.",
+  "family": "versioned-datasets",
+  "id": "public-workspace-publication",
+  "measurements": [
+    "row_count",
+    "semantic_checksum",
+    "published_files",
+    "replay_effect",
+    "compaction_result"
+  ],
+  "seed": 4723,
+  "status": "registered",
+  "title": "Public local-workspace publication, replay, and compaction",
+  "workload": {
+    "executions": 10,
+    "publicationPolicies": [
+      "append_all",
+      "new_urls_only"
+    ],
+    "urls": 100
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "acceptance": "Redelivery and cache loss cause no duplicate authorization, post-terminal request, budget violation, or unsettled reservation.",
+  "family": "policy-and-recovery",
+  "id": "concurrent-redelivery-stress",
+  "measurements": [
+    "duplicate_deliveries",
+    "duplicate_authorizations",
+    "late_messages",
+    "policy_violations"
+  ],
+  "seed": 4710,
+  "status": "registered",
+  "title": "Concurrency, redelivery, cache-loss, and late-message stress",
+  "workload": {
+    "cacheLossEvery": 17,
+    "concurrency": 8,
+    "duplicateDeliveryRate": 0.35,
+    "localPacingGroups": 2,
+    "maximumUrls": 100,
+    "parallelJobs": 8,
+    "repetitions": 30
+  }
+}

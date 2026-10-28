@@ -1,0 +1,20 @@
+{
+  "acceptance": "Query results must be semantically correct before performance measurements are interpreted.",
+  "family": "versioned-datasets",
+  "id": "temporal-query-scaling",
+  "measurements": [
+    "row_count",
+    "query_seconds",
+    "payload_checksum",
+    "bytes",
+    "file_count"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Temporal query scaling",
+  "workload": {
+    "executions": 10,
+    "newFraction": 0.1,
+    "rowsPerExecution": 1000
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "authoredMatches": 240,
+  "completeRecords": 300,
+  "diagnosticsBySite": {
+    "jobs-01": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "jobs-02": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "jobs-03": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "jobs-04": {
+      "authored": 0,
+      "fallback": 20,
+      "miss": 0
+    },
+    "jobs-05": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "news-01": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "news-02": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "news-03": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "news-04": {
+      "authored": 0,
+      "fallback": 20,
+      "miss": 0
+    },
+    "news-05": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "products-01": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "products-02": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "products-03": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    },
+    "products-04": {
+      "authored": 0,
+      "fallback": 20,
+      "miss": 0
+    },
+    "products-05": {
+      "authored": 20,
+      "fallback": 0,
+      "miss": 0
+    }
+  },
+  "fallbackRate": 0.2,
+  "needsTemplate": 60,
+  "needsTemplateRate": 0.2,
+  "pages": 300,
+  "status": "completed",
+  "systemFallbackMatches": 60
+}

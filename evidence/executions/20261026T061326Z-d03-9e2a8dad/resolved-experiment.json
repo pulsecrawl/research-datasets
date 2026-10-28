@@ -1,0 +1,21 @@
+{
+  "acceptance": "Readers observe a complete committed version before or after compaction, never a partial replacement.",
+  "family": "versioned-datasets",
+  "id": "compaction-version-isolation",
+  "measurements": [
+    "version_count",
+    "reader_consistency",
+    "compaction_seconds",
+    "file_count",
+    "payload_checksum"
+  ],
+  "seed": 4705,
+  "status": "registered",
+  "title": "Compaction and version isolation",
+  "workload": {
+    "concurrentReaders": 8,
+    "executions": 100,
+    "newFraction": 0.1,
+    "rowsPerExecution": 1000
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "acceptance": "Metrics are computed against the frozen expected-value manifests without live-network substitution.",
+  "family": "template-extraction",
+  "id": "frozen-multi-industry-corpus",
+  "measurements": [
+    "field_precision",
+    "field_recall",
+    "field_f1",
+    "record_coverage"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "Frozen multi-industry corpus quality",
+  "workload": {
+    "itemsPerSite": 20,
+    "sitesPerVertical": 5
+  }
+}

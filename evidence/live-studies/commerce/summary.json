@@ -1,0 +1,60 @@
+{
+  "method": "live-study-summary-with-phases-kept-separate",
+  "runs": [
+    {
+      "bytes_processed": 5620943,
+      "completedCycles": 8,
+      "enabledSites": 1,
+      "excludedSites": 9,
+      "materializedRows": 8,
+      "pages_discovered": 0,
+      "pages_failed": 0,
+      "pages_fetched": 8,
+      "phase": "retained",
+      "plannedCycles": 8,
+      "publishedExecutions": 8,
+      "rate_limit_deferrals": 4,
+      "rate_limit_queue_deferrals": 4,
+      "records_extracted": 8,
+      "requestedSites": 10,
+      "robots_blocked": 0,
+      "robots_cache_hits": 8,
+      "robots_checks": 12,
+      "robots_fetch_failures": 0,
+      "robots_fetches": 4,
+      "rows": 8,
+      "runId": "20261026T062448Z-l02-5b82bc4b",
+      "sourceUrls": 1,
+      "status": "completed",
+      "study": "commerce",
+      "transient_retries": 0,
+      "urls_attempted": 8
+    }
+  ],
+  "schemaVersion": 1,
+  "sites": [
+    {
+      "bytes_processed": 5620943,
+      "executions": 8,
+      "materializedRows": 8,
+      "pages_discovered": 0,
+      "pages_failed": 0,
+      "pages_fetched": 8,
+      "phase": "retained",
+      "rate_limit_deferrals": 4,
+      "rate_limit_queue_deferrals": 4,
+      "records_extracted": 8,
+      "robots_blocked": 0,
+      "robots_cache_hits": 8,
+      "robots_checks": 12,
+      "robots_fetch_failures": 0,
+      "robots_fetches": 4,
+      "runId": "20261026T062448Z-l02-5b82bc4b",
+      "siteId": "alo-airlift",
+      "status_succeeded": 8,
+      "study": "commerce",
+      "transient_retries": 0,
+      "urls_attempted": 8
+    }
+  ]
+}

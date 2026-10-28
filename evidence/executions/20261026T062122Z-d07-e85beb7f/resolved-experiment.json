@@ -1,0 +1,17 @@
+{
+  "acceptance": "Hourly, daily, all-history, and new-URL queries return the registered rows and checksums.",
+  "family": "versioned-datasets",
+  "id": "temporal-query-correctness",
+  "measurements": [
+    "expected_rows",
+    "actual_rows",
+    "payload_checksum",
+    "query_seconds"
+  ],
+  "seed": 4717,
+  "status": "registered",
+  "title": "Temporal query correctness and latency",
+  "workload": {
+    "queryRepetitions": 30
+  }
+}

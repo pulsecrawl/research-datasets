@@ -1,0 +1,29 @@
+{
+  "acceptance": "Baseline, adverse, and repaired outcomes are reported separately; template-label coverage is not presented as field-level attribution.",
+  "family": "template-extraction",
+  "id": "scoped-template-governance",
+  "measurements": [
+    "field_accuracy",
+    "negative_page_false_positive_rate",
+    "contamination_rate",
+    "repair_scope",
+    "template_label_coverage"
+  ],
+  "seed": 4720,
+  "status": "registered",
+  "title": "Scoped-template governance under realistic drift",
+  "workload": {
+    "catalog": "datasets/site-pattern-html/catalog.json",
+    "documentsPerSite": 5,
+    "driftCases": [
+      "shared_selector_rename",
+      "site_selector_rename",
+      "wrapper_insertion",
+      "jsonld_to_meta",
+      "multiple_entities",
+      "canonical_change",
+      "negative_page",
+      "literal_leak"
+    ]
+  }
+}

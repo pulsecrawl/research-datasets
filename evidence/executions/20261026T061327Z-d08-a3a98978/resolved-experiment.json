@@ -1,0 +1,24 @@
+{
+  "acceptance": "Every interruption leaves at least one valid committed dataset view and never exposes a partial replacement.",
+  "family": "versioned-datasets",
+  "id": "compaction-interruption-matrix",
+  "measurements": [
+    "valid_committed_view",
+    "missing_parts",
+    "checksum_mismatches",
+    "orphan_candidates"
+  ],
+  "seed": 4718,
+  "status": "registered",
+  "title": "Compaction interruption matrix",
+  "workload": {
+    "interruptionPoints": [
+      "before_compaction",
+      "after_replacement_write",
+      "during_version_pointer_write",
+      "after_version_swap",
+      "after_cleanup"
+    ],
+    "repetitions": 30
+  }
+}

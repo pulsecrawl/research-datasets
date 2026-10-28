@@ -1,0 +1,18 @@
+{
+  "acceptance": "Scoped stacks retain registered record coverage while preventing literal values from unrelated scopes.",
+  "family": "template-extraction",
+  "id": "url-scoped-template-selection",
+  "measurements": [
+    "field_precision",
+    "field_recall",
+    "record_coverage",
+    "cross_scope_contamination"
+  ],
+  "seed": 4703,
+  "status": "registered",
+  "title": "URL-scoped template selection and contamination",
+  "workload": {
+    "itemsPerSite": 20,
+    "sitesPerVertical": 5
+  }
+}
