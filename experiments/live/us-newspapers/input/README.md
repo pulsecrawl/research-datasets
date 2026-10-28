@@ -1,6 +1,9 @@
 # United States newspapers
 
-This directory defines the public sources used by the bounded live study. The listing URL supports later recurring discovery; the representative detail URL is used by the ten-minute qualification. No response bodies are retained.
+This directory defines the 20 selected public websites used by the
+bounded live study. The listing URL supports later recurring discovery; the
+qualification URL is used by the short two-cycle check. No response bodies
+are retained.
 
 | Website | Stable ID | Listing URL | Qualification URL |
 |---|---|---|---|

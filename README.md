@@ -131,19 +131,19 @@ organized by descriptive experiment name under
 
 ## Multi-category live qualification
 
-The live catalog contains 119 reviewed sources across nine categories:
+The live catalog contains 107 selected websites across nine categories:
 
 | Category | Sources | Output schema | Planned retained interval |
 |---|---:|---|---:|
-| Mexican newspapers | 20 | Article | 30 minutes |
+| Mexican newspapers | 19 | Article | 30 minutes |
 | United States newspapers | 20 | Article | 30 minutes |
 | Financial and stock news | 20 | Article | 30 minutes |
-| General commerce | 11 | Product | 60 minutes |
-| Mexican supermarkets | 6 | Product | 60 minutes |
-| S&P 500 company careers | 12 | Job posting | 60 minutes |
-| Government and regulatory notices | 10 | Public notice | 60 minutes |
-| Security advisories | 10 | Security advisory | 60 minutes |
-| Weather and environmental alerts | 10 | Weather alert | 30 minutes |
+| General commerce | 9 | Product | 60 minutes |
+| Mexican supermarkets | 5 | Product | 60 minutes |
+| S&P 500 company careers | 10 | Job posting | 60 minutes |
+| Government and regulatory notices | 9 | Public notice | 60 minutes |
+| Security advisories | 8 | Security advisory | 60 minutes |
+| Weather and environmental alerts | 7 | Weather alert | 30 minutes |
 
 The bounded qualification runs each category twice, five minutes apart. It
 uses actual raw HTTP requests, performs a fresh fail-closed robots review, and
@@ -154,12 +154,10 @@ pulsecrawl-research qualify-live \
   --output-root ./qualification-output
 ```
 
-The qualification command cannot start the 24-hour retained phase. A source
-that is unavailable or excluded by its current robots rules remains visible in
-the access review. The reviewed qualification release contains all 119
-candidates: 107 passed the runtime and required-field checks, while 12 remain
-visible with an explicit exclusion reason. The release is indexed at
-[`experiments/releases/multi-category-qualification-v0.4.0-rc.1/`](experiments/releases/multi-category-qualification-v0.4.0-rc.1/).
+The qualification command cannot start the 24-hour retained phase. The
+reviewed qualification release contains the 107 selected websites, all of
+which passed the runtime and required-field checks. The release is indexed at
+[`experiments/releases/multi-category-qualification-v0.4.1-rc.1/`](experiments/releases/multi-category-qualification-v0.4.1-rc.1/).
 
 ## Dataset and publication boundary
 

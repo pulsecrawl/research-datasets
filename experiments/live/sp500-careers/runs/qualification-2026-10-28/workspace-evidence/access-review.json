@@ -117,15 +117,6 @@
       "status": "enabled"
     },
     {
-      "checkedAt": "2026-10-28T03:58:13.066422+00:00",
-      "enabled": false,
-      "reason": "The detail page passed raw preflight review but returned HTTP 403 to the PulseCrawl request during both pilot cycles.",
-      "seedUrl": "https://www.careers.jnj.com/en/jobs/2406217121w/innovative-medicine-%E7%94%9F%E7%94%A3%E7%89%A9%E6%B5%81%E6%9C%AC%E9%83%A8-%E5%AF%8C%E5%A3%AB%E5%B7%A5%E5%A0%B4-%E8%A3%BD%E9%80%A0%E9%83%A8-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%883-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC-%E5%AF%8C%E5%A3%AB%E5%B7%A5%E5%A0%B4/",
-      "siteId": "careers-johnson-johnson",
-      "siteName": "Johnson & Johnson",
-      "status": "study_excluded"
-    },
-    {
       "checkedAt": "2026-10-28T03:58:13.066441+00:00",
       "contentType": "text/html; charset=UTF-8",
       "enabled": true,
@@ -172,15 +163,6 @@
       "siteId": "careers-pepsico",
       "siteName": "PepsiCo",
       "status": "enabled"
-    },
-    {
-      "checkedAt": "2026-10-28T03:58:16.554340+00:00",
-      "enabled": false,
-      "reason": "The detail page passed raw preflight review but returned HTTP 403 to the PulseCrawl request during both pilot cycles.",
-      "seedUrl": "https://careers.caterpillar.com/en/jobs/r0000402171/machinist-ii/",
-      "siteId": "careers-caterpillar",
-      "siteName": "Caterpillar",
-      "status": "study_excluded"
     }
   ],
   "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"

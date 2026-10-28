@@ -14,31 +14,44 @@ def build_live_guides() -> int:
     for category in catalog["categories"]:
         folder = ROOT / "experiments/live" / category["id"]
         sites = json.loads((folder / "input/sites.json").read_text())["sites"]
-        eligible = [site for site in sites if site.get("retainedEnabled") is not False]
         rows = []
         for site in sites:
-            status = "eligible for qualification"
-            if site.get("retainedEnabled") is False:
-                status = "excluded after pilot"
             rows.append(
-                f"| {site['name']} | `{site['id']}` | {status} | "
+                f"| {site['name']} | `{site['id']}` | "
                 f"{site['qualificationSeedUrls'][0]} |"
             )
         body = f"""# {category['name']} live study
 
-This category contains {len(sites)} reviewed candidates. {len(eligible)} are
-currently eligible for the two-cycle qualification. A later 24-hour study is
+This category contains {len(sites)} websites selected for the two-cycle
+qualification. A later 24-hour study is
 configured separately and is not started by the qualification command.
 
-| Website | Stable ID | Current status | Qualification URL |
-|---|---|---|---|
+| Website | Stable ID | Qualification URL |
+|---|---|---|
 {chr(10).join(rows)}
 
-Exact hosts, discovery limits, template mappings, and exclusion reasons are in
+Exact hosts, discovery limits, and template mappings are in
 [`input/sites.json`](input/sites.json). Completed evidence appears under
 `runs/`; an empty `runs/` folder means that no public run has been released.
 """
         (folder / "README.md").write_text(body, encoding="utf-8")
+        input_rows = [
+            f"| {site['name']} | `{site['id']}` | {site['listingUrl']} | "
+            f"{site['qualificationSeedUrls'][0]} |"
+            for site in sites
+        ]
+        input_body = f"""# {category['name']}
+
+This directory defines the {len(sites)} selected public websites used by the
+bounded live study. The listing URL supports later recurring discovery; the
+qualification URL is used by the short two-cycle check. No response bodies
+are retained.
+
+| Website | Stable ID | Listing URL | Qualification URL |
+|---|---|---|---|
+{chr(10).join(input_rows)}
+"""
+        (folder / "input/README.md").write_text(input_body, encoding="utf-8")
         written += 1
     return written
 

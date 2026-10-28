@@ -1,609 +1,609 @@
 {
-  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "schemaVersion": 2,
+  "studyId": "us-newspapers",
   "displayName": "United States newspapers",
   "schemaProfile": "article",
-  "schemaVersion": 2,
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
   "sites": [
     {
-      "constantFields": {
-        "source_name": "Chicago Tribune"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?chicagotribune\\.com/.+"
-      ],
-      "hosts": [
-        "www.chicagotribune.com"
-      ],
       "id": "us-chicago-tribune",
-      "listingUrl": "https://www.chicagotribune.com/news/",
-      "maxDepth": 1,
-      "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
       "name": "Chicago Tribune",
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.chicagotribune.com/2026/10/27/seven-file-to-run-for-harvey-mayor-candidates-also-file-in-dolton-lynwood-and-riverdale/"
-      ],
+      "listingUrl": "https://www.chicagotribune.com/news/",
       "representativeDetailUrl": "https://www.chicagotribune.com/2026/10/27/seven-file-to-run-for-harvey-mayor-candidates-also-file-in-dolton-lynwood-and-riverdale/",
       "seedUrls": [
         "https://www.chicagotribune.com/news/",
         "https://www.chicagotribune.com/2026/10/27/seven-file-to-run-for-harvey-mayor-candidates-also-file-in-dolton-lynwood-and-riverdale/"
       ],
-      "templatePatterns": [
-        "https://www.chicagotribune.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Houston Chronicle"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?houstonchronicle\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.chicagotribune.com/2026/10/27/seven-file-to-run-for-harvey-mayor-candidates-also-file-in-dolton-lynwood-and-riverdale/"
       ],
       "hosts": [
-        "www.houstonchronicle.com"
+        "www.chicagotribune.com"
       ],
-      "id": "us-houston-chronicle",
-      "listingUrl": "https://www.houstonchronicle.com/news/houston-texas/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?chicagotribune\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.chicagotribune.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Chicago Tribune"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Houston Chronicle",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.houstonchronicle.com/news/houston-texas/trending/article/kirby-mansion-midtown-sale-22496930.php"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-houston-chronicle",
+      "name": "Houston Chronicle",
+      "listingUrl": "https://www.houstonchronicle.com/news/houston-texas/",
       "representativeDetailUrl": "https://www.houstonchronicle.com/news/houston-texas/trending/article/kirby-mansion-midtown-sale-22496930.php",
       "seedUrls": [
         "https://www.houstonchronicle.com/news/houston-texas/",
         "https://www.houstonchronicle.com/news/houston-texas/trending/article/kirby-mansion-midtown-sale-22496930.php"
       ],
-      "templatePatterns": [
-        "https://www.houstonchronicle.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Los Angeles Times"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?latimes\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.houstonchronicle.com/news/houston-texas/trending/article/kirby-mansion-midtown-sale-22496930.php"
       ],
       "hosts": [
-        "www.latimes.com"
+        "www.houstonchronicle.com"
       ],
-      "id": "us-los-angeles-times",
-      "listingUrl": "https://www.latimes.com/california",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?houstonchronicle\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.houstonchronicle.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Houston Chronicle"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Los Angeles Times",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.latimes.com/california/story/2026-10-27/progressive-candidate-could-topple-incumbent-for-los-angeles-house-seat-but-she-has-her-own-critics"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-los-angeles-times",
+      "name": "Los Angeles Times",
+      "listingUrl": "https://www.latimes.com/california",
       "representativeDetailUrl": "https://www.latimes.com/california/story/2026-10-27/progressive-candidate-could-topple-incumbent-for-los-angeles-house-seat-but-she-has-her-own-critics",
       "seedUrls": [
         "https://www.latimes.com/california",
         "https://www.latimes.com/california/story/2026-10-27/progressive-candidate-could-topple-incumbent-for-los-angeles-house-seat-but-she-has-her-own-critics"
       ],
-      "templatePatterns": [
-        "https://www.latimes.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Newsday"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?newsday\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.latimes.com/california/story/2026-10-27/progressive-candidate-could-topple-incumbent-for-los-angeles-house-seat-but-she-has-her-own-critics"
       ],
       "hosts": [
-        "www.newsday.com"
+        "www.latimes.com"
       ],
-      "id": "us-newsday",
-      "listingUrl": "https://www.newsday.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?latimes\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.latimes.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Los Angeles Times"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Newsday",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.newsday.com/long-island/politics/elections/voters-guide/long-island-voters-guide-for-nov-3-2026"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-newsday",
+      "name": "Newsday",
+      "listingUrl": "https://www.newsday.com/news/",
       "representativeDetailUrl": "https://www.newsday.com/long-island/politics/elections/voters-guide/long-island-voters-guide-for-nov-3-2026",
       "seedUrls": [
         "https://www.newsday.com/news/",
         "https://www.newsday.com/long-island/politics/elections/voters-guide/long-island-voters-guide-for-nov-3-2026"
       ],
-      "templatePatterns": [
-        "https://www.newsday.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "NOLA.com"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?nola\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.newsday.com/long-island/politics/elections/voters-guide/long-island-voters-guide-for-nov-3-2026"
       ],
       "hosts": [
-        "www.nola.com"
+        "www.newsday.com"
       ],
-      "id": "us-nola",
-      "listingUrl": "https://www.nola.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?newsday\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.newsday.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Newsday"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "NOLA.com",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.nola.com/news/jefferson_parish/elmwood-early-voting-location-reopens-after-brief-closure-due-to-suspicious-liquid-stain-on-envelope/article_c96c13c4-4652-4e6e-a86e-8e95dfbe5fdf.html"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-nola",
+      "name": "NOLA.com",
+      "listingUrl": "https://www.nola.com/news/",
       "representativeDetailUrl": "https://www.nola.com/news/jefferson_parish/elmwood-early-voting-location-reopens-after-brief-closure-due-to-suspicious-liquid-stain-on-envelope/article_c96c13c4-4652-4e6e-a86e-8e95dfbe5fdf.html",
       "seedUrls": [
         "https://www.nola.com/news/",
         "https://www.nola.com/news/jefferson_parish/elmwood-early-voting-location-reopens-after-brief-closure-due-to-suspicious-liquid-stain-on-envelope/article_c96c13c4-4652-4e6e-a86e-8e95dfbe5fdf.html"
       ],
-      "templatePatterns": [
-        "https://www.nola.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "San Diego Union-Tribune"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?sandiegouniontribune\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.nola.com/news/jefferson_parish/elmwood-early-voting-location-reopens-after-brief-closure-due-to-suspicious-liquid-stain-on-envelope/article_c96c13c4-4652-4e6e-a86e-8e95dfbe5fdf.html"
       ],
       "hosts": [
-        "www.sandiegouniontribune.com"
+        "www.nola.com"
       ],
-      "id": "us-san-diego-union-tribune",
-      "listingUrl": "https://www.sandiegouniontribune.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?nola\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.nola.com/*"
+      ],
+      "constantFields": {
+        "source_name": "NOLA.com"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "San Diego Union-Tribune",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.sandiegouniontribune.com/2026/10/27/taking-a-try-at-dry-pausing-alcohol-consumption-even-for-just-a-few-weeks-can-have-noticeable-benefits/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-san-diego-union-tribune",
+      "name": "San Diego Union-Tribune",
+      "listingUrl": "https://www.sandiegouniontribune.com/news/",
       "representativeDetailUrl": "https://www.sandiegouniontribune.com/2026/10/27/taking-a-try-at-dry-pausing-alcohol-consumption-even-for-just-a-few-weeks-can-have-noticeable-benefits/",
       "seedUrls": [
         "https://www.sandiegouniontribune.com/news/",
         "https://www.sandiegouniontribune.com/2026/10/27/taking-a-try-at-dry-pausing-alcohol-consumption-even-for-just-a-few-weeks-can-have-noticeable-benefits/"
       ],
-      "templatePatterns": [
-        "https://www.sandiegouniontribune.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "San Francisco Chronicle"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?sfchronicle\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.sandiegouniontribune.com/2026/10/27/taking-a-try-at-dry-pausing-alcohol-consumption-even-for-just-a-few-weeks-can-have-noticeable-benefits/"
       ],
       "hosts": [
-        "www.sfchronicle.com"
+        "www.sandiegouniontribune.com"
       ],
-      "id": "us-san-francisco-chronicle",
-      "listingUrl": "https://www.sfchronicle.com/bayarea/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?sandiegouniontribune\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.sandiegouniontribune.com/*"
+      ],
+      "constantFields": {
+        "source_name": "San Diego Union-Tribune"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "San Francisco Chronicle",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.sfchronicle.com/bayarea/article/san-jose-pedestrian-fatality-motorcycle-accident-22497617.php"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-san-francisco-chronicle",
+      "name": "San Francisco Chronicle",
+      "listingUrl": "https://www.sfchronicle.com/bayarea/",
       "representativeDetailUrl": "https://www.sfchronicle.com/bayarea/article/san-jose-pedestrian-fatality-motorcycle-accident-22497617.php",
       "seedUrls": [
         "https://www.sfchronicle.com/bayarea/",
         "https://www.sfchronicle.com/bayarea/article/san-jose-pedestrian-fatality-motorcycle-accident-22497617.php"
       ],
-      "templatePatterns": [
-        "https://www.sfchronicle.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Tampa Bay Times"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?tampabay\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.sfchronicle.com/bayarea/article/san-jose-pedestrian-fatality-motorcycle-accident-22497617.php"
       ],
       "hosts": [
-        "www.tampabay.com"
+        "www.sfchronicle.com"
       ],
-      "id": "us-tampa-bay-times",
-      "listingUrl": "https://www.tampabay.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?sfchronicle\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.sfchronicle.com/*"
+      ],
+      "constantFields": {
+        "source_name": "San Francisco Chronicle"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Tampa Bay Times",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.tampabay.com/news/environment/2026/10/27/clearwater-flooding-stormwater-drains-volunteers/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-tampa-bay-times",
+      "name": "Tampa Bay Times",
+      "listingUrl": "https://www.tampabay.com/news/",
       "representativeDetailUrl": "https://www.tampabay.com/news/environment/2026/10/27/clearwater-flooding-stormwater-drains-volunteers/",
       "seedUrls": [
         "https://www.tampabay.com/news/",
         "https://www.tampabay.com/news/environment/2026/10/27/clearwater-flooding-stormwater-drains-volunteers/"
       ],
-      "templatePatterns": [
-        "https://www.tampabay.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Atlanta Journal-Constitution"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?ajc\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.tampabay.com/news/environment/2026/10/27/clearwater-flooding-stormwater-drains-volunteers/"
       ],
       "hosts": [
-        "www.ajc.com"
+        "www.tampabay.com"
       ],
-      "id": "us-atlanta-journal-constitution",
-      "listingUrl": "https://www.ajc.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?tampabay\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.tampabay.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Tampa Bay Times"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Atlanta Journal-Constitution",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.ajc.com/news/2026/10/brewers-aaron-ashby-breaks-postseason-scoreless-relief-record-as-world-series-game-4-goes-to-extras/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-atlanta-journal-constitution",
+      "name": "The Atlanta Journal-Constitution",
+      "listingUrl": "https://www.ajc.com/news/",
       "representativeDetailUrl": "https://www.ajc.com/news/2026/10/brewers-aaron-ashby-breaks-postseason-scoreless-relief-record-as-world-series-game-4-goes-to-extras/",
       "seedUrls": [
         "https://www.ajc.com/news/",
         "https://www.ajc.com/news/2026/10/brewers-aaron-ashby-breaks-postseason-scoreless-relief-record-as-world-series-game-4-goes-to-extras/"
       ],
-      "templatePatterns": [
-        "https://www.ajc.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Baltimore Sun"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?baltimoresun\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.ajc.com/news/2026/10/brewers-aaron-ashby-breaks-postseason-scoreless-relief-record-as-world-series-game-4-goes-to-extras/"
       ],
       "hosts": [
-        "www.baltimoresun.com"
+        "www.ajc.com"
       ],
-      "id": "us-baltimore-sun",
-      "listingUrl": "https://www.baltimoresun.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?ajc\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.ajc.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Atlanta Journal-Constitution"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Baltimore Sun",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.baltimoresun.com/2026/10/27/brazils-flvio-bolsonaro-and-family-will-get-us-visas-after-election-loss-state-department-says/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-baltimore-sun",
+      "name": "The Baltimore Sun",
+      "listingUrl": "https://www.baltimoresun.com/news/",
       "representativeDetailUrl": "https://www.baltimoresun.com/2026/10/27/brazils-flvio-bolsonaro-and-family-will-get-us-visas-after-election-loss-state-department-says/",
       "seedUrls": [
         "https://www.baltimoresun.com/news/",
         "https://www.baltimoresun.com/2026/10/27/brazils-flvio-bolsonaro-and-family-will-get-us-visas-after-election-loss-state-department-says/"
       ],
-      "templatePatterns": [
-        "https://www.baltimoresun.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Boston Globe"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?bostonglobe\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.baltimoresun.com/2026/10/27/brazils-flvio-bolsonaro-and-family-will-get-us-visas-after-election-loss-state-department-says/"
       ],
       "hosts": [
-        "www.bostonglobe.com"
+        "www.baltimoresun.com"
       ],
-      "id": "us-boston-globe",
-      "listingUrl": "https://www.bostonglobe.com/metro/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?baltimoresun\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.baltimoresun.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Baltimore Sun"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Boston Globe",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.bostonglobe.com/2026/10/26/metro/man-accused-of-targeting-three-downtown-boston-banks-in-27-minutes-queries-no-matching-queries/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-boston-globe",
+      "name": "The Boston Globe",
+      "listingUrl": "https://www.bostonglobe.com/metro/",
       "representativeDetailUrl": "https://www.bostonglobe.com/2026/10/26/metro/man-accused-of-targeting-three-downtown-boston-banks-in-27-minutes-queries-no-matching-queries/",
       "seedUrls": [
         "https://www.bostonglobe.com/metro/",
         "https://www.bostonglobe.com/2026/10/26/metro/man-accused-of-targeting-three-downtown-boston-banks-in-27-minutes-queries-no-matching-queries/"
       ],
-      "templatePatterns": [
-        "https://www.bostonglobe.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Dallas Morning News"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?dallasnews\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.bostonglobe.com/2026/10/26/metro/man-accused-of-targeting-three-downtown-boston-banks-in-27-minutes-queries-no-matching-queries/"
       ],
       "hosts": [
-        "www.dallasnews.com"
+        "www.bostonglobe.com"
       ],
-      "id": "us-dallas-morning-news",
-      "listingUrl": "https://www.dallasnews.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?bostonglobe\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.bostonglobe.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Boston Globe"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Dallas Morning News",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.dallasnews.com/news/transportation/article/new-dart-ceo-nat-ford-defends-record-first-day-22491079.php"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-dallas-morning-news",
+      "name": "The Dallas Morning News",
+      "listingUrl": "https://www.dallasnews.com/news/",
       "representativeDetailUrl": "https://www.dallasnews.com/news/transportation/article/new-dart-ceo-nat-ford-defends-record-first-day-22491079.php",
       "seedUrls": [
         "https://www.dallasnews.com/news/",
         "https://www.dallasnews.com/news/transportation/article/new-dart-ceo-nat-ford-defends-record-first-day-22491079.php"
       ],
-      "templatePatterns": [
-        "https://www.dallasnews.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Denver Post"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?denverpost\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.dallasnews.com/news/transportation/article/new-dart-ceo-nat-ford-defends-record-first-day-22491079.php"
       ],
       "hosts": [
-        "www.denverpost.com"
+        "www.dallasnews.com"
       ],
-      "id": "us-denver-post",
-      "listingUrl": "https://www.denverpost.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?dallasnews\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.dallasnews.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Dallas Morning News"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Denver Post",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.denverpost.com/2026/10/26/lauren-boebert-eileen-laubacher-colorado-4th-congressional-district/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-denver-post",
+      "name": "The Denver Post",
+      "listingUrl": "https://www.denverpost.com/news/",
       "representativeDetailUrl": "https://www.denverpost.com/2026/10/26/lauren-boebert-eileen-laubacher-colorado-4th-congressional-district/",
       "seedUrls": [
         "https://www.denverpost.com/news/",
         "https://www.denverpost.com/2026/10/26/lauren-boebert-eileen-laubacher-colorado-4th-congressional-district/"
       ],
-      "templatePatterns": [
-        "https://www.denverpost.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Philadelphia Inquirer"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?inquirer\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.denverpost.com/2026/10/26/lauren-boebert-eileen-laubacher-colorado-4th-congressional-district/"
       ],
       "hosts": [
-        "www.inquirer.com"
+        "www.denverpost.com"
       ],
-      "id": "us-philadelphia-inquirer",
-      "listingUrl": "https://www.inquirer.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?denverpost\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.denverpost.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Denver Post"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Philadelphia Inquirer",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.inquirer.com/news/nation-world/alex-pretti-shot-immigration-agents-minneapolis-parents-investigation-blocked-justice-department-20261027.html"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-philadelphia-inquirer",
+      "name": "The Philadelphia Inquirer",
+      "listingUrl": "https://www.inquirer.com/news/",
       "representativeDetailUrl": "https://www.inquirer.com/news/nation-world/alex-pretti-shot-immigration-agents-minneapolis-parents-investigation-blocked-justice-department-20261027.html",
       "seedUrls": [
         "https://www.inquirer.com/news/",
         "https://www.inquirer.com/news/nation-world/alex-pretti-shot-immigration-agents-minneapolis-parents-investigation-blocked-justice-department-20261027.html"
       ],
-      "templatePatterns": [
-        "https://www.inquirer.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Salt Lake Tribune"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?sltrib\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.inquirer.com/news/nation-world/alex-pretti-shot-immigration-agents-minneapolis-parents-investigation-blocked-justice-department-20261027.html"
       ],
       "hosts": [
-        "www.sltrib.com"
+        "www.inquirer.com"
       ],
-      "id": "us-salt-lake-tribune",
-      "listingUrl": "https://www.sltrib.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?inquirer\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.inquirer.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Philadelphia Inquirer"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Salt Lake Tribune",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.sltrib.com/news/environment/2026/10/26/utah-bird-flu-outbreak-could-spark/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-salt-lake-tribune",
+      "name": "The Salt Lake Tribune",
+      "listingUrl": "https://www.sltrib.com/news/",
       "representativeDetailUrl": "https://www.sltrib.com/news/environment/2026/10/26/utah-bird-flu-outbreak-could-spark/",
       "seedUrls": [
         "https://www.sltrib.com/news/",
         "https://www.sltrib.com/news/environment/2026/10/26/utah-bird-flu-outbreak-could-spark/"
       ],
-      "templatePatterns": [
-        "https://www.sltrib.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "The Seattle Times"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?seattletimes\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.sltrib.com/news/environment/2026/10/26/utah-bird-flu-outbreak-could-spark/"
       ],
       "hosts": [
-        "www.seattletimes.com"
+        "www.sltrib.com"
       ],
-      "id": "us-seattle-times",
-      "listingUrl": "https://www.seattletimes.com/seattle-news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?sltrib\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.sltrib.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Salt Lake Tribune"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "The Seattle Times",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.seattletimes.com/seattle-news/times-watchdog/hanford-safety-reports-are-public-again-as-doe-resumes-top-secret-reviews/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-seattle-times",
+      "name": "The Seattle Times",
+      "listingUrl": "https://www.seattletimes.com/seattle-news/",
       "representativeDetailUrl": "https://www.seattletimes.com/seattle-news/times-watchdog/hanford-safety-reports-are-public-again-as-doe-resumes-top-secret-reviews/",
       "seedUrls": [
         "https://www.seattletimes.com/seattle-news/",
         "https://www.seattletimes.com/seattle-news/times-watchdog/hanford-safety-reports-are-public-again-as-doe-resumes-top-secret-reviews/"
       ],
-      "templatePatterns": [
-        "https://www.seattletimes.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Boston Herald"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?bostonherald\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.seattletimes.com/seattle-news/times-watchdog/hanford-safety-reports-are-public-again-as-doe-resumes-top-secret-reviews/"
       ],
       "hosts": [
-        "www.bostonherald.com"
+        "www.seattletimes.com"
       ],
-      "id": "us-boston-herald",
-      "listingUrl": "https://www.bostonherald.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?seattletimes\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.seattletimes.com/*"
+      ],
+      "constantFields": {
+        "source_name": "The Seattle Times"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Boston Herald",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.bostonherald.com/2026/10/27/post-mcas-massachusetts-graduation-plan-moving-forward-with-curriculum-post-secondary-planning-regulations-coming/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-boston-herald",
+      "name": "Boston Herald",
+      "listingUrl": "https://www.bostonherald.com/news/",
       "representativeDetailUrl": "https://www.bostonherald.com/2026/10/27/post-mcas-massachusetts-graduation-plan-moving-forward-with-curriculum-post-secondary-planning-regulations-coming/",
       "seedUrls": [
         "https://www.bostonherald.com/news/",
         "https://www.bostonherald.com/2026/10/27/post-mcas-massachusetts-graduation-plan-moving-forward-with-curriculum-post-secondary-planning-regulations-coming/"
       ],
-      "templatePatterns": [
-        "https://www.bostonherald.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Orange County Register"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?ocregister\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.bostonherald.com/2026/10/27/post-mcas-massachusetts-graduation-plan-moving-forward-with-curriculum-post-secondary-planning-regulations-coming/"
       ],
       "hosts": [
-        "www.ocregister.com"
+        "www.bostonherald.com"
       ],
-      "id": "us-orange-county-register",
-      "listingUrl": "https://www.ocregister.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?bostonherald\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.bostonherald.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Boston Herald"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Orange County Register",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.ocregister.com/2026/10/27/teamsters-threatens-to-resume-strike-after-rejecting-new-contract-from-orange-county-leadership/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-orange-county-register",
+      "name": "Orange County Register",
+      "listingUrl": "https://www.ocregister.com/news/",
       "representativeDetailUrl": "https://www.ocregister.com/2026/10/27/teamsters-threatens-to-resume-strike-after-rejecting-new-contract-from-orange-county-leadership/",
       "seedUrls": [
         "https://www.ocregister.com/news/",
         "https://www.ocregister.com/2026/10/27/teamsters-threatens-to-resume-strike-after-rejecting-new-contract-from-orange-county-leadership/"
       ],
-      "templatePatterns": [
-        "https://www.ocregister.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Albuquerque Journal"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?abqjournal\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.ocregister.com/2026/10/27/teamsters-threatens-to-resume-strike-after-rejecting-new-contract-from-orange-county-leadership/"
       ],
       "hosts": [
-        "www.abqjournal.com"
+        "www.ocregister.com"
       ],
-      "id": "us-albuquerque-journal",
-      "listingUrl": "https://www.abqjournal.com/news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?ocregister\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.ocregister.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Orange County Register"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Albuquerque Journal",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.abqjournal.com/news/students-tribal-leaders-protest-heinrichs-permitting-bill-saying-it-could-speed-data-centers-and-fossil-fuels/3150524"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-albuquerque-journal",
+      "name": "Albuquerque Journal",
+      "listingUrl": "https://www.abqjournal.com/news/",
       "representativeDetailUrl": "https://www.abqjournal.com/news/students-tribal-leaders-protest-heinrichs-permitting-bill-saying-it-could-speed-data-centers-and-fossil-fuels/3150524",
       "seedUrls": [
         "https://www.abqjournal.com/news/",
         "https://www.abqjournal.com/news/students-tribal-leaders-protest-heinrichs-permitting-bill-saying-it-could-speed-data-centers-and-fossil-fuels/3150524"
       ],
-      "templatePatterns": [
-        "https://www.abqjournal.com/*"
-      ]
-    },
-    {
-      "constantFields": {
-        "source_name": "Anchorage Daily News"
-      },
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?adn\\.com/.+"
+      "qualificationSeedUrls": [
+        "https://www.abqjournal.com/news/students-tribal-leaders-protest-heinrichs-permitting-bill-saying-it-could-speed-data-centers-and-fossil-fuels/3150524"
       ],
       "hosts": [
-        "www.adn.com"
+        "www.abqjournal.com"
       ],
-      "id": "us-anchorage-daily-news",
-      "listingUrl": "https://www.adn.com/alaska-news/",
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?abqjournal\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.abqjournal.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Albuquerque Journal"
+      },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,
-      "minimumOriginDelaySeconds": 5,
-      "name": "Anchorage Daily News",
       "qualificationMaxDepth": 0,
       "qualificationMaxUrlsPerExecution": 1,
-      "qualificationSeedUrls": [
-        "https://www.adn.com/alaska-news/rural-alaska/2026/10/23/bethel-based-journalist-aleutian-and-pribilof-region-nonprofit-leader-honored-with-alaska-federation-of-natives-awards/"
-      ],
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "us-anchorage-daily-news",
+      "name": "Anchorage Daily News",
+      "listingUrl": "https://www.adn.com/alaska-news/",
       "representativeDetailUrl": "https://www.adn.com/alaska-news/rural-alaska/2026/10/23/bethel-based-journalist-aleutian-and-pribilof-region-nonprofit-leader-honored-with-alaska-federation-of-natives-awards/",
       "seedUrls": [
         "https://www.adn.com/alaska-news/",
         "https://www.adn.com/alaska-news/rural-alaska/2026/10/23/bethel-based-journalist-aleutian-and-pribilof-region-nonprofit-leader-honored-with-alaska-federation-of-natives-awards/"
       ],
+      "qualificationSeedUrls": [
+        "https://www.adn.com/alaska-news/rural-alaska/2026/10/23/bethel-based-journalist-aleutian-and-pribilof-region-nonprofit-leader-honored-with-alaska-federation-of-natives-awards/"
+      ],
+      "hosts": [
+        "www.adn.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?adn\\.com/.+"
+      ],
       "templatePatterns": [
         "https://www.adn.com/*"
-      ]
+      ],
+      "constantFields": {
+        "source_name": "Anchorage Daily News"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
     }
-  ],
-  "studyId": "us-newspapers"
+  ]
 }

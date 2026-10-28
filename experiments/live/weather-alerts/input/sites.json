@@ -6,68 +6,6 @@
   "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
   "sites": [
     {
-      "id": "weather-noaa-nhc",
-      "name": "NOAA National Hurricane Center",
-      "listingUrl": "https://www.nhc.noaa.gov/",
-      "representativeDetailUrl": "https://www.nhc.noaa.gov/",
-      "seedUrls": [
-        "https://www.nhc.noaa.gov/"
-      ],
-      "qualificationSeedUrls": [
-        "https://www.nhc.noaa.gov/"
-      ],
-      "hosts": [
-        "www.nhc.noaa.gov"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?nhc\\.noaa\\.gov/.+"
-      ],
-      "templatePatterns": [
-        "https://www.nhc.noaa.gov/*"
-      ],
-      "constantFields": {
-        "authority": "NOAA National Hurricane Center"
-      },
-      "retainedEnabled": false,
-      "retainedExclusion": "The reviewed home page does not expose one alert record through the tested HTML template engines; an RSS or XML adapter is required.",
-      "maxDepth": 0,
-      "maxUrlsPerExecution": 1,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
-      "id": "weather-environment-canada",
-      "name": "Environment Canada Alerts",
-      "retainedEnabled": false,
-      "retainedExclusion": "The qualification page produced alert metadata but did not expose a canonical URL required by the alert schema.",
-      "listingUrl": "https://weather.gc.ca/mainmenu/alert_menu_e.html",
-      "representativeDetailUrl": "https://weather.gc.ca/mainmenu/alert_menu_e.html",
-      "seedUrls": [
-        "https://weather.gc.ca/mainmenu/alert_menu_e.html"
-      ],
-      "qualificationSeedUrls": [
-        "https://weather.gc.ca/mainmenu/alert_menu_e.html"
-      ],
-      "hosts": [
-        "weather.gc.ca"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?weather\\.gc\\.ca/.+"
-      ],
-      "templatePatterns": [
-        "https://weather.gc.ca/*"
-      ],
-      "constantFields": {
-        "authority": "Environment Canada Alerts"
-      },
-      "maxDepth": 0,
-      "maxUrlsPerExecution": 1,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
       "id": "weather-uk-met-office",
       "name": "UK Met Office Warnings",
       "listingUrl": "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings",
@@ -118,37 +56,6 @@
       ],
       "constantFields": {
         "authority": "Met Éireann Warnings"
-      },
-      "maxDepth": 0,
-      "maxUrlsPerExecution": 1,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
-      "id": "weather-metservice-nz",
-      "name": "MetService New Zealand Warnings",
-      "retainedEnabled": false,
-      "retainedExclusion": "The qualification page produced alert metadata but did not expose a canonical URL required by the alert schema.",
-      "listingUrl": "https://www.metservice.com/warnings/home",
-      "representativeDetailUrl": "https://www.metservice.com/warnings/home",
-      "seedUrls": [
-        "https://www.metservice.com/warnings/home"
-      ],
-      "qualificationSeedUrls": [
-        "https://www.metservice.com/warnings/home"
-      ],
-      "hosts": [
-        "www.metservice.com"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?metservice\\.com/.+"
-      ],
-      "templatePatterns": [
-        "https://www.metservice.com/*"
-      ],
-      "constantFields": {
-        "authority": "MetService New Zealand Warnings"
       },
       "maxDepth": 0,
       "maxUrlsPerExecution": 1,

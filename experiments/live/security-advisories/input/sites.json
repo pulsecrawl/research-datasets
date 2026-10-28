@@ -6,38 +6,6 @@
   "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
   "sites": [
     {
-      "id": "security-cisa",
-      "name": "CISA Cybersecurity Advisories",
-      "listingUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories",
-      "representativeDetailUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
-      "seedUrls": [
-        "https://www.cisa.gov/news-events/cybersecurity-advisories",
-        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a"
-      ],
-      "qualificationSeedUrls": [
-        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a"
-      ],
-      "hosts": [
-        "www.cisa.gov"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?cisa\\.gov/.+"
-      ],
-      "templatePatterns": [
-        "https://www.cisa.gov/*"
-      ],
-      "constantFields": {
-        "vendor": "CISA Cybersecurity Advisories"
-      },
-      "retainedEnabled": false,
-      "retainedExclusion": "The current detail page returned HTTP 403 during the pilot access review.",
-      "maxDepth": 1,
-      "maxUrlsPerExecution": 4,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
       "id": "security-apple",
       "name": "Apple Security Releases",
       "listingUrl": "https://support.apple.com/en-us/100100",
@@ -240,38 +208,6 @@
       ],
       "constantFields": {
         "vendor": "GitLab Releases"
-      },
-      "maxDepth": 1,
-      "maxUrlsPerExecution": 4,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
-      "id": "security-palo-alto",
-      "name": "Palo Alto Networks Security Advisories",
-      "retainedEnabled": false,
-      "retainedExclusion": "The qualification response produced advisory content but did not expose a canonical URL required by the advisory schema.",
-      "listingUrl": "https://security.paloaltonetworks.com/",
-      "representativeDetailUrl": "https://security.paloaltonetworks.com/CVE-2026-111497",
-      "seedUrls": [
-        "https://security.paloaltonetworks.com/",
-        "https://security.paloaltonetworks.com/CVE-2026-111497"
-      ],
-      "qualificationSeedUrls": [
-        "https://security.paloaltonetworks.com/CVE-2026-111497"
-      ],
-      "hosts": [
-        "security.paloaltonetworks.com"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?security\\.paloaltonetworks\\.com/.+"
-      ],
-      "templatePatterns": [
-        "https://security.paloaltonetworks.com/*"
-      ],
-      "constantFields": {
-        "vendor": "Palo Alto Networks Security Advisories"
       },
       "maxDepth": 1,
       "maxUrlsPerExecution": 4,

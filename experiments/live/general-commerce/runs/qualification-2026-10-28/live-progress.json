@@ -202,7 +202,7 @@
   ],
   "datasetId": "ds_eac2542fc4ba38113aa6",
   "enabledSites": 9,
-  "excludedSites": 2,
+  "excludedSites": 0,
   "executions": [
     {
       "durationSeconds": 54.289863,
@@ -535,7 +535,7 @@
           "status": "succeeded"
         }
       ],
-      "startLagSeconds": 4e-06,
+      "startLagSeconds": 0.000004,
       "startedAt": "2026-10-28T03:58:15.818251+00:00"
     },
     {
@@ -920,7 +920,7 @@
     ],
     "truncated": false
   },
-  "requestedSites": 11,
+  "requestedSites": 9,
   "schemaProfile": "product",
   "settings": {
     "executions": 2,

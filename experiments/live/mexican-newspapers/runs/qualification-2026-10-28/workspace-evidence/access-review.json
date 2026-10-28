@@ -49,7 +49,7 @@
       "robotsUrl": "https://heraldodemexico.com.mx/robots.txt",
       "seedUrl": "https://heraldodemexico.com.mx/nacional/2026/10/27/caso-doctora-cristina-ramos-ofrecen-recompensa-de-700-mil-pesos-por-su-expareja-su-padre-acusados-de-feminicidio-917473.html",
       "siteId": "mx-el-heraldo",
-      "siteName": "El Heraldo de M\u00e9xico",
+      "siteName": "El Heraldo de México",
       "status": "enabled"
     },
     {
@@ -97,7 +97,7 @@
       "robotsUrl": "https://www.excelsior.com.mx/robots.txt",
       "seedUrl": "https://www.excelsior.com.mx/nacional/fuerzas-aereas-mexico-y-estados-unidos-realizan-ejercicio-amalgam-eagle-2026-frontera",
       "siteId": "mx-excelsior",
-      "siteName": "Exc\u00e9lsior",
+      "siteName": "Excélsior",
       "status": "enabled"
     },
     {
@@ -113,7 +113,7 @@
       "robotsUrl": "https://www.cronica.com.mx/robots.txt",
       "seedUrl": "https://www.cronica.com.mx/nacional/2026/10/27/con-el-programa-la-escuela-es-nuestra-se-han-intervenido-141-mil-planteles-durante-el-ciclo-escolar-2025-2026-mario-delgado/",
       "siteId": "mx-la-cronica",
-      "siteName": "La Cr\u00f3nica de Hoy",
+      "siteName": "La Crónica de Hoy",
       "status": "enabled"
     },
     {
@@ -129,7 +129,7 @@
       "robotsUrl": "https://laopcion.com.mx/robots.txt",
       "seedUrl": "https://laopcion.com.mx/delicias/promueve-meoqui-vacunacion-contra-la-polio-y-ofrece-orientacion-en-seis-centros-de-salud-20261024-530770.html",
       "siteId": "mx-la-opcion",
-      "siteName": "La Opci\u00f3n de Chihuahua",
+      "siteName": "La Opción de Chihuahua",
       "status": "enabled"
     },
     {
@@ -145,17 +145,8 @@
       "robotsUrl": "https://www.razon.com.mx/robots.txt",
       "seedUrl": "https://www.razon.com.mx/mexico/2026/10/27/vance-amenaza-con-fuertes-lluvias-e-inundaciones-en-sinaloa-proteccion-civil-alerta-a-siete-estados/",
       "siteId": "mx-la-razon",
-      "siteName": "La Raz\u00f3n de M\u00e9xico",
+      "siteName": "La Razón de México",
       "status": "enabled"
-    },
-    {
-      "checkedAt": "2026-10-28T03:58:13.214496+00:00",
-      "enabled": false,
-      "reason": "The microsite qualification page produced article fields but did not expose a canonical URL required by the article schema.",
-      "seedUrl": "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/",
-      "siteId": "mx-la-verdad-juarez",
-      "siteName": "La Verdad Ju\u00e1rez",
-      "status": "study_excluded"
     },
     {
       "checkedAt": "2026-10-28T03:58:13.214523+00:00",
@@ -234,7 +225,7 @@
       "robotsUrl": "https://raichali.com/robots.txt",
       "seedUrl": "https://raichali.com/2026/10/26/desplazamiento-forzado-moris-uruachi-derechos-humanos-corrupcion-e-impunidad/",
       "siteId": "mx-raichali",
-      "siteName": "Ra\u00edchali",
+      "siteName": "Raíchali",
       "status": "enabled"
     },
     {
@@ -314,7 +305,7 @@
       "robotsUrl": "https://elmanana.com.mx/robots.txt",
       "seedUrl": "https://elmanana.com.mx/laredo-texas/2026/10/27/atrapan-a-peligroso-sujeto-en-laredo-se-metio-a-una-casa-y-amenazo-a-mujer-y-a-su-familia-con-pistol-183328.html",
       "siteId": "mx-el-manana-nuevo-laredo",
-      "siteName": "El Ma\u00f1ana de Nuevo Laredo",
+      "siteName": "El Mañana de Nuevo Laredo",
       "status": "enabled"
     }
   ],

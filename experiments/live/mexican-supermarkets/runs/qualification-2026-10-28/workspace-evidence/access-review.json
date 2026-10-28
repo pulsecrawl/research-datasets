@@ -5,15 +5,6 @@
   "schemaVersion": 1,
   "sites": [
     {
-      "checkedAt": "2026-10-28T03:58:08.408586+00:00",
-      "enabled": false,
-      "reason": "The server-rendered response identifies the product but does not expose a price that the tested local templates can extract.",
-      "seedUrl": "https://alsuper.com/producto/uva-roja-sin-semilla-35",
-      "siteId": "supermarket-alsuper",
-      "siteName": "Alsuper",
-      "status": "study_excluded"
-    },
-    {
       "checkedAt": "2026-10-28T03:58:08.408599+00:00",
       "contentType": "text/html; charset=utf-8",
       "enabled": true,
@@ -42,7 +33,7 @@
       "robotsUrl": "https://justo.mx/robots.txt",
       "seedUrl": "https://justo.mx/product/leche-alpura-selecta-entera-1l-12249",
       "siteId": "supermarket-justo",
-      "siteName": "J\u00fcsto",
+      "siteName": "Jüsto",
       "status": "enabled"
     },
     {
@@ -74,7 +65,7 @@
       "robotsUrl": "https://www.smartnfinal.com.mx/robots.txt",
       "seedUrl": "https://www.smartnfinal.com.mx/tienda/abarrotes/frijol-pinto-verde-valle-900-g/",
       "siteId": "supermarket-smart-final",
-      "siteName": "Smart & Final M\u00e9xico",
+      "siteName": "Smart & Final México",
       "status": "enabled"
     },
     {

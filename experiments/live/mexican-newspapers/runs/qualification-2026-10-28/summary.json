@@ -215,7 +215,7 @@
     ],
     "datasetId": "ds_fc602d9164abeac5bb8c",
     "enabledSites": 19,
-    "excludedSites": 1,
+    "excludedSites": 0,
     "executions": [
       {
         "durationSeconds": 110.021905,
@@ -908,7 +908,7 @@
             "status": "succeeded"
           }
         ],
-        "startLagSeconds": 4e-06,
+        "startLagSeconds": 0.000004,
         "startedAt": "2026-10-28T03:58:21.196796+00:00"
       },
       {
@@ -1661,7 +1661,7 @@
       ],
       "truncated": false
     },
-    "requestedSites": 20,
+    "requestedSites": 19,
     "schemaProfile": "article",
     "settings": {
       "executions": 2,

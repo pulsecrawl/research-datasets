@@ -141,35 +141,6 @@
       "minimumOriginDelaySeconds": 5
     },
     {
-      "id": "commerce-madewell",
-      "name": "Madewell",
-      "listingUrl": "https://www.madewell.com/womens/clothing",
-      "representativeDetailUrl": "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609",
-      "seedUrls": [
-        "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609"
-      ],
-      "qualificationSeedUrls": [
-        "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609"
-      ],
-      "hosts": [
-        "www.madewell.com"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?madewell\\.com/.+"
-      ],
-      "templatePatterns": [
-        "https://www.madewell.com/*"
-      ],
-      "constantFields": {},
-      "retainedEnabled": false,
-      "retainedExclusion": "The raw page exposes product text, but the tested local extraction stack did not recover a complete price and currency record without interpreting application state.",
-      "maxDepth": 0,
-      "maxUrlsPerExecution": 1,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
       "id": "commerce-puma",
       "name": "PUMA",
       "listingUrl": "https://us.puma.com/us/en/women",
@@ -190,35 +161,6 @@
         "https://us.puma.com/*"
       ],
       "constantFields": {},
-      "maxDepth": 0,
-      "maxUrlsPerExecution": 1,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
-      "id": "commerce-reformation",
-      "name": "Reformation",
-      "listingUrl": "https://www.thereformation.com/new",
-      "representativeDetailUrl": "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO",
-      "seedUrls": [
-        "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO"
-      ],
-      "qualificationSeedUrls": [
-        "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO"
-      ],
-      "hosts": [
-        "www.thereformation.com"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?thereformation\\.com/.+"
-      ],
-      "templatePatterns": [
-        "https://www.thereformation.com/*"
-      ],
-      "constantFields": {},
-      "retainedEnabled": false,
-      "retainedExclusion": "The raw preflight request succeeded, but the PulseCrawl request received HTTP 403 during both pilot cycles.",
       "maxDepth": 0,
       "maxUrlsPerExecution": 1,
       "qualificationMaxDepth": 0,

@@ -85,15 +85,6 @@
       "status": "enabled"
     },
     {
-      "checkedAt": "2026-10-28T03:58:13.635539+00:00",
-      "enabled": false,
-      "reason": "The raw page exposes product text, but the tested local extraction stack did not recover a complete price and currency record without interpreting application state.",
-      "seedUrl": "https://www.madewell.com/p/womens/clothing/jackets/coats/funnel-neck-puffer-coat/OB968/?ccode=PP8609",
-      "siteId": "commerce-madewell",
-      "siteName": "Madewell",
-      "status": "study_excluded"
-    },
-    {
       "checkedAt": "2026-10-28T03:58:13.635558+00:00",
       "contentType": "text/html; charset=utf-8",
       "enabled": true,
@@ -108,15 +99,6 @@
       "siteId": "commerce-puma",
       "siteName": "PUMA",
       "status": "enabled"
-    },
-    {
-      "checkedAt": "2026-10-28T03:58:13.839104+00:00",
-      "enabled": false,
-      "reason": "The raw preflight request succeeded, but the PulseCrawl request received HTTP 403 during both pilot cycles.",
-      "seedUrl": "https://www.thereformation.com/products/maribel-dress/1320723HEO.html?dwvar_1320723HEO_color=HEO",
-      "siteId": "commerce-reformation",
-      "siteName": "Reformation",
-      "status": "study_excluded"
     },
     {
       "checkedAt": "2026-10-28T03:58:13.839133+00:00",

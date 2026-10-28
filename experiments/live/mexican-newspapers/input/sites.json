@@ -276,38 +276,6 @@
       "minimumOriginDelaySeconds": 5
     },
     {
-      "id": "mx-la-verdad-juarez",
-      "name": "La Verdad Juárez",
-      "retainedEnabled": false,
-      "retainedExclusion": "The microsite qualification page produced article fields but did not expose a canonical URL required by the article schema.",
-      "listingUrl": "https://laverdadjuarez.com/",
-      "representativeDetailUrl": "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/",
-      "seedUrls": [
-        "https://laverdadjuarez.com/",
-        "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/"
-      ],
-      "qualificationSeedUrls": [
-        "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/"
-      ],
-      "hosts": [
-        "laverdadjuarez.com"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?laverdadjuarez\\.com/.+"
-      ],
-      "templatePatterns": [
-        "https://laverdadjuarez.com/*"
-      ],
-      "constantFields": {
-        "source_name": "La Verdad Juárez"
-      },
-      "maxDepth": 1,
-      "maxUrlsPerExecution": 4,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
       "id": "mx-noroeste",
       "name": "Noroeste",
       "listingUrl": "https://www.noroeste.com.mx/nacional/",

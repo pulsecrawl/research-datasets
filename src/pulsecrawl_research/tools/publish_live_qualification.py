@@ -10,7 +10,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[3]
-RELEASE_ID = "multi-category-qualification-v0.4.0-rc.1"
+RELEASE_ID = "multi-category-qualification-v0.4.1-rc.1"
 RUN_NAME = "qualification-2026-10-28"
 
 
@@ -65,11 +65,9 @@ This folder is the published output of the short qualification completed on
 metadata, Parquet dataset parts, dataset-version manifests, direct metrics,
 and checksums. Third-party response bodies are not included.
 
-- Candidate sites: {category['requestedSites']}
-- Enabled sites: {category['enabledSites']}
-- Excluded sites: {category['excludedSites']}
+- Selected websites: {category['requestedSites']}
 - Completed cycles: {category['cycles']}
-- Enabled sites with a complete required-field record: {category['sourceUrlsWithAllRequiredFields']}
+- Websites with a complete required-field record: {category['sourceUrlsWithAllRequiredFields']}
 - Ready for the separately configured retained study: {str(category['readyForRetainedStudy']).lower()}
 
 Start with `live-progress.json`, then inspect
@@ -122,13 +120,13 @@ def publish(source_root: Path) -> Path:
 
     manifest = {
         "schemaVersion": 1,
-        "release": "0.4.0-rc.1",
+        "release": "0.4.1-rc.1",
         "status": "qualification-completed",
         "publicRepository": "https://github.com/pulsecrawl/research-datasets",
         "softwareUnderEvaluation": {"distribution": "pulsecrawl", "version": "0.1.0"},
         "phase": "qualification",
         "retainedStudyStarted": False,
-        "candidateSites": summary["expectedSites"],
+        "selectedSites": summary["expectedSites"],
         "categories": published,
         "thirdPartyHtmlIncluded": False,
         "personalMetadataIncluded": False,
@@ -139,7 +137,7 @@ def publish(source_root: Path) -> Path:
     }
     _write_json(release / "release-manifest.json", manifest)
     (release / "README.md").write_text(
-        "# Multi-category qualification v0.4.0-rc.1\n\n"
+        "# Multi-category qualification v0.4.1-rc.1\n\n"
         "This release indexes the nine-category, two-cycle readiness check. "
         "The 24-hour study was not started. Open `release-manifest.json` for "
         "category paths and `qualification-summary.json` for the measured gates.\n",

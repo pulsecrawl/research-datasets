@@ -5,15 +5,6 @@
   "schemaVersion": 1,
   "sites": [
     {
-      "checkedAt": "2026-10-28T03:58:08.408423+00:00",
-      "enabled": false,
-      "reason": "The qualification response produced the notice title and agency but did not expose a canonical URL required by the notice schema.",
-      "seedUrl": "https://sidof.segob.gob.mx/notas/5800082",
-      "siteId": "government-dof-mx",
-      "siteName": "Diario Oficial de la Federaci\u00f3n",
-      "status": "study_excluded"
-    },
-    {
       "checkedAt": "2026-10-28T03:58:08.408438+00:00",
       "contentType": "text/html; charset=utf-8",
       "enabled": true,

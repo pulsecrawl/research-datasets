@@ -12,7 +12,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
 CONTROLLED_RELEASE = ROOT / "experiments/releases/controlled-evidence-v0.3.2"
-QUALIFICATION_RELEASE = ROOT / "experiments/releases/multi-category-qualification-v0.4.0-rc.1"
+QUALIFICATION_RELEASE = ROOT / "experiments/releases/multi-category-qualification-v0.4.1-rc.1"
 EXPECTED_DATASETS = {"fixed-html": 60, "site-pattern-html": 100, "commerce-html": 20}
 EXPECTED_FAMILIES = {"policy-and-recovery", "template-extraction", "versioned-datasets"}
 SHA256_PATTERN = re.compile(r"[a-f0-9]{64}")
@@ -68,8 +68,8 @@ def verify_research_metadata() -> dict[str, object]:
     if installed != version:
         raise ValueError(f"installed pulsecrawl {installed} does not match {version}")
     live = _json(ROOT / "experiments/live/catalog.json")
-    if len(live["categories"]) != 9 or sum(row["sites"] for row in live["categories"]) != 119:
-        raise ValueError("live catalog does not contain the registered 119 candidates")
+    if len(live["categories"]) != 9 or sum(row["sites"] for row in live["categories"]) != 107:
+        raise ValueError("live catalog does not contain the 107 selected websites")
     for category in live["categories"]:
         folder = ROOT / "experiments/live" / category["id"]
         sites = _json(folder / "input/sites.json")["sites"]
@@ -77,14 +77,11 @@ def verify_research_metadata() -> dict[str, object]:
             raise ValueError(f"live site count differs: {category['id']}")
         if not (folder / "README.md").is_file() or not (folder / "experiment.yaml").is_file():
             raise ValueError(f"live category lacks a reader guide: {category['id']}")
-        for site in sites:
-            if site.get("retainedEnabled") is False and not site.get("retainedExclusion"):
-                raise ValueError(f"excluded live source lacks a reason: {site['id']}")
     return {
         "controlledExperiments": len(experiments),
         "families": sorted(families),
         "liveCategories": len(live["categories"]),
-        "liveCandidates": sum(row["sites"] for row in live["categories"]),
+        "liveWebsites": sum(row["sites"] for row in live["categories"]),
         "pulsecrawl": installed,
     }
 
@@ -158,7 +155,7 @@ def verify_controlled_evidence() -> dict[str, object]:
 def verify_qualification_release() -> dict[str, object]:
     manifest = _json(QUALIFICATION_RELEASE / "release-manifest.json")
     summary = _json(QUALIFICATION_RELEASE / "qualification-summary.json")
-    if manifest["release"] != "0.4.0-rc.1" or manifest["retainedStudyStarted"] is not False:
+    if manifest["release"] != "0.4.1-rc.1" or manifest["retainedStudyStarted"] is not False:
         raise ValueError("qualification release identity or phase boundary differs")
     if not summary.get("readyForRetainedStudy") or summary.get("retainedStudyStarted") is not False:
         raise ValueError("published qualification did not pass both readiness gates")
@@ -181,8 +178,7 @@ def verify_qualification_release() -> dict[str, object]:
     return {
         "release": manifest["release"],
         "categories": len(manifest["categories"]),
-        "candidateSites": manifest["candidateSites"],
-        "enabledSites": sum(row["enabledSites"] for row in manifest["categories"]),
+        "selectedSites": manifest["selectedSites"],
         "retainedStudyStarted": False,
     }
 

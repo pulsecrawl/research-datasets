@@ -1,6 +1,9 @@
 # Mexican newspapers
 
-This directory defines the public sources used by the bounded live study. The listing URL supports later recurring discovery; the representative detail URL is used by the ten-minute qualification. No response bodies are retained.
+This directory defines the 19 selected public websites used by the
+bounded live study. The listing URL supports later recurring discovery; the
+qualification URL is used by the short two-cycle check. No response bodies
+are retained.
 
 | Website | Stable ID | Listing URL | Qualification URL |
 |---|---|---|---|
@@ -13,7 +16,6 @@ This directory defines the public sources used by the bounded live study. The li
 | La Crónica de Hoy | `mx-la-cronica` | https://www.cronica.com.mx/nacional/ | https://www.cronica.com.mx/nacional/2026/10/27/con-el-programa-la-escuela-es-nuestra-se-han-intervenido-141-mil-planteles-durante-el-ciclo-escolar-2025-2026-mario-delgado/ |
 | La Opción de Chihuahua | `mx-la-opcion` | https://laopcion.com.mx/ | https://laopcion.com.mx/delicias/promueve-meoqui-vacunacion-contra-la-polio-y-ofrece-orientacion-en-seis-centros-de-salud-20261024-530770.html |
 | La Razón de México | `mx-la-razon` | https://www.razon.com.mx/mexico/ | https://www.razon.com.mx/mexico/2026/10/27/vance-amenaza-con-fuertes-lluvias-e-inundaciones-en-sinaloa-proteccion-civil-alerta-a-siete-estados/ |
-| La Verdad Juárez | `mx-la-verdad-juarez` | https://laverdadjuarez.com/ | https://laverdadjuarez.com/2026/05/25/gobierno-de-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/ |
 | Noroeste | `mx-noroeste` | https://www.noroeste.com.mx/nacional/ | https://www.noroeste.com.mx/nacional/el-gobernador-alejandro-armenta-y-la-titular-de-la-loteria-olivia-salomon-develan-billete-inspirado-en-puebla-y-sus-majestuosas-montanas-AI26845665 |
 | Norte Digital | `mx-norte-digital` | https://nortedigital.mx/ | https://nortedigital.mx/donmirone/caso-jauregui-dos-procesos-un-pan-fracturado-y-una-crisis-que-llega-a-palacio-nacional/ |
 | Proceso | `mx-proceso` | https://www.proceso.com.mx/nacional/ | https://www.proceso.com.mx/nacional/estados/2026/10/27/cae-el-isra-segundo-al-mando-de-los-rusos-lo-relacionan-con-privacion-de-la-libertad-de-el-gordo-gad-382640.html |

@@ -5,15 +5,6 @@
   "schemaVersion": 1,
   "sites": [
     {
-      "checkedAt": "2026-10-28T03:58:08.411925+00:00",
-      "enabled": false,
-      "reason": "The current detail page returned HTTP 403 during the pilot access review.",
-      "seedUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
-      "siteId": "security-cisa",
-      "siteName": "CISA Cybersecurity Advisories",
-      "status": "study_excluded"
-    },
-    {
       "checkedAt": "2026-10-28T03:58:08.411947+00:00",
       "contentType": "text/html;charset=utf-8",
       "enabled": true,
@@ -124,15 +115,6 @@
       "siteId": "security-gitlab",
       "siteName": "GitLab Releases",
       "status": "enabled"
-    },
-    {
-      "checkedAt": "2026-10-28T03:58:12.152253+00:00",
-      "enabled": false,
-      "reason": "The qualification response produced advisory content but did not expose a canonical URL required by the advisory schema.",
-      "seedUrl": "https://security.paloaltonetworks.com/CVE-2026-111497",
-      "siteId": "security-palo-alto",
-      "siteName": "Palo Alto Networks Security Advisories",
-      "status": "study_excluded"
     },
     {
       "checkedAt": "2026-10-28T03:58:12.152277+00:00",

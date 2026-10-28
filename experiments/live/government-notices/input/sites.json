@@ -6,38 +6,6 @@
   "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
   "sites": [
     {
-      "id": "government-dof-mx",
-      "name": "Diario Oficial de la Federación",
-      "retainedEnabled": false,
-      "retainedExclusion": "The qualification response produced the notice title and agency but did not expose a canonical URL required by the notice schema.",
-      "listingUrl": "https://sidof.segob.gob.mx/",
-      "representativeDetailUrl": "https://sidof.segob.gob.mx/notas/5800082",
-      "seedUrls": [
-        "https://sidof.segob.gob.mx/",
-        "https://sidof.segob.gob.mx/notas/5800082"
-      ],
-      "qualificationSeedUrls": [
-        "https://sidof.segob.gob.mx/notas/5800082"
-      ],
-      "hosts": [
-        "sidof.segob.gob.mx"
-      ],
-      "discoveryPatterns": [
-        "^https?://(?:www\\.)?sidof\\.segob\\.gob\\.mx/.+"
-      ],
-      "templatePatterns": [
-        "https://sidof.segob.gob.mx/*"
-      ],
-      "constantFields": {
-        "agency": "Diario Oficial de la Federación"
-      },
-      "maxDepth": 1,
-      "maxUrlsPerExecution": 4,
-      "qualificationMaxDepth": 0,
-      "qualificationMaxUrlsPerExecution": 1,
-      "minimumOriginDelaySeconds": 5
-    },
-    {
       "id": "government-cnbv-mx",
       "name": "CNBV",
       "listingUrl": "https://www.gob.mx/cnbv/archivo/prensa",

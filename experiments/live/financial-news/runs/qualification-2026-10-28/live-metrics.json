@@ -953,7 +953,7 @@
           "status": "succeeded"
         }
       ],
-      "startLagSeconds": 4e-06,
+      "startLagSeconds": 0.000004,
       "startedAt": "2026-10-28T03:58:19.059558+00:00"
     },
     {

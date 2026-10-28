@@ -5,7 +5,7 @@
       "id": "mexican-newspapers",
       "name": "Mexican newspapers",
       "schemaProfile": "article",
-      "sites": 20,
+      "sites": 19,
       "qualificationExecutions": 2,
       "retainedExecutions": 48,
       "retainedIntervalMinutes": 30
@@ -32,7 +32,7 @@
       "id": "general-commerce",
       "name": "General commerce",
       "schemaProfile": "product",
-      "sites": 11,
+      "sites": 9,
       "qualificationExecutions": 2,
       "retainedExecutions": 24,
       "retainedIntervalMinutes": 60
@@ -41,7 +41,7 @@
       "id": "mexican-supermarkets",
       "name": "Mexican supermarkets",
       "schemaProfile": "product",
-      "sites": 6,
+      "sites": 5,
       "qualificationExecutions": 2,
       "retainedExecutions": 24,
       "retainedIntervalMinutes": 60
@@ -50,7 +50,7 @@
       "id": "sp500-careers",
       "name": "S&P 500 company careers",
       "schemaProfile": "job",
-      "sites": 12,
+      "sites": 10,
       "qualificationExecutions": 2,
       "retainedExecutions": 24,
       "retainedIntervalMinutes": 60
@@ -59,7 +59,7 @@
       "id": "government-notices",
       "name": "Government and regulatory notices",
       "schemaProfile": "notice",
-      "sites": 10,
+      "sites": 9,
       "qualificationExecutions": 2,
       "retainedExecutions": 24,
       "retainedIntervalMinutes": 60
@@ -68,7 +68,7 @@
       "id": "security-advisories",
       "name": "Security advisories",
       "schemaProfile": "advisory",
-      "sites": 10,
+      "sites": 8,
       "qualificationExecutions": 2,
       "retainedExecutions": 24,
       "retainedIntervalMinutes": 60
@@ -77,7 +77,7 @@
       "id": "weather-alerts",
       "name": "Weather and environmental alerts",
       "schemaProfile": "alert",
-      "sites": 10,
+      "sites": 7,
       "qualificationExecutions": 2,
       "retainedExecutions": 48,
       "retainedIntervalMinutes": 30

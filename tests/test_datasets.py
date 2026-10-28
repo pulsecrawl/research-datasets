@@ -63,9 +63,9 @@ class DatasetTests(unittest.TestCase):
     def test_multi_category_qualification_is_complete_and_did_not_start_retained(self):
         verifier = module("verify")
         evidence = verifier.verify_qualification_release()
-        self.assertEqual(evidence["release"], "0.4.0-rc.1")
+        self.assertEqual(evidence["release"], "0.4.1-rc.1")
         self.assertEqual(evidence["categories"], 9)
-        self.assertEqual(evidence["candidateSites"], 119)
+        self.assertEqual(evidence["selectedSites"], 107)
         self.assertFalse(evidence["retainedStudyStarted"])
 
     def test_fixed_inputs_regenerate_identically(self):

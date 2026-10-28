@@ -5,24 +5,6 @@
   "schemaVersion": 1,
   "sites": [
     {
-      "checkedAt": "2026-10-28T03:58:08.407822+00:00",
-      "enabled": false,
-      "reason": "The reviewed home page does not expose one alert record through the tested HTML template engines; an RSS or XML adapter is required.",
-      "seedUrl": "https://www.nhc.noaa.gov/",
-      "siteId": "weather-noaa-nhc",
-      "siteName": "NOAA National Hurricane Center",
-      "status": "study_excluded"
-    },
-    {
-      "checkedAt": "2026-10-28T03:58:08.407832+00:00",
-      "enabled": false,
-      "reason": "The qualification page produced alert metadata but did not expose a canonical URL required by the alert schema.",
-      "seedUrl": "https://weather.gc.ca/mainmenu/alert_menu_e.html",
-      "siteId": "weather-environment-canada",
-      "siteName": "Environment Canada Alerts",
-      "status": "study_excluded"
-    },
-    {
       "checkedAt": "2026-10-28T03:58:08.407852+00:00",
       "contentType": "text/html; charset=utf-8",
       "enabled": true,
@@ -51,17 +33,8 @@
       "robotsUrl": "https://www.met.ie/robots.txt",
       "seedUrl": "https://www.met.ie/warnings-today.html",
       "siteId": "weather-met-eireann",
-      "siteName": "Met \u00c9ireann Warnings",
+      "siteName": "Met Éireann Warnings",
       "status": "enabled"
-    },
-    {
-      "checkedAt": "2026-10-28T03:58:10.658750+00:00",
-      "enabled": false,
-      "reason": "The qualification page produced alert metadata but did not expose a canonical URL required by the alert schema.",
-      "seedUrl": "https://www.metservice.com/warnings/home",
-      "siteId": "weather-metservice-nz",
-      "siteName": "MetService New Zealand Warnings",
-      "status": "study_excluded"
     },
     {
       "checkedAt": "2026-10-28T03:58:10.658766+00:00",
@@ -108,7 +81,7 @@
       "robotsUrl": "https://vigilance.meteofrance.fr/robots.txt",
       "seedUrl": "https://vigilance.meteofrance.fr/fr",
       "siteId": "weather-meteofrance",
-      "siteName": "M\u00e9t\u00e9o-France Vigilance",
+      "siteName": "Météo-France Vigilance",
       "status": "enabled"
     },
     {

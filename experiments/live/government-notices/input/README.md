@@ -1,10 +1,12 @@
 # Government and regulatory notices
 
-This directory defines the public sources used by the bounded live study. The listing URL supports later recurring discovery; the representative detail URL is used by the ten-minute qualification. No response bodies are retained.
+This directory defines the 9 selected public websites used by the
+bounded live study. The listing URL supports later recurring discovery; the
+qualification URL is used by the short two-cycle check. No response bodies
+are retained.
 
 | Website | Stable ID | Listing URL | Qualification URL |
 |---|---|---|---|
-| Diario Oficial de la Federación | `government-dof-mx` | https://sidof.segob.gob.mx/ | https://sidof.segob.gob.mx/notas/5800082 |
 | CNBV | `government-cnbv-mx` | https://www.gob.mx/cnbv/archivo/prensa | https://www.gob.mx/cnbv/prensa/indice-de-capitalizacion-de-la-banca-multiple-al-cierre-de-agosto-de-2026?idiom=es |
 | PROFECO | `government-profeco-mx` | https://www.gob.mx/profeco/archivo/prensa | https://www.gob.mx/profeco/prensa/publicidad-enganosa-profeco-orienta-para-identificarla?idiom=es |
 | U.S. Consumer Product Safety Commission | `government-cpsc-us` | https://www.cpsc.gov/Recalls | https://www.cpsc.gov/Recalls/2027/VQQQ-Gas-Patio-Heaters-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards |
