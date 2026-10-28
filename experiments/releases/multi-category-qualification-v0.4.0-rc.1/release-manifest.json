@@ -1,0 +1,99 @@
+{
+  "candidateSites": 119,
+  "categories": [
+    {
+      "categoryId": "financial-news",
+      "checksumsSha256": "e3810c6a08684cbf7829e1ef28777fcf584bd8b5656391b825771db5727c7df5",
+      "enabledSites": 20,
+      "excludedSites": 0,
+      "path": "experiments/live/financial-news/runs/qualification-2026-10-28",
+      "requestedSites": 20,
+      "sourceUrlsWithAllRequiredFields": 20
+    },
+    {
+      "categoryId": "general-commerce",
+      "checksumsSha256": "d5811187e7c84e449ca65912e89c08fcebf1ef989204735249b0909fa4f1f279",
+      "enabledSites": 9,
+      "excludedSites": 2,
+      "path": "experiments/live/general-commerce/runs/qualification-2026-10-28",
+      "requestedSites": 11,
+      "sourceUrlsWithAllRequiredFields": 9
+    },
+    {
+      "categoryId": "government-notices",
+      "checksumsSha256": "801efdb9c81ea43854ad97a102d9c988bc0a17b2e1a441025f11d03132609b72",
+      "enabledSites": 9,
+      "excludedSites": 1,
+      "path": "experiments/live/government-notices/runs/qualification-2026-10-28",
+      "requestedSites": 10,
+      "sourceUrlsWithAllRequiredFields": 9
+    },
+    {
+      "categoryId": "mexican-newspapers",
+      "checksumsSha256": "ea5b6e2337d77079a530ecabe2ce8c80ef43b5e3cb36c72825d49e868b9bb7c7",
+      "enabledSites": 19,
+      "excludedSites": 1,
+      "path": "experiments/live/mexican-newspapers/runs/qualification-2026-10-28",
+      "requestedSites": 20,
+      "sourceUrlsWithAllRequiredFields": 19
+    },
+    {
+      "categoryId": "mexican-supermarkets",
+      "checksumsSha256": "13cdb7ec8850833f3af7cdb42c263acd8cac627b157714467efe26146cb7e1e4",
+      "enabledSites": 5,
+      "excludedSites": 1,
+      "path": "experiments/live/mexican-supermarkets/runs/qualification-2026-10-28",
+      "requestedSites": 6,
+      "sourceUrlsWithAllRequiredFields": 5
+    },
+    {
+      "categoryId": "security-advisories",
+      "checksumsSha256": "3d609dd531f54023093392d2218fd8093cc8fe90b3ac6d1e603e9b67d029d373",
+      "enabledSites": 8,
+      "excludedSites": 2,
+      "path": "experiments/live/security-advisories/runs/qualification-2026-10-28",
+      "requestedSites": 10,
+      "sourceUrlsWithAllRequiredFields": 8
+    },
+    {
+      "categoryId": "sp500-careers",
+      "checksumsSha256": "ef0ef38d9b5aa27035652f36d730d493ab813b307db6bed07b9fedf5f88bbc7e",
+      "enabledSites": 10,
+      "excludedSites": 2,
+      "path": "experiments/live/sp500-careers/runs/qualification-2026-10-28",
+      "requestedSites": 12,
+      "sourceUrlsWithAllRequiredFields": 10
+    },
+    {
+      "categoryId": "us-newspapers",
+      "checksumsSha256": "8b24ec457392fdf515b6e3081c0ec6852a2892acd5b4790e0c61fb88e22c2320",
+      "enabledSites": 20,
+      "excludedSites": 0,
+      "path": "experiments/live/us-newspapers/runs/qualification-2026-10-28",
+      "requestedSites": 20,
+      "sourceUrlsWithAllRequiredFields": 20
+    },
+    {
+      "categoryId": "weather-alerts",
+      "checksumsSha256": "387abdf978aafb8c3eccd1d15f83e4808d5bed3d2494c51e7dbc00b3ab439b88",
+      "enabledSites": 7,
+      "excludedSites": 3,
+      "path": "experiments/live/weather-alerts/runs/qualification-2026-10-28",
+      "requestedSites": 10,
+      "sourceUrlsWithAllRequiredFields": 7
+    }
+  ],
+  "note": "This release records the two-cycle readiness check. It is not the separately configured 24-hour study.",
+  "personalMetadataIncluded": false,
+  "phase": "qualification",
+  "publicRepository": "https://github.com/pulsecrawl/research-datasets",
+  "release": "0.4.0-rc.1",
+  "retainedStudyStarted": false,
+  "schemaVersion": 1,
+  "softwareUnderEvaluation": {
+    "distribution": "pulsecrawl",
+    "version": "0.1.0"
+  },
+  "status": "qualification-completed",
+  "thirdPartyHtmlIncluded": false
+}

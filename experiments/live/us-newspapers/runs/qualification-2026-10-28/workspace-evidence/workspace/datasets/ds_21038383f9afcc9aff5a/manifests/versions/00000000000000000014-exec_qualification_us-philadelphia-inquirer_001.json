@@ -1,0 +1,162 @@
+{
+  "createdAt": "2026-10-28T03:59:39.257169+00:00",
+  "datasetId": "ds_21038383f9afcc9aff5a",
+  "files": [
+    {
+      "executionId": "exec_qualification_us-atlanta-journal-constitution_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:10.126820+00:00",
+      "minCrawledAt": "2026-10-28 03:59:10.126820+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-atlanta-journal-constitution_001.parquet",
+      "rows": 1,
+      "sizeBytes": 14061
+    },
+    {
+      "executionId": "exec_qualification_us-baltimore-sun_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:16.003844+00:00",
+      "minCrawledAt": "2026-10-28 03:59:16.003844+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-baltimore-sun_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11761
+    },
+    {
+      "executionId": "exec_qualification_us-boston-globe_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:22.035728+00:00",
+      "minCrawledAt": "2026-10-28 03:59:22.035728+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-boston-globe_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10522
+    },
+    {
+      "executionId": "exec_qualification_us-chicago-tribune_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:24.592686+00:00",
+      "minCrawledAt": "2026-10-28 03:58:24.592686+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-chicago-tribune_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11083
+    },
+    {
+      "executionId": "exec_qualification_us-dallas-morning-news_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:27.837309+00:00",
+      "minCrawledAt": "2026-10-28 03:59:27.837309+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-dallas-morning-news_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10737
+    },
+    {
+      "executionId": "exec_qualification_us-denver-post_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:33.466437+00:00",
+      "minCrawledAt": "2026-10-28 03:59:33.466437+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-denver-post_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11181
+    },
+    {
+      "executionId": "exec_qualification_us-houston-chronicle_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:30.150200+00:00",
+      "minCrawledAt": "2026-10-28 03:58:30.150200+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-houston-chronicle_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10520
+    },
+    {
+      "executionId": "exec_qualification_us-los-angeles-times_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:35.781389+00:00",
+      "minCrawledAt": "2026-10-28 03:58:35.781389+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-los-angeles-times_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12553
+    },
+    {
+      "executionId": "exec_qualification_us-newsday_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.352769+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.352769+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-newsday_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11713
+    },
+    {
+      "executionId": "exec_qualification_us-nola_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.942750+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.942750+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-nola_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12638
+    },
+    {
+      "executionId": "exec_qualification_us-philadelphia-inquirer_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:39.024981+00:00",
+      "minCrawledAt": "2026-10-28 03:59:39.024981+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-philadelphia-inquirer_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11925
+    },
+    {
+      "executionId": "exec_qualification_us-san-diego-union-tribune_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:52.892894+00:00",
+      "minCrawledAt": "2026-10-28 03:58:52.892894+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-san-diego-union-tribune_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11464
+    },
+    {
+      "executionId": "exec_qualification_us-san-francisco-chronicle_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:58.455971+00:00",
+      "minCrawledAt": "2026-10-28 03:58:58.455971+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-san-francisco-chronicle_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10471
+    },
+    {
+      "executionId": "exec_qualification_us-tampa-bay-times_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:04.493566+00:00",
+      "minCrawledAt": "2026-10-28 03:59:04.493566+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-tampa-bay-times_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12586
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 14
+}

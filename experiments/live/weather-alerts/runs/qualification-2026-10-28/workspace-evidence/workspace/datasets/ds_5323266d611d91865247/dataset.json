@@ -1,0 +1,56 @@
+{
+  "createdAt": "2026-10-28T03:58:17.997391+00:00",
+  "datasetId": "ds_5323266d611d91865247",
+  "fields": [
+    {
+      "fieldId": "alert_id",
+      "name": "alert_id",
+      "type": "string"
+    },
+    {
+      "fieldId": "title",
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "fieldId": "authority",
+      "name": "authority",
+      "type": "string"
+    },
+    {
+      "fieldId": "issued_at",
+      "name": "issued_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "expires_at",
+      "name": "expires_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "severity",
+      "name": "severity",
+      "type": "string"
+    },
+    {
+      "fieldId": "area",
+      "name": "area",
+      "type": "string"
+    },
+    {
+      "fieldId": "summary",
+      "name": "summary",
+      "type": "string"
+    },
+    {
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "type": "url"
+    }
+  ],
+  "identityColumn": "_source_url",
+  "identityField": "_source_url",
+  "mode": "new_urls_only",
+  "name": "Live weather-alerts observations",
+  "schemaId": "schema_dccd072a77e7b481b286"
+}

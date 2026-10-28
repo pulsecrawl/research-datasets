@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "advisory_id",
+  "name": "advisory_id",
+  "origin": "custom",
+  "type": "string"
+}

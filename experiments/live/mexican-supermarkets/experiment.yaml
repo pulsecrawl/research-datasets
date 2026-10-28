@@ -1,0 +1,28 @@
+{
+  "id": "live-mexican-supermarkets",
+  "kind": "live",
+  "title": "Recurring mexican supermarkets study",
+  "aliases": [
+    "mexican-supermarkets"
+  ],
+  "seed": 4703,
+  "parameters": {
+    "study": "mexican-supermarkets",
+    "manifest": "experiments/live/mexican-supermarkets/input/sites.json",
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 24,
+        "intervalMinutes": 60
+      }
+    },
+    "minimumOriginDelaySeconds": 5,
+    "maxUrlsPerSitePerExecution": 4,
+    "maxDepth": 1,
+    "retainResponseBodies": false
+  }
+}

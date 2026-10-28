@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    "mexican-newspapers"
+  ],
+  "id": "live-mexican-newspapers",
+  "kind": "live",
+  "parameters": {
+    "manifest": "corpora/live-studies/mexican-newspapers/site-manifest.json",
+    "maxDepth": 1,
+    "maxUrlsPerSitePerExecution": 4,
+    "minimumOriginDelaySeconds": 5,
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 48,
+        "intervalMinutes": 30
+      }
+    },
+    "retainResponseBodies": false,
+    "study": "mexican-newspapers"
+  },
+  "seed": 4703,
+  "title": "Recurring mexican newspapers study"
+}

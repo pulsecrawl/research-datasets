@@ -1,0 +1,28 @@
+{
+  "id": "live-financial-news",
+  "kind": "live",
+  "title": "Recurring financial and stock news study",
+  "aliases": [
+    "financial-news"
+  ],
+  "seed": 4703,
+  "parameters": {
+    "study": "financial-news",
+    "manifest": "experiments/live/financial-news/input/sites.json",
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 48,
+        "intervalMinutes": 30
+      }
+    },
+    "minimumOriginDelaySeconds": 5,
+    "maxUrlsPerSitePerExecution": 4,
+    "maxDepth": 1,
+    "retainResponseBodies": false
+  }
+}

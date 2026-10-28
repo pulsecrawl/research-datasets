@@ -1,0 +1,63 @@
+{
+  "createdAt": "2026-10-28T03:59:07.622282+00:00",
+  "datasetId": "ds_d21ca77fcdd2daa19c2c",
+  "files": [
+    {
+      "executionId": "exec_qualification_government-cnbv-mx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:17.628910+00:00",
+      "minCrawledAt": "2026-10-28 03:58:17.628910+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cnbv-mx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8815
+    },
+    {
+      "executionId": "exec_qualification_government-cpsc-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:28.880840+00:00",
+      "minCrawledAt": "2026-10-28 03:58:28.880840+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cpsc-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11036
+    },
+    {
+      "executionId": "exec_qualification_government-epa-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:07.545637+00:00",
+      "minCrawledAt": "2026-10-28 03:59:07.545637+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-epa-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10276
+    },
+    {
+      "executionId": "exec_qualification_government-fda-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:01.926834+00:00",
+      "minCrawledAt": "2026-10-28 03:59:01.926834+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-fda-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10582
+    },
+    {
+      "executionId": "exec_qualification_government-profeco-mx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:23.131880+00:00",
+      "minCrawledAt": "2026-10-28 03:58:23.131880+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-profeco-mx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8910
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 5
+}

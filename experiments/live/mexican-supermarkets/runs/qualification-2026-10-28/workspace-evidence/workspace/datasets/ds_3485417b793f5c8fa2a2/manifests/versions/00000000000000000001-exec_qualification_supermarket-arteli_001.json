@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-10-28T03:58:22.684399+00:00",
+  "datasetId": "ds_3485417b793f5c8fa2a2",
+  "files": [
+    {
+      "executionId": "exec_qualification_supermarket-arteli_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:22.613626+00:00",
+      "minCrawledAt": "2026-10-28 03:58:22.613626+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_supermarket-arteli_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11830
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 1
+}

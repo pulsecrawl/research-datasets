@@ -1,0 +1,118 @@
+{
+  "createdAt": "2026-10-28T03:59:15.500185+00:00",
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "files": [
+    {
+      "executionId": "exec_qualification_careers-accenture_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:45.634031+00:00",
+      "minCrawledAt": "2026-10-28 03:58:45.634031+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-accenture_001.parquet",
+      "rows": 1,
+      "sizeBytes": 25374
+    },
+    {
+      "executionId": "exec_qualification_careers-adobe_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:39.705485+00:00",
+      "minCrawledAt": "2026-10-28 03:58:39.705485+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-adobe_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12505
+    },
+    {
+      "executionId": "exec_qualification_careers-cisco_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:33.885582+00:00",
+      "minCrawledAt": "2026-10-28 03:58:33.885582+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-cisco_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13021
+    },
+    {
+      "executionId": "exec_qualification_careers-coca-cola_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:08.645941+00:00",
+      "minCrawledAt": "2026-10-28 03:59:08.645941+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-coca-cola_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12143
+    },
+    {
+      "executionId": "exec_qualification_careers-home-depot_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:51.178191+00:00",
+      "minCrawledAt": "2026-10-28 03:58:51.178191+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-home-depot_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11603
+    },
+    {
+      "executionId": "exec_qualification_careers-intel_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:27.926646+00:00",
+      "minCrawledAt": "2026-10-28 03:58:27.926646+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-intel_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12457
+    },
+    {
+      "executionId": "exec_qualification_careers-merck_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:56.761568+00:00",
+      "minCrawledAt": "2026-10-28 03:58:56.761568+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-merck_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13775
+    },
+    {
+      "executionId": "exec_qualification_careers-nvidia_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:22.085023+00:00",
+      "minCrawledAt": "2026-10-28 03:58:22.085023+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-nvidia_001.parquet",
+      "rows": 1,
+      "sizeBytes": 23425
+    },
+    {
+      "executionId": "exec_qualification_careers-pepsico_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:14.682862+00:00",
+      "minCrawledAt": "2026-10-28 03:59:14.682862+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-pepsico_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10070
+    },
+    {
+      "executionId": "exec_qualification_careers-procter-gamble_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:02.633239+00:00",
+      "minCrawledAt": "2026-10-28 03:59:02.633239+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-procter-gamble_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11257
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 10
+}

@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    "government-notices"
+  ],
+  "id": "live-government-notices",
+  "kind": "live",
+  "parameters": {
+    "manifest": "corpora/live-studies/government-notices/site-manifest.json",
+    "maxDepth": 1,
+    "maxUrlsPerSitePerExecution": 4,
+    "minimumOriginDelaySeconds": 5,
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 24,
+        "intervalMinutes": 60
+      }
+    },
+    "retainResponseBodies": false,
+    "study": "government-notices"
+  },
+  "seed": 4703,
+  "title": "Recurring government and regulatory notices study"
+}

@@ -1,0 +1,551 @@
+{
+  "categories": [
+    {
+      "categoryId": "financial-news",
+      "checksumsSha256": "8124e982cf384bfce088cac503809d1c5760a05063921da91bde6354d3ca8cbd",
+      "cycles": 2,
+      "displayName": "Financial and stock news",
+      "enabledSites": 20,
+      "excludedSites": 0,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_headline",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            20,
+            20,
+            20,
+            20
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            20,
+            20,
+            20
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 20,
+      "runDirectory": "experiments/live/financial-news/runs/qualification-2026-10-28",
+      "schemaProfile": "article",
+      "siteExecutions": 40,
+      "sourceUrlsWithAllRequiredFields": 20,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 40,
+        "jobs": 20,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "general-commerce",
+      "checksumsSha256": "fecdd959af2a708a6daa3e9164bc76c08431bade5aae973f7bc49d81f565e139",
+      "cycles": 2,
+      "displayName": "General commerce",
+      "enabledSites": 9,
+      "excludedSites": 2,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_name",
+          "rows_with_price",
+          "rows_with_currency",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            22,
+            22,
+            22,
+            22,
+            9
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            22,
+            18,
+            9
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 11,
+      "runDirectory": "experiments/live/general-commerce/runs/qualification-2026-10-28",
+      "schemaProfile": "product",
+      "siteExecutions": 18,
+      "sourceUrlsWithAllRequiredFields": 9,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 18,
+        "jobs": 9,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "government-notices",
+      "checksumsSha256": "db71e945c3aba979ebe3b3b66c57bfa4ac71cf222e0c7951ac8577f2f2ebe34c",
+      "cycles": 2,
+      "displayName": "Government and regulatory notices",
+      "enabledSites": 9,
+      "excludedSites": 1,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_title",
+          "rows_with_agency",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            9,
+            9,
+            9,
+            9,
+            9
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            9,
+            9,
+            9
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 10,
+      "runDirectory": "experiments/live/government-notices/runs/qualification-2026-10-28",
+      "schemaProfile": "notice",
+      "siteExecutions": 18,
+      "sourceUrlsWithAllRequiredFields": 9,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 18,
+        "jobs": 9,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "mexican-newspapers",
+      "checksumsSha256": "f87ab4fec274e4e8700530b09b917fd6ac52226b8c52f5bf4592f8a4d029a632",
+      "cycles": 2,
+      "displayName": "Mexican newspapers",
+      "enabledSites": 19,
+      "excludedSites": 1,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_headline",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            19,
+            19,
+            19,
+            19
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            19,
+            19,
+            19
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 20,
+      "runDirectory": "experiments/live/mexican-newspapers/runs/qualification-2026-10-28",
+      "schemaProfile": "article",
+      "siteExecutions": 38,
+      "sourceUrlsWithAllRequiredFields": 19,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 38,
+        "jobs": 19,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "mexican-supermarkets",
+      "checksumsSha256": "81dec7ae5b3ec05e8634fde2945ee3add4f04399167a43af8129390ff142b957",
+      "cycles": 2,
+      "displayName": "Mexican supermarkets",
+      "enabledSites": 5,
+      "excludedSites": 1,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_name",
+          "rows_with_price",
+          "rows_with_currency",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            10,
+            10,
+            10,
+            10,
+            5
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            10,
+            10,
+            5
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 6,
+      "runDirectory": "experiments/live/mexican-supermarkets/runs/qualification-2026-10-28",
+      "schemaProfile": "product",
+      "siteExecutions": 10,
+      "sourceUrlsWithAllRequiredFields": 5,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 10,
+        "jobs": 5,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "security-advisories",
+      "checksumsSha256": "68115f8fef03c4675221466e0343df798e730d2b9023398e2b297c7467cf29e6",
+      "cycles": 2,
+      "displayName": "Security advisories",
+      "enabledSites": 8,
+      "excludedSites": 2,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_title",
+          "rows_with_vendor",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            8,
+            8,
+            8
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 10,
+      "runDirectory": "experiments/live/security-advisories/runs/qualification-2026-10-28",
+      "schemaProfile": "advisory",
+      "siteExecutions": 16,
+      "sourceUrlsWithAllRequiredFields": 8,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 16,
+        "jobs": 8,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "sp500-careers",
+      "checksumsSha256": "ad06a346966d95952403da941ede0aa5c1ec967670f2d0dd0f6b0f2dff03e969",
+      "cycles": 2,
+      "displayName": "S&P 500 company careers",
+      "enabledSites": 10,
+      "excludedSites": 2,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_title",
+          "rows_with_company",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            10,
+            10,
+            10
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 12,
+      "runDirectory": "experiments/live/sp500-careers/runs/qualification-2026-10-28",
+      "schemaProfile": "job",
+      "siteExecutions": 20,
+      "sourceUrlsWithAllRequiredFields": 10,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 20,
+        "jobs": 10,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "us-newspapers",
+      "checksumsSha256": "9af4e15ceddf4da25df22e5f6aa6f5548a14ae1d161c4de80d1a0a17c5488642",
+      "cycles": 2,
+      "displayName": "United States newspapers",
+      "enabledSites": 20,
+      "excludedSites": 0,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_headline",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            20,
+            20,
+            20,
+            20
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            20,
+            20,
+            20
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 20,
+      "runDirectory": "experiments/live/us-newspapers/runs/qualification-2026-10-28",
+      "schemaProfile": "article",
+      "siteExecutions": 40,
+      "sourceUrlsWithAllRequiredFields": 20,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 40,
+        "jobs": 20,
+        "valid": true
+      }
+    },
+    {
+      "categoryId": "weather-alerts",
+      "checksumsSha256": "90eaab13af6bbdf7d7f115792504fabf75b16c40ad09be320e0dee48d6f3ee0c",
+      "cycles": 2,
+      "displayName": "Weather and environmental alerts",
+      "enabledSites": 7,
+      "excludedSites": 3,
+      "failedSiteExecutions": 0,
+      "passesEvidenceGate": true,
+      "passesRuntimeGate": true,
+      "qualitySummary": {
+        "columns": [
+          "rows_with_title",
+          "rows_with_authority",
+          "rows_with_canonical_url",
+          "rows_with_all_required_fields",
+          "source_urls_with_all_required_fields"
+        ],
+        "rows": [
+          [
+            7,
+            7,
+            7,
+            7,
+            7
+          ]
+        ],
+        "truncated": false
+      },
+      "querySummary": {
+        "columns": [
+          "rows",
+          "executions",
+          "source_urls"
+        ],
+        "rows": [
+          [
+            7,
+            7,
+            7
+          ]
+        ],
+        "truncated": false
+      },
+      "readyForRetainedStudy": true,
+      "requestedSites": 10,
+      "runDirectory": "experiments/live/weather-alerts/runs/qualification-2026-10-28",
+      "schemaProfile": "alert",
+      "siteExecutions": 14,
+      "sourceUrlsWithAllRequiredFields": 7,
+      "status": "completed",
+      "workspaceValidation": {
+        "datasets": 1,
+        "errors": [],
+        "executions": 14,
+        "jobs": 7,
+        "valid": true
+      }
+    }
+  ],
+  "completedCategories": [
+    "financial-news",
+    "general-commerce",
+    "government-notices",
+    "mexican-newspapers",
+    "mexican-supermarkets",
+    "security-advisories",
+    "sp500-careers",
+    "us-newspapers",
+    "weather-alerts"
+  ],
+  "errors": [],
+  "expectedCategories": 9,
+  "expectedSites": 119,
+  "finishedAt": "2026-10-28T04:03:29.412828+00:00",
+  "passedEvidenceGate": true,
+  "passedRuntimeGate": true,
+  "phase": "qualification",
+  "readyForRetainedStudy": true,
+  "retainedStudyStarted": false,
+  "schemaVersion": 1,
+  "startedAt": "2026-10-28T03:58:08.212228+00:00"
+}

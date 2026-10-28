@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "title": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "careers-intel-job-css",
+  "origin": "org",
+  "outputSchemaId": "schema_b9a0eee344faf485150a",
+  "templateId": "careers-intel-job-css"
+}

@@ -1,12 +1,12 @@
 # Evaluation datasets
 
 This directory contains the controlled inputs used by the registered
-experiments. These files are inputs, not results. Execution evidence is stored
-under [`../evidence/`](../evidence/), and derived results are under
-[`../analysis/`](../analysis/).
+experiments. These files are inputs, not results. Controlled run evidence is
+under [`../experiments/controlled/`](../experiments/controlled/), and reviewed
+releases are under [`../experiments/releases/`](../experiments/releases/).
 
 If those terms are unfamiliar, read the repository's
-[`START_HERE.md`](../START_HERE.md) first.
+[`README.md`](../README.md) first.
 
 | Collection | What it contains | Primary purpose |
 | --- | --- | --- |
@@ -21,12 +21,12 @@ Reserved `.example` hosts and generated content prevent controlled inputs from
 being mistaken for captured website data. The screenshots in this repository
 show these generated fixtures only; they are not screenshots of external sites.
 
-See [`../DATASETS.md`](../DATASETS.md) for licensing, provenance, and the full
+See [`../README.md`](../README.md) for licensing, provenance, and the full
 publication boundary.
 
 ## Do not confuse these folders
 
 - `datasets/` contains repeatable controlled inputs.
-- `evidence/executions/` contains measurements from completed controlled runs.
-- `analysis/` contains results calculated from those measurements.
-- `evidence/live-studies/` contains aggregate observations from real websites.
+- `experiments/controlled/` contains measurements from completed controlled runs.
+- `experiments/releases/` contains reviewed results calculated from those measurements.
+- `experiments/live/completed-news-and-commerce/` contains aggregate observations from real websites.

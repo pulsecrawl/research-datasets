@@ -1,0 +1,923 @@
+{
+  "completedAt": "2026-10-28T04:03:20.678244+00:00",
+  "datasetFiles": [
+    {
+      "executionId": "exec_qualification_careers-accenture_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:45.634031+00:00",
+      "minCrawledAt": "2026-10-28 03:58:45.634031+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-accenture_001.parquet",
+      "rows": 1,
+      "sizeBytes": 25374
+    },
+    {
+      "executionId": "exec_qualification_careers-adobe_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:39.705485+00:00",
+      "minCrawledAt": "2026-10-28 03:58:39.705485+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-adobe_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12505
+    },
+    {
+      "executionId": "exec_qualification_careers-cisco_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:33.885582+00:00",
+      "minCrawledAt": "2026-10-28 03:58:33.885582+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-cisco_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13021
+    },
+    {
+      "executionId": "exec_qualification_careers-coca-cola_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:08.645941+00:00",
+      "minCrawledAt": "2026-10-28 03:59:08.645941+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-coca-cola_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12143
+    },
+    {
+      "executionId": "exec_qualification_careers-home-depot_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:51.178191+00:00",
+      "minCrawledAt": "2026-10-28 03:58:51.178191+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-home-depot_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11603
+    },
+    {
+      "executionId": "exec_qualification_careers-intel_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:27.926646+00:00",
+      "minCrawledAt": "2026-10-28 03:58:27.926646+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-intel_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12457
+    },
+    {
+      "executionId": "exec_qualification_careers-merck_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:56.761568+00:00",
+      "minCrawledAt": "2026-10-28 03:58:56.761568+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-merck_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13775
+    },
+    {
+      "executionId": "exec_qualification_careers-nvidia_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:22.085023+00:00",
+      "minCrawledAt": "2026-10-28 03:58:22.085023+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-nvidia_001.parquet",
+      "rows": 1,
+      "sizeBytes": 23425
+    },
+    {
+      "executionId": "exec_qualification_careers-pepsico_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:14.682862+00:00",
+      "minCrawledAt": "2026-10-28 03:59:14.682862+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-pepsico_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10070
+    },
+    {
+      "executionId": "exec_qualification_careers-procter-gamble_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:02.633239+00:00",
+      "minCrawledAt": "2026-10-28 03:59:02.633239+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_careers-procter-gamble_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11257
+    }
+  ],
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "enabledSites": 10,
+  "excludedSites": 2,
+  "executions": [
+    {
+      "durationSeconds": 58.923586,
+      "finishedAt": "2026-10-28T03:59:15.502822+00:00",
+      "scheduledAt": "2026-10-28T03:58:16.579232+00:00",
+      "sequence": 1,
+      "sites": [
+        {
+          "executionId": "exec_qualification_careers-nvidia_001",
+          "finishedAt": "2026-10-28T03:58:22.419606+00:00",
+          "siteId": "careers-nvidia",
+          "startedAt": "2026-10-28T03:58:16.580230+00:00",
+          "stats": {
+            "bytes_processed": 13441,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.439809083938599,
+            "rate_limit_wait_seconds": 5.439809083938599,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "nvidia.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-intel_001",
+          "finishedAt": "2026-10-28T03:58:28.377933+00:00",
+          "siteId": "careers-intel",
+          "startedAt": "2026-10-28T03:58:22.423372+00:00",
+          "stats": {
+            "bytes_processed": 19647,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.299277067184448,
+            "rate_limit_wait_seconds": 5.299277067184448,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "intel.wd1.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-cisco_001",
+          "finishedAt": "2026-10-28T03:58:34.197670+00:00",
+          "siteId": "careers-cisco",
+          "startedAt": "2026-10-28T03:58:28.381624+00:00",
+          "stats": {
+            "bytes_processed": 24472,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 4.841460943222046,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 0,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "cisco.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-adobe_001",
+          "finishedAt": "2026-10-28T03:58:40.127665+00:00",
+          "siteId": "careers-adobe",
+          "startedAt": "2026-10-28T03:58:34.201950+00:00",
+          "stats": {
+            "bytes_processed": 24200,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.135448217391968,
+            "rate_limit_wait_seconds": 5.135448932647705,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "adobe.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-accenture_001",
+          "finishedAt": "2026-10-28T03:58:45.672457+00:00",
+          "siteId": "careers-accenture",
+          "startedAt": "2026-10-28T03:58:40.130431+00:00",
+          "stats": {
+            "bytes_processed": 166454,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.294799089431763,
+            "rate_limit_wait_seconds": 5.294799089431763,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.accenture.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-home-depot_001",
+          "finishedAt": "2026-10-28T03:58:51.256742+00:00",
+          "siteId": "careers-home-depot",
+          "startedAt": "2026-10-28T03:58:45.675207+00:00",
+          "stats": {
+            "bytes_processed": 1342317,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.44594407081604,
+            "rate_limit_wait_seconds": 5.44594407081604,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "careers.homedepot.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-merck_001",
+          "finishedAt": "2026-10-28T03:58:57.126712+00:00",
+          "siteId": "careers-merck",
+          "startedAt": "2026-10-28T03:58:51.259027+00:00",
+          "stats": {
+            "bytes_processed": 25402,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.258788824081421,
+            "rate_limit_wait_seconds": 5.258790969848633,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "msd.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-procter-gamble_001",
+          "finishedAt": "2026-10-28T03:59:03.138835+00:00",
+          "siteId": "careers-procter-gamble",
+          "startedAt": "2026-10-28T03:58:57.129793+00:00",
+          "stats": {
+            "bytes_processed": 237926,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.092434883117676,
+            "rate_limit_wait_seconds": 5.092435836791992,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.pgcareers.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-coca-cola_001",
+          "finishedAt": "2026-10-28T03:59:09.175269+00:00",
+          "siteId": "careers-coca-cola",
+          "startedAt": "2026-10-28T03:59:03.141857+00:00",
+          "stats": {
+            "bytes_processed": 20564,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.181217908859253,
+            "rate_limit_wait_seconds": 5.181220054626465,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "coke.wd1.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-pepsico_001",
+          "finishedAt": "2026-10-28T03:59:15.501115+00:00",
+          "siteId": "careers-pepsico",
+          "startedAt": "2026-10-28T03:59:09.179243+00:00",
+          "stats": {
+            "bytes_processed": 1083211,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.222222089767456,
+            "rate_limit_wait_seconds": 5.2222230434417725,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.pepsicojobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 4e-06,
+      "startedAt": "2026-10-28T03:58:16.579236+00:00"
+    },
+    {
+      "durationSeconds": 4.043704,
+      "finishedAt": "2026-10-28T04:03:20.635004+00:00",
+      "scheduledAt": "2026-10-28T04:03:16.579232+00:00",
+      "sequence": 2,
+      "sites": [
+        {
+          "executionId": "exec_qualification_careers-nvidia_002",
+          "finishedAt": "2026-10-28T04:03:16.992973+00:00",
+          "siteId": "careers-nvidia",
+          "startedAt": "2026-10-28T04:03:16.595682+00:00",
+          "stats": {
+            "bytes_processed": 13441,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "nvidia.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-intel_002",
+          "finishedAt": "2026-10-28T04:03:17.470860+00:00",
+          "siteId": "careers-intel",
+          "startedAt": "2026-10-28T04:03:16.996190+00:00",
+          "stats": {
+            "bytes_processed": 19647,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "intel.wd1.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-cisco_002",
+          "finishedAt": "2026-10-28T04:03:17.769161+00:00",
+          "siteId": "careers-cisco",
+          "startedAt": "2026-10-28T04:03:17.476030+00:00",
+          "stats": {
+            "bytes_processed": 24472,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "cisco.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-adobe_002",
+          "finishedAt": "2026-10-28T04:03:18.311515+00:00",
+          "siteId": "careers-adobe",
+          "startedAt": "2026-10-28T04:03:17.771922+00:00",
+          "stats": {
+            "bytes_processed": 24200,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "adobe.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-accenture_002",
+          "finishedAt": "2026-10-28T04:03:18.413495+00:00",
+          "siteId": "careers-accenture",
+          "startedAt": "2026-10-28T04:03:18.314219+00:00",
+          "stats": {
+            "bytes_processed": 166454,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.accenture.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-home-depot_002",
+          "finishedAt": "2026-10-28T04:03:18.518884+00:00",
+          "siteId": "careers-home-depot",
+          "startedAt": "2026-10-28T04:03:18.416523+00:00",
+          "stats": {
+            "bytes_processed": 1342317,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "careers.homedepot.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-merck_002",
+          "finishedAt": "2026-10-28T04:03:18.868071+00:00",
+          "siteId": "careers-merck",
+          "startedAt": "2026-10-28T04:03:18.522060+00:00",
+          "stats": {
+            "bytes_processed": 25402,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "msd.wd5.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-procter-gamble_002",
+          "finishedAt": "2026-10-28T04:03:19.284578+00:00",
+          "siteId": "careers-procter-gamble",
+          "startedAt": "2026-10-28T04:03:18.869909+00:00",
+          "stats": {
+            "bytes_processed": 237923,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.pgcareers.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-coca-cola_002",
+          "finishedAt": "2026-10-28T04:03:19.854647+00:00",
+          "siteId": "careers-coca-cola",
+          "startedAt": "2026-10-28T04:03:19.286956+00:00",
+          "stats": {
+            "bytes_processed": 20564,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "coke.wd1.myworkdayjobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_careers-pepsico_002",
+          "finishedAt": "2026-10-28T04:03:20.631279+00:00",
+          "siteId": "careers-pepsico",
+          "startedAt": "2026-10-28T04:03:19.856949+00:00",
+          "stats": {
+            "bytes_processed": 1083211,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.pepsicojobs.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 0.012068,
+      "startedAt": "2026-10-28T04:03:16.591300+00:00"
+    }
+  ],
+  "jobIds": {
+    "careers-accenture": "job_a04c44d4ed9be48a5d97",
+    "careers-adobe": "job_619b28e1085d1c431295",
+    "careers-cisco": "job_730f44b667d606a29055",
+    "careers-coca-cola": "job_ac6b41bccb9e675d6b25",
+    "careers-home-depot": "job_0c2227b387cb183ccb76",
+    "careers-intel": "job_feb23e37c932c568e248",
+    "careers-merck": "job_037dc9bf26cd6bca25af",
+    "careers-nvidia": "job_c95a861c44d5e6bd7956",
+    "careers-pepsico": "job_286c33f1c7eca8288e24",
+    "careers-procter-gamble": "job_c08b541e8b6b1f2d68ad"
+  },
+  "phase": "qualification",
+  "publicPackageVersion": "0.1.0",
+  "qualitySummary": {
+    "columns": [
+      "rows_with_title",
+      "rows_with_company",
+      "rows_with_canonical_url",
+      "rows_with_all_required_fields",
+      "source_urls_with_all_required_fields"
+    ],
+    "rows": [
+      [
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    ],
+    "truncated": false
+  },
+  "querySummary": {
+    "columns": [
+      "rows",
+      "executions",
+      "source_urls"
+    ],
+    "rows": [
+      [
+        10,
+        10,
+        10
+      ]
+    ],
+    "truncated": false
+  },
+  "requestedSites": 12,
+  "schemaProfile": "job",
+  "settings": {
+    "executions": 2,
+    "intervalMinutes": 5
+  },
+  "status": "completed",
+  "study": "sp500-careers",
+  "workspaceValidation": {
+    "datasets": 1,
+    "errors": [],
+    "executions": 20,
+    "jobs": 10,
+    "valid": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "agency": [
+      "literal:CNBV"
+    ],
+    "canonical_url": [
+      "og:url"
+    ],
+    "published_at": [
+      "article:published_time",
+      "date"
+    ],
+    "summary": [
+      "og:description",
+      "description"
+    ],
+    "title": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ],
+    "updated_at": [
+      "article:modified_time",
+      "og:updated_time"
+    ]
+  },
+  "name": "government-cnbv-mx-notice-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_ded022f721cafafef812",
+  "templateId": "government-cnbv-mx-notice-meta"
+}

@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "severity",
+  "name": "severity",
+  "origin": "custom",
+  "type": "string"
+}

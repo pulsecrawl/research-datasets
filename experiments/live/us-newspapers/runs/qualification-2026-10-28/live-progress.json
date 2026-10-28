@@ -1,0 +1,1761 @@
+{
+  "completedAt": "2026-10-28T04:03:25.484851+00:00",
+  "datasetFiles": [
+    {
+      "executionId": "exec_qualification_us-atlanta-journal-constitution_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:10.126820+00:00",
+      "minCrawledAt": "2026-10-28 03:59:10.126820+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-atlanta-journal-constitution_001.parquet",
+      "rows": 1,
+      "sizeBytes": 14061
+    },
+    {
+      "executionId": "exec_qualification_us-baltimore-sun_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:16.003844+00:00",
+      "minCrawledAt": "2026-10-28 03:59:16.003844+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-baltimore-sun_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11761
+    },
+    {
+      "executionId": "exec_qualification_us-boston-globe_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:22.035728+00:00",
+      "minCrawledAt": "2026-10-28 03:59:22.035728+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-boston-globe_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10522
+    },
+    {
+      "executionId": "exec_qualification_us-boston-herald_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:56.112306+00:00",
+      "minCrawledAt": "2026-10-28 03:59:56.112306+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-boston-herald_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11818
+    },
+    {
+      "executionId": "exec_qualification_us-chicago-tribune_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:24.592686+00:00",
+      "minCrawledAt": "2026-10-28 03:58:24.592686+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-chicago-tribune_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11083
+    },
+    {
+      "executionId": "exec_qualification_us-dallas-morning-news_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:27.837309+00:00",
+      "minCrawledAt": "2026-10-28 03:59:27.837309+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-dallas-morning-news_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10737
+    },
+    {
+      "executionId": "exec_qualification_us-denver-post_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:33.466437+00:00",
+      "minCrawledAt": "2026-10-28 03:59:33.466437+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-denver-post_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11181
+    },
+    {
+      "executionId": "exec_qualification_us-houston-chronicle_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:30.150200+00:00",
+      "minCrawledAt": "2026-10-28 03:58:30.150200+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-houston-chronicle_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10520
+    },
+    {
+      "executionId": "exec_qualification_us-los-angeles-times_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:35.781389+00:00",
+      "minCrawledAt": "2026-10-28 03:58:35.781389+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-los-angeles-times_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12553
+    },
+    {
+      "executionId": "exec_qualification_us-newsday_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.352769+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.352769+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-newsday_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11713
+    },
+    {
+      "executionId": "exec_qualification_us-nola_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.942750+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.942750+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-nola_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12638
+    },
+    {
+      "executionId": "exec_qualification_us-philadelphia-inquirer_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:39.024981+00:00",
+      "minCrawledAt": "2026-10-28 03:59:39.024981+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-philadelphia-inquirer_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11925
+    },
+    {
+      "executionId": "exec_qualification_us-salt-lake-tribune_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:44.764620+00:00",
+      "minCrawledAt": "2026-10-28 03:59:44.764620+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-salt-lake-tribune_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11390
+    },
+    {
+      "executionId": "exec_qualification_us-san-diego-union-tribune_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:52.892894+00:00",
+      "minCrawledAt": "2026-10-28 03:58:52.892894+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-san-diego-union-tribune_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11464
+    },
+    {
+      "executionId": "exec_qualification_us-san-francisco-chronicle_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:58.455971+00:00",
+      "minCrawledAt": "2026-10-28 03:58:58.455971+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-san-francisco-chronicle_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10471
+    },
+    {
+      "executionId": "exec_qualification_us-seattle-times_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:50.472212+00:00",
+      "minCrawledAt": "2026-10-28 03:59:50.472212+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-seattle-times_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10950
+    },
+    {
+      "executionId": "exec_qualification_us-tampa-bay-times_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:04.493566+00:00",
+      "minCrawledAt": "2026-10-28 03:59:04.493566+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_us-tampa-bay-times_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12586
+    },
+    {
+      "executionId": "exec_qualification_us-albuquerque-journal_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:00:07.226407+00:00",
+      "minCrawledAt": "2026-10-28 04:00:07.226407+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_us-albuquerque-journal_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11385
+    },
+    {
+      "executionId": "exec_qualification_us-anchorage-daily-news_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:00:12.935847+00:00",
+      "minCrawledAt": "2026-10-28 04:00:12.935847+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_us-anchorage-daily-news_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11941
+    },
+    {
+      "executionId": "exec_qualification_us-orange-county-register_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 4,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 04:00:01.669172+00:00",
+      "minCrawledAt": "2026-10-28 04:00:01.669172+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_us-orange-county-register_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11227
+    }
+  ],
+  "datasetId": "ds_21038383f9afcc9aff5a",
+  "enabledSites": 20,
+  "excludedSites": 0,
+  "executions": [
+    {
+      "durationSeconds": 113.938192,
+      "finishedAt": "2026-10-28T04:00:13.025066+00:00",
+      "scheduledAt": "2026-10-28T03:58:19.086871+00:00",
+      "sequence": 1,
+      "sites": [
+        {
+          "executionId": "exec_qualification_us-chicago-tribune_001",
+          "finishedAt": "2026-10-28T03:58:24.643037+00:00",
+          "siteId": "us-chicago-tribune",
+          "startedAt": "2026-10-28T03:58:19.087611+00:00",
+          "stats": {
+            "bytes_processed": 192664,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.473622798919678,
+            "rate_limit_wait_seconds": 5.473622798919678,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.chicagotribune.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-houston-chronicle_001",
+          "finishedAt": "2026-10-28T03:58:30.273533+00:00",
+          "siteId": "us-houston-chronicle",
+          "startedAt": "2026-10-28T03:58:24.646384+00:00",
+          "stats": {
+            "bytes_processed": 553007,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.466328144073486,
+            "rate_limit_wait_seconds": 5.466328144073486,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.houstonchronicle.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-los-angeles-times_001",
+          "finishedAt": "2026-10-28T03:58:35.846094+00:00",
+          "siteId": "us-los-angeles-times",
+          "startedAt": "2026-10-28T03:58:30.276402+00:00",
+          "stats": {
+            "bytes_processed": 498671,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.376502990722656,
+            "rate_limit_wait_seconds": 5.376503944396973,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.latimes.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-newsday_001",
+          "finishedAt": "2026-10-28T03:58:41.434828+00:00",
+          "siteId": "us-newsday",
+          "startedAt": "2026-10-28T03:58:35.848979+00:00",
+          "stats": {
+            "bytes_processed": 869291,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.445621013641357,
+            "rate_limit_wait_seconds": 5.445621013641357,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.newsday.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-nola_001",
+          "finishedAt": "2026-10-28T03:58:47.385797+00:00",
+          "siteId": "us-nola",
+          "startedAt": "2026-10-28T03:58:41.438141+00:00",
+          "stats": {
+            "bytes_processed": 343839,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.290966987609863,
+            "rate_limit_wait_seconds": 5.290966987609863,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.nola.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-san-diego-union-tribune_001",
+          "finishedAt": "2026-10-28T03:58:52.949704+00:00",
+          "siteId": "us-san-diego-union-tribune",
+          "startedAt": "2026-10-28T03:58:47.388491+00:00",
+          "stats": {
+            "bytes_processed": 239236,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.463817119598389,
+            "rate_limit_wait_seconds": 5.463817119598389,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.sandiegouniontribune.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-san-francisco-chronicle_001",
+          "finishedAt": "2026-10-28T03:58:58.988438+00:00",
+          "siteId": "us-san-francisco-chronicle",
+          "startedAt": "2026-10-28T03:58:52.952265+00:00",
+          "stats": {
+            "bytes_processed": 601588,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.472719192504883,
+            "rate_limit_wait_seconds": 5.472719192504883,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.sfchronicle.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-tampa-bay-times_001",
+          "finishedAt": "2026-10-28T03:59:04.621396+00:00",
+          "siteId": "us-tampa-bay-times",
+          "startedAt": "2026-10-28T03:58:58.991324+00:00",
+          "stats": {
+            "bytes_processed": 195143,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 4.994626045227051,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 0,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.tampabay.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-atlanta-journal-constitution_001",
+          "finishedAt": "2026-10-28T03:59:10.498349+00:00",
+          "siteId": "us-atlanta-journal-constitution",
+          "startedAt": "2026-10-28T03:59:04.623717+00:00",
+          "stats": {
+            "bytes_processed": 401739,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.449979305267334,
+            "rate_limit_wait_seconds": 5.449980020523071,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.ajc.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-baltimore-sun_001",
+          "finishedAt": "2026-10-28T03:59:16.529123+00:00",
+          "siteId": "us-baltimore-sun",
+          "startedAt": "2026-10-28T03:59:10.500580+00:00",
+          "stats": {
+            "bytes_processed": 184550,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.464300870895386,
+            "rate_limit_wait_seconds": 5.464302062988281,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.baltimoresun.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-boston-globe_001",
+          "finishedAt": "2026-10-28T03:59:22.332391+00:00",
+          "siteId": "us-boston-globe",
+          "startedAt": "2026-10-28T03:59:16.532100+00:00",
+          "stats": {
+            "bytes_processed": 974499,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.18979024887085,
+            "rate_limit_wait_seconds": 5.18979024887085,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.bostonglobe.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-dallas-morning-news_001",
+          "finishedAt": "2026-10-28T03:59:27.958228+00:00",
+          "siteId": "us-dallas-morning-news",
+          "startedAt": "2026-10-28T03:59:22.334668+00:00",
+          "stats": {
+            "bytes_processed": 566408,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.471030235290527,
+            "rate_limit_wait_seconds": 5.471030950546265,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.dallasnews.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-denver-post_001",
+          "finishedAt": "2026-10-28T03:59:33.517962+00:00",
+          "siteId": "us-denver-post",
+          "startedAt": "2026-10-28T03:59:27.960851+00:00",
+          "stats": {
+            "bytes_processed": 213438,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.4034950733184814,
+            "rate_limit_wait_seconds": 5.4034950733184814,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.denverpost.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-philadelphia-inquirer_001",
+          "finishedAt": "2026-10-28T03:59:39.258019+00:00",
+          "siteId": "us-philadelphia-inquirer",
+          "startedAt": "2026-10-28T03:59:33.520943+00:00",
+          "stats": {
+            "bytes_processed": 986393,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.2156877517700195,
+            "rate_limit_wait_seconds": 5.215688943862915,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.inquirer.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-salt-lake-tribune_001",
+          "finishedAt": "2026-10-28T03:59:44.964299+00:00",
+          "siteId": "us-salt-lake-tribune",
+          "startedAt": "2026-10-28T03:59:39.260589+00:00",
+          "stats": {
+            "bytes_processed": 378302,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.367466926574707,
+            "rate_limit_wait_seconds": 5.367466926574707,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.sltrib.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-seattle-times_001",
+          "finishedAt": "2026-10-28T03:59:50.605626+00:00",
+          "siteId": "us-seattle-times",
+          "startedAt": "2026-10-28T03:59:44.966595+00:00",
+          "stats": {
+            "bytes_processed": 235385,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.451525926589966,
+            "rate_limit_wait_seconds": 5.451525926589966,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.seattletimes.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-boston-herald_001",
+          "finishedAt": "2026-10-28T03:59:56.160432+00:00",
+          "siteId": "us-boston-herald",
+          "startedAt": "2026-10-28T03:59:50.608964+00:00",
+          "stats": {
+            "bytes_processed": 226247,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.471090078353882,
+            "rate_limit_wait_seconds": 5.471091032028198,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.bostonherald.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-orange-county-register_001",
+          "finishedAt": "2026-10-28T04:00:01.718103+00:00",
+          "siteId": "us-orange-county-register",
+          "startedAt": "2026-10-28T03:59:56.163947+00:00",
+          "stats": {
+            "bytes_processed": 192100,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.472149133682251,
+            "rate_limit_wait_seconds": 5.472149133682251,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.ocregister.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-albuquerque-journal_001",
+          "finishedAt": "2026-10-28T04:00:07.428384+00:00",
+          "siteId": "us-albuquerque-journal",
+          "startedAt": "2026-10-28T04:00:01.721234+00:00",
+          "stats": {
+            "bytes_processed": 245704,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.343922853469849,
+            "rate_limit_wait_seconds": 5.343923807144165,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.abqjournal.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-anchorage-daily-news_001",
+          "finishedAt": "2026-10-28T04:00:13.022941+00:00",
+          "siteId": "us-anchorage-daily-news",
+          "startedAt": "2026-10-28T04:00:07.431611+00:00",
+          "stats": {
+            "bytes_processed": 187963,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.4161481857299805,
+            "rate_limit_wait_seconds": 5.416149139404297,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.adn.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 3e-06,
+      "startedAt": "2026-10-28T03:58:19.086874+00:00"
+    },
+    {
+      "durationSeconds": 6.325258,
+      "finishedAt": "2026-10-28T04:03:25.423864+00:00",
+      "scheduledAt": "2026-10-28T04:03:19.086871+00:00",
+      "sequence": 2,
+      "sites": [
+        {
+          "executionId": "exec_qualification_us-chicago-tribune_002",
+          "finishedAt": "2026-10-28T04:03:19.138551+00:00",
+          "siteId": "us-chicago-tribune",
+          "startedAt": "2026-10-28T04:03:19.100358+00:00",
+          "stats": {
+            "bytes_processed": 192664,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.chicagotribune.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-houston-chronicle_002",
+          "finishedAt": "2026-10-28T04:03:19.560085+00:00",
+          "siteId": "us-houston-chronicle",
+          "startedAt": "2026-10-28T04:03:19.141173+00:00",
+          "stats": {
+            "bytes_processed": 554028,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.houstonchronicle.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-los-angeles-times_002",
+          "finishedAt": "2026-10-28T04:03:19.658682+00:00",
+          "siteId": "us-los-angeles-times",
+          "startedAt": "2026-10-28T04:03:19.562673+00:00",
+          "stats": {
+            "bytes_processed": 498671,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.latimes.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-newsday_002",
+          "finishedAt": "2026-10-28T04:03:19.839367+00:00",
+          "siteId": "us-newsday",
+          "startedAt": "2026-10-28T04:03:19.661422+00:00",
+          "stats": {
+            "bytes_processed": 869291,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.newsday.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-nola_002",
+          "finishedAt": "2026-10-28T04:03:20.202785+00:00",
+          "siteId": "us-nola",
+          "startedAt": "2026-10-28T04:03:19.841897+00:00",
+          "stats": {
+            "bytes_processed": 343839,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.nola.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-san-diego-union-tribune_002",
+          "finishedAt": "2026-10-28T04:03:20.348011+00:00",
+          "siteId": "us-san-diego-union-tribune",
+          "startedAt": "2026-10-28T04:03:20.205685+00:00",
+          "stats": {
+            "bytes_processed": 239236,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.sandiegouniontribune.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-san-francisco-chronicle_002",
+          "finishedAt": "2026-10-28T04:03:20.929828+00:00",
+          "siteId": "us-san-francisco-chronicle",
+          "startedAt": "2026-10-28T04:03:20.350593+00:00",
+          "stats": {
+            "bytes_processed": 430672,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.sfchronicle.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-tampa-bay-times_002",
+          "finishedAt": "2026-10-28T04:03:21.070008+00:00",
+          "siteId": "us-tampa-bay-times",
+          "startedAt": "2026-10-28T04:03:20.934803+00:00",
+          "stats": {
+            "bytes_processed": 195143,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.tampabay.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-atlanta-journal-constitution_002",
+          "finishedAt": "2026-10-28T04:03:21.720419+00:00",
+          "siteId": "us-atlanta-journal-constitution",
+          "startedAt": "2026-10-28T04:03:21.073301+00:00",
+          "stats": {
+            "bytes_processed": 403605,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.ajc.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-baltimore-sun_002",
+          "finishedAt": "2026-10-28T04:03:21.771049+00:00",
+          "siteId": "us-baltimore-sun",
+          "startedAt": "2026-10-28T04:03:21.723702+00:00",
+          "stats": {
+            "bytes_processed": 184550,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.baltimoresun.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-boston-globe_002",
+          "finishedAt": "2026-10-28T04:03:23.731067+00:00",
+          "siteId": "us-boston-globe",
+          "startedAt": "2026-10-28T04:03:21.774740+00:00",
+          "stats": {
+            "bytes_processed": 1011549,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.bostonglobe.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-dallas-morning-news_002",
+          "finishedAt": "2026-10-28T04:03:23.843906+00:00",
+          "siteId": "us-dallas-morning-news",
+          "startedAt": "2026-10-28T04:03:23.733243+00:00",
+          "stats": {
+            "bytes_processed": 566408,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.dallasnews.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-denver-post_002",
+          "finishedAt": "2026-10-28T04:03:24.043607+00:00",
+          "siteId": "us-denver-post",
+          "startedAt": "2026-10-28T04:03:23.846234+00:00",
+          "stats": {
+            "bytes_processed": 213438,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.denverpost.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-philadelphia-inquirer_002",
+          "finishedAt": "2026-10-28T04:03:24.395417+00:00",
+          "siteId": "us-philadelphia-inquirer",
+          "startedAt": "2026-10-28T04:03:24.046321+00:00",
+          "stats": {
+            "bytes_processed": 986472,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.inquirer.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-salt-lake-tribune_002",
+          "finishedAt": "2026-10-28T04:03:24.784454+00:00",
+          "siteId": "us-salt-lake-tribune",
+          "startedAt": "2026-10-28T04:03:24.397879+00:00",
+          "stats": {
+            "bytes_processed": 378301,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.sltrib.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-seattle-times_002",
+          "finishedAt": "2026-10-28T04:03:24.870010+00:00",
+          "siteId": "us-seattle-times",
+          "startedAt": "2026-10-28T04:03:24.787340+00:00",
+          "stats": {
+            "bytes_processed": 235388,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.seattletimes.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-boston-herald_002",
+          "finishedAt": "2026-10-28T04:03:24.913914+00:00",
+          "siteId": "us-boston-herald",
+          "startedAt": "2026-10-28T04:03:24.872058+00:00",
+          "stats": {
+            "bytes_processed": 226247,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.bostonherald.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-orange-county-register_002",
+          "finishedAt": "2026-10-28T04:03:25.049627+00:00",
+          "siteId": "us-orange-county-register",
+          "startedAt": "2026-10-28T04:03:24.916322+00:00",
+          "stats": {
+            "bytes_processed": 192100,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.ocregister.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-albuquerque-journal_002",
+          "finishedAt": "2026-10-28T04:03:25.271175+00:00",
+          "siteId": "us-albuquerque-journal",
+          "startedAt": "2026-10-28T04:03:25.052817+00:00",
+          "stats": {
+            "bytes_processed": 245704,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.abqjournal.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_us-anchorage-daily-news_002",
+          "finishedAt": "2026-10-28T04:03:25.422128+00:00",
+          "siteId": "us-anchorage-daily-news",
+          "startedAt": "2026-10-28T04:03:25.273736+00:00",
+          "stats": {
+            "bytes_processed": 187963,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.adn.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 0.011735,
+      "startedAt": "2026-10-28T04:03:19.098606+00:00"
+    }
+  ],
+  "jobIds": {
+    "us-albuquerque-journal": "job_5c8eef5c7116a13b8787",
+    "us-anchorage-daily-news": "job_47938136a1c3468f53e1",
+    "us-atlanta-journal-constitution": "job_fb7779b7604a05eae184",
+    "us-baltimore-sun": "job_409a00472823371893ea",
+    "us-boston-globe": "job_37a6ba5a87eed0e35a63",
+    "us-boston-herald": "job_a2ad3932d15bf5b3a2e0",
+    "us-chicago-tribune": "job_d9f4d1567d61d988ed9a",
+    "us-dallas-morning-news": "job_cd81dc19365e4dd643f7",
+    "us-denver-post": "job_e55c46b691e3e6b69e18",
+    "us-houston-chronicle": "job_61bfa93e1ee51879c4c0",
+    "us-los-angeles-times": "job_c39bf710df349e82c9d1",
+    "us-newsday": "job_7892c6d6db95e47ef699",
+    "us-nola": "job_2d202cd6529a7e4e4179",
+    "us-orange-county-register": "job_a47028707c0bface7f80",
+    "us-philadelphia-inquirer": "job_fc93b4f736681035dd13",
+    "us-salt-lake-tribune": "job_73aa3542445befe3c37d",
+    "us-san-diego-union-tribune": "job_f6e906362d33ea570756",
+    "us-san-francisco-chronicle": "job_a52b94f26d0c510808ee",
+    "us-seattle-times": "job_1a71f05cc4f3bb054beb",
+    "us-tampa-bay-times": "job_3ad3b87ac3d3db1c1b41"
+  },
+  "phase": "qualification",
+  "publicPackageVersion": "0.1.0",
+  "qualitySummary": {
+    "columns": [
+      "rows_with_headline",
+      "rows_with_canonical_url",
+      "rows_with_all_required_fields",
+      "source_urls_with_all_required_fields"
+    ],
+    "rows": [
+      [
+        20,
+        20,
+        20,
+        20
+      ]
+    ],
+    "truncated": false
+  },
+  "querySummary": {
+    "columns": [
+      "rows",
+      "executions",
+      "source_urls"
+    ],
+    "rows": [
+      [
+        20,
+        20,
+        20
+      ]
+    ],
+    "truncated": false
+  },
+  "requestedSites": 20,
+  "schemaProfile": "article",
+  "settings": {
+    "executions": 2,
+    "intervalMinutes": 5
+  },
+  "status": "completed",
+  "study": "us-newspapers",
+  "workspaceValidation": {
+    "datasets": 1,
+    "errors": [],
+    "executions": 40,
+    "jobs": 20,
+    "valid": true
+  }
+}

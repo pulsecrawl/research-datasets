@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "headline": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "us-atlanta-journal-constitution-article-css",
+  "origin": "org",
+  "outputSchemaId": "schema_6aa09c399697a207348a",
+  "templateId": "us-atlanta-journal-constitution-article-css"
+}

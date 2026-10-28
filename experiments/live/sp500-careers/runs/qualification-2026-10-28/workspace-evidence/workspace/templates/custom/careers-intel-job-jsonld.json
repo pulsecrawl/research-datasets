@@ -1,0 +1,36 @@
+{
+  "engine": "jsonld",
+  "mappings": {
+    "canonical_url": [
+      "JobPosting.url"
+    ],
+    "company": [
+      "JobPosting.hiringOrganization.name"
+    ],
+    "description": [
+      "JobPosting.description"
+    ],
+    "employment_type": [
+      "JobPosting.employmentType"
+    ],
+    "job_id": [
+      "JobPosting.identifier.value",
+      "JobPosting.identifier"
+    ],
+    "location": [
+      "JobPosting.jobLocation.address.addressLocality",
+      "JobPosting.jobLocation.address.addressRegion"
+    ],
+    "posted_at": [
+      "JobPosting.datePosted"
+    ],
+    "title": [
+      "JobPosting.title",
+      "JobPosting.name"
+    ]
+  },
+  "name": "careers-intel-job-jsonld",
+  "origin": "org",
+  "outputSchemaId": "schema_b9a0eee344faf485150a",
+  "templateId": "careers-intel-job-jsonld"
+}

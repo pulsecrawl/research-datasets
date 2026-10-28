@@ -1,0 +1,248 @@
+{
+  "cancellationMode": null,
+  "cancellationRequestedAt": null,
+  "createdAt": "2026-10-28T04:03:22.491258+00:00",
+  "datasetId": "ds_fc602d9164abeac5bb8c",
+  "error": null,
+  "executionId": "exec_qualification_mx-el-imparcial_002",
+  "finishedAt": "2026-10-28T04:03:22.699516+00:00",
+  "intent": {
+    "datasetId": "ds_fc602d9164abeac5bb8c",
+    "politeness": {
+      "organizationRequestsPerSecond": 0.2,
+      "requestsPerSecond": 0.2,
+      "respectRobotsTxt": true,
+      "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"
+    },
+    "publishRecords": true,
+    "schema": {
+      "fields": [
+        {
+          "fieldId": "headline",
+          "name": "headline",
+          "type": "string"
+        },
+        {
+          "fieldId": "canonical_url",
+          "name": "canonical_url",
+          "type": "url"
+        },
+        {
+          "fieldId": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "fieldId": "author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "fieldId": "published_at",
+          "name": "published_at",
+          "type": "datetime"
+        },
+        {
+          "fieldId": "modified_at",
+          "name": "modified_at",
+          "type": "datetime"
+        },
+        {
+          "fieldId": "image_url",
+          "name": "image_url",
+          "type": "url"
+        },
+        {
+          "fieldId": "section",
+          "name": "section",
+          "type": "string"
+        },
+        {
+          "fieldId": "source_name",
+          "name": "source_name",
+          "type": "string"
+        }
+      ],
+      "schemaId": "schema_702486d15e7cf6856677"
+    },
+    "scope": {
+      "excludePatterns": [],
+      "includePatterns": [
+        "^https?://(?:www\\.)?elimparcial\\.com/.+"
+      ],
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "maxUrlsTotal": 2,
+      "sameDomainOnly": true
+    },
+    "seeds": [
+      "https://www.elimparcial.com/mexico/2026/10/25/la-crisis-turistica-de-tulum-ya-no-se-refleja-unicamente-en-los-vuelos-cancelados-los-hoteles-vacios-y-los-comercios-cerrados-tambien-alcanza-a-uno-de-sus-principales-atractivos-la-zona-arqueologica-perdio-alrededor-del-70-de-sus-visitantes-en-septiembre-de-2026-frente-al-mismo-mes-de-2024/"
+    ],
+    "storeRawPages": false,
+    "systemTemplates": [],
+    "templateStack": [
+      {
+        "engine": "jsonld",
+        "mappings": {
+          "author": [
+            "NewsArticle.author.name",
+            "Article.author.name",
+            "NewsArticle.author",
+            "Article.author"
+          ],
+          "canonical_url": [
+            "NewsArticle.url",
+            "Article.url",
+            "NewsArticle.mainEntityOfPage.@id",
+            "Article.mainEntityOfPage.@id"
+          ],
+          "description": [
+            "NewsArticle.description",
+            "Article.description"
+          ],
+          "headline": [
+            "NewsArticle.headline",
+            "Article.headline",
+            "NewsArticle.name",
+            "Article.name"
+          ],
+          "image_url": [
+            "NewsArticle.image.url",
+            "Article.image.url",
+            "NewsArticle.image",
+            "Article.image"
+          ],
+          "modified_at": [
+            "NewsArticle.dateModified",
+            "Article.dateModified"
+          ],
+          "published_at": [
+            "NewsArticle.datePublished",
+            "Article.datePublished"
+          ],
+          "section": [
+            "NewsArticle.articleSection",
+            "Article.articleSection"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "www.elimparcial.com"
+          ],
+          "urlPatterns": [
+            "https://www.elimparcial.com/*"
+          ]
+        },
+        "templateId": "mx-el-imparcial-article-jsonld"
+      },
+      {
+        "engine": "css",
+        "mappings": {
+          "canonical_url": [
+            "link[rel='canonical']@href"
+          ],
+          "headline": [
+            "main h1",
+            "article h1",
+            "h1"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "www.elimparcial.com"
+          ],
+          "urlPatterns": [
+            "https://www.elimparcial.com/*"
+          ]
+        },
+        "templateId": "mx-el-imparcial-article-css"
+      },
+      {
+        "engine": "meta",
+        "mappings": {
+          "author": [
+            "article:author",
+            "author"
+          ],
+          "canonical_url": [
+            "og:url"
+          ],
+          "description": [
+            "og:description",
+            "description"
+          ],
+          "headline": [
+            "og:title",
+            "twitter:title",
+            "<title>"
+          ],
+          "image_url": [
+            "og:image",
+            "twitter:image"
+          ],
+          "modified_at": [
+            "article:modified_time",
+            "og:updated_time"
+          ],
+          "published_at": [
+            "article:published_time",
+            "date"
+          ],
+          "section": [
+            "article:section"
+          ],
+          "source_name": [
+            "literal:El Imparcial"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "www.elimparcial.com"
+          ],
+          "urlPatterns": [
+            "https://www.elimparcial.com/*"
+          ]
+        },
+        "templateId": "mx-el-imparcial-article-meta"
+      }
+    ]
+  },
+  "jobId": "job_04933ccebc04c9fdaeb0",
+  "reservedUrls": 0,
+  "scheduledFor": null,
+  "startedAt": "2026-10-28T04:03:22.492369+00:00",
+  "stats": {
+    "bytes_processed": 691338,
+    "materializedRows": 0,
+    "pages_discovered": 0,
+    "pages_failed": 0,
+    "pages_fetched": 1,
+    "rate_limit_deferrals": 0,
+    "rate_limit_queue_deferrals": 0,
+    "rate_limit_queue_wait_seconds": 0.0,
+    "rate_limit_wait_seconds": 0.0,
+    "records_extracted": 1,
+    "robots_blocked": 0,
+    "robots_cache_hits": 1,
+    "robots_checks": 1,
+    "robots_fetch_failures": 0,
+    "robots_fetches": 0,
+    "template_coverage": {
+      "www.elimparcial.com": {
+        "needsTemplate": false,
+        "sampleUrls": [],
+        "scopedMatches": 1,
+        "stackFallbackMatches": 0,
+        "systemFallbackMatches": 0,
+        "unmatchedPages": 0
+      }
+    },
+    "transient_retries": 0,
+    "urls_attempted": 1
+  },
+  "status": "succeeded",
+  "trigger": "manual"
+}

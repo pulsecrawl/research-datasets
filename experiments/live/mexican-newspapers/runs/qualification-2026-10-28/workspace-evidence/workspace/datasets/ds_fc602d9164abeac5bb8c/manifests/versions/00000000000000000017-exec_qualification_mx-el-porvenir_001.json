@@ -1,0 +1,195 @@
+{
+  "createdAt": "2026-10-28T03:59:59.940991+00:00",
+  "datasetId": "ds_fc602d9164abeac5bb8c",
+  "files": [
+    {
+      "executionId": "exec_qualification_mx-el-economista_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:26.701793+00:00",
+      "minCrawledAt": "2026-10-28 03:58:26.701793+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-economista_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12508
+    },
+    {
+      "executionId": "exec_qualification_mx-el-financiero_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:32.270056+00:00",
+      "minCrawledAt": "2026-10-28 03:58:32.270056+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-financiero_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11992
+    },
+    {
+      "executionId": "exec_qualification_mx-el-heraldo_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:37.878871+00:00",
+      "minCrawledAt": "2026-10-28 03:58:37.878871+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-heraldo_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12506
+    },
+    {
+      "executionId": "exec_qualification_mx-el-horizonte_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:52.308659+00:00",
+      "minCrawledAt": "2026-10-28 03:59:52.308659+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-horizonte_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10675
+    },
+    {
+      "executionId": "exec_qualification_mx-el-imparcial_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:43.467227+00:00",
+      "minCrawledAt": "2026-10-28 03:58:43.467227+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-imparcial_001.parquet",
+      "rows": 1,
+      "sizeBytes": 15704
+    },
+    {
+      "executionId": "exec_qualification_mx-el-informador_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:49.142386+00:00",
+      "minCrawledAt": "2026-10-28 03:58:49.142386+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-informador_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11675
+    },
+    {
+      "executionId": "exec_qualification_mx-el-porvenir_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:59.870923+00:00",
+      "minCrawledAt": "2026-10-28 03:59:59.870923+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-porvenir_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10564
+    },
+    {
+      "executionId": "exec_qualification_mx-excelsior_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:54.775754+00:00",
+      "minCrawledAt": "2026-10-28 03:58:54.775754+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-excelsior_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12266
+    },
+    {
+      "executionId": "exec_qualification_mx-la-cronica_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:00.327456+00:00",
+      "minCrawledAt": "2026-10-28 03:59:00.327456+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-cronica_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11797
+    },
+    {
+      "executionId": "exec_qualification_mx-la-opcion_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:05.956150+00:00",
+      "minCrawledAt": "2026-10-28 03:59:05.956150+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-opcion_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10464
+    },
+    {
+      "executionId": "exec_qualification_mx-la-razon_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:11.815043+00:00",
+      "minCrawledAt": "2026-10-28 03:59:11.815043+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-razon_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11909
+    },
+    {
+      "executionId": "exec_qualification_mx-noroeste_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:17.445317+00:00",
+      "minCrawledAt": "2026-10-28 03:59:17.445317+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-noroeste_001.parquet",
+      "rows": 1,
+      "sizeBytes": 13026
+    },
+    {
+      "executionId": "exec_qualification_mx-norte-digital_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:23.181760+00:00",
+      "minCrawledAt": "2026-10-28 03:59:23.181760+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-norte-digital_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10568
+    },
+    {
+      "executionId": "exec_qualification_mx-proceso_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:29.222413+00:00",
+      "minCrawledAt": "2026-10-28 03:59:29.222413+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-proceso_001.parquet",
+      "rows": 1,
+      "sizeBytes": 14410
+    },
+    {
+      "executionId": "exec_qualification_mx-pulso-slp_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:34.859420+00:00",
+      "minCrawledAt": "2026-10-28 03:59:34.859420+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-pulso-slp_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10374
+    },
+    {
+      "executionId": "exec_qualification_mx-raichali_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:40.457474+00:00",
+      "minCrawledAt": "2026-10-28 03:59:40.457474+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-raichali_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10761
+    },
+    {
+      "executionId": "exec_qualification_mx-sdp-noticias_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:46.693379+00:00",
+      "minCrawledAt": "2026-10-28 03:59:46.693379+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-sdp-noticias_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11545
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 17
+}

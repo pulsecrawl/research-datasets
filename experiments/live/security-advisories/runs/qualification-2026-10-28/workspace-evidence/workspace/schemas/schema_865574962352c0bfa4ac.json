@@ -1,0 +1,73 @@
+{
+  "fieldIds": [
+    "advisory_id",
+    "title",
+    "vendor",
+    "published_at",
+    "updated_at",
+    "severity",
+    "summary",
+    "canonical_url"
+  ],
+  "fields": [
+    {
+      "description": "",
+      "fieldId": "advisory_id",
+      "name": "advisory_id",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "title",
+      "name": "title",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "vendor",
+      "name": "vendor",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "published_at",
+      "name": "published_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "updated_at",
+      "name": "updated_at",
+      "origin": "custom",
+      "type": "datetime"
+    },
+    {
+      "description": "",
+      "fieldId": "severity",
+      "name": "severity",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "summary",
+      "name": "summary",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "origin": "custom",
+      "type": "url"
+    }
+  ],
+  "name": "Live security-advisories observations schema",
+  "origin": "custom",
+  "schemaId": "schema_865574962352c0bfa4ac"
+}

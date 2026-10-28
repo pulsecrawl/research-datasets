@@ -1,0 +1,35 @@
+{
+  "engine": "jsonld",
+  "mappings": {
+    "canonical_url": [
+      "NewsArticle.url",
+      "Article.url"
+    ],
+    "notice_id": [
+      "NewsArticle.identifier",
+      "Article.identifier"
+    ],
+    "published_at": [
+      "NewsArticle.datePublished",
+      "Article.datePublished"
+    ],
+    "summary": [
+      "NewsArticle.description",
+      "Article.description"
+    ],
+    "title": [
+      "NewsArticle.headline",
+      "Article.headline",
+      "NewsArticle.name",
+      "Article.name"
+    ],
+    "updated_at": [
+      "NewsArticle.dateModified",
+      "Article.dateModified"
+    ]
+  },
+  "name": "government-cnbv-mx-notice-jsonld",
+  "origin": "org",
+  "outputSchemaId": "schema_ded022f721cafafef812",
+  "templateId": "government-cnbv-mx-notice-jsonld"
+}

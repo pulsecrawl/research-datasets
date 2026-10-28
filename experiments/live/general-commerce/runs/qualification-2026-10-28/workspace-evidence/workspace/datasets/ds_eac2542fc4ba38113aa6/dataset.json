@@ -1,0 +1,81 @@
+{
+  "createdAt": "2026-10-28T03:58:15.804795+00:00",
+  "datasetId": "ds_eac2542fc4ba38113aa6",
+  "fields": [
+    {
+      "fieldId": "product_id",
+      "name": "product_id",
+      "type": "string"
+    },
+    {
+      "fieldId": "sku",
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "fieldId": "name",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "type": "url"
+    },
+    {
+      "fieldId": "description",
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "fieldId": "brand",
+      "name": "brand",
+      "type": "string"
+    },
+    {
+      "fieldId": "category",
+      "name": "category",
+      "type": "string"
+    },
+    {
+      "fieldId": "color",
+      "name": "color",
+      "type": "string"
+    },
+    {
+      "fieldId": "price",
+      "name": "price",
+      "type": "number"
+    },
+    {
+      "fieldId": "currency",
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "fieldId": "availability",
+      "name": "availability",
+      "type": "string"
+    },
+    {
+      "fieldId": "image_url",
+      "name": "image_url",
+      "type": "url"
+    },
+    {
+      "fieldId": "rating_value",
+      "name": "rating_value",
+      "type": "number"
+    },
+    {
+      "fieldId": "rating_count",
+      "name": "rating_count",
+      "type": "number"
+    }
+  ],
+  "identityColumn": "_source_url",
+  "identityField": "_source_url",
+  "mode": "append_all",
+  "name": "Live general-commerce observations",
+  "schemaId": "schema_b74cf08ce9bc84ab5422"
+}

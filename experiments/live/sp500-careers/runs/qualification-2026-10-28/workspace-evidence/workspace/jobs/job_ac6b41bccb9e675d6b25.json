@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-28T03:58:16.576332+00:00",
+  "datasetId": "ds_d238052a48d5a4012cf9",
+  "jobId": "job_ac6b41bccb9e675d6b25",
+  "name": "sp500-careers: The Coca-Cola Company",
+  "politeness": {
+    "organizationRequestsPerSecond": 0.2,
+    "requestsPerSecond": 0.2,
+    "respectRobotsTxt": true,
+    "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"
+  },
+  "schema": {
+    "fields": [
+      {
+        "fieldId": "job_id",
+        "name": "job_id",
+        "type": "string"
+      },
+      {
+        "fieldId": "title",
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "fieldId": "company",
+        "name": "company",
+        "type": "string"
+      },
+      {
+        "fieldId": "location",
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "fieldId": "employment_type",
+        "name": "employment_type",
+        "type": "string"
+      },
+      {
+        "fieldId": "posted_at",
+        "name": "posted_at",
+        "type": "datetime"
+      },
+      {
+        "fieldId": "description",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "fieldId": "canonical_url",
+        "name": "canonical_url",
+        "type": "url"
+      }
+    ],
+    "schemaId": "schema_b9a0eee344faf485150a"
+  },
+  "scope": {
+    "excludePatterns": [],
+    "includePatterns": [
+      "^https?://(?:www\\.)?coke\\.wd1\\.myworkdayjobs\\.com/.+"
+    ],
+    "maxDepth": 0,
+    "maxUrlsPerExecution": 1,
+    "maxUrlsTotal": 2,
+    "sameDomainOnly": true
+  },
+  "seeds": [
+    "https://coke.wd1.myworkdayjobs.com/coca-cola-careers/job/South-Korea---Uiwang/Project-Procurement-Manager_R-148222"
+  ],
+  "storeRawPages": false,
+  "systemTemplates": [],
+  "templates": [
+    {
+      "engine": "jsonld",
+      "mappings": {
+        "canonical_url": [
+          "JobPosting.url"
+        ],
+        "company": [
+          "JobPosting.hiringOrganization.name"
+        ],
+        "description": [
+          "JobPosting.description"
+        ],
+        "employment_type": [
+          "JobPosting.employmentType"
+        ],
+        "job_id": [
+          "JobPosting.identifier.value",
+          "JobPosting.identifier"
+        ],
+        "location": [
+          "JobPosting.jobLocation.address.addressLocality",
+          "JobPosting.jobLocation.address.addressRegion"
+        ],
+        "posted_at": [
+          "JobPosting.datePosted"
+        ],
+        "title": [
+          "JobPosting.title",
+          "JobPosting.name"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "coke.wd1.myworkdayjobs.com"
+        ],
+        "urlPatterns": [
+          "https://coke.wd1.myworkdayjobs.com/*"
+        ]
+      },
+      "templateId": "careers-coca-cola-job-jsonld"
+    },
+    {
+      "engine": "css",
+      "mappings": {
+        "canonical_url": [
+          "link[rel='canonical']@href"
+        ],
+        "title": [
+          "main h1",
+          "article h1",
+          "h1"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "coke.wd1.myworkdayjobs.com"
+        ],
+        "urlPatterns": [
+          "https://coke.wd1.myworkdayjobs.com/*"
+        ]
+      },
+      "templateId": "careers-coca-cola-job-css"
+    },
+    {
+      "engine": "meta",
+      "mappings": {
+        "canonical_url": [
+          "og:url"
+        ],
+        "company": [
+          "literal:The Coca-Cola Company"
+        ],
+        "description": [
+          "og:description",
+          "description"
+        ],
+        "title": [
+          "og:title",
+          "twitter:title",
+          "<title>"
+        ]
+      },
+      "origin": "org",
+      "scope": {
+        "hosts": [
+          "coke.wd1.myworkdayjobs.com"
+        ],
+        "urlPatterns": [
+          "https://coke.wd1.myworkdayjobs.com/*"
+        ]
+      },
+      "templateId": "careers-coca-cola-job-meta"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    "weather-alerts"
+  ],
+  "id": "live-weather-alerts",
+  "kind": "live",
+  "parameters": {
+    "manifest": "corpora/live-studies/weather-alerts/site-manifest.json",
+    "maxDepth": 1,
+    "maxUrlsPerSitePerExecution": 4,
+    "minimumOriginDelaySeconds": 5,
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 48,
+        "intervalMinutes": 30
+      }
+    },
+    "retainResponseBodies": false,
+    "study": "weather-alerts"
+  },
+  "seed": 4703,
+  "title": "Recurring weather and environmental alerts study"
+}

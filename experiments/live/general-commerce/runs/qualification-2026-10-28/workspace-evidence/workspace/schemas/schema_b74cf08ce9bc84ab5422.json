@@ -1,0 +1,121 @@
+{
+  "fieldIds": [
+    "product_id",
+    "sku",
+    "name",
+    "canonical_url",
+    "description",
+    "brand",
+    "category",
+    "color",
+    "price",
+    "currency",
+    "availability",
+    "image_url",
+    "rating_value",
+    "rating_count"
+  ],
+  "fields": [
+    {
+      "description": "",
+      "fieldId": "product_id",
+      "name": "product_id",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "sku",
+      "name": "sku",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "name",
+      "name": "name",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "origin": "custom",
+      "type": "url"
+    },
+    {
+      "description": "",
+      "fieldId": "description",
+      "name": "description",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "brand",
+      "name": "brand",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "category",
+      "name": "category",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "color",
+      "name": "color",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "price",
+      "name": "price",
+      "origin": "custom",
+      "type": "number"
+    },
+    {
+      "description": "",
+      "fieldId": "currency",
+      "name": "currency",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "availability",
+      "name": "availability",
+      "origin": "custom",
+      "type": "string"
+    },
+    {
+      "description": "",
+      "fieldId": "image_url",
+      "name": "image_url",
+      "origin": "custom",
+      "type": "url"
+    },
+    {
+      "description": "",
+      "fieldId": "rating_value",
+      "name": "rating_value",
+      "origin": "custom",
+      "type": "number"
+    },
+    {
+      "description": "",
+      "fieldId": "rating_count",
+      "name": "rating_count",
+      "origin": "custom",
+      "type": "number"
+    }
+  ],
+  "name": "Live general-commerce observations schema",
+  "origin": "custom",
+  "schemaId": "schema_b74cf08ce9bc84ab5422"
+}

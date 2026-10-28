@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 2,
+  "studyId": "weather-alerts",
+  "displayName": "Weather and environmental alerts",
+  "schemaProfile": "alert",
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "sites": [
+    {
+      "id": "weather-noaa-nhc",
+      "name": "NOAA National Hurricane Center",
+      "listingUrl": "https://www.nhc.noaa.gov/",
+      "representativeDetailUrl": "https://www.nhc.noaa.gov/",
+      "seedUrls": [
+        "https://www.nhc.noaa.gov/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.nhc.noaa.gov/"
+      ],
+      "hosts": [
+        "www.nhc.noaa.gov"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?nhc\\.noaa\\.gov/.+"
+      ],
+      "templatePatterns": [
+        "https://www.nhc.noaa.gov/*"
+      ],
+      "constantFields": {
+        "authority": "NOAA National Hurricane Center"
+      },
+      "retainedEnabled": false,
+      "retainedExclusion": "The reviewed home page does not expose one alert record through the tested HTML template engines; an RSS or XML adapter is required.",
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-environment-canada",
+      "name": "Environment Canada Alerts",
+      "retainedEnabled": false,
+      "retainedExclusion": "The qualification page produced alert metadata but did not expose a canonical URL required by the alert schema.",
+      "listingUrl": "https://weather.gc.ca/mainmenu/alert_menu_e.html",
+      "representativeDetailUrl": "https://weather.gc.ca/mainmenu/alert_menu_e.html",
+      "seedUrls": [
+        "https://weather.gc.ca/mainmenu/alert_menu_e.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://weather.gc.ca/mainmenu/alert_menu_e.html"
+      ],
+      "hosts": [
+        "weather.gc.ca"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?weather\\.gc\\.ca/.+"
+      ],
+      "templatePatterns": [
+        "https://weather.gc.ca/*"
+      ],
+      "constantFields": {
+        "authority": "Environment Canada Alerts"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-uk-met-office",
+      "name": "UK Met Office Warnings",
+      "listingUrl": "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings",
+      "representativeDetailUrl": "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings",
+      "seedUrls": [
+        "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings"
+      ],
+      "qualificationSeedUrls": [
+        "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings"
+      ],
+      "hosts": [
+        "weather.metoffice.gov.uk"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?weather\\.metoffice\\.gov\\.uk/.+"
+      ],
+      "templatePatterns": [
+        "https://weather.metoffice.gov.uk/*"
+      ],
+      "constantFields": {
+        "authority": "UK Met Office Warnings"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-met-eireann",
+      "name": "Met Éireann Warnings",
+      "listingUrl": "https://www.met.ie/warnings-today.html",
+      "representativeDetailUrl": "https://www.met.ie/warnings-today.html",
+      "seedUrls": [
+        "https://www.met.ie/warnings-today.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.met.ie/warnings-today.html"
+      ],
+      "hosts": [
+        "www.met.ie"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?met\\.ie/.+"
+      ],
+      "templatePatterns": [
+        "https://www.met.ie/*"
+      ],
+      "constantFields": {
+        "authority": "Met Éireann Warnings"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-metservice-nz",
+      "name": "MetService New Zealand Warnings",
+      "retainedEnabled": false,
+      "retainedExclusion": "The qualification page produced alert metadata but did not expose a canonical URL required by the alert schema.",
+      "listingUrl": "https://www.metservice.com/warnings/home",
+      "representativeDetailUrl": "https://www.metservice.com/warnings/home",
+      "seedUrls": [
+        "https://www.metservice.com/warnings/home"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.metservice.com/warnings/home"
+      ],
+      "hosts": [
+        "www.metservice.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?metservice\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.metservice.com/*"
+      ],
+      "constantFields": {
+        "authority": "MetService New Zealand Warnings"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-knmi-nl",
+      "name": "KNMI Netherlands Warnings",
+      "listingUrl": "https://www.knmi.nl/nederland-nu/weer/waarschuwingen/",
+      "representativeDetailUrl": "https://www.knmi.nl/nederland-nu/weer/waarschuwingen/utrecht",
+      "seedUrls": [
+        "https://www.knmi.nl/nederland-nu/weer/waarschuwingen/utrecht"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.knmi.nl/nederland-nu/weer/waarschuwingen/utrecht"
+      ],
+      "hosts": [
+        "www.knmi.nl"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?knmi\\.nl/.+"
+      ],
+      "templatePatterns": [
+        "https://www.knmi.nl/*"
+      ],
+      "constantFields": {
+        "authority": "KNMI Netherlands Warnings"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-aemet-es",
+      "name": "AEMET Spain Warnings",
+      "listingUrl": "https://www.aemet.es/en/eltiempo/prediccion/avisos",
+      "representativeDetailUrl": "https://www.aemet.es/en/eltiempo/prediccion/avisos",
+      "seedUrls": [
+        "https://www.aemet.es/en/eltiempo/prediccion/avisos"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.aemet.es/en/eltiempo/prediccion/avisos"
+      ],
+      "hosts": [
+        "www.aemet.es"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?aemet\\.es/.+"
+      ],
+      "templatePatterns": [
+        "https://www.aemet.es/*"
+      ],
+      "constantFields": {
+        "authority": "AEMET Spain Warnings"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-meteofrance",
+      "name": "Météo-France Vigilance",
+      "listingUrl": "https://vigilance.meteofrance.fr/fr",
+      "representativeDetailUrl": "https://vigilance.meteofrance.fr/fr",
+      "seedUrls": [
+        "https://vigilance.meteofrance.fr/fr"
+      ],
+      "qualificationSeedUrls": [
+        "https://vigilance.meteofrance.fr/fr"
+      ],
+      "hosts": [
+        "vigilance.meteofrance.fr"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?vigilance\\.meteofrance\\.fr/.+"
+      ],
+      "templatePatterns": [
+        "https://vigilance.meteofrance.fr/*"
+      ],
+      "constantFields": {
+        "authority": "Météo-France Vigilance"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-fmi-finland",
+      "name": "Finnish Meteorological Institute Warnings",
+      "listingUrl": "https://en.ilmatieteenlaitos.fi/warnings",
+      "representativeDetailUrl": "https://en.ilmatieteenlaitos.fi/warnings",
+      "seedUrls": [
+        "https://en.ilmatieteenlaitos.fi/warnings"
+      ],
+      "qualificationSeedUrls": [
+        "https://en.ilmatieteenlaitos.fi/warnings"
+      ],
+      "hosts": [
+        "en.ilmatieteenlaitos.fi"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?en\\.ilmatieteenlaitos\\.fi/.+"
+      ],
+      "templatePatterns": [
+        "https://en.ilmatieteenlaitos.fi/*"
+      ],
+      "constantFields": {
+        "authority": "Finnish Meteorological Institute Warnings"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "weather-mss-singapore",
+      "name": "Meteorological Service Singapore Heavy Rain Warning",
+      "listingUrl": "https://www.weather.gov.sg/warning-heavy-rain/",
+      "representativeDetailUrl": "https://www.weather.gov.sg/warning-heavy-rain/",
+      "seedUrls": [
+        "https://www.weather.gov.sg/warning-heavy-rain/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.weather.gov.sg/warning-heavy-rain/"
+      ],
+      "hosts": [
+        "www.weather.gov.sg"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?weather\\.gov\\.sg/.+"
+      ],
+      "templatePatterns": [
+        "https://www.weather.gov.sg/*"
+      ],
+      "constantFields": {
+        "authority": "Meteorological Service Singapore Heavy Rain Warning"
+      },
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    }
+  ]
+}

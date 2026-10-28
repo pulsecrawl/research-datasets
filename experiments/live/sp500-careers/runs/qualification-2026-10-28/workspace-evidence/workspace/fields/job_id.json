@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "job_id",
+  "name": "job_id",
+  "origin": "custom",
+  "type": "string"
+}

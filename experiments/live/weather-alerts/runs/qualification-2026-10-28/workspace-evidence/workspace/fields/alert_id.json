@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "alert_id",
+  "name": "alert_id",
+  "origin": "custom",
+  "type": "string"
+}

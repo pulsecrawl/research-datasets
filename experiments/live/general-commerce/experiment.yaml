@@ -1,0 +1,28 @@
+{
+  "id": "live-general-commerce",
+  "kind": "live",
+  "title": "Recurring general commerce study",
+  "aliases": [
+    "general-commerce"
+  ],
+  "seed": 4703,
+  "parameters": {
+    "study": "general-commerce",
+    "manifest": "experiments/live/general-commerce/input/sites.json",
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 24,
+        "intervalMinutes": 60
+      }
+    },
+    "minimumOriginDelaySeconds": 5,
+    "maxUrlsPerSitePerExecution": 4,
+    "maxDepth": 1,
+    "retainResponseBodies": false
+  }
+}

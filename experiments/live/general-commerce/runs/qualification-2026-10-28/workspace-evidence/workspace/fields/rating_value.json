@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "rating_value",
+  "name": "rating_value",
+  "origin": "custom",
+  "type": "number"
+}

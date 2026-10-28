@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "headline": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "mx-sdp-noticias-article-css",
+  "origin": "org",
+  "outputSchemaId": "schema_702486d15e7cf6856677",
+  "templateId": "mx-sdp-noticias-article-css"
+}

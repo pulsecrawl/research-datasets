@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "currency",
+  "name": "currency",
+  "origin": "custom",
+  "type": "string"
+}

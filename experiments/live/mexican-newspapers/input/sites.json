@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 2,
+  "studyId": "mexican-newspapers",
+  "displayName": "Mexican newspapers",
+  "schemaProfile": "article",
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "sites": [
+    {
+      "id": "mx-el-economista",
+      "name": "El Economista",
+      "listingUrl": "https://www.eleconomista.com.mx/politica",
+      "representativeDetailUrl": "https://www.eleconomista.com.mx/politica/jefa-gobierno-clara-brugada-molina-inaugura-utopia-soberana-inversion-300-millones-pesos-recibe-maximo-galardon-onu-habitat-20261025-840395.html",
+      "seedUrls": [
+        "https://www.eleconomista.com.mx/politica",
+        "https://www.eleconomista.com.mx/politica/jefa-gobierno-clara-brugada-molina-inaugura-utopia-soberana-inversion-300-millones-pesos-recibe-maximo-galardon-onu-habitat-20261025-840395.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.eleconomista.com.mx/politica/jefa-gobierno-clara-brugada-molina-inaugura-utopia-soberana-inversion-300-millones-pesos-recibe-maximo-galardon-onu-habitat-20261025-840395.html"
+      ],
+      "hosts": [
+        "www.eleconomista.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?eleconomista\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.eleconomista.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Economista"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-financiero",
+      "name": "El Financiero",
+      "listingUrl": "https://www.elfinanciero.com.mx/nacional/",
+      "representativeDetailUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/27/pan-lleva-caso-taddei-a-la-fgr-exige-investigar-contratos-y-presuntos-conflictos-de-interes-en-el-ine/",
+      "seedUrls": [
+        "https://www.elfinanciero.com.mx/nacional/",
+        "https://www.elfinanciero.com.mx/nacional/2026/10/27/pan-lleva-caso-taddei-a-la-fgr-exige-investigar-contratos-y-presuntos-conflictos-de-interes-en-el-ine/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.elfinanciero.com.mx/nacional/2026/10/27/pan-lleva-caso-taddei-a-la-fgr-exige-investigar-contratos-y-presuntos-conflictos-de-interes-en-el-ine/"
+      ],
+      "hosts": [
+        "www.elfinanciero.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?elfinanciero\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.elfinanciero.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Financiero"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-heraldo",
+      "name": "El Heraldo de México",
+      "listingUrl": "https://heraldodemexico.com.mx/nacional/",
+      "representativeDetailUrl": "https://heraldodemexico.com.mx/nacional/2026/10/27/caso-doctora-cristina-ramos-ofrecen-recompensa-de-700-mil-pesos-por-su-expareja-su-padre-acusados-de-feminicidio-917473.html",
+      "seedUrls": [
+        "https://heraldodemexico.com.mx/nacional/",
+        "https://heraldodemexico.com.mx/nacional/2026/10/27/caso-doctora-cristina-ramos-ofrecen-recompensa-de-700-mil-pesos-por-su-expareja-su-padre-acusados-de-feminicidio-917473.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://heraldodemexico.com.mx/nacional/2026/10/27/caso-doctora-cristina-ramos-ofrecen-recompensa-de-700-mil-pesos-por-su-expareja-su-padre-acusados-de-feminicidio-917473.html"
+      ],
+      "hosts": [
+        "heraldodemexico.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?heraldodemexico\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://heraldodemexico.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Heraldo de México"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-imparcial",
+      "name": "El Imparcial",
+      "listingUrl": "https://www.elimparcial.com/mexico/",
+      "representativeDetailUrl": "https://www.elimparcial.com/mexico/2026/10/25/la-crisis-turistica-de-tulum-ya-no-se-refleja-unicamente-en-los-vuelos-cancelados-los-hoteles-vacios-y-los-comercios-cerrados-tambien-alcanza-a-uno-de-sus-principales-atractivos-la-zona-arqueologica-perdio-alrededor-del-70-de-sus-visitantes-en-septiembre-de-2026-frente-al-mismo-mes-de-2024/",
+      "seedUrls": [
+        "https://www.elimparcial.com/mexico/",
+        "https://www.elimparcial.com/mexico/2026/10/25/la-crisis-turistica-de-tulum-ya-no-se-refleja-unicamente-en-los-vuelos-cancelados-los-hoteles-vacios-y-los-comercios-cerrados-tambien-alcanza-a-uno-de-sus-principales-atractivos-la-zona-arqueologica-perdio-alrededor-del-70-de-sus-visitantes-en-septiembre-de-2026-frente-al-mismo-mes-de-2024/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.elimparcial.com/mexico/2026/10/25/la-crisis-turistica-de-tulum-ya-no-se-refleja-unicamente-en-los-vuelos-cancelados-los-hoteles-vacios-y-los-comercios-cerrados-tambien-alcanza-a-uno-de-sus-principales-atractivos-la-zona-arqueologica-perdio-alrededor-del-70-de-sus-visitantes-en-septiembre-de-2026-frente-al-mismo-mes-de-2024/"
+      ],
+      "hosts": [
+        "www.elimparcial.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?elimparcial\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.elimparcial.com/*"
+      ],
+      "constantFields": {
+        "source_name": "El Imparcial"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-informador",
+      "name": "El Informador",
+      "listingUrl": "https://www.informador.mx/mexico/",
+      "representativeDetailUrl": "https://www.informador.mx/mexico/bloqueo-de-transportistas-trailer-choca-y-se-incendia-durante-manifestaciones-en-autopista-toluca-mexico-20261027-0162.html",
+      "seedUrls": [
+        "https://www.informador.mx/mexico/",
+        "https://www.informador.mx/mexico/bloqueo-de-transportistas-trailer-choca-y-se-incendia-durante-manifestaciones-en-autopista-toluca-mexico-20261027-0162.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.informador.mx/mexico/bloqueo-de-transportistas-trailer-choca-y-se-incendia-durante-manifestaciones-en-autopista-toluca-mexico-20261027-0162.html"
+      ],
+      "hosts": [
+        "www.informador.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?informador\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.informador.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Informador"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-excelsior",
+      "name": "Excélsior",
+      "listingUrl": "https://www.excelsior.com.mx/nacional",
+      "representativeDetailUrl": "https://www.excelsior.com.mx/nacional/fuerzas-aereas-mexico-y-estados-unidos-realizan-ejercicio-amalgam-eagle-2026-frontera",
+      "seedUrls": [
+        "https://www.excelsior.com.mx/nacional",
+        "https://www.excelsior.com.mx/nacional/fuerzas-aereas-mexico-y-estados-unidos-realizan-ejercicio-amalgam-eagle-2026-frontera"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.excelsior.com.mx/nacional/fuerzas-aereas-mexico-y-estados-unidos-realizan-ejercicio-amalgam-eagle-2026-frontera"
+      ],
+      "hosts": [
+        "www.excelsior.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?excelsior\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.excelsior.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "Excélsior"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-la-cronica",
+      "name": "La Crónica de Hoy",
+      "listingUrl": "https://www.cronica.com.mx/nacional/",
+      "representativeDetailUrl": "https://www.cronica.com.mx/nacional/2026/10/27/con-el-programa-la-escuela-es-nuestra-se-han-intervenido-141-mil-planteles-durante-el-ciclo-escolar-2025-2026-mario-delgado/",
+      "seedUrls": [
+        "https://www.cronica.com.mx/nacional/",
+        "https://www.cronica.com.mx/nacional/2026/10/27/con-el-programa-la-escuela-es-nuestra-se-han-intervenido-141-mil-planteles-durante-el-ciclo-escolar-2025-2026-mario-delgado/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.cronica.com.mx/nacional/2026/10/27/con-el-programa-la-escuela-es-nuestra-se-han-intervenido-141-mil-planteles-durante-el-ciclo-escolar-2025-2026-mario-delgado/"
+      ],
+      "hosts": [
+        "www.cronica.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?cronica\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.cronica.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "La Crónica de Hoy"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-la-opcion",
+      "name": "La Opción de Chihuahua",
+      "listingUrl": "https://laopcion.com.mx/",
+      "representativeDetailUrl": "https://laopcion.com.mx/delicias/promueve-meoqui-vacunacion-contra-la-polio-y-ofrece-orientacion-en-seis-centros-de-salud-20261024-530770.html",
+      "seedUrls": [
+        "https://laopcion.com.mx/",
+        "https://laopcion.com.mx/delicias/promueve-meoqui-vacunacion-contra-la-polio-y-ofrece-orientacion-en-seis-centros-de-salud-20261024-530770.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://laopcion.com.mx/delicias/promueve-meoqui-vacunacion-contra-la-polio-y-ofrece-orientacion-en-seis-centros-de-salud-20261024-530770.html"
+      ],
+      "hosts": [
+        "laopcion.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?laopcion\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://laopcion.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "La Opción de Chihuahua"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-la-razon",
+      "name": "La Razón de México",
+      "listingUrl": "https://www.razon.com.mx/mexico/",
+      "representativeDetailUrl": "https://www.razon.com.mx/mexico/2026/10/27/vance-amenaza-con-fuertes-lluvias-e-inundaciones-en-sinaloa-proteccion-civil-alerta-a-siete-estados/",
+      "seedUrls": [
+        "https://www.razon.com.mx/mexico/",
+        "https://www.razon.com.mx/mexico/2026/10/27/vance-amenaza-con-fuertes-lluvias-e-inundaciones-en-sinaloa-proteccion-civil-alerta-a-siete-estados/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.razon.com.mx/mexico/2026/10/27/vance-amenaza-con-fuertes-lluvias-e-inundaciones-en-sinaloa-proteccion-civil-alerta-a-siete-estados/"
+      ],
+      "hosts": [
+        "www.razon.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?razon\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.razon.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "La Razón de México"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-la-verdad-juarez",
+      "name": "La Verdad Juárez",
+      "retainedEnabled": false,
+      "retainedExclusion": "The microsite qualification page produced article fields but did not expose a canonical URL required by the article schema.",
+      "listingUrl": "https://laverdadjuarez.com/",
+      "representativeDetailUrl": "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/",
+      "seedUrls": [
+        "https://laverdadjuarez.com/",
+        "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/"
+      ],
+      "qualificationSeedUrls": [
+        "https://laverdadjuarez.com/micrositios/gobierno-ciudad-juarez-otorgo-contratos-millonarios-a-aliados-politicos-del-hermano-del-alcalde-cruz-perez-cuellar/"
+      ],
+      "hosts": [
+        "laverdadjuarez.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?laverdadjuarez\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://laverdadjuarez.com/*"
+      ],
+      "constantFields": {
+        "source_name": "La Verdad Juárez"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-noroeste",
+      "name": "Noroeste",
+      "listingUrl": "https://www.noroeste.com.mx/nacional/",
+      "representativeDetailUrl": "https://www.noroeste.com.mx/nacional/el-gobernador-alejandro-armenta-y-la-titular-de-la-loteria-olivia-salomon-develan-billete-inspirado-en-puebla-y-sus-majestuosas-montanas-AI26845665",
+      "seedUrls": [
+        "https://www.noroeste.com.mx/nacional/",
+        "https://www.noroeste.com.mx/nacional/el-gobernador-alejandro-armenta-y-la-titular-de-la-loteria-olivia-salomon-develan-billete-inspirado-en-puebla-y-sus-majestuosas-montanas-AI26845665"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.noroeste.com.mx/nacional/el-gobernador-alejandro-armenta-y-la-titular-de-la-loteria-olivia-salomon-develan-billete-inspirado-en-puebla-y-sus-majestuosas-montanas-AI26845665"
+      ],
+      "hosts": [
+        "www.noroeste.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?noroeste\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.noroeste.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "Noroeste"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-norte-digital",
+      "name": "Norte Digital",
+      "listingUrl": "https://nortedigital.mx/",
+      "representativeDetailUrl": "https://nortedigital.mx/donmirone/caso-jauregui-dos-procesos-un-pan-fracturado-y-una-crisis-que-llega-a-palacio-nacional/",
+      "seedUrls": [
+        "https://nortedigital.mx/",
+        "https://nortedigital.mx/donmirone/caso-jauregui-dos-procesos-un-pan-fracturado-y-una-crisis-que-llega-a-palacio-nacional/"
+      ],
+      "qualificationSeedUrls": [
+        "https://nortedigital.mx/donmirone/caso-jauregui-dos-procesos-un-pan-fracturado-y-una-crisis-que-llega-a-palacio-nacional/"
+      ],
+      "hosts": [
+        "nortedigital.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?nortedigital\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://nortedigital.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "Norte Digital"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-proceso",
+      "name": "Proceso",
+      "listingUrl": "https://www.proceso.com.mx/nacional/",
+      "representativeDetailUrl": "https://www.proceso.com.mx/nacional/estados/2026/10/27/cae-el-isra-segundo-al-mando-de-los-rusos-lo-relacionan-con-privacion-de-la-libertad-de-el-gordo-gad-382640.html",
+      "seedUrls": [
+        "https://www.proceso.com.mx/nacional/",
+        "https://www.proceso.com.mx/nacional/estados/2026/10/27/cae-el-isra-segundo-al-mando-de-los-rusos-lo-relacionan-con-privacion-de-la-libertad-de-el-gordo-gad-382640.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.proceso.com.mx/nacional/estados/2026/10/27/cae-el-isra-segundo-al-mando-de-los-rusos-lo-relacionan-con-privacion-de-la-libertad-de-el-gordo-gad-382640.html"
+      ],
+      "hosts": [
+        "www.proceso.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?proceso\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.proceso.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "Proceso"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-pulso-slp",
+      "name": "Pulso de San Luis",
+      "listingUrl": "https://pulsoslp.com.mx/nacional",
+      "representativeDetailUrl": "https://pulsoslp.com.mx/nacional/sabores-de-dia-de-muertos-en-heladerias-cdmx-2026/2100814",
+      "seedUrls": [
+        "https://pulsoslp.com.mx/nacional",
+        "https://pulsoslp.com.mx/nacional/sabores-de-dia-de-muertos-en-heladerias-cdmx-2026/2100814"
+      ],
+      "qualificationSeedUrls": [
+        "https://pulsoslp.com.mx/nacional/sabores-de-dia-de-muertos-en-heladerias-cdmx-2026/2100814"
+      ],
+      "hosts": [
+        "pulsoslp.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?pulsoslp\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://pulsoslp.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "Pulso de San Luis"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-raichali",
+      "name": "Raíchali",
+      "listingUrl": "https://raichali.com/",
+      "representativeDetailUrl": "https://raichali.com/2026/10/26/desplazamiento-forzado-moris-uruachi-derechos-humanos-corrupcion-e-impunidad/",
+      "seedUrls": [
+        "https://raichali.com/",
+        "https://raichali.com/2026/10/26/desplazamiento-forzado-moris-uruachi-derechos-humanos-corrupcion-e-impunidad/"
+      ],
+      "qualificationSeedUrls": [
+        "https://raichali.com/2026/10/26/desplazamiento-forzado-moris-uruachi-derechos-humanos-corrupcion-e-impunidad/"
+      ],
+      "hosts": [
+        "raichali.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?raichali\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://raichali.com/*"
+      ],
+      "constantFields": {
+        "source_name": "Raíchali"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-sdp-noticias",
+      "name": "SDP Noticias",
+      "listingUrl": "https://www.sdpnoticias.com/mexico/",
+      "representativeDetailUrl": "https://www.sdpnoticias.com/mexico/ariadna-montiel-exige-disculpas-a-el-universal-y-hector-de-mauleon-por-la-supuesta-reunion-con-el-guano/",
+      "seedUrls": [
+        "https://www.sdpnoticias.com/mexico/",
+        "https://www.sdpnoticias.com/mexico/ariadna-montiel-exige-disculpas-a-el-universal-y-hector-de-mauleon-por-la-supuesta-reunion-con-el-guano/"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.sdpnoticias.com/mexico/ariadna-montiel-exige-disculpas-a-el-universal-y-hector-de-mauleon-por-la-supuesta-reunion-con-el-guano/"
+      ],
+      "hosts": [
+        "www.sdpnoticias.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?sdpnoticias\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://www.sdpnoticias.com/*"
+      ],
+      "constantFields": {
+        "source_name": "SDP Noticias"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-horizonte",
+      "name": "El Horizonte",
+      "listingUrl": "https://www.elhorizonte.mx/nacional/",
+      "representativeDetailUrl": "https://www.elhorizonte.mx/nacional/localizan-sano-y-salvo-al-sacerdote-clemente-morales-en-culiacan/1482004147",
+      "seedUrls": [
+        "https://www.elhorizonte.mx/nacional/",
+        "https://www.elhorizonte.mx/nacional/localizan-sano-y-salvo-al-sacerdote-clemente-morales-en-culiacan/1482004147"
+      ],
+      "qualificationSeedUrls": [
+        "https://www.elhorizonte.mx/nacional/localizan-sano-y-salvo-al-sacerdote-clemente-morales-en-culiacan/1482004147"
+      ],
+      "hosts": [
+        "www.elhorizonte.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?elhorizonte\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://www.elhorizonte.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Horizonte"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-porvenir",
+      "name": "El Porvenir",
+      "listingUrl": "https://elporvenir.mx/nacional/",
+      "representativeDetailUrl": "https://elporvenir.mx/nacional/sheinbaum-anuncia-nuevo-portal-de-transparencia-del-gobierno-federal/1038823",
+      "seedUrls": [
+        "https://elporvenir.mx/nacional/",
+        "https://elporvenir.mx/nacional/sheinbaum-anuncia-nuevo-portal-de-transparencia-del-gobierno-federal/1038823"
+      ],
+      "qualificationSeedUrls": [
+        "https://elporvenir.mx/nacional/sheinbaum-anuncia-nuevo-portal-de-transparencia-del-gobierno-federal/1038823"
+      ],
+      "hosts": [
+        "elporvenir.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?elporvenir\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://elporvenir.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Porvenir"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-la-silla-rota",
+      "name": "La Silla Rota",
+      "listingUrl": "https://lasillarota.com/nacion/",
+      "representativeDetailUrl": "https://lasillarota.com/nacion/2026/10/27/diputados-aprueban-cuenta-publica-de-2024-queda-por-aclarar-destino-de-65-mil-millones-de-pesos-534853.html",
+      "seedUrls": [
+        "https://lasillarota.com/nacion/",
+        "https://lasillarota.com/nacion/2026/10/27/diputados-aprueban-cuenta-publica-de-2024-queda-por-aclarar-destino-de-65-mil-millones-de-pesos-534853.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://lasillarota.com/nacion/2026/10/27/diputados-aprueban-cuenta-publica-de-2024-queda-por-aclarar-destino-de-65-mil-millones-de-pesos-534853.html"
+      ],
+      "hosts": [
+        "lasillarota.com"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?lasillarota\\.com/.+"
+      ],
+      "templatePatterns": [
+        "https://lasillarota.com/*"
+      ],
+      "constantFields": {
+        "source_name": "La Silla Rota"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    },
+    {
+      "id": "mx-el-manana-nuevo-laredo",
+      "name": "El Mañana de Nuevo Laredo",
+      "listingUrl": "https://elmanana.com.mx/",
+      "representativeDetailUrl": "https://elmanana.com.mx/laredo-texas/2026/10/27/atrapan-a-peligroso-sujeto-en-laredo-se-metio-a-una-casa-y-amenazo-a-mujer-y-a-su-familia-con-pistol-183328.html",
+      "seedUrls": [
+        "https://elmanana.com.mx/",
+        "https://elmanana.com.mx/laredo-texas/2026/10/27/atrapan-a-peligroso-sujeto-en-laredo-se-metio-a-una-casa-y-amenazo-a-mujer-y-a-su-familia-con-pistol-183328.html"
+      ],
+      "qualificationSeedUrls": [
+        "https://elmanana.com.mx/laredo-texas/2026/10/27/atrapan-a-peligroso-sujeto-en-laredo-se-metio-a-una-casa-y-amenazo-a-mujer-y-a-su-familia-con-pistol-183328.html"
+      ],
+      "hosts": [
+        "elmanana.com.mx"
+      ],
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?elmanana\\.com\\.mx/.+"
+      ],
+      "templatePatterns": [
+        "https://elmanana.com.mx/*"
+      ],
+      "constantFields": {
+        "source_name": "El Mañana de Nuevo Laredo"
+      },
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "minimumOriginDelaySeconds": 5
+    }
+  ]
+}

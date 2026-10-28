@@ -1,0 +1,28 @@
+{
+  "id": "live-weather-alerts",
+  "kind": "live",
+  "title": "Recurring weather and environmental alerts study",
+  "aliases": [
+    "weather-alerts"
+  ],
+  "seed": 4703,
+  "parameters": {
+    "study": "weather-alerts",
+    "manifest": "experiments/live/weather-alerts/input/sites.json",
+    "phase": "qualification",
+    "phases": {
+      "qualification": {
+        "executions": 2,
+        "intervalMinutes": 5
+      },
+      "retained": {
+        "executions": 48,
+        "intervalMinutes": 30
+      }
+    },
+    "minimumOriginDelaySeconds": 5,
+    "maxUrlsPerSitePerExecution": 4,
+    "maxDepth": 1,
+    "retainResponseBodies": false
+  }
+}

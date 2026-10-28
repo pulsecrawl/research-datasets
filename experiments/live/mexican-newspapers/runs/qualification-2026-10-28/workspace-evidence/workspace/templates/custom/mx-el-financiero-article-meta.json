@@ -1,0 +1,43 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "author": [
+      "article:author",
+      "author"
+    ],
+    "canonical_url": [
+      "og:url"
+    ],
+    "description": [
+      "og:description",
+      "description"
+    ],
+    "headline": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ],
+    "image_url": [
+      "og:image",
+      "twitter:image"
+    ],
+    "modified_at": [
+      "article:modified_time",
+      "og:updated_time"
+    ],
+    "published_at": [
+      "article:published_time",
+      "date"
+    ],
+    "section": [
+      "article:section"
+    ],
+    "source_name": [
+      "literal:El Financiero"
+    ]
+  },
+  "name": "mx-el-financiero-article-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_702486d15e7cf6856677",
+  "templateId": "mx-el-financiero-article-meta"
+}

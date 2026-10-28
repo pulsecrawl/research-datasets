@@ -1,171 +1,184 @@
 # PulseCrawl research experiments and evidence
 
-This repository is the public reproducibility companion for
-[PulseCrawl](https://github.com/pulsecrawl/PulseCrawl). It contains the inputs,
-registered experiment definitions, analysis methods, and reviewed execution
-evidence used to evaluate the local open-source application.
+This is the public reproducibility companion for
+[PulseCrawl](https://github.com/pulsecrawl/PulseCrawl). It contains the
+controlled inputs, experiment definitions, runnable research code, comparison
+runners, reviewed evidence, and analysis used to evaluate the local
+open-source package.
 
-**New readers should begin with [`START_HERE.md`](START_HERE.md).** It explains
-the difference between inputs, experiments, executions, evidence, analysis,
-and live studies, and shows where each item can be found.
+The thesis PDF is intentionally not stored here. This repository contains the
+research material needed to inspect how results were produced.
 
-The repository does **not** contain a second copy of PulseCrawl. Experiments run
-against the versioned package published on PyPI:
+## Start here
+
+The research flow is:
+
+```text
+Input data -> Experiment definition -> One or more runs -> Reviewed evidence -> Analysis
+Public URL -> Access review         -> Bounded live run -> Versioned dataset -> Summary
+```
+
+These terms are deliberately separate:
+
+| Term | Meaning | Location |
+|---|---|---|
+| Input data | Generated pages or records with known answers | [`datasets/`](datasets/) |
+| Experiment | The question, settings, measurements, and acceptance rule | [`experiments/`](experiments/) |
+| Run | One execution with resolved settings, measurements, and checksums | `experiments/controlled/<experiment>/runs/` or `experiments/live/<category>/runs/` |
+| Evidence release | A reviewed collection of runs and derived results | [`experiments/releases/`](experiments/releases/) |
+| Research code | Runners, metrics, storage helpers, and verification tools | [`src/pulsecrawl_research/`](src/pulsecrawl_research/) |
+
+An input file or experiment definition is not proof that a run occurred.
+Completed runs contain their own manifests and checksums.
+
+## Repository map
+
+```text
+research-datasets/
+├── README.md                       this guide and the reviewer reading order
+├── CITATION.cff                    citation metadata
+├── LICENSE, NOTICE, PRIVACY.md     licensing and publication boundaries
+├── pyproject.toml                  reproducible research package
+├── registry.yaml                  runnable public experiment registry
+│
+├── docs/
+│   ├── protocols/                  evaluation procedures and decision rules
+│   ├── environment/                package pins and compatibility information
+│   └── images/                     previews of generated, non-live fixtures
+│
+├── datasets/
+│   ├── fixed-html/                 60 generated pages with expected answers
+│   ├── site-pattern-html/          100 scoped-template pages
+│   ├── commerce-html/              fictional recurring price observations
+│   ├── storage/                    generated versioned-dataset inputs
+│   └── webbench/                   local controlled HTTP website generator
+│
+├── experiments/
+│   ├── catalog.json                descriptive controlled experiment catalog
+│   ├── controlled/
+│   │   └── <experiment-name>/
+│   │       └── runs/run-001/       manifest, measurements, summary, checksums
+│   ├── live/
+│   │   ├── catalog.json            nine live categories and source counts
+│   │   └── <category>/
+│   │       ├── README.md           category purpose and schedule
+│   │       ├── experiment.yaml     qualification and retained settings
+│   │       ├── input/sites.json    exact reviewed URLs and limits
+│   │       └── runs/               published bounded-run evidence
+│   └── releases/
+│       └── <release>/              analysis, evidence index, and checksums
+│
+├── runners/
+│   ├── pulsecrawl/                 PulseCrawl controlled runner
+│   ├── scrapy/                     Scrapy controlled runner
+│   ├── crawlee/                    Crawlee controlled runner
+│   └── firecrawl/                  pinned optional self-hosted profile
+│
+├── src/pulsecrawl_research/
+│   ├── adapters.py                 comparison-system adapters
+│   ├── runner.py                   one-experiment orchestration
+│   ├── live_websites.py            bounded raw-HTTP live workflow
+│   ├── live_profiles.py            six shared output schemas
+│   ├── live_qualification.py       parallel two-cycle qualification
+│   ├── metrics.py                  measurement calculations
+│   ├── models.py                   shared research data structures
+│   ├── store.py                    immutable run directories and checksums
+│   ├── webbench.py                 controlled local website generator
+│   └── tools/                      generators, importers, and verifier
+│
+└── tests/                          repository and research-code checks
+```
+
+Folder names use full experiment names. Historical opaque identifiers remain
+only inside immutable source manifests where changing them would break
+traceability.
+
+## Install and verify
+
+Python 3.11 or newer:
 
 ```sh
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r environment/requirements.txt
-```
-
-The pinned research dependency is `pulsecrawl[workspace]==0.1.0`. The package
-implements the crawler and local workspace; this repository supplies the
-evaluation inputs and records what was executed.
-
-## Repository contents
-
-| Area | Contents | Purpose |
-| --- | --- | --- |
-| [`datasets/`](datasets/) | Fixed synthetic HTML, scoped-template cases, fictional commerce observations, WebBench configuration, and storage inputs | Repeatable inputs with known expected values |
-| [`experiments/`](experiments/) | Descriptively named experiment catalog and registered parameters | Defines the question, workload, measurements, and acceptance rule before a run |
-| [`protocols/`](protocols/) | Policy, template, and versioned-dataset evaluation procedures | Explains how the experiment families are executed and interpreted |
-| [`evidence/`](evidence/) | Schemas, execution manifests, measurements, checksums, and reviewed summaries | Connects an execution to its inputs, software version, configuration, and outcome |
-| [`analysis/`](analysis/) | Analysis rules and derived tables or figures | Keeps transformations from measurements to reported results inspectable |
-| [`live-case-study/`](live-case-study/) | Candidate commerce sources and the bounded live-study procedure | Defines the exercise; completed results are under `evidence/live-studies/` |
-| [`tools/`](tools/) | Generators, verification, WebBench, and evidence utilities | Regenerates inputs and validates the publication boundary |
-
-No manuscript or thesis PDF is stored here. The repository provides research
-artifacts that can be cited or inspected independently.
-
-## Where to start
-
-Choose the path that matches what you want to inspect:
-
-| Goal | Start here |
-| --- | --- |
-| Understand how the repository fits together | [`START_HERE.md`](START_HERE.md) |
-| Read the principal controlled findings | [`analysis/releases/public-local-0.1.0-2026-10-27/README.md`](analysis/releases/public-local-0.1.0-2026-10-27/README.md) |
-| Understand the real-website studies | [`evidence/live-studies/README.md`](evidence/live-studies/README.md) |
-| Inspect individual controlled executions | [`evidence/executions/README.md`](evidence/executions/README.md) |
-| Understand the synthetic inputs | [`datasets/README.md`](datasets/README.md) |
-| See what each experiment tests | [`experiments/README.md`](experiments/README.md) |
-| Reproduce the procedures | [`protocols/README.md`](protocols/README.md) |
-
-The human-readable guides explain the artifact first. JSON, JSONL, CSV, and
-checksum files remain available for programmatic verification.
-
-## Controlled evaluation inputs
-
-| Collection | Current coverage | Interpretation |
-| --- | --- | --- |
-| Fixed HTML | 60 documents | Deterministic extraction behavior across news, employment, and product layouts |
-| Scoped synthetic HTML | 100 documents across 20 fictional site configurations | Template selection, fallback, ambiguity, and controlled drift |
-| Fictional commerce | Two observations for ten fictional stores | Repeated extraction and structured price-history behavior |
-| Storage | 1,000-row retained sample and a deterministic million-row generator configuration | Version publication, compaction, and temporal-query experiments |
-| WebBench | Loopback HTTP generator | Request budgets, robots rules, pacing, redirects, failures, and recovery |
-
-Synthetic data uses fictional names and reserved `.example` URLs. Real website
-names and URLs appear only in the live case-study manifest. A failed live fetch
-is never replaced by a synthetic page and reported as a live result.
-
-## Verify the repository
-
-Python 3.11 or newer:
-
-```sh
-python tools/verify.py
+python -m pip install -e '.[all]'
+python src/pulsecrawl_research/tools/verify.py
 python -m unittest discover -s tests -v
 ```
 
-Regenerate the deterministic input collections when their generators change:
+The research package pins the separately published local package:
 
 ```sh
-python tools/generate_fixed_html.py
-python tools/generate_site_pattern.py
-python tools/generate_commerce.py
-python tools/webbench.py --items-per-site 10 --sites-per-vertical 1
+python -m pip install 'pulsecrawl[workspace]==0.1.0'
 ```
 
-Generate the larger storage workload outside the repository:
+The PulseCrawl implementation is not copied into this repository.
+
+## Controlled inputs and evidence
+
+| Collection | Scope | Purpose |
+|---|---:|---|
+| Fixed HTML | 60 generated pages | Basic extraction against known values |
+| Scoped site patterns | 100 pages across 20 fictional configurations | Template selection, fallback, and markup changes |
+| Fictional commerce | 20 documents from ten fictional stores | Repeated product and price observations |
+| Storage reference | Deterministic 1,000-row sample plus larger generator settings | Dataset versions, compaction, and temporal queries |
+| WebBench | Generated local HTTP websites | Budgets, robots rules, pacing, failures, and recovery |
+
+Generated inputs use fictional names and reserved `.example` URLs. They are
+not presented as real website observations. Reviewed controlled evidence is
+organized by descriptive experiment name under
+[`experiments/controlled/`](experiments/controlled/).
+
+## Multi-category live qualification
+
+The live catalog contains 119 reviewed sources across nine categories:
+
+| Category | Sources | Output schema | Planned retained interval |
+|---|---:|---|---:|
+| Mexican newspapers | 20 | Article | 30 minutes |
+| United States newspapers | 20 | Article | 30 minutes |
+| Financial and stock news | 20 | Article | 30 minutes |
+| General commerce | 11 | Product | 60 minutes |
+| Mexican supermarkets | 6 | Product | 60 minutes |
+| S&P 500 company careers | 12 | Job posting | 60 minutes |
+| Government and regulatory notices | 10 | Public notice | 60 minutes |
+| Security advisories | 10 | Security advisory | 60 minutes |
+| Weather and environmental alerts | 10 | Weather alert | 30 minutes |
+
+The bounded qualification runs each category twice, five minutes apart. It
+uses actual raw HTTP requests, performs a fresh fail-closed robots review, and
+does not retain third-party response bodies:
 
 ```sh
-python tools/generate_storage.py \
-  --output ./storage-output \
-  --rows 1000000 \
-  --executions 100
+pulsecrawl-research qualify-live \
+  --output-root ./qualification-output
 ```
 
-## Experiment and evidence workflow
+The qualification command cannot start the 24-hour retained phase. A source
+that is unavailable or excluded by its current robots rules remains visible in
+the access review. The reviewed qualification release contains all 119
+candidates: 107 passed the runtime and required-field checks, while 12 remain
+visible with an explicit exclusion reason. The release is indexed at
+[`experiments/releases/multi-category-qualification-v0.4.0-rc.1/`](experiments/releases/multi-category-qualification-v0.4.0-rc.1/).
 
-1. Select an entry from [`experiments/catalog.json`](experiments/catalog.json).
-2. Confirm that its dataset revision and package version match
-   [`environment/compatibility.json`](environment/compatibility.json).
-3. Execute the registered workload against the installed public package.
-4. Store the sanitized run manifest, measurements, and checksums under
-   `evidence/executions/<execution-id>/`.
-5. Generate derived summaries under `analysis/` without modifying the retained
-   measurements.
-6. Run `python tools/verify.py` before publishing the artifact.
+## Dataset and publication boundary
 
-After a run has produced reviewed measurements and a summary, create the
-bounded evidence directory with:
+- Third-party HTML bodies are processed in memory and are not published.
+- Published live evidence may contain source URLs, HTTP status, response
+  checksums, extracted records, local workspace validation, Parquet parts, and
+  dataset-version manifests.
+- No credentials, browser profiles, workstation paths, or personal names are
+  permitted in a release.
+- Every published run has a checksum file. Every release has a separate
+  release manifest; releases are never overwritten.
 
-```sh
-python tools/create_execution_manifest.py \
-  --experiment execution-budget-under-concurrency \
-  --execution-id budget-run-001 \
-  --measurements ./reviewed/measurements.csv \
-  --summary ./reviewed/summary.json \
-  --output ./evidence/executions/budget-run-001 \
-  -- pulsecrawl run registered-job.json
-```
+See [`PRIVACY.md`](PRIVACY.md) for the complete boundary.
 
-The utility copies only the selected files, records generic software and
-platform versions, and writes a per-execution checksum manifest. Review the
-created directory before committing it.
+## Reviewer reading order
 
-The evidence directory distinguishes three layers:
-
-- **Registered definition:** what was planned and how success is evaluated.
-- **Execution evidence:** what version and configuration ran, plus the direct
-  measurements and checksums.
-- **Analysis:** derived statistics, tables, and figures with a documented input
-  set and transformation.
-
-An experiment definition is not evidence that the experiment ran. A run is not
-included in a release until its evidence passes schema, checksum, and privacy
-validation.
-
-## Live end-to-end exercise
-
-[`live-case-study/sources.json`](live-case-study/sources.json) defines ten real
-candidate product sources and conservative request limits. Candidates start
-disabled until an operator reviews access conditions.
-
-The exercise uses real HTTP and records structured results, dataset-version
-identifiers, request status/checksum metadata, and practical setup or repair
-notes. Downloaded HTML bodies are not published. Access blocks, zero extracted
-records, unchanged prices, and required template repairs remain valid observed
-outcomes.
-
-The retained evidence includes two live studies. The news study ran 48 cycles
-across Norte Digital, La Verdad Juárez, Raíchali, La Opción de Chihuahua, and
-Tiempo. The commerce study ran eight cycles against one Alo Yoga product page.
-The [live-study overview](evidence/live-studies/README.md) lists the study ID,
-retained run ID, site IDs, URLs, and aggregate results.
-
-These summaries contain counts and operational outcomes, not downloaded pages,
-article or product text, raw request logs, or workspace databases. A source
-manifest alone is not treated as evidence of execution.
-
-## Release boundary
-
-Release `v0.3.2` adds a plain-language repository map and self-contained source
-indexes for the retained live studies. It does not change the controlled input
-collections, the 116 controlled executions, or the frozen controlled analysis.
-Each controlled execution links its public checksum manifest to the checksum of
-the corresponding frozen source run. Existing tags remain immutable.
-
-See [`DATASETS.md`](DATASETS.md), [`PRIVACY.md`](PRIVACY.md), and
-[`NOTICE`](NOTICE) for dataset, publication, and licensing boundaries.
+1. This README.
+2. [`experiments/catalog.json`](experiments/catalog.json) for controlled tests.
+3. [`experiments/live/catalog.json`](experiments/live/catalog.json) for live categories.
+4. [`docs/protocols/`](docs/protocols/) for evaluation procedures.
+5. [`experiments/releases/`](experiments/releases/) for reviewed findings.
+6. A named experiment's `runs/` directory for direct measurements and checksums.

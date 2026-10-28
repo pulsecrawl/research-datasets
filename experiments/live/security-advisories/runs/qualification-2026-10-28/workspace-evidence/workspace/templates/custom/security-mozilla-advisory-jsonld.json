@@ -1,0 +1,35 @@
+{
+  "engine": "jsonld",
+  "mappings": {
+    "advisory_id": [
+      "TechArticle.identifier",
+      "Article.identifier"
+    ],
+    "canonical_url": [
+      "TechArticle.url",
+      "Article.url"
+    ],
+    "published_at": [
+      "TechArticle.datePublished",
+      "Article.datePublished"
+    ],
+    "summary": [
+      "TechArticle.description",
+      "Article.description"
+    ],
+    "title": [
+      "TechArticle.headline",
+      "Article.headline",
+      "TechArticle.name",
+      "Article.name"
+    ],
+    "updated_at": [
+      "TechArticle.dateModified",
+      "Article.dateModified"
+    ]
+  },
+  "name": "security-mozilla-advisory-jsonld",
+  "origin": "org",
+  "outputSchemaId": "schema_865574962352c0bfa4ac",
+  "templateId": "security-mozilla-advisory-jsonld"
+}

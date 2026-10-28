@@ -1,0 +1,151 @@
+{
+  "createdAt": "2026-10-28T03:59:34.204201+00:00",
+  "datasetId": "ds_fc773854aaf73d28a175",
+  "files": [
+    {
+      "executionId": "exec_qualification_finance-bnn-bloomberg_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:03.912859+00:00",
+      "minCrawledAt": "2026-10-28 03:59:03.912859+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-bnn-bloomberg_001.parquet",
+      "rows": 1,
+      "sizeBytes": 12144
+    },
+    {
+      "executionId": "exec_qualification_finance-business-insider_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:24.565430+00:00",
+      "minCrawledAt": "2026-10-28 03:58:24.565430+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-business-insider_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10231
+    },
+    {
+      "executionId": "exec_qualification_finance-cbs-moneywatch_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:09.516587+00:00",
+      "minCrawledAt": "2026-10-28 03:59:09.516587+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-cbs-moneywatch_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10609
+    },
+    {
+      "executionId": "exec_qualification_finance-cnbc_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:30.181380+00:00",
+      "minCrawledAt": "2026-10-28 03:58:30.181380+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-cnbc_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10272
+    },
+    {
+      "executionId": "exec_qualification_finance-economic-times_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:15.105915+00:00",
+      "minCrawledAt": "2026-10-28 03:59:15.105915+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-economic-times_001.parquet",
+      "rows": 1,
+      "sizeBytes": 15538
+    },
+    {
+      "executionId": "exec_qualification_finance-financial-post_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:27.560795+00:00",
+      "minCrawledAt": "2026-10-28 03:59:27.560795+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-financial-post_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11369
+    },
+    {
+      "executionId": "exec_qualification_finance-finbold_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:33.256165+00:00",
+      "minCrawledAt": "2026-10-28 03:59:33.256165+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-finbold_001.parquet",
+      "rows": 1,
+      "sizeBytes": 9739
+    },
+    {
+      "executionId": "exec_qualification_finance-fortune_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:35.781132+00:00",
+      "minCrawledAt": "2026-10-28 03:58:35.781132+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fortune_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11849
+    },
+    {
+      "executionId": "exec_qualification_finance-fxstreet_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:21.519138+00:00",
+      "minCrawledAt": "2026-10-28 03:59:21.519138+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fxstreet_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10425
+    },
+    {
+      "executionId": "exec_qualification_finance-kiplinger_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.348561+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.348561+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-kiplinger_001.parquet",
+      "rows": 1,
+      "sizeBytes": 9921
+    },
+    {
+      "executionId": "exec_qualification_finance-motley-fool_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.988180+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.988180+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-motley-fool_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11326
+    },
+    {
+      "executionId": "exec_qualification_finance-tradingview_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:52.562201+00:00",
+      "minCrawledAt": "2026-10-28 03:58:52.562201+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-tradingview_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10789
+    },
+    {
+      "executionId": "exec_qualification_finance-yahoo_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:58.118500+00:00",
+      "minCrawledAt": "2026-10-28 03:58:58.118500+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-yahoo_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11535
+    }
+  ],
+  "schemaVersion": 1,
+  "version": 13
+}

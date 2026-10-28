@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "category",
+  "name": "category",
+  "origin": "custom",
+  "type": "string"
+}

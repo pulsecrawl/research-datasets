@@ -1,0 +1,248 @@
+{
+  "cancellationMode": null,
+  "cancellationRequestedAt": null,
+  "createdAt": "2026-10-28T04:03:24.661909+00:00",
+  "datasetId": "ds_fc773854aaf73d28a175",
+  "error": null,
+  "executionId": "exec_qualification_finance-mint_002",
+  "finishedAt": "2026-10-28T04:03:24.835733+00:00",
+  "intent": {
+    "datasetId": "ds_fc773854aaf73d28a175",
+    "politeness": {
+      "organizationRequestsPerSecond": 0.2,
+      "requestsPerSecond": 0.2,
+      "respectRobotsTxt": true,
+      "userAgent": "PulseCrawlResearchBot/0.1 (+https://github.com/pulsecrawl/research-datasets)"
+    },
+    "publishRecords": true,
+    "schema": {
+      "fields": [
+        {
+          "fieldId": "headline",
+          "name": "headline",
+          "type": "string"
+        },
+        {
+          "fieldId": "canonical_url",
+          "name": "canonical_url",
+          "type": "url"
+        },
+        {
+          "fieldId": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "fieldId": "author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "fieldId": "published_at",
+          "name": "published_at",
+          "type": "datetime"
+        },
+        {
+          "fieldId": "modified_at",
+          "name": "modified_at",
+          "type": "datetime"
+        },
+        {
+          "fieldId": "image_url",
+          "name": "image_url",
+          "type": "url"
+        },
+        {
+          "fieldId": "section",
+          "name": "section",
+          "type": "string"
+        },
+        {
+          "fieldId": "source_name",
+          "name": "source_name",
+          "type": "string"
+        }
+      ],
+      "schemaId": "schema_c8ac4d64bd083cd8958a"
+    },
+    "scope": {
+      "excludePatterns": [],
+      "includePatterns": [
+        "^https?://(?:www\\.)?livemint\\.com/.+"
+      ],
+      "maxDepth": 0,
+      "maxUrlsPerExecution": 1,
+      "maxUrlsTotal": 2,
+      "sameDomainOnly": true
+    },
+    "seeds": [
+      "https://www.livemint.com/market/stock-market-news/anthropic-ipo-it-s-official-now-artificial-intelligence-giant-files-papers-to-sell-shares-to-public-for-first-time-11793019537204.html"
+    ],
+    "storeRawPages": false,
+    "systemTemplates": [],
+    "templateStack": [
+      {
+        "engine": "jsonld",
+        "mappings": {
+          "author": [
+            "NewsArticle.author.name",
+            "Article.author.name",
+            "NewsArticle.author",
+            "Article.author"
+          ],
+          "canonical_url": [
+            "NewsArticle.url",
+            "Article.url",
+            "NewsArticle.mainEntityOfPage.@id",
+            "Article.mainEntityOfPage.@id"
+          ],
+          "description": [
+            "NewsArticle.description",
+            "Article.description"
+          ],
+          "headline": [
+            "NewsArticle.headline",
+            "Article.headline",
+            "NewsArticle.name",
+            "Article.name"
+          ],
+          "image_url": [
+            "NewsArticle.image.url",
+            "Article.image.url",
+            "NewsArticle.image",
+            "Article.image"
+          ],
+          "modified_at": [
+            "NewsArticle.dateModified",
+            "Article.dateModified"
+          ],
+          "published_at": [
+            "NewsArticle.datePublished",
+            "Article.datePublished"
+          ],
+          "section": [
+            "NewsArticle.articleSection",
+            "Article.articleSection"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "www.livemint.com"
+          ],
+          "urlPatterns": [
+            "https://www.livemint.com/*"
+          ]
+        },
+        "templateId": "finance-mint-article-jsonld"
+      },
+      {
+        "engine": "css",
+        "mappings": {
+          "canonical_url": [
+            "link[rel='canonical']@href"
+          ],
+          "headline": [
+            "main h1",
+            "article h1",
+            "h1"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "www.livemint.com"
+          ],
+          "urlPatterns": [
+            "https://www.livemint.com/*"
+          ]
+        },
+        "templateId": "finance-mint-article-css"
+      },
+      {
+        "engine": "meta",
+        "mappings": {
+          "author": [
+            "article:author",
+            "author"
+          ],
+          "canonical_url": [
+            "og:url"
+          ],
+          "description": [
+            "og:description",
+            "description"
+          ],
+          "headline": [
+            "og:title",
+            "twitter:title",
+            "<title>"
+          ],
+          "image_url": [
+            "og:image",
+            "twitter:image"
+          ],
+          "modified_at": [
+            "article:modified_time",
+            "og:updated_time"
+          ],
+          "published_at": [
+            "article:published_time",
+            "date"
+          ],
+          "section": [
+            "article:section"
+          ],
+          "source_name": [
+            "literal:Mint Markets"
+          ]
+        },
+        "origin": "org",
+        "scope": {
+          "hosts": [
+            "www.livemint.com"
+          ],
+          "urlPatterns": [
+            "https://www.livemint.com/*"
+          ]
+        },
+        "templateId": "finance-mint-article-meta"
+      }
+    ]
+  },
+  "jobId": "job_5e7e74b0452516d69916",
+  "reservedUrls": 0,
+  "scheduledFor": null,
+  "startedAt": "2026-10-28T04:03:24.663058+00:00",
+  "stats": {
+    "bytes_processed": 206827,
+    "materializedRows": 0,
+    "pages_discovered": 0,
+    "pages_failed": 0,
+    "pages_fetched": 1,
+    "rate_limit_deferrals": 0,
+    "rate_limit_queue_deferrals": 0,
+    "rate_limit_queue_wait_seconds": 0.0,
+    "rate_limit_wait_seconds": 0.0,
+    "records_extracted": 1,
+    "robots_blocked": 0,
+    "robots_cache_hits": 1,
+    "robots_checks": 1,
+    "robots_fetch_failures": 0,
+    "robots_fetches": 0,
+    "template_coverage": {
+      "www.livemint.com": {
+        "needsTemplate": false,
+        "sampleUrls": [],
+        "scopedMatches": 1,
+        "stackFallbackMatches": 0,
+        "systemFallbackMatches": 0,
+        "unmatchedPages": 0
+      }
+    },
+    "transient_retries": 0,
+    "urls_attempted": 1
+  },
+  "status": "succeeded",
+  "trigger": "manual"
+}

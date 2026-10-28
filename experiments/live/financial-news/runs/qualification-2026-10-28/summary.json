@@ -1,0 +1,1764 @@
+{
+  "kind": "live",
+  "results": {
+    "completedAt": "2026-10-28T04:03:26.269662+00:00",
+    "datasetFiles": [
+      {
+        "executionId": "exec_qualification_finance-bnn-bloomberg_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:03.912859+00:00",
+        "minCrawledAt": "2026-10-28 03:59:03.912859+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-bnn-bloomberg_001.parquet",
+        "rows": 1,
+        "sizeBytes": 12144
+      },
+      {
+        "executionId": "exec_qualification_finance-business-insider_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:24.565430+00:00",
+        "minCrawledAt": "2026-10-28 03:58:24.565430+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-business-insider_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10231
+      },
+      {
+        "executionId": "exec_qualification_finance-cbs-moneywatch_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:09.516587+00:00",
+        "minCrawledAt": "2026-10-28 03:59:09.516587+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-cbs-moneywatch_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10609
+      },
+      {
+        "executionId": "exec_qualification_finance-cnbc_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:30.181380+00:00",
+        "minCrawledAt": "2026-10-28 03:58:30.181380+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-cnbc_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10272
+      },
+      {
+        "executionId": "exec_qualification_finance-daily-upside_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:56.712892+00:00",
+        "minCrawledAt": "2026-10-28 03:59:56.712892+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-daily-upside_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10989
+      },
+      {
+        "executionId": "exec_qualification_finance-economic-times_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:15.105915+00:00",
+        "minCrawledAt": "2026-10-28 03:59:15.105915+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-economic-times_001.parquet",
+        "rows": 1,
+        "sizeBytes": 15538
+      },
+      {
+        "executionId": "exec_qualification_finance-financial-post_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:27.560795+00:00",
+        "minCrawledAt": "2026-10-28 03:59:27.560795+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-financial-post_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11369
+      },
+      {
+        "executionId": "exec_qualification_finance-finbold_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:33.256165+00:00",
+        "minCrawledAt": "2026-10-28 03:59:33.256165+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-finbold_001.parquet",
+        "rows": 1,
+        "sizeBytes": 9739
+      },
+      {
+        "executionId": "exec_qualification_finance-fortune_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:35.781132+00:00",
+        "minCrawledAt": "2026-10-28 03:58:35.781132+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fortune_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11849
+      },
+      {
+        "executionId": "exec_qualification_finance-fox-business_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:39.712374+00:00",
+        "minCrawledAt": "2026-10-28 03:59:39.712374+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fox-business_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10952
+      },
+      {
+        "executionId": "exec_qualification_finance-fxstreet_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:21.519138+00:00",
+        "minCrawledAt": "2026-10-28 03:59:21.519138+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-fxstreet_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10425
+      },
+      {
+        "executionId": "exec_qualification_finance-kiplinger_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:41.348561+00:00",
+        "minCrawledAt": "2026-10-28 03:58:41.348561+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-kiplinger_001.parquet",
+        "rows": 1,
+        "sizeBytes": 9921
+      },
+      {
+        "executionId": "exec_qualification_finance-kitco_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:45.270432+00:00",
+        "minCrawledAt": "2026-10-28 03:59:45.270432+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-kitco_001.parquet",
+        "rows": 1,
+        "sizeBytes": 12089
+      },
+      {
+        "executionId": "exec_qualification_finance-mint_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:59:50.982712+00:00",
+        "minCrawledAt": "2026-10-28 03:59:50.982712+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-mint_001.parquet",
+        "rows": 1,
+        "sizeBytes": 12487
+      },
+      {
+        "executionId": "exec_qualification_finance-motley-fool_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:46.988180+00:00",
+        "minCrawledAt": "2026-10-28 03:58:46.988180+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-motley-fool_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11326
+      },
+      {
+        "executionId": "exec_qualification_finance-tradingview_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:52.562201+00:00",
+        "minCrawledAt": "2026-10-28 03:58:52.562201+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-tradingview_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10789
+      },
+      {
+        "executionId": "exec_qualification_finance-yahoo_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 3,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 03:58:58.118500+00:00",
+        "minCrawledAt": "2026-10-28 03:58:58.118500+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_finance-yahoo_001.parquet",
+        "rows": 1,
+        "sizeBytes": 11535
+      },
+      {
+        "executionId": "exec_qualification_finance-guardian-business_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 4,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 04:00:03.025684+00:00",
+        "minCrawledAt": "2026-10-28 04:00:03.025684+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_finance-guardian-business_001.parquet",
+        "rows": 1,
+        "sizeBytes": 15643
+      },
+      {
+        "executionId": "exec_qualification_finance-moneyweek_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 4,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 04:00:08.764194+00:00",
+        "minCrawledAt": "2026-10-28 04:00:08.764194+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_finance-moneyweek_001.parquet",
+        "rows": 1,
+        "sizeBytes": 9846
+      },
+      {
+        "executionId": "exec_qualification_finance-sherwood_001",
+        "ingestDate": "2026-10-28",
+        "ingestHour": 4,
+        "kind": "delta",
+        "maxCrawledAt": "2026-10-28 04:00:14.523052+00:00",
+        "minCrawledAt": "2026-10-28 04:00:14.523052+00:00",
+        "path": "data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_finance-sherwood_001.parquet",
+        "rows": 1,
+        "sizeBytes": 10077
+      }
+    ],
+    "datasetId": "ds_fc773854aaf73d28a175",
+    "enabledSites": 20,
+    "excludedSites": 0,
+    "executions": [
+      {
+        "durationSeconds": 115.683888,
+        "finishedAt": "2026-10-28T04:00:14.743446+00:00",
+        "scheduledAt": "2026-10-28T03:58:19.059554+00:00",
+        "sequence": 1,
+        "sites": [
+          {
+            "executionId": "exec_qualification_finance-business-insider_001",
+            "finishedAt": "2026-10-28T03:58:24.675571+00:00",
+            "siteId": "finance-business-insider",
+            "startedAt": "2026-10-28T03:58:19.060965+00:00",
+            "stats": {
+              "bytes_processed": 402200,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.467900037765503,
+              "rate_limit_wait_seconds": 5.467900991439819,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.businessinsider.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-cnbc_001",
+            "finishedAt": "2026-10-28T03:58:30.273786+00:00",
+            "siteId": "finance-cnbc",
+            "startedAt": "2026-10-28T03:58:24.678182+00:00",
+            "stats": {
+              "bytes_processed": 806431,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.053750038146973,
+              "rate_limit_wait_seconds": 5.053750038146973,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.cnbc.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-fortune_001",
+            "finishedAt": "2026-10-28T03:58:35.840015+00:00",
+            "siteId": "finance-fortune",
+            "startedAt": "2026-10-28T03:58:30.276486+00:00",
+            "stats": {
+              "bytes_processed": 454925,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.35056209564209,
+              "rate_limit_wait_seconds": 5.35056209564209,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "fortune.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-kiplinger_001",
+            "finishedAt": "2026-10-28T03:58:41.479909+00:00",
+            "siteId": "finance-kiplinger",
+            "startedAt": "2026-10-28T03:58:35.844218+00:00",
+            "stats": {
+              "bytes_processed": 2077004,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.46397590637207,
+              "rate_limit_wait_seconds": 5.463977098464966,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.kiplinger.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-motley-fool_001",
+            "finishedAt": "2026-10-28T03:58:47.054294+00:00",
+            "siteId": "finance-motley-fool",
+            "startedAt": "2026-10-28T03:58:41.482028+00:00",
+            "stats": {
+              "bytes_processed": 380070,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.4095139503479,
+              "rate_limit_wait_seconds": 5.4095139503479,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.fool.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-tradingview_001",
+            "finishedAt": "2026-10-28T03:58:52.612516+00:00",
+            "siteId": "finance-tradingview",
+            "startedAt": "2026-10-28T03:58:47.056570+00:00",
+            "stats": {
+              "bytes_processed": 190373,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.374271869659424,
+              "rate_limit_wait_seconds": 5.37427282333374,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.tradingview.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-yahoo_001",
+            "finishedAt": "2026-10-28T03:58:58.405675+00:00",
+            "siteId": "finance-yahoo",
+            "startedAt": "2026-10-28T03:58:52.615078+00:00",
+            "stats": {
+              "bytes_processed": 581720,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.440774917602539,
+              "rate_limit_wait_seconds": 5.4407758712768555,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "finance.yahoo.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-bnn-bloomberg_001",
+            "finishedAt": "2026-10-28T03:59:04.007951+00:00",
+            "siteId": "finance-bnn-bloomberg",
+            "startedAt": "2026-10-28T03:58:58.407857+00:00",
+            "stats": {
+              "bytes_processed": 170888,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.415255069732666,
+              "rate_limit_wait_seconds": 5.415255069732666,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.bnnbloomberg.ca": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-cbs-moneywatch_001",
+            "finishedAt": "2026-10-28T03:59:09.599575+00:00",
+            "siteId": "finance-cbs-moneywatch",
+            "startedAt": "2026-10-28T03:59:04.011499+00:00",
+            "stats": {
+              "bytes_processed": 629888,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.473160982131958,
+              "rate_limit_wait_seconds": 5.473160982131958,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.cbsnews.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-economic-times_001",
+            "finishedAt": "2026-10-28T03:59:16.009457+00:00",
+            "siteId": "finance-economic-times",
+            "startedAt": "2026-10-28T03:59:09.601999+00:00",
+            "stats": {
+              "bytes_processed": 306288,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.365699768066406,
+              "rate_limit_wait_seconds": 5.365699768066406,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "economictimes.indiatimes.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-fxstreet_001",
+            "finishedAt": "2026-10-28T03:59:22.051974+00:00",
+            "siteId": "finance-fxstreet",
+            "startedAt": "2026-10-28T03:59:16.012884+00:00",
+            "stats": {
+              "bytes_processed": 821487,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.346873044967651,
+              "rate_limit_wait_seconds": 5.346873760223389,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.fxstreet.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-financial-post_001",
+            "finishedAt": "2026-10-28T03:59:27.750057+00:00",
+            "siteId": "finance-financial-post",
+            "startedAt": "2026-10-28T03:59:22.054723+00:00",
+            "stats": {
+              "bytes_processed": 302309,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.395751714706421,
+              "rate_limit_wait_seconds": 5.395752906799316,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "financialpost.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-finbold_001",
+            "finishedAt": "2026-10-28T03:59:34.205138+00:00",
+            "siteId": "finance-finbold",
+            "startedAt": "2026-10-28T03:59:27.752839+00:00",
+            "stats": {
+              "bytes_processed": 431242,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.455759763717651,
+              "rate_limit_wait_seconds": 5.455760717391968,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "finbold.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-fox-business_001",
+            "finishedAt": "2026-10-28T03:59:39.764220+00:00",
+            "siteId": "finance-fox-business",
+            "startedAt": "2026-10-28T03:59:34.208741+00:00",
+            "stats": {
+              "bytes_processed": 207612,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.352271318435669,
+              "rate_limit_wait_seconds": 5.352272033691406,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.foxbusiness.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-kitco_001",
+            "finishedAt": "2026-10-28T03:59:45.476013+00:00",
+            "siteId": "finance-kitco",
+            "startedAt": "2026-10-28T03:59:39.767308+00:00",
+            "stats": {
+              "bytes_processed": 153008,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.394068717956543,
+              "rate_limit_wait_seconds": 5.3940699100494385,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.kitco.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-mint_001",
+            "finishedAt": "2026-10-28T03:59:51.205937+00:00",
+            "siteId": "finance-mint",
+            "startedAt": "2026-10-28T03:59:45.478227+00:00",
+            "stats": {
+              "bytes_processed": 206827,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.367204904556274,
+              "rate_limit_wait_seconds": 5.367205858230591,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.livemint.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-daily-upside_001",
+            "finishedAt": "2026-10-28T03:59:57.515580+00:00",
+            "siteId": "finance-daily-upside",
+            "startedAt": "2026-10-28T03:59:51.208945+00:00",
+            "stats": {
+              "bytes_processed": 227069,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.261872291564941,
+              "rate_limit_wait_seconds": 5.261873245239258,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.thedailyupside.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-guardian-business_001",
+            "finishedAt": "2026-10-28T04:00:03.256815+00:00",
+            "siteId": "finance-guardian-business",
+            "startedAt": "2026-10-28T03:59:57.519693+00:00",
+            "stats": {
+              "bytes_processed": 777039,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.304483652114868,
+              "rate_limit_wait_seconds": 5.304484844207764,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "www.theguardian.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-moneyweek_001",
+            "finishedAt": "2026-10-28T04:00:09.015276+00:00",
+            "siteId": "finance-moneyweek",
+            "startedAt": "2026-10-28T04:00:03.260083+00:00",
+            "stats": {
+              "bytes_processed": 1713275,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.476712703704834,
+              "rate_limit_wait_seconds": 5.4767138957977295,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "moneyweek.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-sherwood_001",
+            "finishedAt": "2026-10-28T04:00:14.741872+00:00",
+            "siteId": "finance-sherwood",
+            "startedAt": "2026-10-28T04:00:09.017999+00:00",
+            "stats": {
+              "bytes_processed": 787556,
+              "materializedRows": 1,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 1,
+              "rate_limit_queue_deferrals": 1,
+              "rate_limit_queue_wait_seconds": 5.453936815261841,
+              "rate_limit_wait_seconds": 5.453938007354736,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 2,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 1,
+              "template_coverage": {
+                "sherwood.news": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          }
+        ],
+        "startLagSeconds": 4e-06,
+        "startedAt": "2026-10-28T03:58:19.059558+00:00"
+      },
+      {
+        "durationSeconds": 7.140922,
+        "finishedAt": "2026-10-28T04:03:26.210354+00:00",
+        "scheduledAt": "2026-10-28T04:03:19.059554+00:00",
+        "sequence": 2,
+        "sites": [
+          {
+            "executionId": "exec_qualification_finance-business-insider_002",
+            "finishedAt": "2026-10-28T04:03:19.148534+00:00",
+            "siteId": "finance-business-insider",
+            "startedAt": "2026-10-28T04:03:19.071422+00:00",
+            "stats": {
+              "bytes_processed": 402200,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.businessinsider.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-cnbc_002",
+            "finishedAt": "2026-10-28T04:03:19.491064+00:00",
+            "siteId": "finance-cnbc",
+            "startedAt": "2026-10-28T04:03:19.150809+00:00",
+            "stats": {
+              "bytes_processed": 806519,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.cnbc.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-fortune_002",
+            "finishedAt": "2026-10-28T04:03:19.554194+00:00",
+            "siteId": "finance-fortune",
+            "startedAt": "2026-10-28T04:03:19.493421+00:00",
+            "stats": {
+              "bytes_processed": 455046,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "fortune.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-kiplinger_002",
+            "finishedAt": "2026-10-28T04:03:19.673543+00:00",
+            "siteId": "finance-kiplinger",
+            "startedAt": "2026-10-28T04:03:19.557935+00:00",
+            "stats": {
+              "bytes_processed": 2077004,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.kiplinger.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-motley-fool_002",
+            "finishedAt": "2026-10-28T04:03:19.859686+00:00",
+            "siteId": "finance-motley-fool",
+            "startedAt": "2026-10-28T04:03:19.676988+00:00",
+            "stats": {
+              "bytes_processed": 380070,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.fool.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-tradingview_002",
+            "finishedAt": "2026-10-28T04:03:19.954936+00:00",
+            "siteId": "finance-tradingview",
+            "startedAt": "2026-10-28T04:03:19.861780+00:00",
+            "stats": {
+              "bytes_processed": 190373,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.tradingview.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-yahoo_002",
+            "finishedAt": "2026-10-28T04:03:20.325777+00:00",
+            "siteId": "finance-yahoo",
+            "startedAt": "2026-10-28T04:03:19.959708+00:00",
+            "stats": {
+              "bytes_processed": 657332,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "finance.yahoo.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-bnn-bloomberg_002",
+            "finishedAt": "2026-10-28T04:03:20.628905+00:00",
+            "siteId": "finance-bnn-bloomberg",
+            "startedAt": "2026-10-28T04:03:20.328104+00:00",
+            "stats": {
+              "bytes_processed": 170888,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.bnnbloomberg.ca": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-cbs-moneywatch_002",
+            "finishedAt": "2026-10-28T04:03:20.703896+00:00",
+            "siteId": "finance-cbs-moneywatch",
+            "startedAt": "2026-10-28T04:03:20.633706+00:00",
+            "stats": {
+              "bytes_processed": 629888,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.cbsnews.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-economic-times_002",
+            "finishedAt": "2026-10-28T04:03:21.597749+00:00",
+            "siteId": "finance-economic-times",
+            "startedAt": "2026-10-28T04:03:20.706614+00:00",
+            "stats": {
+              "bytes_processed": 306288,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "economictimes.indiatimes.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-fxstreet_002",
+            "finishedAt": "2026-10-28T04:03:21.772275+00:00",
+            "siteId": "finance-fxstreet",
+            "startedAt": "2026-10-28T04:03:21.601175+00:00",
+            "stats": {
+              "bytes_processed": 821487,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.fxstreet.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-financial-post_002",
+            "finishedAt": "2026-10-28T04:03:23.307568+00:00",
+            "siteId": "finance-financial-post",
+            "startedAt": "2026-10-28T04:03:21.775393+00:00",
+            "stats": {
+              "bytes_processed": 302495,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "financialpost.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-finbold_002",
+            "finishedAt": "2026-10-28T04:03:24.223850+00:00",
+            "siteId": "finance-finbold",
+            "startedAt": "2026-10-28T04:03:23.311307+00:00",
+            "stats": {
+              "bytes_processed": 431242,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "finbold.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-fox-business_002",
+            "finishedAt": "2026-10-28T04:03:24.317031+00:00",
+            "siteId": "finance-fox-business",
+            "startedAt": "2026-10-28T04:03:24.227011+00:00",
+            "stats": {
+              "bytes_processed": 207612,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.foxbusiness.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-kitco_002",
+            "finishedAt": "2026-10-28T04:03:24.659738+00:00",
+            "siteId": "finance-kitco",
+            "startedAt": "2026-10-28T04:03:24.320380+00:00",
+            "stats": {
+              "bytes_processed": 153008,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.kitco.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-mint_002",
+            "finishedAt": "2026-10-28T04:03:24.835733+00:00",
+            "siteId": "finance-mint",
+            "startedAt": "2026-10-28T04:03:24.663058+00:00",
+            "stats": {
+              "bytes_processed": 206827,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.livemint.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-daily-upside_002",
+            "finishedAt": "2026-10-28T04:03:25.122895+00:00",
+            "siteId": "finance-daily-upside",
+            "startedAt": "2026-10-28T04:03:24.837777+00:00",
+            "stats": {
+              "bytes_processed": 227069,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.thedailyupside.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-guardian-business_002",
+            "finishedAt": "2026-10-28T04:03:25.233702+00:00",
+            "siteId": "finance-guardian-business",
+            "startedAt": "2026-10-28T04:03:25.127052+00:00",
+            "stats": {
+              "bytes_processed": 777039,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "www.theguardian.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-moneyweek_002",
+            "finishedAt": "2026-10-28T04:03:25.321978+00:00",
+            "siteId": "finance-moneyweek",
+            "startedAt": "2026-10-28T04:03:25.236560+00:00",
+            "stats": {
+              "bytes_processed": 1713275,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "moneyweek.com": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          },
+          {
+            "executionId": "exec_qualification_finance-sherwood_002",
+            "finishedAt": "2026-10-28T04:03:26.206379+00:00",
+            "siteId": "finance-sherwood",
+            "startedAt": "2026-10-28T04:03:25.324056+00:00",
+            "stats": {
+              "bytes_processed": 787556,
+              "materializedRows": 0,
+              "pages_discovered": 0,
+              "pages_failed": 0,
+              "pages_fetched": 1,
+              "rate_limit_deferrals": 0,
+              "rate_limit_queue_deferrals": 0,
+              "rate_limit_queue_wait_seconds": 0.0,
+              "rate_limit_wait_seconds": 0.0,
+              "records_extracted": 1,
+              "robots_blocked": 0,
+              "robots_cache_hits": 1,
+              "robots_checks": 1,
+              "robots_fetch_failures": 0,
+              "robots_fetches": 0,
+              "template_coverage": {
+                "sherwood.news": {
+                  "needsTemplate": false,
+                  "sampleUrls": [],
+                  "scopedMatches": 1,
+                  "stackFallbackMatches": 0,
+                  "systemFallbackMatches": 0,
+                  "unmatchedPages": 0
+                }
+              },
+              "transient_retries": 0,
+              "urls_attempted": 1
+            },
+            "status": "succeeded"
+          }
+        ],
+        "startLagSeconds": 0.009878,
+        "startedAt": "2026-10-28T04:03:19.069432+00:00"
+      }
+    ],
+    "jobIds": {
+      "finance-bnn-bloomberg": "job_b2350152d4cba8e397bd",
+      "finance-business-insider": "job_075d786003e0110adbef",
+      "finance-cbs-moneywatch": "job_0e4f0342282c927b7988",
+      "finance-cnbc": "job_ad5c7f25772cf91a2568",
+      "finance-daily-upside": "job_68a0535645db902d77a8",
+      "finance-economic-times": "job_38635d5c487ba1d4d1ea",
+      "finance-financial-post": "job_8812f959e46ee569d006",
+      "finance-finbold": "job_9f7263ff2094e1ef41cc",
+      "finance-fortune": "job_6a3a7b445f30be460c40",
+      "finance-fox-business": "job_65b0e8424808d8c3a7a4",
+      "finance-fxstreet": "job_ca9f2c745d89533427fc",
+      "finance-guardian-business": "job_ce271b5973a8255c8591",
+      "finance-kiplinger": "job_5c00c61224a6b4e4f6bf",
+      "finance-kitco": "job_1888684da62a339263d4",
+      "finance-mint": "job_5e7e74b0452516d69916",
+      "finance-moneyweek": "job_7dd9442b8af548509079",
+      "finance-motley-fool": "job_d86d905e68a374eeeae6",
+      "finance-sherwood": "job_b6b1a3a2e45b1bb97454",
+      "finance-tradingview": "job_e70a6777ad301c2c3b25",
+      "finance-yahoo": "job_b3a57ea86e1313c1cdc5"
+    },
+    "phase": "qualification",
+    "publicPackageVersion": "0.1.0",
+    "qualitySummary": {
+      "columns": [
+        "rows_with_headline",
+        "rows_with_canonical_url",
+        "rows_with_all_required_fields",
+        "source_urls_with_all_required_fields"
+      ],
+      "rows": [
+        [
+          20,
+          20,
+          20,
+          20
+        ]
+      ],
+      "truncated": false
+    },
+    "querySummary": {
+      "columns": [
+        "rows",
+        "executions",
+        "source_urls"
+      ],
+      "rows": [
+        [
+          20,
+          20,
+          20
+        ]
+      ],
+      "truncated": false
+    },
+    "requestedSites": 20,
+    "schemaProfile": "article",
+    "settings": {
+      "executions": 2,
+      "intervalMinutes": 5
+    },
+    "status": "completed",
+    "study": "financial-news",
+    "workspaceValidation": {
+      "datasets": 1,
+      "errors": [],
+      "executions": 40,
+      "jobs": 20,
+      "valid": true
+    }
+  }
+}

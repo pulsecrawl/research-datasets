@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "headline",
+  "name": "headline",
+  "origin": "custom",
+  "type": "string"
+}

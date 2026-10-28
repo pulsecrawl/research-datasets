@@ -1,0 +1,755 @@
+{
+  "completedAt": "2026-10-28T04:03:14.438468+00:00",
+  "datasetFiles": [
+    {
+      "executionId": "exec_qualification_security-apple_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:18.089663+00:00",
+      "minCrawledAt": "2026-10-28 03:58:18.089663+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-apple_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8359
+    },
+    {
+      "executionId": "exec_qualification_security-chrome-releases_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:29.769495+00:00",
+      "minCrawledAt": "2026-10-28 03:58:29.769495+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-chrome-releases_001.parquet",
+      "rows": 1,
+      "sizeBytes": 9143
+    },
+    {
+      "executionId": "exec_qualification_security-github_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:46.903711+00:00",
+      "minCrawledAt": "2026-10-28 03:58:46.903711+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-github_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8312
+    },
+    {
+      "executionId": "exec_qualification_security-gitlab_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:52.763969+00:00",
+      "minCrawledAt": "2026-10-28 03:58:52.763969+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-gitlab_001.parquet",
+      "rows": 1,
+      "sizeBytes": 7965
+    },
+    {
+      "executionId": "exec_qualification_security-mozilla_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:35.484444+00:00",
+      "minCrawledAt": "2026-10-28 03:58:35.484444+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-mozilla_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8182
+    },
+    {
+      "executionId": "exec_qualification_security-nodejs_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:58.325295+00:00",
+      "minCrawledAt": "2026-10-28 03:58:58.325295+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-nodejs_001.parquet",
+      "rows": 1,
+      "sizeBytes": 9049
+    },
+    {
+      "executionId": "exec_qualification_security-oracle_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:41.036953+00:00",
+      "minCrawledAt": "2026-10-28 03:58:41.036953+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-oracle_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8291
+    },
+    {
+      "executionId": "exec_qualification_security-ubuntu_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:23.700534+00:00",
+      "minCrawledAt": "2026-10-28 03:58:23.700534+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-ubuntu_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8471
+    }
+  ],
+  "datasetId": "ds_2b13c3f125eaa5bb568b",
+  "enabledSites": 8,
+  "excludedSites": 2,
+  "executions": [
+    {
+      "durationSeconds": 45.838145,
+      "finishedAt": "2026-10-28T03:58:58.423367+00:00",
+      "scheduledAt": "2026-10-28T03:58:12.585218+00:00",
+      "sequence": 1,
+      "sites": [
+        {
+          "executionId": "exec_qualification_security-apple_001",
+          "finishedAt": "2026-10-28T03:58:18.193424+00:00",
+          "siteId": "security-apple",
+          "startedAt": "2026-10-28T03:58:12.586024+00:00",
+          "stats": {
+            "bytes_processed": 156582,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.381608009338379,
+            "rate_limit_wait_seconds": 5.381608963012695,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "support.apple.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-ubuntu_001",
+          "finishedAt": "2026-10-28T03:58:24.261262+00:00",
+          "siteId": "security-ubuntu",
+          "startedAt": "2026-10-28T03:58:18.195876+00:00",
+          "stats": {
+            "bytes_processed": 70993,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.059108018875122,
+            "rate_limit_wait_seconds": 5.0591089725494385,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "ubuntu.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-chrome-releases_001",
+          "finishedAt": "2026-10-28T03:58:29.978947+00:00",
+          "siteId": "security-chrome-releases",
+          "startedAt": "2026-10-28T03:58:24.265508+00:00",
+          "stats": {
+            "bytes_processed": 121293,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.4277732372283936,
+            "rate_limit_wait_seconds": 5.42777419090271,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "chromereleases.googleblog.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-mozilla_001",
+          "finishedAt": "2026-10-28T03:58:35.531602+00:00",
+          "siteId": "security-mozilla",
+          "startedAt": "2026-10-28T03:58:29.981057+00:00",
+          "stats": {
+            "bytes_processed": 121082,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.4751739501953125,
+            "rate_limit_wait_seconds": 5.4751739501953125,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.mozilla.org": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-oracle_001",
+          "finishedAt": "2026-10-28T03:58:41.390903+00:00",
+          "siteId": "security-oracle",
+          "startedAt": "2026-10-28T03:58:35.534316+00:00",
+          "stats": {
+            "bytes_processed": 41447,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.383864879608154,
+            "rate_limit_wait_seconds": 5.38386607170105,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.oracle.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-github_001",
+          "finishedAt": "2026-10-28T03:58:47.257861+00:00",
+          "siteId": "security-github",
+          "startedAt": "2026-10-28T03:58:41.393665+00:00",
+          "stats": {
+            "bytes_processed": 188821,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.388684034347534,
+            "rate_limit_wait_seconds": 5.388684034347534,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "github.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-gitlab_001",
+          "finishedAt": "2026-10-28T03:58:52.816736+00:00",
+          "siteId": "security-gitlab",
+          "startedAt": "2026-10-28T03:58:47.260573+00:00",
+          "stats": {
+            "bytes_processed": 30973,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.461405992507935,
+            "rate_limit_wait_seconds": 5.461406946182251,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "docs.gitlab.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-nodejs_001",
+          "finishedAt": "2026-10-28T03:58:58.421744+00:00",
+          "siteId": "security-nodejs",
+          "startedAt": "2026-10-28T03:58:52.819526+00:00",
+          "stats": {
+            "bytes_processed": 305792,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.365257024765015,
+            "rate_limit_wait_seconds": 5.365257024765015,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "nodejs.org": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 4e-06,
+      "startedAt": "2026-10-28T03:58:12.585222+00:00"
+    },
+    {
+      "durationSeconds": 1.715582,
+      "finishedAt": "2026-10-28T04:03:14.312877+00:00",
+      "scheduledAt": "2026-10-28T04:03:12.585218+00:00",
+      "sequence": 2,
+      "sites": [
+        {
+          "executionId": "exec_qualification_security-apple_002",
+          "finishedAt": "2026-10-28T04:03:12.676956+00:00",
+          "siteId": "security-apple",
+          "startedAt": "2026-10-28T04:03:12.602248+00:00",
+          "stats": {
+            "bytes_processed": 156582,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "support.apple.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-ubuntu_002",
+          "finishedAt": "2026-10-28T04:03:13.229326+00:00",
+          "siteId": "security-ubuntu",
+          "startedAt": "2026-10-28T04:03:12.680226+00:00",
+          "stats": {
+            "bytes_processed": 70993,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "ubuntu.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-chrome-releases_002",
+          "finishedAt": "2026-10-28T04:03:13.304379+00:00",
+          "siteId": "security-chrome-releases",
+          "startedAt": "2026-10-28T04:03:13.233190+00:00",
+          "stats": {
+            "bytes_processed": 121293,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "chromereleases.googleblog.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-mozilla_002",
+          "finishedAt": "2026-10-28T04:03:13.533151+00:00",
+          "siteId": "security-mozilla",
+          "startedAt": "2026-10-28T04:03:13.307331+00:00",
+          "stats": {
+            "bytes_processed": 121082,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.mozilla.org": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-oracle_002",
+          "finishedAt": "2026-10-28T04:03:13.696902+00:00",
+          "siteId": "security-oracle",
+          "startedAt": "2026-10-28T04:03:13.536132+00:00",
+          "stats": {
+            "bytes_processed": 41447,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.oracle.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-github_002",
+          "finishedAt": "2026-10-28T04:03:14.117529+00:00",
+          "siteId": "security-github",
+          "startedAt": "2026-10-28T04:03:13.700273+00:00",
+          "stats": {
+            "bytes_processed": 188816,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "github.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-gitlab_002",
+          "finishedAt": "2026-10-28T04:03:14.181832+00:00",
+          "siteId": "security-gitlab",
+          "startedAt": "2026-10-28T04:03:14.120141+00:00",
+          "stats": {
+            "bytes_processed": 30973,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "docs.gitlab.com": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_security-nodejs_002",
+          "finishedAt": "2026-10-28T04:03:14.311066+00:00",
+          "siteId": "security-nodejs",
+          "startedAt": "2026-10-28T04:03:14.185020+00:00",
+          "stats": {
+            "bytes_processed": 305792,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "nodejs.org": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 0.012077,
+      "startedAt": "2026-10-28T04:03:12.597295+00:00"
+    }
+  ],
+  "jobIds": {
+    "security-apple": "job_3025527b9c0e455d1a50",
+    "security-chrome-releases": "job_97b58407c12a10512fdb",
+    "security-github": "job_2b6d33f3009cc71beb7f",
+    "security-gitlab": "job_d11ba50b1f22162b70da",
+    "security-mozilla": "job_2413814f5981cdf9124c",
+    "security-nodejs": "job_3c1f8af2cf4d6ea2375a",
+    "security-oracle": "job_e17bdfcdfae0e0a67ac7",
+    "security-ubuntu": "job_c764c47308c593afc4b3"
+  },
+  "phase": "qualification",
+  "publicPackageVersion": "0.1.0",
+  "qualitySummary": {
+    "columns": [
+      "rows_with_title",
+      "rows_with_vendor",
+      "rows_with_canonical_url",
+      "rows_with_all_required_fields",
+      "source_urls_with_all_required_fields"
+    ],
+    "rows": [
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    ],
+    "truncated": false
+  },
+  "querySummary": {
+    "columns": [
+      "rows",
+      "executions",
+      "source_urls"
+    ],
+    "rows": [
+      [
+        8,
+        8,
+        8
+      ]
+    ],
+    "truncated": false
+  },
+  "requestedSites": 10,
+  "schemaProfile": "advisory",
+  "settings": {
+    "executions": 2,
+    "intervalMinutes": 5
+  },
+  "status": "completed",
+  "study": "security-advisories",
+  "workspaceValidation": {
+    "datasets": 1,
+    "errors": [],
+    "executions": 16,
+    "jobs": 8,
+    "valid": true
+  }
+}

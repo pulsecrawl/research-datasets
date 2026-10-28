@@ -1,0 +1,24 @@
+{
+  "engine": "meta",
+  "mappings": {
+    "canonical_url": [
+      "og:url"
+    ],
+    "company": [
+      "literal:PepsiCo"
+    ],
+    "description": [
+      "og:description",
+      "description"
+    ],
+    "title": [
+      "og:title",
+      "twitter:title",
+      "<title>"
+    ]
+  },
+  "name": "careers-pepsico-job-meta",
+  "origin": "org",
+  "outputSchemaId": "schema_b9a0eee344faf485150a",
+  "templateId": "careers-pepsico-job-meta"
+}

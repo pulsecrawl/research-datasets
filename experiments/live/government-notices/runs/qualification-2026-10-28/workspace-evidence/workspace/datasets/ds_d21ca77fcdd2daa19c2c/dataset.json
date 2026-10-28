@@ -1,0 +1,46 @@
+{
+  "createdAt": "2026-10-28T03:58:12.111950+00:00",
+  "datasetId": "ds_d21ca77fcdd2daa19c2c",
+  "fields": [
+    {
+      "fieldId": "notice_id",
+      "name": "notice_id",
+      "type": "string"
+    },
+    {
+      "fieldId": "title",
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "fieldId": "agency",
+      "name": "agency",
+      "type": "string"
+    },
+    {
+      "fieldId": "published_at",
+      "name": "published_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "updated_at",
+      "name": "updated_at",
+      "type": "datetime"
+    },
+    {
+      "fieldId": "summary",
+      "name": "summary",
+      "type": "string"
+    },
+    {
+      "fieldId": "canonical_url",
+      "name": "canonical_url",
+      "type": "url"
+    }
+  ],
+  "identityColumn": "_source_url",
+  "identityField": "_source_url",
+  "mode": "new_urls_only",
+  "name": "Live government-notices observations",
+  "schemaId": "schema_ded022f721cafafef812"
+}

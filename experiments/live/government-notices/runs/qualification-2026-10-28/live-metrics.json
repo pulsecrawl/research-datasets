@@ -1,0 +1,839 @@
+{
+  "completedAt": "2026-10-28T04:03:19.308205+00:00",
+  "datasetFiles": [
+    {
+      "executionId": "exec_qualification_government-cfpb-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:24.336397+00:00",
+      "minCrawledAt": "2026-10-28 03:59:24.336397+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cfpb-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10266
+    },
+    {
+      "executionId": "exec_qualification_government-cftc-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:18.767534+00:00",
+      "minCrawledAt": "2026-10-28 03:59:18.767534+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cftc-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8547
+    },
+    {
+      "executionId": "exec_qualification_government-cnbv-mx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:17.628910+00:00",
+      "minCrawledAt": "2026-10-28 03:58:17.628910+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cnbv-mx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8815
+    },
+    {
+      "executionId": "exec_qualification_government-cpsc-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:28.880840+00:00",
+      "minCrawledAt": "2026-10-28 03:58:28.880840+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cpsc-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 11036
+    },
+    {
+      "executionId": "exec_qualification_government-doj-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:13.130600+00:00",
+      "minCrawledAt": "2026-10-28 03:59:13.130600+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-doj-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10968
+    },
+    {
+      "executionId": "exec_qualification_government-epa-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:07.545637+00:00",
+      "minCrawledAt": "2026-10-28 03:59:07.545637+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-epa-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10276
+    },
+    {
+      "executionId": "exec_qualification_government-fda-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:01.926834+00:00",
+      "minCrawledAt": "2026-10-28 03:59:01.926834+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-fda-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 10582
+    },
+    {
+      "executionId": "exec_qualification_government-finra-us_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:59:29.924986+00:00",
+      "minCrawledAt": "2026-10-28 03:59:29.924986+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-finra-us_001.parquet",
+      "rows": 1,
+      "sizeBytes": 9872
+    },
+    {
+      "executionId": "exec_qualification_government-profeco-mx_001",
+      "ingestDate": "2026-10-28",
+      "ingestHour": 3,
+      "kind": "delta",
+      "maxCrawledAt": "2026-10-28 03:58:23.131880+00:00",
+      "minCrawledAt": "2026-10-28 03:58:23.131880+00:00",
+      "path": "data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-profeco-mx_001.parquet",
+      "rows": 1,
+      "sizeBytes": 8910
+    }
+  ],
+  "datasetId": "ds_d21ca77fcdd2daa19c2c",
+  "enabledSites": 9,
+  "excludedSites": 1,
+  "executions": [
+    {
+      "durationSeconds": 78.027167,
+      "finishedAt": "2026-10-28T03:59:30.149195+00:00",
+      "scheduledAt": "2026-10-28T03:58:12.122024+00:00",
+      "sequence": 1,
+      "sites": [
+        {
+          "executionId": "exec_qualification_government-cnbv-mx_001",
+          "finishedAt": "2026-10-28T03:58:17.909981+00:00",
+          "siteId": "government-cnbv-mx",
+          "startedAt": "2026-10-28T03:58:12.122871+00:00",
+          "stats": {
+            "bytes_processed": 55428,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.453890323638916,
+            "rate_limit_wait_seconds": 5.453891277313232,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.gob.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-profeco-mx_001",
+          "finishedAt": "2026-10-28T03:58:23.374914+00:00",
+          "siteId": "government-profeco-mx",
+          "startedAt": "2026-10-28T03:58:17.912776+00:00",
+          "stats": {
+            "bytes_processed": 55498,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.215000152587891,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.gob.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-cpsc-us_001",
+          "finishedAt": "2026-10-28T03:58:28.920264+00:00",
+          "siteId": "government-cpsc-us",
+          "startedAt": "2026-10-28T03:58:23.377299+00:00",
+          "stats": {
+            "bytes_processed": 74141,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.458628177642822,
+            "rate_limit_wait_seconds": 5.458628177642822,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.cpsc.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-fda-us_001",
+          "finishedAt": "2026-10-28T03:59:02.038440+00:00",
+          "siteId": "government-fda-us",
+          "startedAt": "2026-10-28T03:58:28.922113+00:00",
+          "stats": {
+            "bytes_processed": 41342,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 32.95419979095459,
+            "rate_limit_wait_seconds": 32.954200744628906,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.fda.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-epa-us_001",
+          "finishedAt": "2026-10-28T03:59:07.623196+00:00",
+          "siteId": "government-epa-us",
+          "startedAt": "2026-10-28T03:59:02.040512+00:00",
+          "stats": {
+            "bytes_processed": 57776,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.4438230991363525,
+            "rate_limit_wait_seconds": 5.443824052810669,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.epa.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-doj-us_001",
+          "finishedAt": "2026-10-28T03:59:13.260265+00:00",
+          "siteId": "government-doj-us",
+          "startedAt": "2026-10-28T03:59:07.625940+00:00",
+          "stats": {
+            "bytes_processed": 138012,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.446967124938965,
+            "rate_limit_wait_seconds": 5.446968078613281,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.justice.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-cftc-us_001",
+          "finishedAt": "2026-10-28T03:59:18.827451+00:00",
+          "siteId": "government-cftc-us",
+          "startedAt": "2026-10-28T03:59:13.263533+00:00",
+          "stats": {
+            "bytes_processed": 36228,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.360595941543579,
+            "rate_limit_wait_seconds": 5.360595941543579,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.cftc.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-cfpb-us_001",
+          "finishedAt": "2026-10-28T03:59:24.415031+00:00",
+          "siteId": "government-cfpb-us",
+          "startedAt": "2026-10-28T03:59:18.830710+00:00",
+          "stats": {
+            "bytes_processed": 146002,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.461098909378052,
+            "rate_limit_wait_seconds": 5.461098909378052,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.consumerfinance.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-finra-us_001",
+          "finishedAt": "2026-10-28T03:59:30.146824+00:00",
+          "siteId": "government-finra-us",
+          "startedAt": "2026-10-28T03:59:24.418081+00:00",
+          "stats": {
+            "bytes_processed": 83035,
+            "materializedRows": 1,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 1,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.298271894454956,
+            "rate_limit_wait_seconds": 5.298273086547852,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 2,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 1,
+            "template_coverage": {
+              "www.finra.org": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 4e-06,
+      "startedAt": "2026-10-28T03:58:12.122028+00:00"
+    },
+    {
+      "durationSeconds": 7.134058,
+      "finishedAt": "2026-10-28T04:03:19.265857+00:00",
+      "scheduledAt": "2026-10-28T04:03:12.122024+00:00",
+      "sequence": 2,
+      "sites": [
+        {
+          "executionId": "exec_qualification_government-cnbv-mx_002",
+          "finishedAt": "2026-10-28T04:03:12.519170+00:00",
+          "siteId": "government-cnbv-mx",
+          "startedAt": "2026-10-28T04:03:12.137957+00:00",
+          "stats": {
+            "bytes_processed": 55429,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.gob.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-profeco-mx_002",
+          "finishedAt": "2026-10-28T04:03:18.106214+00:00",
+          "siteId": "government-profeco-mx",
+          "startedAt": "2026-10-28T04:03:12.522625+00:00",
+          "stats": {
+            "bytes_processed": 55498,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 1,
+            "rate_limit_queue_wait_seconds": 5.116727113723755,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.gob.mx": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-cpsc-us_002",
+          "finishedAt": "2026-10-28T04:03:18.353822+00:00",
+          "siteId": "government-cpsc-us",
+          "startedAt": "2026-10-28T04:03:18.109912+00:00",
+          "stats": {
+            "bytes_processed": 74141,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.cpsc.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-fda-us_002",
+          "finishedAt": "2026-10-28T04:03:18.553983+00:00",
+          "siteId": "government-fda-us",
+          "startedAt": "2026-10-28T04:03:18.355999+00:00",
+          "stats": {
+            "bytes_processed": 41342,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.fda.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-epa-us_002",
+          "finishedAt": "2026-10-28T04:03:18.627741+00:00",
+          "siteId": "government-epa-us",
+          "startedAt": "2026-10-28T04:03:18.556175+00:00",
+          "stats": {
+            "bytes_processed": 57776,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.epa.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-doj-us_002",
+          "finishedAt": "2026-10-28T04:03:18.893885+00:00",
+          "siteId": "government-doj-us",
+          "startedAt": "2026-10-28T04:03:18.629871+00:00",
+          "stats": {
+            "bytes_processed": 138012,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.justice.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-cftc-us_002",
+          "finishedAt": "2026-10-28T04:03:18.946346+00:00",
+          "siteId": "government-cftc-us",
+          "startedAt": "2026-10-28T04:03:18.895999+00:00",
+          "stats": {
+            "bytes_processed": 36228,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.cftc.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-cfpb-us_002",
+          "finishedAt": "2026-10-28T04:03:19.111441+00:00",
+          "siteId": "government-cfpb-us",
+          "startedAt": "2026-10-28T04:03:18.948927+00:00",
+          "stats": {
+            "bytes_processed": 146002,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.consumerfinance.gov": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        },
+        {
+          "executionId": "exec_qualification_government-finra-us_002",
+          "finishedAt": "2026-10-28T04:03:19.263801+00:00",
+          "siteId": "government-finra-us",
+          "startedAt": "2026-10-28T04:03:19.113574+00:00",
+          "stats": {
+            "bytes_processed": 83035,
+            "materializedRows": 0,
+            "pages_discovered": 0,
+            "pages_failed": 0,
+            "pages_fetched": 1,
+            "rate_limit_deferrals": 0,
+            "rate_limit_queue_deferrals": 0,
+            "rate_limit_queue_wait_seconds": 0.0,
+            "rate_limit_wait_seconds": 0.0,
+            "records_extracted": 1,
+            "robots_blocked": 0,
+            "robots_cache_hits": 1,
+            "robots_checks": 1,
+            "robots_fetch_failures": 0,
+            "robots_fetches": 0,
+            "template_coverage": {
+              "www.finra.org": {
+                "needsTemplate": false,
+                "sampleUrls": [],
+                "scopedMatches": 1,
+                "stackFallbackMatches": 0,
+                "systemFallbackMatches": 0,
+                "unmatchedPages": 0
+              }
+            },
+            "transient_retries": 0,
+            "urls_attempted": 1
+          },
+          "status": "succeeded"
+        }
+      ],
+      "startLagSeconds": 0.009775,
+      "startedAt": "2026-10-28T04:03:12.131799+00:00"
+    }
+  ],
+  "jobIds": {
+    "government-cfpb-us": "job_e20eb6d26ffad38bd52c",
+    "government-cftc-us": "job_cd74272c2fe81e37ebc3",
+    "government-cnbv-mx": "job_5eac6d5dafaa8ace51a5",
+    "government-cpsc-us": "job_72ef1ae574ed097bc9ba",
+    "government-doj-us": "job_194e93da0900248e0687",
+    "government-epa-us": "job_743ecd61d60984b7c30d",
+    "government-fda-us": "job_c1ba725d9b64775d88a5",
+    "government-finra-us": "job_77f64f84c39d9c79ce81",
+    "government-profeco-mx": "job_472c014bec6a304e7a76"
+  },
+  "phase": "qualification",
+  "publicPackageVersion": "0.1.0",
+  "qualitySummary": {
+    "columns": [
+      "rows_with_title",
+      "rows_with_agency",
+      "rows_with_canonical_url",
+      "rows_with_all_required_fields",
+      "source_urls_with_all_required_fields"
+    ],
+    "rows": [
+      [
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    ],
+    "truncated": false
+  },
+  "querySummary": {
+    "columns": [
+      "rows",
+      "executions",
+      "source_urls"
+    ],
+    "rows": [
+      [
+        9,
+        9,
+        9
+      ]
+    ],
+    "truncated": false
+  },
+  "requestedSites": 10,
+  "schemaProfile": "notice",
+  "settings": {
+    "executions": 2,
+    "intervalMinutes": 5
+  },
+  "status": "completed",
+  "study": "government-notices",
+  "workspaceValidation": {
+    "datasets": 1,
+    "errors": [],
+    "executions": 18,
+    "jobs": 9,
+    "valid": true
+  }
+}

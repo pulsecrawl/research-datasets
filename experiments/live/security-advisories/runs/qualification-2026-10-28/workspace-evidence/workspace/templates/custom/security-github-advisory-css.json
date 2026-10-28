@@ -1,0 +1,17 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "title": [
+      "main h1",
+      "article h1",
+      "h1"
+    ]
+  },
+  "name": "security-github-advisory-css",
+  "origin": "org",
+  "outputSchemaId": "schema_865574962352c0bfa4ac",
+  "templateId": "security-github-advisory-css"
+}

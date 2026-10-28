@@ -1,0 +1,311 @@
+{
+  "description": "Raw-HTTP-reviewed public sources for the bounded local live study. Access is checked again immediately before every execution.",
+  "displayName": "Government and regulatory notices",
+  "schemaProfile": "notice",
+  "schemaVersion": 2,
+  "sites": [
+    {
+      "constantFields": {
+        "agency": "Diario Oficial de la Federaci\u00f3n"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?sidof\\.segob\\.gob\\.mx/.+"
+      ],
+      "hosts": [
+        "sidof.segob.gob.mx"
+      ],
+      "id": "government-dof-mx",
+      "listingUrl": "https://sidof.segob.gob.mx/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Diario Oficial de la Federaci\u00f3n",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://sidof.segob.gob.mx/notas/5800082"
+      ],
+      "representativeDetailUrl": "https://sidof.segob.gob.mx/notas/5800082",
+      "retainedEnabled": false,
+      "retainedExclusion": "The qualification response produced the notice title and agency but did not expose a canonical URL required by the notice schema.",
+      "seedUrls": [
+        "https://sidof.segob.gob.mx/",
+        "https://sidof.segob.gob.mx/notas/5800082"
+      ],
+      "templatePatterns": [
+        "https://sidof.segob.gob.mx/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "CNBV"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?gob\\.mx/.+"
+      ],
+      "hosts": [
+        "www.gob.mx"
+      ],
+      "id": "government-cnbv-mx",
+      "listingUrl": "https://www.gob.mx/cnbv/archivo/prensa",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "CNBV",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.gob.mx/cnbv/prensa/indice-de-capitalizacion-de-la-banca-multiple-al-cierre-de-agosto-de-2026?idiom=es"
+      ],
+      "representativeDetailUrl": "https://www.gob.mx/cnbv/prensa/indice-de-capitalizacion-de-la-banca-multiple-al-cierre-de-agosto-de-2026?idiom=es",
+      "seedUrls": [
+        "https://www.gob.mx/cnbv/archivo/prensa",
+        "https://www.gob.mx/cnbv/prensa/indice-de-capitalizacion-de-la-banca-multiple-al-cierre-de-agosto-de-2026?idiom=es"
+      ],
+      "templatePatterns": [
+        "https://www.gob.mx/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "PROFECO"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?gob\\.mx/.+"
+      ],
+      "hosts": [
+        "www.gob.mx"
+      ],
+      "id": "government-profeco-mx",
+      "listingUrl": "https://www.gob.mx/profeco/archivo/prensa",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "PROFECO",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.gob.mx/profeco/prensa/publicidad-enganosa-profeco-orienta-para-identificarla?idiom=es"
+      ],
+      "representativeDetailUrl": "https://www.gob.mx/profeco/prensa/publicidad-enganosa-profeco-orienta-para-identificarla?idiom=es",
+      "seedUrls": [
+        "https://www.gob.mx/profeco/archivo/prensa",
+        "https://www.gob.mx/profeco/prensa/publicidad-enganosa-profeco-orienta-para-identificarla?idiom=es"
+      ],
+      "templatePatterns": [
+        "https://www.gob.mx/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "U.S. Consumer Product Safety Commission"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?cpsc\\.gov/.+"
+      ],
+      "hosts": [
+        "www.cpsc.gov"
+      ],
+      "id": "government-cpsc-us",
+      "listingUrl": "https://www.cpsc.gov/Recalls",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "U.S. Consumer Product Safety Commission",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.cpsc.gov/Recalls/2027/VQQQ-Gas-Patio-Heaters-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards"
+      ],
+      "representativeDetailUrl": "https://www.cpsc.gov/Recalls/2027/VQQQ-Gas-Patio-Heaters-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards",
+      "seedUrls": [
+        "https://www.cpsc.gov/Recalls",
+        "https://www.cpsc.gov/Recalls/2027/VQQQ-Gas-Patio-Heaters-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards"
+      ],
+      "templatePatterns": [
+        "https://www.cpsc.gov/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "U.S. Food and Drug Administration"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?fda\\.gov/.+"
+      ],
+      "hosts": [
+        "www.fda.gov"
+      ],
+      "id": "government-fda-us",
+      "listingUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 30,
+      "name": "U.S. Food and Drug Administration",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+      ],
+      "representativeDetailUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "seedUrls": [
+        "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+        "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+      ],
+      "templatePatterns": [
+        "https://www.fda.gov/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "U.S. Environmental Protection Agency"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?epa\\.gov/.+"
+      ],
+      "hosts": [
+        "www.epa.gov"
+      ],
+      "id": "government-epa-us",
+      "listingUrl": "https://www.epa.gov/newsroom/browse-news-releases",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "U.S. Environmental Protection Agency",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.epa.gov/newsreleases/epas-first-ever-pfas-tech-strategy-spurs-innovation-research-and-technology-address"
+      ],
+      "representativeDetailUrl": "https://www.epa.gov/newsreleases/epas-first-ever-pfas-tech-strategy-spurs-innovation-research-and-technology-address",
+      "seedUrls": [
+        "https://www.epa.gov/newsroom/browse-news-releases",
+        "https://www.epa.gov/newsreleases/epas-first-ever-pfas-tech-strategy-spurs-innovation-research-and-technology-address"
+      ],
+      "templatePatterns": [
+        "https://www.epa.gov/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "U.S. Department of Justice"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?justice\\.gov/.+"
+      ],
+      "hosts": [
+        "www.justice.gov"
+      ],
+      "id": "government-doj-us",
+      "listingUrl": "https://www.justice.gov/news",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "U.S. Department of Justice",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.justice.gov/opa/pr/justice-department-moves-strip-citizenship-40-criminals-largest-single-period"
+      ],
+      "representativeDetailUrl": "https://www.justice.gov/opa/pr/justice-department-moves-strip-citizenship-40-criminals-largest-single-period",
+      "seedUrls": [
+        "https://www.justice.gov/news",
+        "https://www.justice.gov/opa/pr/justice-department-moves-strip-citizenship-40-criminals-largest-single-period"
+      ],
+      "templatePatterns": [
+        "https://www.justice.gov/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "Commodity Futures Trading Commission"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?cftc\\.gov/.+"
+      ],
+      "hosts": [
+        "www.cftc.gov"
+      ],
+      "id": "government-cftc-us",
+      "listingUrl": "https://www.cftc.gov/PressRoom/PressReleases",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Commodity Futures Trading Commission",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.cftc.gov/PressRoom/PressReleases/9317-26"
+      ],
+      "representativeDetailUrl": "https://www.cftc.gov/PressRoom/PressReleases/9317-26",
+      "seedUrls": [
+        "https://www.cftc.gov/PressRoom/PressReleases",
+        "https://www.cftc.gov/PressRoom/PressReleases/9317-26"
+      ],
+      "templatePatterns": [
+        "https://www.cftc.gov/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "Consumer Financial Protection Bureau"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?consumerfinance\\.gov/.+"
+      ],
+      "hosts": [
+        "www.consumerfinance.gov"
+      ],
+      "id": "government-cfpb-us",
+      "listingUrl": "https://www.consumerfinance.gov/about-us/newsroom/",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "Consumer Financial Protection Bureau",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-new-initiative-to-address-occ-uncovered-debanking-by-large-banks/"
+      ],
+      "representativeDetailUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-new-initiative-to-address-occ-uncovered-debanking-by-large-banks/",
+      "seedUrls": [
+        "https://www.consumerfinance.gov/about-us/newsroom/",
+        "https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-new-initiative-to-address-occ-uncovered-debanking-by-large-banks/"
+      ],
+      "templatePatterns": [
+        "https://www.consumerfinance.gov/*"
+      ]
+    },
+    {
+      "constantFields": {
+        "agency": "FINRA"
+      },
+      "discoveryPatterns": [
+        "^https?://(?:www\\.)?finra\\.org/.+"
+      ],
+      "hosts": [
+        "www.finra.org"
+      ],
+      "id": "government-finra-us",
+      "listingUrl": "https://www.finra.org/media-center/newsreleases",
+      "maxDepth": 1,
+      "maxUrlsPerExecution": 4,
+      "minimumOriginDelaySeconds": 5,
+      "name": "FINRA",
+      "qualificationMaxDepth": 0,
+      "qualificationMaxUrlsPerExecution": 1,
+      "qualificationSeedUrls": [
+        "https://www.finra.org/media-center/newsreleases/2026/finra-makes-investor-education-content-available-zogo-financial"
+      ],
+      "representativeDetailUrl": "https://www.finra.org/media-center/newsreleases/2026/finra-makes-investor-education-content-available-zogo-financial",
+      "seedUrls": [
+        "https://www.finra.org/media-center/newsreleases",
+        "https://www.finra.org/media-center/newsreleases/2026/finra-makes-investor-education-content-available-zogo-financial"
+      ],
+      "templatePatterns": [
+        "https://www.finra.org/*"
+      ]
+    }
+  ],
+  "studyId": "government-notices"
+}

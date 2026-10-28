@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "notice_id",
+  "name": "notice_id",
+  "origin": "custom",
+  "type": "string"
+}

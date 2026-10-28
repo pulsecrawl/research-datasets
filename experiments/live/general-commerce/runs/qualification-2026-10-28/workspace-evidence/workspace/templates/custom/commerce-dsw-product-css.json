@@ -1,0 +1,39 @@
+{
+  "engine": "css",
+  "mappings": {
+    "canonical_url": [
+      "link[rel='canonical']@href"
+    ],
+    "currency": [
+      "[itemprop='priceCurrency']@content",
+      "meta[property='product:price:currency']@content"
+    ],
+    "image_url": [
+      "meta[property='og:image:secure_url']@content",
+      "meta[property='og:image']@content"
+    ],
+    "name": [
+      "[itemprop='name']@content",
+      "h1.product__title",
+      "h1.product-title",
+      "main h1"
+    ],
+    "price": [
+      "[itemprop='price']@content",
+      "[data-product-price]@data-product-price",
+      "meta[property='product:price:amount']@content",
+      ".price-item--sale",
+      ".price-item--regular",
+      "[data-testid*='currentPrice']",
+      "[data-wk-name='purchasePodProductPrice']"
+    ],
+    "sku": [
+      "[itemprop='sku']@content",
+      "[data-product-sku]"
+    ]
+  },
+  "name": "commerce-dsw-product-css",
+  "origin": "org",
+  "outputSchemaId": "schema_b74cf08ce9bc84ab5422",
+  "templateId": "commerce-dsw-product-css"
+}

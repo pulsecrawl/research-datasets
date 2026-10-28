@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "fieldId": "agency",
+  "name": "agency",
+  "origin": "custom",
+  "type": "string"
+}
