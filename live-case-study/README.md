@@ -1,12 +1,15 @@
 # Live end-to-end case study
 
 This directory defines a real-website usability and workflow exercise for the
-local PulseCrawl application. It is not an offline HTML corpus and the current
-tagged release does not claim completed live results.
+local PulseCrawl application. It is not an offline HTML corpus. Aggregate
+results from the retained executions are published separately under
+[`../evidence/live-studies/`](../evidence/live-studies/).
 
 `sources.json` contains ten candidate product sources, provisional scoped
 templates, nullable typed fields, and conservative request bounds. It contains
-no manufactured product records or expected prices.
+no manufactured product records or expected prices. Candidates remain disabled
+in this public reproducibility copy; the completed study used a separately
+reviewed local configuration and does not rewrite this source manifest.
 
 ## Installation
 
@@ -61,3 +64,7 @@ notes, and an unreviewed workspace are not published.
 An execution that produces zero useful product records is not evidence of
 successful extraction. It is still a reportable usability or access outcome.
 A source manifest alone is never described as a completed run.
+
+The retained commerce study completed eight cycles on one eligible product
+page. Its aggregate counts and publication boundary are explained in
+[`../evidence/live-studies/commerce/README.md`](../evidence/live-studies/commerce/README.md).

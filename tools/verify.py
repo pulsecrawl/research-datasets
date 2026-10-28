@@ -7,6 +7,7 @@ import importlib.metadata
 import json
 from pathlib import Path
 import re
+import struct
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {"fixed-html": 60, "site-pattern-html": 100, "commerce-html": 20}
@@ -108,7 +109,11 @@ def verify_directory_checksums(directory: Path) -> str:
         if not target.is_file() or hashlib.sha256(target.read_bytes()).hexdigest() != digest:
             raise ValueError(f"evidence checksum mismatch: {target.relative_to(ROOT)}")
         listed.add(target)
-    actual = {path for path in directory.iterdir() if path.is_file() and path != checksum_path}
+    actual = {
+        path
+        for path in directory.iterdir()
+        if path.is_file() and path != checksum_path and path.name != "README.md"
+    }
     if listed != actual:
         raise ValueError(f"checksum coverage mismatch: {directory.relative_to(ROOT)}")
     return hashlib.sha256(checksum_path.read_bytes()).hexdigest()
@@ -141,7 +146,8 @@ def verify_reviewed_evidence() -> dict[str, object]:
         if manifest["status"] != "completed":
             raise ValueError(f"reviewed execution is not complete: {directory.name}")
         inputs = manifest["inputs"]
-        if inputs["artifactRelease"] != release["release"]:
+        evidence_release = release["evidence"].get("evidenceRelease", release["release"])
+        if inputs["artifactRelease"] != evidence_release:
             raise ValueError(f"artifact release mismatch: {directory.name}")
         if not SHA256_PATTERN.fullmatch(inputs["checksumsSha256"]):
             raise ValueError(f"invalid input-release checksum: {directory.name}")
@@ -202,6 +208,70 @@ def verify_reviewed_evidence() -> dict[str, object]:
     }
 
 
+def verify_documentation() -> dict[str, object]:
+    release = json.loads((ROOT / "release-manifest.json").read_text(encoding="utf-8"))
+    required_guides = {
+        "datasets/README.md",
+        "datasets/fixed-html/README.md",
+        "datasets/site-pattern-html/README.md",
+        "datasets/commerce-html/README.md",
+        "datasets/storage/README.md",
+        "datasets/webbench/README.md",
+        "evidence/executions/INDEX.md",
+        "evidence/live-studies/README.md",
+        "evidence/live-studies/news/README.md",
+        "evidence/live-studies/commerce/README.md",
+        "analysis/releases/public-local-0.1.0-2026-10-27/README.md",
+    }
+    for relative in required_guides:
+        if not (ROOT / relative).is_file():
+            raise ValueError(f"missing reader guide: {relative}")
+
+    link_pattern = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+    checked_links = 0
+    for path in ROOT.rglob("*.md"):
+        if any(part in {".git", ".venv"} for part in path.relative_to(ROOT).parts):
+            continue
+        for raw_target in link_pattern.findall(path.read_text(encoding="utf-8")):
+            target = raw_target.split("#", 1)[0]
+            if not target or "://" in target or target.startswith("mailto:"):
+                continue
+            destination = (path.parent / target).resolve()
+            if not destination.is_relative_to(ROOT) or not destination.exists():
+                raise ValueError(f"broken local Markdown link in {path.relative_to(ROOT)}: {target}")
+            checked_links += 1
+
+    images = sorted((ROOT / "docs" / "images").glob("*.png"))
+    expected_images = release["documentation"]["syntheticFixtureScreenshots"]
+    if len(images) != expected_images:
+        raise ValueError("synthetic fixture screenshot count differs")
+    prohibited_chunks = {b"tEXt", b"zTXt", b"iTXt", b"eXIf"}
+    for path in images:
+        body = path.read_bytes()
+        if body[:8] != b"\x89PNG\r\n\x1a\n":
+            raise ValueError(f"documentation image is not PNG: {path.name}")
+        length = struct.unpack(">I", body[8:12])[0]
+        if body[12:16] != b"IHDR" or length != 13:
+            raise ValueError(f"documentation image lacks a valid IHDR: {path.name}")
+        width, height = struct.unpack(">II", body[16:24])
+        if (width, height) != (1000, 400):
+            raise ValueError(f"unexpected documentation image dimensions: {path.name}")
+        offset = 8
+        while offset + 12 <= len(body):
+            chunk_length = struct.unpack(">I", body[offset:offset + 4])[0]
+            chunk_type = body[offset + 4:offset + 8]
+            if chunk_type in prohibited_chunks:
+                raise ValueError(f"documentation image contains metadata: {path.name}")
+            offset += 12 + chunk_length
+            if chunk_type == b"IEND":
+                break
+    return {
+        "readerGuides": len(required_guides),
+        "syntheticScreenshots": len(images),
+        "localLinks": checked_links,
+    }
+
+
 def privacy_scan(deny: list[str] | None = None) -> None:
     rules = {
         "absolute home path": re.compile(r"/(?:Users|home)/[A-Za-z0-9_.-]+|[A-Za-z]:\\Users\\", re.I),
@@ -214,7 +284,11 @@ def privacy_scan(deny: list[str] | None = None) -> None:
     allowed_emails = {"341176098+pulsecrawl@users.noreply.github.com"}
     for path in release_files():
         relative = path.relative_to(ROOT).as_posix()
-        body = path.read_text(encoding="utf-8")
+        try:
+            body = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            # Binary assets remain checksum-covered but are not text-scanned.
+            continue
         for label, pattern in rules.items():
             for match in pattern.finditer(relative + "\n" + body):
                 if label == "email" and match.group(0) in allowed_emails:
@@ -235,6 +309,7 @@ def main() -> int:
     counts = verify_manifests()
     metadata = verify_research_metadata()
     evidence = verify_reviewed_evidence()
+    documentation = verify_documentation()
     privacy_scan(args.deny)
     expected = checksum_lines()
     checksum_file = ROOT / "checksums.sha256"
@@ -246,6 +321,7 @@ def main() -> int:
         "htmlCounts": counts,
         "researchMetadata": metadata,
         "reviewedEvidence": evidence,
+        "documentation": documentation,
         "checksums": "valid",
         "publicationScan": "passed",
     }))

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "release": "0.3.0",
+  "release": "0.3.1",
   "status": "verified",
   "publisher": "PulseCrawl",
   "publicRepository": "https://github.com/pulsecrawl/research-datasets",
@@ -63,6 +63,7 @@
     "schema": "evidence/execution-manifest.schema.json",
     "executionsPath": "evidence/executions/",
     "reviewedExecutions": 116,
+    "evidenceRelease": "0.3.0",
     "reviewedRelease": "evidence/reviewed-release.json",
     "status": "sanitized-reviewed-executions-published"
   },
@@ -103,5 +104,11 @@
     "rawRecordsIncluded": false,
     "downloadedHtmlIncluded": false
   },
-  "revisionNote": "Release 0.3.0 adds 116 sanitized controlled executions, one frozen controlled analysis, and aggregate summaries from the retained news and commerce studies. Raw workspaces, downloaded third-party HTML, record-level live review files, and machine-specific metadata remain excluded."
+  "documentation": {
+    "version": "0.3.1",
+    "folderGuidesAdded": true,
+    "syntheticFixtureScreenshots": 6,
+    "externalWebsiteScreenshots": 0
+  },
+  "revisionNote": "Release 0.3.1 adds human-readable folder guides, an execution index, and screenshots of generated synthetic fixtures. The reviewed execution evidence remains the checksum-linked 0.3.0 evidence set. No external website screenshots, raw workspaces, downloaded third-party HTML, record-level live review files, or machine-specific metadata are included."
 }

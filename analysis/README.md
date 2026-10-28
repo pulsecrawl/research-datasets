@@ -34,3 +34,7 @@ Its manifest lists all 116 included controlled executions, and its checksum
 manifest covers the retained findings, measurements, statistics, and verdict
 files.
 
+Start with the release directory's
+[`README.md`](releases/public-local-0.1.0-2026-10-27/README.md) before opening
+the CSV or JSON outputs.
+

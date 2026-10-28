@@ -21,7 +21,7 @@ Version 0.2.0 changed the identities of scoped and commerce synthetic inputs. It
 
 ## Live end-to-end case study
 
-`live-case-study/sources.json` contains real candidate product URLs, provisional template stacks, shared fields, request limits, and explicit access-review status. It contains no fake records or expected prices. All candidates are initially disabled. The study status is `not-run`.
+`live-case-study/sources.json` contains real candidate product URLs, provisional template stacks, shared fields, request limits, and explicit access-review status. It contains no fake records or expected prices. All candidates remain disabled in the published reproducibility manifest; the retained live study used a separately reviewed local configuration.
 
 The exercise uses real HTTP through the local OSS workspace. It retains extracted records, execution summaries, version manifests, request status/checksum metadata, and setup/repair notes. HTML is processed in memory, not archived by the example.
 
@@ -34,8 +34,9 @@ release files. `release-manifest.json` records current coverage and exclusions.
 Published executions additionally carry a per-execution checksum manifest and
 identify the exact public PulseCrawl package version.
 
-The live source manifest defines an exercise but does not prove it ran. No
-independently labeled external corpus, manuscript, personal metadata, or
-completed live-commerce observations are included in the current tagged
-release. Publishing collected output requires a separate review for permissions
-and sensitive data.
+The source manifest defines the exercise but does not by itself prove it ran.
+Aggregate evidence from the completed news and commerce studies is published
+under `evidence/live-studies/`. It includes operational counts and outcomes but
+not downloaded HTML, article or product text, record-level live review files,
+raw request logs, or workspace databases. No independently labeled external
+corpus, manuscript, or personal metadata is included.
