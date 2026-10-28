@@ -9,7 +9,7 @@ Each published execution uses this layout:
 evidence/executions/<execution-id>/
 ├── execution-manifest.json
 ├── resolved-experiment.json
-├── measurements.csv or measurements.jsonl
+├── measurements.json
 ├── summary.json
 └── checksums.sha256
 ```
@@ -31,6 +31,10 @@ Release `v0.3.0` contains 116 reviewed controlled executions. The release index
 at [`reviewed-release.json`](reviewed-release.json) records the frozen source
 release, source commit, per-run source checksum, public checksum, controlled
 analysis, and aggregate live-study summaries.
+
+For a readable entry point, use the
+[`executions` guide and index](executions/README.md) for controlled runs and the
+[`live-studies` guide](live-studies/README.md) for real-website observations.
 
 The live-study directories contain aggregate counts only. Record-level review
 files, downloaded third-party HTML, article or product text, raw request logs,

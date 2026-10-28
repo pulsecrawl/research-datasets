@@ -1,10 +1,10 @@
 evaluation_question,experiment_id,protocol,input_collection,evidence_status,evidence_path,analysis_path
-Are execution budgets enforced under concurrency?,execution-budget-under-concurrency,protocols/policy-and-recovery.md,WebBench,registered,,
-Does interrupted local work converge to a valid terminal state?,interruption-recovery,protocols/policy-and-recovery.md,WebBench,registered,,
-Are same-origin authorizations paced across local jobs?,shared-origin-pacing,protocols/policy-and-recovery.md,WebBench,registered,,
-Are robots rules and crawl delays applied before requests?,robots-request-controls,protocols/policy-and-recovery.md,WebBench,registered,,
-Do scoped templates prevent cross-scope contamination while retaining coverage?,url-scoped-template-selection,protocols/template-extraction.md,site-pattern-html,registered,,
-Are fallback ambiguity and repair outcomes observable?,controlled-markup-drift,protocols/template-extraction.md,site-pattern-html,registered,,
-Do independently generated local dataset versions retain semantic equality?,local-publication-reproducibility,protocols/versioned-datasets.md,storage,registered,,
-Does interruption-safe publication avoid partial committed versions?,compaction-interruption-matrix,protocols/versioned-datasets.md,storage,registered,,
+Are execution budgets enforced under concurrency?,execution-budget-under-concurrency,protocols/policy-and-recovery.md,WebBench,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Does interrupted local work converge to a valid terminal state?,interruption-recovery,protocols/policy-and-recovery.md,WebBench,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Are same-origin authorizations paced across local jobs?,shared-origin-pacing,protocols/policy-and-recovery.md,WebBench,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Are robots rules and crawl delays applied before requests?,robots-request-controls,protocols/policy-and-recovery.md,WebBench,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Do scoped templates prevent cross-scope contamination while retaining coverage?,url-scoped-template-selection,protocols/template-extraction.md,site-pattern-html,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Are fallback ambiguity and repair outcomes observable?,controlled-markup-drift,protocols/template-extraction.md,site-pattern-html,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Do independently generated local dataset versions retain semantic equality?,public-workspace-publication,protocols/versioned-datasets.md,storage,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
+Does interruption-safe publication avoid partial committed versions?,compaction-interruption-matrix,protocols/versioned-datasets.md,storage,reviewed,evidence/reviewed-release.json,analysis/releases/public-local-0.1.0-2026-10-27/findings.md
 

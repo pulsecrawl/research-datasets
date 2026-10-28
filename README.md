@@ -34,6 +34,22 @@ evaluation inputs and records what was executed.
 No manuscript or thesis PDF is stored here. The repository provides research
 artifacts that can be cited or inspected independently.
 
+## Where to start
+
+Choose the path that matches what you want to inspect:
+
+| Goal | Start here |
+| --- | --- |
+| Read the principal controlled findings | [`analysis/releases/public-local-0.1.0-2026-10-27/README.md`](analysis/releases/public-local-0.1.0-2026-10-27/README.md) |
+| Understand the real-website studies | [`evidence/live-studies/README.md`](evidence/live-studies/README.md) |
+| Inspect individual controlled executions | [`evidence/executions/README.md`](evidence/executions/README.md) |
+| Understand the synthetic inputs | [`datasets/README.md`](datasets/README.md) |
+| See what each experiment tests | [`experiments/README.md`](experiments/README.md) |
+| Reproduce the procedures | [`protocols/README.md`](protocols/README.md) |
+
+The human-readable guides explain the artifact first. JSON, JSONL, CSV, and
+checksum files remain available for programmatic verification.
+
 ## Controlled evaluation inputs
 
 | Collection | Current coverage | Interpretation |
@@ -128,7 +144,8 @@ notes. Downloaded HTML bodies are not published. Access blocks, zero extracted
 records, unchanged prices, and required template repairs remain valid observed
 outcomes.
 
-Release `v0.3.0` includes aggregate summaries from two retained live studies:
+The reviewed `v0.3.0` evidence includes aggregate summaries from two retained
+live studies:
 48 news cycles across five eligible sites and eight commerce cycles on one
 eligible product page. These summaries contain counts and operational outcomes,
 not downloaded pages, article or product text, raw request logs, or workspace
@@ -136,10 +153,11 @@ databases. The source manifest alone is not treated as evidence of execution.
 
 ## Release boundary
 
-[`v0.3.0`](https://github.com/pulsecrawl/research-datasets/releases/tag/v0.3.0)
-publishes 116 sanitized controlled executions, the frozen controlled analysis,
-and the two aggregate live-study summaries. Each controlled execution links its
-public checksum manifest to the checksum of the corresponding frozen source
+[`v0.3.1`](https://github.com/pulsecrawl/research-datasets/releases/tag/v0.3.1)
+adds human-readable folder guides and exact renders of synthetic fixtures to the
+116 controlled executions, frozen controlled analysis, and two aggregate live
+study summaries first published in `v0.3.0`. Each controlled execution links
+its public checksum manifest to the checksum of the corresponding frozen source
 run. Existing tags remain immutable.
 
 See [`DATASETS.md`](DATASETS.md), [`PRIVACY.md`](PRIVACY.md), and
