@@ -1,36 +1,62 @@
 # News study: 48 recurring cycles
 
-This retained study exercised PulseCrawl every 30 minutes for 48 cycles. Five
-of seven requested news sites were eligible for execution; two remained
-excluded by the study's access review.
+This study ran PulseCrawl every 30 minutes for 48 cycles against five public
+news websites. All five site configurations completed every scheduled cycle.
 
-## Aggregate result
+## Study identity
+
+| Identifier | Value |
+| --- | --- |
+| Study ID | `news` |
+| Retained run ID | `20261026T062242Z-l01-59f95fc5` |
+| Schedule | Every 30 minutes |
+| Planned and completed cycles | 48 of 48 |
+| Website configurations | 5 |
+
+## Websites evaluated
+
+| Website | Site ID | Domain | Executions | Pages fetched | Records extracted | Published rows |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| Norte Digital | `norte-digital` | `nortedigital.mx` | 48 | 384 | 336 | 32 |
+| La Verdad Juárez | `la-verdad-juarez` | `laverdadjuarez.com` | 48 | 384 | 336 | 7 |
+| Raíchali | `raichali` | `raichali.com` | 48 | 384 | 336 | 9 |
+| La Opción de Chihuahua | `la-opcion` | `laopcion.com.mx` | 48 | 384 | 336 | 67 |
+| Tiempo | `tiempo` | `tiempo.com.mx` | 48 | 384 | 336 | 88 |
+| **Total** |  |  | **240** | **1,920** | **1,680** | **203** |
+
+**Records extracted** counts records produced during all executions.
+**Published rows** counts rows retained by the study's new-URL publication
+policy, so a URL seen again in a later cycle does not create another published
+row. The 83 published executions are the site executions that added at least
+one new row to the dataset.
+
+The exact seed URLs and the mapping from website names to site IDs are in
+[`sources.json`](sources.json).
+
+## Aggregate outcome
 
 | Measurement | Result |
 | --- | ---: |
 | Planned cycles | 48 |
 | Completed cycles | 48 |
-| Eligible sites | 5 |
 | Pages fetched | 1,920 |
 | Pages failed | 0 |
 | Records extracted | 1,680 |
-| Materialized rows | 203 |
+| Published rows | 203 |
 | Published executions | 83 |
 | Transient retries | 0 |
 | Robots fetch failures | 0 |
 
-The five site summaries each report 48 successful executions. The aggregate
-summary also retains discovery, request-control, robots-cache, and byte-count
-measurements so that the practical workload can be inspected without
-publishing page bodies or article records.
-
 ## How to read the files
 
-- [`summary.json`](summary.json) contains the aggregate run and per-site
-  counters.
-- [`manifest.json`](manifest.json) identifies the retained summary by checksum
-  and lists material intentionally excluded from publication.
-- [`checksums.sha256`](checksums.sha256) detects changes to the published files.
+- [`sources.json`](sources.json) answers **which websites and identifiers were
+  used?**
+- [`summary.json`](summary.json) answers **what aggregate activity was
+  recorded?**
+- [`manifest.json`](manifest.json) answers **what was published or omitted?**
+- [`checksums.sha256`](checksums.sha256) answers **have the published JSON files
+  changed?**
 
-Website screenshots are not included because these were external sites. Only
-the aggregate operational evidence is public.
+Website screenshots and downloaded pages are not included because these were
+external sites. Only the aggregate operational evidence and public source
+identifiers are published.

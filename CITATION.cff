@@ -4,7 +4,7 @@ title: "PulseCrawl research experiments and evidence"
 type: dataset
 authors:
   - name: "PulseCrawl"
-version: "0.3.1"
+version: "0.3.2"
 date-released: "2026-10-27"
 repository-code: "https://github.com/pulsecrawl/research-datasets"
 url: "https://github.com/pulsecrawl/research-datasets"

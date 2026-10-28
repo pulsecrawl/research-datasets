@@ -5,6 +5,10 @@ This repository is the public reproducibility companion for
 registered experiment definitions, analysis methods, and reviewed execution
 evidence used to evaluate the local open-source application.
 
+**New readers should begin with [`START_HERE.md`](START_HERE.md).** It explains
+the difference between inputs, experiments, executions, evidence, analysis,
+and live studies, and shows where each item can be found.
+
 The repository does **not** contain a second copy of PulseCrawl. Experiments run
 against the versioned package published on PyPI:
 
@@ -28,7 +32,7 @@ evaluation inputs and records what was executed.
 | [`protocols/`](protocols/) | Policy, template, and versioned-dataset evaluation procedures | Explains how the experiment families are executed and interpreted |
 | [`evidence/`](evidence/) | Schemas, execution manifests, measurements, checksums, and reviewed summaries | Connects an execution to its inputs, software version, configuration, and outcome |
 | [`analysis/`](analysis/) | Analysis rules and derived tables or figures | Keeps transformations from measurements to reported results inspectable |
-| [`live-case-study/`](live-case-study/) | Reviewed source manifest, templates, bounded configuration, and publishable run records | Supports a real-website workflow without redistributing downloaded HTML |
+| [`live-case-study/`](live-case-study/) | Candidate commerce sources and the bounded live-study procedure | Defines the exercise; completed results are under `evidence/live-studies/` |
 | [`tools/`](tools/) | Generators, verification, WebBench, and evidence utilities | Regenerates inputs and validates the publication boundary |
 
 No manuscript or thesis PDF is stored here. The repository provides research
@@ -40,6 +44,7 @@ Choose the path that matches what you want to inspect:
 
 | Goal | Start here |
 | --- | --- |
+| Understand how the repository fits together | [`START_HERE.md`](START_HERE.md) |
 | Read the principal controlled findings | [`analysis/releases/public-local-0.1.0-2026-10-27/README.md`](analysis/releases/public-local-0.1.0-2026-10-27/README.md) |
 | Understand the real-website studies | [`evidence/live-studies/README.md`](evidence/live-studies/README.md) |
 | Inspect individual controlled executions | [`evidence/executions/README.md`](evidence/executions/README.md) |
@@ -144,21 +149,23 @@ notes. Downloaded HTML bodies are not published. Access blocks, zero extracted
 records, unchanged prices, and required template repairs remain valid observed
 outcomes.
 
-The reviewed `v0.3.0` evidence includes aggregate summaries from two retained
-live studies:
-48 news cycles across five eligible sites and eight commerce cycles on one
-eligible product page. These summaries contain counts and operational outcomes,
-not downloaded pages, article or product text, raw request logs, or workspace
-databases. The source manifest alone is not treated as evidence of execution.
+The retained evidence includes two live studies. The news study ran 48 cycles
+across Norte Digital, La Verdad Juárez, Raíchali, La Opción de Chihuahua, and
+Tiempo. The commerce study ran eight cycles against one Alo Yoga product page.
+The [live-study overview](evidence/live-studies/README.md) lists the study ID,
+retained run ID, site IDs, URLs, and aggregate results.
+
+These summaries contain counts and operational outcomes, not downloaded pages,
+article or product text, raw request logs, or workspace databases. A source
+manifest alone is not treated as evidence of execution.
 
 ## Release boundary
 
-[`v0.3.1`](https://github.com/pulsecrawl/research-datasets/releases/tag/v0.3.1)
-adds human-readable folder guides and exact renders of synthetic fixtures to the
-116 controlled executions, frozen controlled analysis, and two aggregate live
-study summaries first published in `v0.3.0`. Each controlled execution links
-its public checksum manifest to the checksum of the corresponding frozen source
-run. Existing tags remain immutable.
+Release `v0.3.2` adds a plain-language repository map and self-contained source
+indexes for the retained live studies. It does not change the controlled input
+collections, the 116 controlled executions, or the frozen controlled analysis.
+Each controlled execution links its public checksum manifest to the checksum of
+the corresponding frozen source run. Existing tags remain immutable.
 
 See [`DATASETS.md`](DATASETS.md), [`PRIVACY.md`](PRIVACY.md), and
 [`NOTICE`](NOTICE) for dataset, publication, and licensing boundaries.

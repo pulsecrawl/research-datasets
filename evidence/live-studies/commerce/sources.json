@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "studyId": "commerce",
+  "studyTitle": "Recurring product observation",
+  "retainedRunId": "20261026T062448Z-l02-5b82bc4b",
+  "schedule": {
+    "intervalMinutes": 60,
+    "plannedCycles": 8,
+    "completedCycles": 8
+  },
+  "publicationPolicy": "append-all",
+  "websites": [
+    {
+      "siteId": "alo-airlift",
+      "name": "Alo Yoga",
+      "domain": "aloyoga.com",
+      "evaluatedUrl": "https://www.aloyoga.com/products/w5766r-7-8-high-waist-airlift-legging-black",
+      "executions": 8,
+      "pagesFetched": 8,
+      "recordsExtracted": 8,
+      "publishedRows": 8
+    }
+  ]
+}

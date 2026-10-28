@@ -705,11 +705,11 @@
   "createdAt": "2026-10-27T21:38:49.194624+00:00",
   "liveStudies": [
     {
-      "checksumsSha256": "47c6cbf91a468abfe1fbbb5409bab2db6c847c3da3af66e6aae14eb6d315c289",
+      "checksumsSha256": "15372530e087b683be4b14907753848c61882ecb0383ce51fc364f5f4d93bdc2",
       "study": "news"
     },
     {
-      "checksumsSha256": "421f024437ba7ab5931d3939a7908ea25bcedb6130594af92a050a848445fa4d",
+      "checksumsSha256": "7681c91a9f2dfacced35064b81bf1624781b1548337db8fac6393f8413f9f720",
       "study": "commerce"
     }
   ],
