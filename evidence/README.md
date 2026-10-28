@@ -3,6 +3,16 @@
 This directory stores reviewed evidence for completed experiment executions.
 It does not store application source or downloaded third-party HTML.
 
+For a plain-language explanation of datasets, experiments, executions,
+evidence, and analysis, begin with [`../START_HERE.md`](../START_HERE.md).
+
+## Two kinds of evidence
+
+| Evidence | Location | Meaning |
+| --- | --- | --- |
+| Controlled executions | [`executions/`](executions/) | Direct measurements from repeatable tests with fixed inputs |
+| Live studies | [`live-studies/`](live-studies/) | Aggregate observations from repeated requests to current public pages |
+
 Each published execution uses this layout:
 
 ```text

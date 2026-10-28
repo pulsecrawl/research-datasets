@@ -189,10 +189,38 @@ def verify_reviewed_evidence() -> dict[str, object]:
         study = row["study"]
         directory = ROOT / "evidence" / "live-studies" / study
         manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+        summary = json.loads((directory / "summary.json").read_text(encoding="utf-8"))
+        sources = json.loads((directory / "sources.json").read_text(encoding="utf-8"))
         if manifest["study"] != study or manifest["status"] != "completed-supporting-observation":
             raise ValueError(f"invalid live-study manifest: {study}")
         if hashlib.sha256((directory / "summary.json").read_bytes()).hexdigest() != manifest["publishedSummarySha256"]:
             raise ValueError(f"live-study summary checksum differs: {study}")
+        if hashlib.sha256((directory / "sources.json").read_bytes()).hexdigest() != manifest["publishedSourcesSha256"]:
+            raise ValueError(f"live-study source-index checksum differs: {study}")
+        if sources["studyId"] != study or not sources["websites"]:
+            raise ValueError(f"invalid live-study source index: {study}")
+        runs = summary["runs"]
+        if len(runs) != 1 or sources["retainedRunId"] != runs[0]["runId"]:
+            raise ValueError(f"live-study run ID differs: {study}")
+        summary_sites = {site["siteId"]: site for site in summary["sites"]}
+        source_sites = {site["siteId"]: site for site in sources["websites"]}
+        if set(summary_sites) != set(source_sites):
+            raise ValueError(f"live-study site IDs differ: {study}")
+        for site_id, source_site in source_sites.items():
+            if not all(source_site.get(field) for field in ("name", "domain")):
+                raise ValueError(f"live-study source lacks a readable identity: {study}/{site_id}")
+            summary_site = summary_sites[site_id]
+            expected_counts = {
+                "executions": summary_site["executions"],
+                "pagesFetched": summary_site["pages_fetched"],
+                "recordsExtracted": summary_site["records_extracted"],
+                "publishedRows": summary_site["materializedRows"],
+            }
+            for field, expected in expected_counts.items():
+                if source_site.get(field) != expected:
+                    raise ValueError(
+                        f"live-study source count differs: {study}/{site_id}/{field}"
+                    )
         if verify_directory_checksums(directory) != row["checksumsSha256"]:
             raise ValueError(f"live-study checksum differs: {study}")
         live_studies.append(study)
@@ -211,6 +239,7 @@ def verify_reviewed_evidence() -> dict[str, object]:
 def verify_documentation() -> dict[str, object]:
     release = json.loads((ROOT / "release-manifest.json").read_text(encoding="utf-8"))
     required_guides = {
+        "START_HERE.md",
         "datasets/README.md",
         "datasets/fixed-html/README.md",
         "datasets/site-pattern-html/README.md",

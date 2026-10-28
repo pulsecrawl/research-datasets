@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "studyId": "news",
+  "studyTitle": "Recurring news collection",
+  "retainedRunId": "20261026T062242Z-l01-59f95fc5",
+  "schedule": {
+    "intervalMinutes": 30,
+    "plannedCycles": 48,
+    "completedCycles": 48
+  },
+  "publicationPolicy": "new-url-only",
+  "websites": [
+    {
+      "siteId": "norte-digital",
+      "name": "Norte Digital",
+      "domain": "nortedigital.mx",
+      "seedUrl": "https://nortedigital.mx/category/frontera/",
+      "executions": 48,
+      "pagesFetched": 384,
+      "recordsExtracted": 336,
+      "publishedRows": 32
+    },
+    {
+      "siteId": "la-verdad-juarez",
+      "name": "La Verdad Juárez",
+      "domain": "laverdadjuarez.com",
+      "seedUrl": "https://laverdadjuarez.com/category/juarez/",
+      "executions": 48,
+      "pagesFetched": 384,
+      "recordsExtracted": 336,
+      "publishedRows": 7
+    },
+    {
+      "siteId": "raichali",
+      "name": "Raíchali",
+      "domain": "raichali.com",
+      "seedUrl": "https://raichali.com/raichali/chihuahua/",
+      "executions": 48,
+      "pagesFetched": 384,
+      "recordsExtracted": 336,
+      "publishedRows": 9
+    },
+    {
+      "siteId": "la-opcion",
+      "name": "La Opción de Chihuahua",
+      "domain": "laopcion.com.mx",
+      "seedUrl": "https://laopcion.com.mx/seccion/local/",
+      "executions": 48,
+      "pagesFetched": 384,
+      "recordsExtracted": 336,
+      "publishedRows": 67
+    },
+    {
+      "siteId": "tiempo",
+      "name": "Tiempo",
+      "domain": "tiempo.com.mx",
+      "seedUrl": "https://www.tiempo.com.mx/local/",
+      "executions": 48,
+      "pagesFetched": 384,
+      "recordsExtracted": 336,
+      "publishedRows": 88
+    }
+  ]
+}

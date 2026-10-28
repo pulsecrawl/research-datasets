@@ -6,6 +6,7 @@
     "workspace databases",
     "machine-specific environment fields"
   ],
+  "publishedSourcesSha256": "713c40c381cab183aded254953525aaede7d7511058add86a9086325d678db62",
   "publishedSummarySha256": "1a22da3b09dae77873bba1bebecfe2d82a1dd2f2e744086372b2d118a4f9504a",
   "schemaVersion": 1,
   "sourceSummarySha256": "1a22da3b09dae77873bba1bebecfe2d82a1dd2f2e744086372b2d118a4f9504a",

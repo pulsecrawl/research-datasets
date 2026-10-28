@@ -5,6 +5,9 @@ experiments. These files are inputs, not results. Execution evidence is stored
 under [`../evidence/`](../evidence/), and derived results are under
 [`../analysis/`](../analysis/).
 
+If those terms are unfamiliar, read the repository's
+[`START_HERE.md`](../START_HERE.md) first.
+
 | Collection | What it contains | Primary purpose |
 | --- | --- | --- |
 | [`fixed-html/`](fixed-html/) | 60 generated news, employment, and product pages | Compare extraction methods against known values |
@@ -20,3 +23,10 @@ show these generated fixtures only; they are not screenshots of external sites.
 
 See [`../DATASETS.md`](../DATASETS.md) for licensing, provenance, and the full
 publication boundary.
+
+## Do not confuse these folders
+
+- `datasets/` contains repeatable controlled inputs.
+- `evidence/executions/` contains measurements from completed controlled runs.
+- `analysis/` contains results calculated from those measurements.
+- `evidence/live-studies/` contains aggregate observations from real websites.

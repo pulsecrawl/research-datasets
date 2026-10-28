@@ -5,6 +5,9 @@ registrations live under `experiments/`, direct execution evidence under
 `evidence/`, and derived results under `analysis/`. Dataset presence alone does
 not establish that an experiment was executed.
 
+For a short explanation of how these folders connect, read
+[`START_HERE.md`](START_HERE.md).
+
 ## Controlled synthetic inputs
 
 All HTML bodies and expected record values in `datasets/` are generated, not scraped.

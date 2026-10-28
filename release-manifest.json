@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "release": "0.3.1",
+  "release": "0.3.2",
   "status": "verified",
   "publisher": "PulseCrawl",
   "publicRepository": "https://github.com/pulsecrawl/research-datasets",
@@ -92,7 +92,11 @@
     "note": "No DOI assigned; cite a tagged repository release."
   },
   "liveCaseStudy": {
-    "manifest": "live-case-study/sources.json",
+    "candidateCommerceManifest": "live-case-study/sources.json",
+    "retainedSourceIndexes": [
+      "evidence/live-studies/news/sources.json",
+      "evidence/live-studies/commerce/sources.json"
+    ],
     "status": "completed-aggregate-summaries-published",
     "candidateSources": 10,
     "enabledSources": 1,
@@ -105,10 +109,12 @@
     "downloadedHtmlIncluded": false
   },
   "documentation": {
-    "version": "0.3.1",
+    "version": "0.3.2",
     "folderGuidesAdded": true,
+    "startHereGuide": "START_HERE.md",
+    "liveStudySourceIndexes": 2,
     "syntheticFixtureScreenshots": 6,
     "externalWebsiteScreenshots": 0
   },
-  "revisionNote": "Release 0.3.1 adds human-readable folder guides, an execution index, and screenshots of generated synthetic fixtures. The reviewed execution evidence remains the checksum-linked 0.3.0 evidence set. No external website screenshots, raw workspaces, downloaded third-party HTML, record-level live review files, or machine-specific metadata are included."
+  "revisionNote": "Release 0.3.2 adds a plain-language repository map and readable source indexes for both retained live studies. The source indexes connect study IDs, run IDs, site IDs, website names, domains, evaluated URLs, and aggregate site counts. The reviewed controlled execution evidence and frozen controlled analysis remain unchanged. No external website screenshots, raw workspaces, downloaded third-party HTML, record-level live review files, or machine-specific metadata are included."
 }
