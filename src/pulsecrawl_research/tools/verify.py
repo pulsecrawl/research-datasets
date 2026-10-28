@@ -1,6 +1,7 @@
 """Verify public inputs, controlled evidence, live runs, links, and privacy."""
 from __future__ import annotations
 
+import csv
 import hashlib
 import importlib.metadata
 import json
@@ -11,8 +12,8 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[3]
-CONTROLLED_RELEASE = ROOT / "experiments/releases/controlled-evidence-v0.3.2"
-QUALIFICATION_RELEASE = ROOT / "experiments/releases/multi-category-qualification-v0.4.1-rc.1"
+CONTROLLED_RELEASE = ROOT / "experiments/releases/controlled-evidence-v0.3.3"
+QUALIFICATION_RELEASE = ROOT / "experiments/releases/multi-category-qualification-v0.4.1"
 EXPECTED_DATASETS = {"fixed-html": 60, "site-pattern-html": 100, "commerce-html": 20}
 EXPECTED_FAMILIES = {"policy-and-recovery", "template-extraction", "versioned-datasets"}
 SHA256_PATTERN = re.compile(r"[a-f0-9]{64}")
@@ -123,11 +124,34 @@ def verify_controlled_evidence() -> dict[str, object]:
             raise ValueError(f"controlled experiment lacks README: {experiment.name}")
         for run in runs:
             manifest = _json(run / "execution-manifest.json")
+            resolved = _json(run / "resolved-experiment.json")
             execution_id = manifest["executionId"]
             if execution_id in found:
                 raise ValueError(f"duplicate controlled execution: {execution_id}")
             if manifest["experimentId"] != experiment.name or manifest["status"] != "completed":
                 raise ValueError(f"invalid controlled execution: {run.relative_to(ROOT)}")
+            if not (run / "README.md").is_file() or not (run / "measurements.csv").is_file():
+                raise ValueError(f"controlled execution lacks readable evidence: {run.relative_to(ROOT)}")
+            with (run / "measurements.csv").open(encoding="utf-8", newline="") as handle:
+                if next(csv.reader(handle), []) != ["measurement", "value", "type"]:
+                    raise ValueError(f"invalid readable measurements: {run.relative_to(ROOT)}")
+            if resolved.get("family") == "versioned-datasets":
+                readable = run / "readable-output"
+                csv_files = list(readable.glob("records*.csv"))
+                parquet_files = list(readable.glob("records*.parquet"))
+                if len(csv_files) != 1 or len(parquet_files) != 1:
+                    raise ValueError(f"dataset execution lacks CSV/Parquet companions: {run.relative_to(ROOT)}")
+                export = _json(readable / "export-manifest.json")
+                if export["publishedCsvSha256"] != hashlib.sha256(csv_files[0].read_bytes()).hexdigest():
+                    raise ValueError(f"dataset CSV checksum differs: {run.relative_to(ROOT)}")
+                if export["publishedParquetSha256"] != hashlib.sha256(parquet_files[0].read_bytes()).hexdigest():
+                    raise ValueError(f"dataset Parquet checksum differs: {run.relative_to(ROOT)}")
+                import pyarrow.parquet as pq
+                with csv_files[0].open(encoding="utf-8", newline="") as handle:
+                    csv_rows = sum(1 for _ in csv.reader(handle)) - 1
+                parquet_rows = pq.read_metadata(parquet_files[0]).num_rows
+                if csv_rows != parquet_rows or csv_rows != export["publishedRows"]:
+                    raise ValueError(f"dataset CSV/Parquet row counts differ: {run.relative_to(ROOT)}")
             found[execution_id] = verify_directory_checksums(run)
         experiment_counts[experiment.name] = len(runs)
     if set(found) != set(reviewed_rows):
@@ -155,7 +179,7 @@ def verify_controlled_evidence() -> dict[str, object]:
 def verify_qualification_release() -> dict[str, object]:
     manifest = _json(QUALIFICATION_RELEASE / "release-manifest.json")
     summary = _json(QUALIFICATION_RELEASE / "qualification-summary.json")
-    if manifest["release"] != "0.4.1-rc.1" or manifest["retainedStudyStarted"] is not False:
+    if manifest["release"] != "0.4.1" or manifest["retainedStudyStarted"] is not False:
         raise ValueError("qualification release identity or phase boundary differs")
     if not summary.get("readyForRetainedStudy") or summary.get("retainedStudyStarted") is not False:
         raise ValueError("published qualification did not pass both readiness gates")
@@ -171,6 +195,18 @@ def verify_qualification_release() -> dict[str, object]:
             raise ValueError(f"qualification lacks SQLite evidence: {row['categoryId']}")
         if not list(folder.glob("workspace-evidence/workspace/datasets/**/*.parquet")):
             raise ValueError(f"qualification lacks Parquet evidence: {row['categoryId']}")
+        readable = folder / "readable-output"
+        csv_path = readable / "records.csv"
+        export_path = readable / "csv-export.json"
+        if not csv_path.is_file() or not export_path.is_file():
+            raise ValueError(f"qualification lacks readable CSV evidence: {row['categoryId']}")
+        export = _json(export_path)
+        with csv_path.open(encoding="utf-8", newline="") as handle:
+            csv_rows = sum(1 for _ in csv.reader(handle)) - 1
+        if csv_rows != export["rowCount"] or csv_rows != row["readableRows"]:
+            raise ValueError(f"qualification CSV row count differs: {row['categoryId']}")
+        if hashlib.sha256(csv_path.read_bytes()).hexdigest() != export["csvSha256"]:
+            raise ValueError(f"qualification CSV checksum differs: {row['categoryId']}")
         access = _json(folder / "workspace-evidence/access-review.json")
         if access.get("retainsHtml") is not False:
             raise ValueError(f"qualification publication boundary differs: {row['categoryId']}")

@@ -1,0 +1,149 @@
+{
+  "fields": [
+    {
+      "name": "product_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "sku",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "canonical_url",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "brand",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "category",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "color",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "nullable": true,
+      "type": "double"
+    },
+    {
+      "name": "currency",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "availability",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "image_url",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "rating_value",
+      "nullable": true,
+      "type": "double"
+    },
+    {
+      "name": "rating_count",
+      "nullable": true,
+      "type": "double"
+    },
+    {
+      "name": "_job_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_execution_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_template_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_template_origin",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_match_tier",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_schema_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_source_url",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_crawled_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_execution_started_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_scheduled_for",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_url_identity",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_is_new_url",
+      "nullable": true,
+      "type": "bool"
+    },
+    {
+      "name": "_first_seen_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_last_seen_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_seen_count",
+      "nullable": true,
+      "type": "int64"
+    }
+  ]
+}

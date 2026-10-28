@@ -1,0 +1,96 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 24,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "fb46541c142ad3178aae21e5eca90e71712e983fbf5511726a59ee880c0eecbd",
+  "datasetId": "ds_fc602d9164abeac5bb8c",
+  "datasetVersion": 19,
+  "exportType": "complete-current-version",
+  "rowCount": 19,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/manifests/versions/00000000000000000019-exec_qualification_mx-el-manana-nuevo-laredo_001.json",
+  "sourceManifestSha256": "de32dd12273a16c4a8e03708fa9fda851851aec6a601464fea7dcb95436954a2",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-economista_001.parquet",
+      "sha256": "8f8255b37f922b05a962bcbafd10c496bf155daf4032129df998bdb27f2119d4"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-financiero_001.parquet",
+      "sha256": "b6268418bae8e0e76fa4c8a3da6db6c25f0f8ed552634b446fca61822e366e56"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-heraldo_001.parquet",
+      "sha256": "9568a1cc0795c4035e4925227cdfb2ee478fce64f05eefd256d498856bbb6358"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-horizonte_001.parquet",
+      "sha256": "cbf1b19383b3a644dd236b8da08d9ecae123576c9fab472b2129b20448717b03"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-imparcial_001.parquet",
+      "sha256": "8d1c6ee129b1ef6c0c5af74a41a0838d9cd2b681585b40118bda7e26c6b8940c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-informador_001.parquet",
+      "sha256": "bd0210df0695a1b42476b89b9eb86dc0ee3638f049011084fa335684aeab602a"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-el-porvenir_001.parquet",
+      "sha256": "b3393c9efa964a057c2ea793bcd03ef1a37692d8ec898fc614071ebfc34ea7e2"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-excelsior_001.parquet",
+      "sha256": "b4dd9785a27c93761200fe747d4427614e908971a1b06d71f83bf9add76bbda5"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-cronica_001.parquet",
+      "sha256": "28ee2457d9ed7a1a9baa768dc6abcee9140dc3fa5692a7cbd0f04dc3562029f4"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-opcion_001.parquet",
+      "sha256": "99313d7e427943a823731ee99bae9d516eddc1e452693036b2fd474cf7937a47"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-la-razon_001.parquet",
+      "sha256": "72c2d0738eeabc544da086ef0d52d5c5e58e68fb785c51f09148fb474b613bf7"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-noroeste_001.parquet",
+      "sha256": "bc8a19057e399559b0d6b16bb7606c53558403c3afec3a7747143a8ce7f399b3"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-norte-digital_001.parquet",
+      "sha256": "215c0a217c61db3f923a6a3a494b7f4f9cc567dca2c29b20b7e1e4972ae24c7f"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-proceso_001.parquet",
+      "sha256": "e79647c835e6c3b3c824da0e693c3133e3e81af3534de395e0f4ecee9472604c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-pulso-slp_001.parquet",
+      "sha256": "90c068f2cbd0f3791643890414781444dd250a0384e20a2c41bb03c3df5e4b24"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-raichali_001.parquet",
+      "sha256": "303fb321ce54a0de2ef9a67925a707f4f2a46f28e0a5db1ff60c01b630f51115"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_mx-sdp-noticias_001.parquet",
+      "sha256": "e15892e5359fb4f097b4975624588d0070b0ae08bb93fd857cced5abaa7a28a8"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_mx-el-manana-nuevo-laredo_001.parquet",
+      "sha256": "c9e34d41dba683fbcaa59a1c4a13192a9b9a06bedd7ee25c9c3ca6d7be07f412"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_fc602d9164abeac5bb8c/data/ingest_date=2026-10-28/hour=04/delta-exec_qualification_mx-la-silla-rota_001.parquet",
+      "sha256": "cd70747aeb669562fb526e976aa65c4dcf0283373fec23f104fe8148355ec8aa"
+    }
+  ]
+}

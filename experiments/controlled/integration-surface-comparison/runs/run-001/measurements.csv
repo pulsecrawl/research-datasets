@@ -1,0 +1,63 @@
+measurement,value,type
+allComparableArtifactsValid,True,bool
+method,generated-equivalent-user-integration-artifacts-with-common-oracle,str
+oracle.accuracy,1.0,float
+oracle.correct,200,int
+oracle.documents,200,int
+scope,user-authored integration surface; excludes framework internals,str
+status,completed,str
+systems.beautifulsoup-reference.artifact,beautifulsoup-reference/integration.py,str
+systems.beautifulsoup-reference.bytes,1729,int
+systems.beautifulsoup-reference.capabilityBoundary,deterministic routing fixture,str
+systems.beautifulsoup-reference.hostsRepresented,20,int
+systems.beautifulsoup-reference.oracleAccuracy,1.0,float
+systems.beautifulsoup-reference.physicalLoc,30,int
+systems.beautifulsoup-reference.routeEntries,20,int
+systems.beautifulsoup-reference.selectorsRepresented,20,int
+systems.beautifulsoup-reference.semanticCatalogComplete,True,bool
+systems.beautifulsoup-reference.sha256,1293acbddc7f2f549034623edb84fbb71798e553a4fc344895d748ff65426809,str
+systems.beautifulsoup-reference.syntaxCheck,ast.parse,str
+systems.crawlee.artifact,crawlee/integration.mjs,str
+systems.crawlee.bytes,1749,int
+systems.crawlee.capabilityBoundary,deterministic routing fixture,str
+systems.crawlee.hostsRepresented,20,int
+systems.crawlee.oracleAccuracy,1.0,float
+systems.crawlee.physicalLoc,29,int
+systems.crawlee.routeEntries,20,int
+systems.crawlee.selectorsRepresented,20,int
+systems.crawlee.semanticCatalogComplete,True,bool
+systems.crawlee.sha256,0a7798eb6af22059614b82690b1f9fab8ed61150cc53b8c1a6cc914e4c419be2,str
+systems.crawlee.syntaxCheck,structural-no-node,str
+systems.firecrawl.artifact,firecrawl/integration.json,str
+systems.firecrawl.bytes,3250,int
+systems.firecrawl.capabilityBoundary,schema-plus-client-routing; live LLM extraction not evaluated,str
+systems.firecrawl.hostsRepresented,20,int
+systems.firecrawl.oracleAccuracy,1.0,float
+systems.firecrawl.physicalLoc,172,int
+systems.firecrawl.routeEntries,20,int
+systems.firecrawl.selectorsRepresented,20,int
+systems.firecrawl.semanticCatalogComplete,True,bool
+systems.firecrawl.sha256,6f11d03fd626aa9eee29d121072e96d117b122008496862c9b0032f6d0d6afc1,str
+systems.firecrawl.syntaxCheck,json.loads,str
+systems.pulsecrawl.artifact,pulsecrawl/integration.json,str
+systems.pulsecrawl.bytes,7354,int
+systems.pulsecrawl.capabilityBoundary,deterministic routing fixture,str
+systems.pulsecrawl.hostsRepresented,20,int
+systems.pulsecrawl.oracleAccuracy,1.0,float
+systems.pulsecrawl.physicalLoc,405,int
+systems.pulsecrawl.routeEntries,20,int
+systems.pulsecrawl.selectorsRepresented,20,int
+systems.pulsecrawl.semanticCatalogComplete,True,bool
+systems.pulsecrawl.sha256,9d631c47c5ce331ca30c7d96fb08cae2e00b9c97850d992b4dd57e5f574d95af,str
+systems.pulsecrawl.syntaxCheck,json.loads,str
+systems.scrapy.artifact,scrapy/integration.py,str
+systems.scrapy.bytes,1645,int
+systems.scrapy.capabilityBoundary,deterministic routing fixture,str
+systems.scrapy.hostsRepresented,20,int
+systems.scrapy.oracleAccuracy,1.0,float
+systems.scrapy.physicalLoc,28,int
+systems.scrapy.routeEntries,20,int
+systems.scrapy.selectorsRepresented,20,int
+systems.scrapy.semanticCatalogComplete,True,bool
+systems.scrapy.sha256,7e35eb4400609422630f8b6ed0a12fb189b058f353f5418f5128e97902723104,str
+systems.scrapy.syntaxCheck,ast.parse,str

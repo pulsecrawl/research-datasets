@@ -1,0 +1,9 @@
+{
+  "fields": [
+    {
+      "name": "value",
+      "nullable": true,
+      "type": "int64"
+    }
+  ]
+}

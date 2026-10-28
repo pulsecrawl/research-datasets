@@ -37,6 +37,6 @@ an aggregate.
 
 The machine-readable mapping from every execution ID to its experiment and
 source/public checksum is
-[`../releases/controlled-evidence-v0.3.2/reviewed-release.json`](../releases/controlled-evidence-v0.3.2/reviewed-release.json). The controlled results
+[`../releases/controlled-evidence-v0.3.3/reviewed-release.json`](../releases/controlled-evidence-v0.3.3/reviewed-release.json). The controlled results
 are summarized in
-[`../releases/controlled-evidence-v0.3.2/analysis/README.md`](../releases/controlled-evidence-v0.3.2/analysis/README.md).
+[`../releases/controlled-evidence-v0.3.3/analysis/README.md`](../releases/controlled-evidence-v0.3.3/analysis/README.md).

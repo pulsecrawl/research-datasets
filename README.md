@@ -57,7 +57,7 @@ research-datasets/
 │   ├── catalog.json                descriptive controlled experiment catalog
 │   ├── controlled/
 │   │   └── <experiment-name>/
-│   │       └── runs/run-001/       manifest, measurements, summary, checksums
+│   │       └── runs/run-001/       guide, JSON evidence, readable CSV, checksums
 │   ├── live/
 │   │   ├── catalog.json            nine live categories and source counts
 │   │   └── <category>/
@@ -157,7 +157,7 @@ pulsecrawl-research qualify-live \
 The qualification command cannot start the 24-hour retained phase. The
 reviewed qualification release contains the 107 selected websites, all of
 which passed the runtime and required-field checks. The release is indexed at
-[`experiments/releases/multi-category-qualification-v0.4.1-rc.1/`](experiments/releases/multi-category-qualification-v0.4.1-rc.1/).
+[`experiments/releases/multi-category-qualification-v0.4.1/`](experiments/releases/multi-category-qualification-v0.4.1/).
 
 ## Dataset and publication boundary
 
@@ -165,6 +165,13 @@ which passed the runtime and required-field checks. The release is indexed at
 - Published live evidence may contain source URLs, HTTP status, response
   checksums, extracted records, local workspace validation, Parquet parts, and
   dataset-version manifests.
+- Every controlled run includes `measurements.csv`, a reviewer-readable view of
+  its authoritative JSON measurements. Dataset-producing controlled runs also
+  include checksum-linked Parquet evidence and a matching complete or bounded
+  CSV view.
+- Every live qualification run includes a complete CSV view of the current
+  manifest-selected Parquet version. Sensitive text is redacted in that CSV;
+  the source Parquet files remain authoritative and unchanged.
 - No credentials, browser profiles, workstation paths, or personal names are
   permitted in a release.
 - Every published run has a checksum file. Every release has a separate

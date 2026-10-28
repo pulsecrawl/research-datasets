@@ -1,0 +1,52 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 23,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "eee244170817f6aa9f36d10d4f93cf696c9626f96383542ecb362a3d0944294d",
+  "datasetId": "ds_2b13c3f125eaa5bb568b",
+  "datasetVersion": 8,
+  "exportType": "complete-current-version",
+  "rowCount": 8,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/manifests/versions/00000000000000000008-exec_qualification_security-nodejs_001.json",
+  "sourceManifestSha256": "a08610e78cf237db2bb1922683b5e978f97767109c54785bc3f95d1ce5f3dfb8",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-apple_001.parquet",
+      "sha256": "b5b9daf03528b3c955e66b800146d3e1089fe6b631fb784a3d9a30f5468d0b29"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-chrome-releases_001.parquet",
+      "sha256": "b9acf8d290403e4e41b01cfec6e91e45bfef85a9c88a4dbf2bc526a4ee515000"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-github_001.parquet",
+      "sha256": "0c2dceee110ba05634ac795d9c3da96195ea84b8e6dfaf31ff9b85b324691d51"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-gitlab_001.parquet",
+      "sha256": "dca91caa3dfd49213aa3216bf6f529925ead70f5cbf34a3a7f3166bddea3bcb7"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-mozilla_001.parquet",
+      "sha256": "3a6702dd4daa7f6abda4586f86d8858c59d69f3748dea1ea944abbb3557b8975"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-nodejs_001.parquet",
+      "sha256": "668fda35e1f6c65554e20127dfc015ee4c0a7675945fa9ba0571553d68d914e0"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-oracle_001.parquet",
+      "sha256": "d9378368f69729455fcd04e205e6e38dc9a53c8696cd40c6daa327bde2a5a10e"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_2b13c3f125eaa5bb568b/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_security-ubuntu_001.parquet",
+      "sha256": "a262b43f6d5f841cd90eff432347c34d4f94be70897d650f1d5942e05c46d643"
+    }
+  ]
+}

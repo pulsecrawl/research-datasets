@@ -1,0 +1,119 @@
+{
+  "fields": [
+    {
+      "name": "advisory_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "title",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "vendor",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "published_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "updated_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "severity",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "summary",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "canonical_url",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_job_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_execution_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_template_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_template_origin",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_match_tier",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_schema_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_source_url",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_crawled_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_execution_started_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_scheduled_for",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_url_identity",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "name": "_is_new_url",
+      "nullable": true,
+      "type": "bool"
+    },
+    {
+      "name": "_first_seen_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_last_seen_at",
+      "nullable": true,
+      "type": "timestamp[us, tz=UTC]"
+    },
+    {
+      "name": "_seen_count",
+      "nullable": true,
+      "type": "int64"
+    }
+  ]
+}

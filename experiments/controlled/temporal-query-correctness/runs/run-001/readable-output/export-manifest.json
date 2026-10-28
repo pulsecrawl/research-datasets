@@ -1,0 +1,21 @@
+{
+  "authoritativeFormat": "Parquet",
+  "csvRole": "reviewer-readable companion",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "exportType": "deterministic-preview",
+  "note": "The full benchmark output is large; this deterministic preview contains the first retained rows of one selected source file. Aggregate full-run measurements remain in measurements.json and measurements.csv.",
+  "publishedCsv": "records-preview.csv",
+  "publishedCsvSha256": "93a4ea43904b7602f32848192785a7539f329132dd1314fcc74ce11c76493ddb",
+  "publishedParquet": "records-preview.parquet",
+  "publishedParquetSha256": "1629254d2740893dce965bc5416940ce6cc57ee83b473a60393408405afacfb5",
+  "publishedRows": 500,
+  "selectedSourceFile": "artifacts/datalake/compact/ingest_date=2026-01-01/compact-000001.parquet",
+  "selectedSourceFileSha256": "0973f4d21e5624fb267317e018ddd4dab1ad5d1ef3cccd92de5b8a46232bb137",
+  "selectedSourceRows": 240000,
+  "sourceRunParquetBytes": 5941140,
+  "sourceRunParquetFiles": 205
+}

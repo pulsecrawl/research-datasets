@@ -1,0 +1,21 @@
+{
+  "authoritativeFormat": "Parquet",
+  "csvRole": "reviewer-readable companion",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "exportType": "complete-selected-file",
+  "note": "The complete selected source file is published.",
+  "publishedCsv": "records.csv",
+  "publishedCsvSha256": "a428f86fd92a1f31aa66ab74f2fc4bcef3f361173321784136ead028e58ce2d7",
+  "publishedParquet": "records.parquet",
+  "publishedParquetSha256": "f672e20df7016fb96fbebd69b0db8d6451e9b7bc7d24a23d6783a71198e5e70d",
+  "publishedRows": 10000,
+  "selectedSourceFile": "artifacts/datalake/compact.parquet",
+  "selectedSourceFileSha256": "f672e20df7016fb96fbebd69b0db8d6451e9b7bc7d24a23d6783a71198e5e70d",
+  "selectedSourceRows": 10000,
+  "sourceRunParquetBytes": 332358,
+  "sourceRunParquetFiles": 31
+}

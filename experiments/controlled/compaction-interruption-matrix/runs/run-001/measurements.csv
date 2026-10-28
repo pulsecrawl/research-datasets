@@ -1,0 +1,17 @@
+measurement,value,type
+allSnapshotsValid,True,bool
+byStage.after_cleanup.observations,30,int
+byStage.after_cleanup.violations,0,int
+byStage.after_compact_before_swap.observations,30,int
+byStage.after_compact_before_swap.violations,0,int
+byStage.after_swap_before_cleanup.observations,30,int
+byStage.after_swap_before_cleanup.violations,0,int
+byStage.before_compact.observations,30,int
+byStage.before_compact.violations,0,int
+byStage.during_pointer_write.observations,30,int
+byStage.during_pointer_write.violations,0,int
+method,atomic-pointer-compaction-boundary-failure-matrix,str
+observations,150,int
+repetitions,30,int
+status,completed,str
+violations,0,int

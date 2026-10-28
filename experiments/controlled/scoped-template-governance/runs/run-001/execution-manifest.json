@@ -37,6 +37,7 @@
   "outputs": {
     "checksums": "checksums.sha256",
     "measurements": "measurements.json",
+    "readableMeasurements": "measurements.csv",
     "summary": "summary.json"
   },
   "schemaVersion": 1,

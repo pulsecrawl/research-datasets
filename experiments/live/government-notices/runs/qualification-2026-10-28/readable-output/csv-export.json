@@ -1,0 +1,56 @@
+{
+  "authoritativeFormat": "Parquet",
+  "columnCount": 22,
+  "csv": "records.csv",
+  "csvRole": "complete row-level reviewer view with sensitive text redacted",
+  "csvSanitization": [
+    "email addresses are replaced with [redacted-email]",
+    "absolute home paths are replaced with [redacted-home-path]",
+    "credential-shaped values are replaced with [redacted-credential]"
+  ],
+  "csvSha256": "10ea19c4809699e5b52a74786c563ebbfe7d84a1084925993961207ccbe374da",
+  "datasetId": "ds_d21ca77fcdd2daa19c2c",
+  "datasetVersion": 9,
+  "exportType": "complete-current-version",
+  "rowCount": 9,
+  "sourceManifest": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/manifests/versions/00000000000000000009-exec_qualification_government-finra-us_001.json",
+  "sourceManifestSha256": "48a90fb100ba7cf69db99809760f760b4579ac24371853fb3a45b4a31dbedd80",
+  "sourceParquetFiles": [
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cfpb-us_001.parquet",
+      "sha256": "6674758e9547091724e17e023490d5e460c2bca70fe7dddf133435d5d49eb78b"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cftc-us_001.parquet",
+      "sha256": "2e909d056508ef883f507404a4f004fecfd8cffec570f933fbe9305f0e8b3ad8"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cnbv-mx_001.parquet",
+      "sha256": "4e613d8f56ebff7d7cc4261ef17d911716f9b999f056c1e2eecc53493182475c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-cpsc-us_001.parquet",
+      "sha256": "319d57189de9a13a234d72255c75211e92eada6ea75fddebe3037c53d9481308"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-doj-us_001.parquet",
+      "sha256": "efb44a2a8ff8468974dc0be8b49af4854b589ebc6915c2989f2b3a9447fabe7f"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-epa-us_001.parquet",
+      "sha256": "1ec4f51037fd94edc129c5e14208d1d4c6db43122634a1f56f9c578a564b1a6f"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-fda-us_001.parquet",
+      "sha256": "5ab876840449f325e95e1b271a1ec2edd8c737ae90600dbfbc22dbcfc87e672c"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-finra-us_001.parquet",
+      "sha256": "cd4e2812931cccd7ccc8d9db2644c530c471476faf86621307272003f7be81bf"
+    },
+    {
+      "path": "workspace-evidence/workspace/datasets/ds_d21ca77fcdd2daa19c2c/data/ingest_date=2026-10-28/hour=03/delta-exec_qualification_government-profeco-mx_001.parquet",
+      "sha256": "e13b32ee88a8d3fd435250d285a4bf6562e1e882e99d7b1dee3da869e19354b6"
+    }
+  ]
+}
